@@ -1,20 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[1]:
 
 
 #Imports
-from pathlib import Path
 import pandas as pd
-import csv
-import os
 
 
-# In[8]:
+# In[2]:
 
 
-#Load                                                                               Land data
+#Load Land data
 df_mlp = pd.read_csv('http://files.zillowstatic.com/research/public/County/County_MedianListingPrice_AllHomes.csv',
                      encoding='ISO-8859-1')
 
@@ -22,7 +19,7 @@ df_mlp = pd.read_csv('http://files.zillowstatic.com/research/public/County/Count
 df_mlp.head()
 
 
-# In[9]:
+# In[3]:
 
 
 #Filter data to NC
@@ -32,7 +29,8 @@ df_mlp_nc = df_mlp[filter1]
 #Check to ensure filter worked
 df_mlp_nc.head(5)
 
-# In[10]:
+
+# In[4]:
 
 
 #Change MunicipalCodeFIPS dtype to add leading 0's
@@ -40,7 +38,7 @@ df_mlp_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlp_nc['MunicipalCodeFIPS'].astype(s
 df_mlp_nc.dtypes
 
 
-# In[11]:
+# In[5]:
 
 
 #Add leading 0's and check to ensure they were added
@@ -48,9 +46,9 @@ df_mlp_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlp_nc['MunicipalCodeFIPS'].str.zfil
 df_mlp_nc.head(5)
 
 
-# In[12]:
+# In[6]:
 
 
 #Save to csv file for export in Excel
-df_mlp_nc.to_csv('./Data/STG_ZLLW_County_MedianListingPrice_AllHomes.txt', sep ='\t')
+#df_mlp_nc.to_csv('./Data/STG_ZLLW_County_MedianListingPrice_AllHomes.txt', sep ='\t')
 

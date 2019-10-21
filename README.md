@@ -12,7 +12,7 @@ The Earnings folder is still a work in progress, but will eventually contain sim
 
 ******************************************************************************************************************************************
 
-#### Folder Breakdown
+### Folder Breakdown
 Each folder will have the following:
 * Backups
   * Here the data from the previous update will be saved until the next update.

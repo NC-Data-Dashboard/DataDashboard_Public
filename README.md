@@ -13,4 +13,4 @@ The Earnings folder is still a work in progress, but will eventually contain sim
 #### Notes
 All folders contain or will contain Windows Batch Files to simplify and expedite update process.
 
-###### grumpyphotographer 10/20/2019
+###### Last Updated: 10/20/2019

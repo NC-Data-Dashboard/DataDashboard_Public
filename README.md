@@ -1,6 +1,6 @@
 # Welcome!
 
-## DataDashboard
+### DataDashboard
 This folder contains work I created related to the Junior Data Analyst role at Western Carolina University.  I am in charge of updating Land data and Earnings data for the [NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx).  
 
 ### [Land](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/DataDashboard/Land)

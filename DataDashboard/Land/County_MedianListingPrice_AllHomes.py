@@ -50,5 +50,5 @@ df_mlp_nc.head(5)
 
 
 #Save to csv file for export in Excel
-#df_mlp_nc.to_csv('./Data/STG_ZLLW_County_MedianListingPrice_AllHomes.txt', sep ='\t')
+df_mlp_nc.to_csv('./Data/STG_ZLLW_County_MedianListingPrice_AllHomes.txt', sep ='\t')
 

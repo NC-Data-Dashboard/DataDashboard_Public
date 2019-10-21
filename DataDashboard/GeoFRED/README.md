@@ -11,6 +11,7 @@
 * Updates
   * The data that was pulled from the latest update will be here, waiting to be moved to the Dashboard.
   
+#### Note: This data is used throughout multiple sections of the Dashboard
   
   
   

@@ -1,7 +1,7 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work I created as it relates to the Junior Data Analyst role at Western Carolina University.  I am in charge of updating both Land and Earnings data for the [NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx).  
 __________________________________________________________________________________________________________________________________________
-### Main Folders
+### **Main Folders**
 ### [Land](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Land)
 The Land folder contains Python scripts that can be used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/).
 
@@ -13,7 +13,7 @@ The Earnings folder is still a work in progress, but will eventually contain sim
 
 ******************************************************************************************************************************************
 
-### Folder Breakdown
+#### Folder Breakdown
 Each folder will have the following:
 * Backups
   * Here the data from the previous update will be saved until the next update.

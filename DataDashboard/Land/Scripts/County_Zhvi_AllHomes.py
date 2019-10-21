@@ -8,6 +8,14 @@
 import pandas as pd
 
 
+# In[ ]:
+
+
+# Create Backups
+df_backup = pd.read_csv('./Updates/STG_ZLLW_County_Zhvi_AllHomes.txt')
+df_backup.to_csv('./Backups/STG_ZLLW_County_Zhvi_AllHomes_BACKUP.txt')
+
+
 # In[8]:
 
 
@@ -48,5 +56,5 @@ df_zhvi_nc.head(5)
 
 
 #Save to csv file for export in Excel
-df_zhvi_nc.to_csv('./Data/STG_ZLLW_County_Zhvi_AllHomes.txt', sep = '\t')
+df_zhvi_nc.to_csv('./Updates/STG_ZLLW_County_Zhvi_AllHomes.txt', sep = '\t')
 

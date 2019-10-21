@@ -8,6 +8,14 @@
 import pandas as pd
 
 
+# In[ ]:
+
+
+# Create backups
+df_backup = pd.read_csv('./Updates/STG_ZLLW_County_MedianValuePerSqft_AllHomes.txt')
+df_backup.to_csv('./Backups/STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP.txt')
+
+
 # In[14]:
 
 
@@ -48,5 +56,5 @@ df_mvsf_nc.head(5)
 
 
 #Save to csv file for export in Excel
-df_mvsf_nc.to_csv('./Data/STG_ZLLW_County_MedianValuePerSqft_AllHomes.txt', sep = '\t')
+df_mvsf_nc.to_csv('./Updates/STG_ZLLW_County_MedianValuePerSqft_AllHomes.txt', sep = '\t')
 

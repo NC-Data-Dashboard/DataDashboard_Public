@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[1]:
 
 
 #Imports
 import pandas as pd
 
 
-# In[ ]:
+# In[2]:
 
 
 # Create backups
@@ -16,17 +16,18 @@ df_backup = pd.read_csv('./Updates/STG_ZLLW_County_MedianValuePerSqft_AllHomes.t
 df_backup.to_csv('./Backups/STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP.txt')
 
 
-# In[14]:
+# In[3]:
 
 
 #Load Land data
-df_mvsf = pd.read_csv('http://files.zillowstatic.com/research/public/County/County_MedianValuePerSqft_AllHomes.csv', encoding='ISO-8859-1')
+df_mvsf = pd.read_csv('http://files.zillowstatic.com/research/public/County/County_MedianValuePerSqft_AllHomes.csv', 
+                      encoding='ISO-8859-1')
 
 #Display table to ensure data loaded correctly
 df_mvsf.head()
 
 
-# In[15]:
+# In[4]:
 
 
 #Filter data to NC
@@ -37,14 +38,22 @@ df_mvsf_nc = df_mvsf[filter1]
 df_mvsf_nc.head(5)
 
 
-# In[16]:
+# In[5]:
+
+
+#View data types of dataframe
+df_mvsf_nc.dtypes
+
+
+# In[9]:
 
 
 #Change MunicipalCodeFIPS dtype to add leading 0's
 df_mvsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mvsf_nc['MunicipalCodeFIPS'].astype(str)
+df_mvsf_nc.dtypes
 
 
-# In[17]:
+# In[7]:
 
 
 #Add leading 0's and check to ensure they were added
@@ -52,7 +61,7 @@ df_mvsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mvsf_nc['MunicipalCodeFIPS'].str.zf
 df_mvsf_nc.head(5)
 
 
-# In[18]:
+# In[8]:
 
 
 #Save to csv file for export in Excel

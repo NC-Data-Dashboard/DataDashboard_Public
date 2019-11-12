@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[ ]:
+
+
+## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, October 2019 ##
+
+
 # In[10]:
 
 

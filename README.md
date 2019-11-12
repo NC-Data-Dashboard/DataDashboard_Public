@@ -1,15 +1,17 @@
 # Welcome to the NC Data Dashboard!
-This repository contains work I created as it relates to the Junior Data Analyst role at Western Carolina University.  I am in charge of updating both Land and Earnings data for the [NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx).  
+This repository contains work student employees created as it relates to Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
 ### [Land](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Land)
-The Land folder contains Python scripts that can be used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/).
+The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
 
 ### [GeoFRED](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/GeoFRED)
-The GeoFRED folder includes scipts to pull all 'maps' of data currently being used by the Data Dashboard, minus those used for Land data.
+The GeoFRED folder includes scripts to pull all 'maps' of data currently being used by the Data Dashboard, minus those used for Land data.
 
 ### [Earnings](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Earnings)
-The Earnings folder is still a work in progress, but will eventually contain similar scripts.
+The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.
 
+
+** Workbooks are available to view and download at the [NC Data Dashboard site](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx). **
 ******************************************************************************************************************************************
 
 ### Folder Breakdown
@@ -24,7 +26,7 @@ Each folder will have the following:
 * Updates
   * The data that was pulled from the latest update will be here, waiting to be moved to the Dashboard.
   
-All folders contain or will contain Windows Batch Files to simplify and expedite update process.  
+All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. Run these files to update data.
  
   
-##### Last updated: 10.20.2019
+##### Last updated: 11.12.2019

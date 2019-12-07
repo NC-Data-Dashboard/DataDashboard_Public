@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, October 2019 ##
+## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
 
 
 # In[11]:
@@ -65,6 +65,22 @@ df_mlsf_nc.dtypes
 #Add leading 0's and check to ensure they were added
 df_mlsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlsf_nc['MunicipalCodeFIPS'].str.zfill(3)
 df_mlsf_nc.head(5)
+
+
+# In[ ]:
+
+
+# Set Index to Region Name
+df_mlsf_nc.set_index(df_mlsf_nc['RegionName'], inplace = True)
+df_mlsf_nc
+
+
+# In[ ]:
+
+
+# Drop Region Name column
+df_mlsf_nc.drop('RegionName', axis = 1, inplace = True)
+df_mlsf_nc
 
 
 # In[18]:

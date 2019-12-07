@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, October 2019 ##
+## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
 
 
 # In[2]:
@@ -64,6 +64,22 @@ df_zhvi_nc.dtypes
 
 #Add leading 0's and check to ensure they were added
 df_zhvi_nc.loc[ :, 'MunicipalCodeFIPS'] = df_zhvi_nc['MunicipalCodeFIPS'].str.zfill(3)
+df_zhvi_nc.head(5)
+
+
+# In[ ]:
+
+
+# Set Index to Region Name
+df_zhvi_nc.set_index(df_zhvi_nc['RegionName'], inplace = True)
+df_zhvi_nc.head(5)
+
+
+# In[ ]:
+
+
+# Drop Region Name column
+df_zhvi_nc.drop('RegionName', axis = 1, inplace = True)
 df_zhvi_nc.head(5)
 
 

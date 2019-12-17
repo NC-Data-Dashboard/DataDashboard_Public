@@ -2,11 +2,13 @@
 This repository contains work student employees created as it relates to Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
 ### [Demographics](https://github.com/nathayoung/NCDataDashboard/tree/master/Demographics)
+The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/)for the Demographics workbook.
 
 ### [Earnings](https://github.com/nathayoung/NCDataDashboard/tree/master/Earnings)
 The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.
 
 ### [Labor](https://github.com/nathayoung/NCDataDashboard/tree/master/Labor)
+The Labor folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) and [BEA](https://apps.bea.gov/regional/downloadzip.cfm) for the Labor workbook.
 
 ### [Land](https://github.com/nathayoung/NCDataDashboard/tree/master/Land)
 The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
@@ -27,7 +29,7 @@ Each folder will have the following:
 * Updates
   * The data that was pulled from the latest update will be here, waiting to be moved to the Dashboard.
   
-All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. Run these files to update data.
+All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. The update.bat file will run each categories .bat file at the same time, providing a one stop place to update data.
  
   
-##### Last updated: 11.12.2019
+##### Last updated: 12.17.2019

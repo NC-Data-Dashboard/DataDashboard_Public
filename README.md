@@ -1,14 +1,15 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work student employees created as it relates to Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
-### [Land](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Land)
-The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
+### [Demographics](https://github.com/nathayoung/NCDataDashboard/tree/master/Demographics)
 
-### [GeoFRED](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/GeoFRED)
-The GeoFRED folder includes scripts to pull all 'maps' of data currently being used by the Data Dashboard, minus those used for Land data.
-
-### [Earnings](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Earnings)
+### [Earnings](https://github.com/nathayoung/NCDataDashboard/tree/master/Earnings)
 The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.
+
+### [Labor](https://github.com/nathayoung/NCDataDashboard/tree/master/Labor)
+
+### [Land](https://github.com/nathayoung/NCDataDashboard/tree/master/Land)
+The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
 
 
 ** Workbooks are available to view and download at the [NC Data Dashboard site](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx). **

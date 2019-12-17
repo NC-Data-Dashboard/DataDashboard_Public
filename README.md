@@ -2,7 +2,7 @@
 This repository contains work student employees created as it relates to Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
 ### [Demographics](https://github.com/nathayoung/NCDataDashboard/tree/master/Demographics)
-The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/)for the Demographics workbook.
+The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) for the Demographics workbook.
 
 ### [Earnings](https://github.com/nathayoung/NCDataDashboard/tree/master/Earnings)
 The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.

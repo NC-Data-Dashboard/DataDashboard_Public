@@ -1,14 +1,17 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work student employees created as it relates to Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
-### [Land](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Land)
-The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
+### [Demographics](https://github.com/nathayoung/NCDataDashboard/tree/master/Demographics)
+The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) for the Demographics workbook.
 
-### [GeoFRED](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/GeoFRED)
-The GeoFRED folder includes scripts to pull all 'maps' of data currently being used by the Data Dashboard, minus those used for Land data.
-
-### [Earnings](https://github.com/grumpyphotographer/NCDataDashboard/tree/master/Earnings)
+### [Earnings](https://github.com/nathayoung/NCDataDashboard/tree/master/Earnings)
 The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.
+
+### [Labor](https://github.com/nathayoung/NCDataDashboard/tree/master/Labor)
+The Labor folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) and [BEA](https://apps.bea.gov/regional/downloadzip.cfm) for the Labor workbook.
+
+### [Land](https://github.com/nathayoung/NCDataDashboard/tree/master/Land)
+The Land folder contains Python scripts that are used to pull data from [Zillow](https://www.zillow.com/research/data/) and [GeoFRED](https://geofred.stlouisfed.org/map/) to update our Land Workbook.
 
 
 ** Workbooks are available to view and download at the [NC Data Dashboard site](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx). **
@@ -26,7 +29,7 @@ Each folder will have the following:
 * Updates
   * The data that was pulled from the latest update will be here, waiting to be moved to the Dashboard.
   
-All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. Run these files to update data.
+All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. The update.bat file will run each categories .bat file at the same time, providing a one stop place to update data.
  
   
-##### Last updated: 11.12.2019
+##### Last updated: 12.17.2019

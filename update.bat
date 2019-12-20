@@ -12,12 +12,15 @@ cd Earnings
 start earnings.bat
 cd..
 
-cd Demographics
-start Demographics.bat
-cd..
+REM cd Demographics
+REM start Demographics.bat
+REM cd..
 
 REM cd Health
 REM start health.bat
 REM cd..
+
+pause
+git status
 
 pause

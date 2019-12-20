@@ -3,12 +3,11 @@ Scripts\GeoFRED_EQFXSUBPRIME.py
 Scripts\GeoFRED_People_25_Years_and_Over_Who_Have_Completed_an_Associates_Degree_or_Higher_5year_estimate_by_County_Percent.py
 Scripts\GeoFRED_Resident_Population_by_County_Thousands_of_Persons.py
 pause
-
+cd Updates
 git status
-pause
 
-git commit -m "Demographics Update %Date%"
 pause
+git commit -a -m "Demographics Update %Date%"
+git status
 
-git push
 pause

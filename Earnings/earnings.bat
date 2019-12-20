@@ -1,11 +1,10 @@
 Python -W ignore Scripts/CAINC5N_NC.py
 pause
-
+cd Updates
 git status
-pause
 
-git commit -m "Earnings Update %Date%"
 pause
+git commit -a -m "Earnings Update %Date%"
+git status
 
-git push
 pause

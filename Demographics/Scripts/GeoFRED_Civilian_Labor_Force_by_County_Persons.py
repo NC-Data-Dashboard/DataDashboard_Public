@@ -4,17 +4,20 @@
 # In[ ]:
 
 
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, October 2019 ##
-
-
-# In[15]:
-
-
 # Imports  
 import pandas as pd 
 
 
-# In[16]:
+# In[ ]:
+
+
+# Watermark
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+
+
+# In[ ]:
 
 
 # Create backups
@@ -22,7 +25,7 @@ df_backup = pd.read_csv('./Updates/STG_FRED_Civilian_Labor_Force_by_County_Perso
 df_backup.to_csv('./Backups/STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP.txt')
 
 
-# In[17]:
+# In[ ]:
 
 
 # Getting and reading new data 
@@ -30,7 +33,7 @@ df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn
 df.head()
 
 
-# In[18]:
+# In[ ]:
 
 
 # Filter data to display only North Carolina
@@ -39,7 +42,23 @@ df_nc = df[filter1]
 df_nc.head()
 
 
-# In[19]:
+# In[ ]:
+
+
+# Set Series ID as index
+df_nc.set_index(df_nc['Series ID'], inplace = True)
+df_nc.head(2)
+
+
+# In[ ]:
+
+
+# Drop Series ID column
+df_nc.drop('Series ID', axis = 1, inplace = True)
+df_nc.head(2)
+
+
+# In[ ]:
 
 
 # Save file to tab delimited txt for upload to SSMS

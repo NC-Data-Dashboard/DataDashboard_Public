@@ -13,3 +13,4 @@ git commit -a -m "Labor Update %Date%"
 git status
 
 pause
+git push

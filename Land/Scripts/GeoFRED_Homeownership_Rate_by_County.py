@@ -1,20 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
-
-
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
-
-
-# In[10]:
+# In[ ]:
 
 
 # Imports  
-import pandas as pd 
+import pandas as pd
 
 
-# In[11]:
+# In[ ]:
+
+
+# Watermark
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+
+
+# In[ ]:
 
 
 # Create backups
@@ -22,7 +25,7 @@ df_backup = pd.read_csv('./Updates/STG_FRED_Homeownership_Rate_by_County.txt')
 df_backup.to_csv('./Backups/STG_FRED_Homeownership_Rate_by_County_BACKUP.txt')
 
 
-# In[12]:
+# In[ ]:
 
 
 # Getting and reading new data 
@@ -30,7 +33,7 @@ df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn
 df.head(2)
 
 
-# In[13]:
+# In[ ]:
 
 
 # Filter data to display only North Carolina
@@ -39,7 +42,7 @@ df_nc = df[filter1]
 df_nc.head(2)
 
 
-# In[14]:
+# In[ ]:
 
 
 # Set Index to Series ID
@@ -47,7 +50,7 @@ df_nc.set_index(df_nc['Series ID'], inplace = True)
 df_nc.head(2)
 
 
-# In[15]:
+# In[ ]:
 
 
 # Drop Series ID column
@@ -55,7 +58,7 @@ df_nc.drop('Series ID', axis = 1, inplace = True)
 df_nc.head(2)
 
 
-# In[16]:
+# In[ ]:
 
 
 # Save file to tab delimited txt for upload to SSMS

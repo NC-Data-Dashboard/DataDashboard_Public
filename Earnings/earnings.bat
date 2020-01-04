@@ -8,3 +8,6 @@ git commit -a -m "Earnings Update %Date%"
 git status
 
 pause
+git push
+
+pause

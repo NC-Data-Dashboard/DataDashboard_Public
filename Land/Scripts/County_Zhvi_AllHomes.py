@@ -1,20 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
-
-
-# In[2]:
+# In[ ]:
 
 
 #Imports
 import pandas as pd
 
 
-# In[3]:
+# In[ ]:
+
+
+# Watermark
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+
+
+# In[ ]:
 
 
 # Create Backups
@@ -22,7 +25,7 @@ df_backup = pd.read_csv('./Updates/STG_ZLLW_County_Zhvi_AllHomes.txt')
 df_backup.to_csv('./Backups/STG_ZLLW_County_Zhvi_AllHomes_BACKUP.txt')
 
 
-# In[4]:
+# In[ ]:
 
 
 #Load Land data
@@ -33,7 +36,7 @@ df_zhvi = pd.read_csv('http://files.zillowstatic.com/research/public/County/Coun
 df_zhvi.head()
 
 
-# In[5]:
+# In[ ]:
 
 
 #Filter data to NC
@@ -44,14 +47,14 @@ df_zhvi_nc = df_zhvi[filter1]
 df_zhvi_nc.head(5)
 
 
-# In[6]:
+# In[ ]:
 
 
 #View data types of dataframe
 df_zhvi_nc.dtypes
 
 
-# In[7]:
+# In[ ]:
 
 
 #Change MunicipalCodeFIPS dtype to add leading 0's
@@ -59,7 +62,7 @@ df_zhvi_nc.loc[ :, 'MunicipalCodeFIPS'] = df_zhvi_nc['MunicipalCodeFIPS'].astype
 df_zhvi_nc.dtypes
 
 
-# In[8]:
+# In[ ]:
 
 
 #Add leading 0's and check to ensure they were added
@@ -83,7 +86,7 @@ df_zhvi_nc.drop('RegionName', axis = 1, inplace = True)
 df_zhvi_nc.head(5)
 
 
-# In[9]:
+# In[ ]:
 
 
 #Save to csv file for export in Excel

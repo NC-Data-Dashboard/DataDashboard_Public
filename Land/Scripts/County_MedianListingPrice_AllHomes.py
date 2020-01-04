@@ -1,20 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[47]:
-
-
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
-
-
-# In[48]:
+# In[ ]:
 
 
 #Imports
 import pandas as pd
 
 
-# In[49]:
+# In[ ]:
+
+
+# Watermark
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+
+
+# In[ ]:
 
 
 # Create Backups
@@ -22,7 +25,7 @@ df_backup = pd.read_csv('./Updates/STG_ZLLW_County_MedianListingPrice_AllHomes.t
 df_backup.to_csv('./Backups/STG_ZLLW_County_MedianListingPrice_AllHomes_BACKUP.txt')
 
 
-# In[50]:
+# In[ ]:
 
 
 #Load Land data
@@ -33,7 +36,7 @@ df_mlp = pd.read_csv('http://files.zillowstatic.com/research/public/County/Count
 df_mlp.head()
 
 
-# In[51]:
+# In[ ]:
 
 
 #Filter data to NC
@@ -44,14 +47,14 @@ df_mlp_nc = df_mlp[filter1]
 df_mlp_nc.head(5)
 
 
-# In[52]:
+# In[ ]:
 
 
 #View data types of dataframe
 df_mlp_nc.dtypes
 
 
-# In[53]:
+# In[ ]:
 
 
 #Change MunicipalCodeFIPS dtype to add leading 0's
@@ -59,7 +62,7 @@ df_mlp_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlp_nc['MunicipalCodeFIPS'].astype(s
 df_mlp_nc.dtypes
 
 
-# In[54]:
+# In[ ]:
 
 
 #Add leading 0's and check to ensure they were added
@@ -67,7 +70,7 @@ df_mlp_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlp_nc['MunicipalCodeFIPS'].str.zfil
 df_mlp_nc.head(5)
 
 
-# In[55]:
+# In[ ]:
 
 
 # Set Index to Region Name
@@ -75,7 +78,7 @@ df_mlp_nc.set_index(df_mlp_nc['RegionName'], inplace = True)
 df_mlp_nc
 
 
-# In[56]:
+# In[ ]:
 
 
 # Drop Region Name column
@@ -83,7 +86,7 @@ df_mlp_nc.drop('RegionName', axis = 1, inplace = True)
 df_mlp_nc
 
 
-# In[57]:
+# In[ ]:
 
 
 #Save to csv file for export in Excel

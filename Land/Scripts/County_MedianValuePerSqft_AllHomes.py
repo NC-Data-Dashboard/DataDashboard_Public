@@ -4,17 +4,20 @@
 # In[ ]:
 
 
-## Written and published by Nathan Young, Junior Data Analyst for NC Data Dashboard, December 2019 ##
-
-
-# In[1]:
-
-
 #Imports
 import pandas as pd
 
 
-# In[2]:
+# In[ ]:
+
+
+# Watermark
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+
+
+# In[ ]:
 
 
 # Create backups
@@ -22,7 +25,7 @@ df_backup = pd.read_csv('./Updates/STG_ZLLW_County_MedianValuePerSqft_AllHomes.t
 df_backup.to_csv('./Backups/STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP.txt')
 
 
-# In[3]:
+# In[ ]:
 
 
 #Load Land data
@@ -33,7 +36,7 @@ df_mvsf = pd.read_csv('http://files.zillowstatic.com/research/public/County/Coun
 df_mvsf.head()
 
 
-# In[4]:
+# In[ ]:
 
 
 #Filter data to NC
@@ -44,14 +47,14 @@ df_mvsf_nc = df_mvsf[filter1]
 df_mvsf_nc.head(5)
 
 
-# In[5]:
+# In[ ]:
 
 
 #View data types of dataframe
 df_mvsf_nc.dtypes
 
 
-# In[9]:
+# In[ ]:
 
 
 #Change MunicipalCodeFIPS dtype to add leading 0's
@@ -59,7 +62,7 @@ df_mvsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mvsf_nc['MunicipalCodeFIPS'].astype
 df_mvsf_nc.dtypes
 
 
-# In[7]:
+# In[ ]:
 
 
 #Add leading 0's and check to ensure they were added
@@ -83,7 +86,7 @@ df_mvsf_nc.drop('RegionName', axis = 1, inplace = True)
 df_mvsf_nc
 
 
-# In[8]:
+# In[ ]:
 
 
 #Save to csv file for export in Excel

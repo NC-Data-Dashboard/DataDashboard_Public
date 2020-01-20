@@ -1,4 +1,4 @@
-git config --global user.name "nathayoung"
+git config --global user.name "NCDataDashboard"
 
 cd Land
 call land.bat

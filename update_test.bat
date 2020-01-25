@@ -1,14 +1,14 @@
 python -m pip install --upgrade pip --user
-pip install jupyter --upgrade
-pip install jupyter lab --upgrade
-pip install pandas --upgrade
-pip install tensorflow --upgrade
-pip install ZipFile --upgrade
-pip install Requests --upgrade
-pip install watermark --upgrade
-pip install xlrd --upgrade
+python -m pip install jupyter --upgrade --user
+python -m pip install jupyter lab --upgrade --user 
+python -m pip install pandas --upgrade --user
+python -m pip install tensorflow --upgrade --user 
+python -m pip install ZipFile --upgrade --user
+python -m pip install Requests --upgrade -user 
+python -m pip install watermark --upgrade --user
+python -m pip install xlrd --upgrade --user
 
-git config --global user.name "nathayoung"
+REM git config --global user.name "NCDataDashboard"
 
 cd Land
 call land.bat
@@ -34,6 +34,6 @@ REM cd Natural Products
 REM start natproducts.bat
 REM cd..
 
-git status
+REM git status
 
 exit

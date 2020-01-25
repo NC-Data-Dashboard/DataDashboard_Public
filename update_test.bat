@@ -1,4 +1,3 @@
-@echo off
 python -m pip install --upgrade pip --user
 python -m pip install jupyter --upgrade --user
 python -m pip install jupyter lab --upgrade --user 

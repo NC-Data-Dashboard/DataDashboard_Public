@@ -1,3 +1,4 @@
+@echo off
 python -m pip install --upgrade pip --user
 python -m pip install jupyter --upgrade --user
 python -m pip install jupyter lab --upgrade --user 
@@ -11,29 +12,30 @@ python -m pip install xlrd --upgrade --user
 REM git config --global user.name "NCDataDashboard"
 
 cd Land
-call land.bat
+call land_test.bat
 cd..
 
 cd Labor
-call labor.bat
+call labor_test.bat
 cd..
 
 cd Earnings
-call earnings.bat
+call earnings_test.bat
 cd..
 
 REM cd Demographics
-REM start Demographics.bat
+REM start Demographics_test.bat
 REM cd..
 
 REM cd Health
-REM start health.bat
+REM start health_test.bat
 REM cd..
 
 REM cd Natural Products
-REM start natproducts.bat
+REM start natproducts_test.bat
 REM cd..
 
 REM git status
 
+pause
 exit

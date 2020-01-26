@@ -20,7 +20,7 @@ call earnings_test.bat
 cd..
 
 cd Demographics
-start Demographics_test.bat
+call Demographics_test.bat
 cd..
 
 REM cd Health

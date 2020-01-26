@@ -7,32 +7,33 @@ pip install Requests --upgrade
 pip install watermark --upgrade
 pip install xlrd --upgrade
 
-git config --global user.name "nathayoung"
+REM git config --global user.name "NCDataDashboard"
 
 cd Land
-call land.bat
+call land_test.bat
 cd..
 
 cd Labor
-call labor.bat
+call labor_test.bat
 cd..
 
 cd Earnings
-call earnings.bat
+call earnings_test.bat
 cd..
 
 REM cd Demographics
-REM start Demographics.bat
+REM start Demographics_test.bat
 REM cd..
 
 REM cd Health
-REM start health.bat
+REM start health_test.bat
 REM cd..
 
 REM cd Natural Products
-REM start natproducts.bat
+REM start natproducts_test.bat
 REM cd..
 
-git status
+REM git status
 
+pause
 exit

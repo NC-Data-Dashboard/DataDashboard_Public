@@ -11,17 +11,17 @@ cd Land
 call land_test.bat
 cd..
 
-REM cd Labor
-REM call labor_test.bat
-REM cd..
+cd Labor
+call labor_test.bat
+cd..
 
-REM cd Earnings
-REM call earnings_test.bat
-REM cd..
+cd Earnings
+call earnings_test.bat
+cd..
 
-REM cd Demographics
-REM start Demographics_test.bat
-REM cd..
+cd Demographics
+start Demographics_test.bat
+cd..
 
 REM cd Health
 REM start health_test.bat

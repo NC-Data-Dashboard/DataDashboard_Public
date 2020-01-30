@@ -29,9 +29,9 @@ Each folder in main directory will have the following:
   * The Jupyter Notebooks upon which the Python scripts are based are located here.
     * Note: They may not match their respective Python script.  If this is case, open ‘command prompt’, navigate to the notebook folder, and run ‘jupyter nbconvert  --to script [notebook].ipynb’
 	  * If you want to convert all the notebooks to .py scripts use asterisk (*) instead of the notebook name
-*Scripts
+* Scripts
   * Python Scripts that the .bat file runs are located here.  After converting notebooks to .py files, move .py files here.
-*Updates
+* Updates
   * The data that was pulled from the latest update will be here, waiting to be uploaded to the database.
   
 Some folders will have a Data folder for data in .csv form that could not be pulled using web address.

@@ -17,9 +17,9 @@ import numpy as np
 
 
 # Watermark
-#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-#get_ipython().run_line_magic('load_ext', 'watermark')
-#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+get_ipython().run_line_magic('load_ext', 'watermark')
+get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
 
 
 # In[ ]:
@@ -296,10 +296,10 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianListingPricePerSqft_AllHomes](
 # In[ ]:
 
 
-params = urllib.parse.quote_plus('Driver={SQL Server};' 
-                                 'Server=STEIN\ECONDEV;'
-                                 'Database=STG2;'
-                                 'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
+                                 r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
@@ -307,7 +307,10 @@ engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 #warning: discard old table if exists
 df_mlsf_nc.to_sql('STG_ZLLW_County_MedianListingPricePerSqft_AllHomes', con=engine, if_exists='replace', index=False)
 
+
 # In[ ]:
+
+
 c.execute("""/*******	DYNAMIC SCRIPT FOR MOVING DATA FROM SHALLOW-AND-WIDE LAYOUT TO DEEP-AND-NARROW LAYOUT	******/
 /*******	TARGET (OUTPUT) TABLE IS STATIC. SOURCE (INPUT) TABLE IS DIFFERENT EVERY TIME			******/
 /*******	Specifically modifed for Zillow Monthly input											******/
@@ -394,9 +397,12 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	Select top 100 * from STG2.dbo.STG_XLSX_DataSeries_WRK
 	;
 
-	')""")
+	""")
 
-#In[]:
+
+# In[ ]:
+
+
 c.execute("""/**************************************************************************/
 /***																	***/
 /***				PopulateDV2_Measure_Tables.sql						***/
@@ -723,9 +729,12 @@ UPDATE [DV2].[dbo].[Sat_Measure_Description]
    From #UpdtKeys K
 	,[DV2].[dbo].[Sat_Measure_Description] T
  WHERE T.[Measure_HashKey] = K.[Measure_HashKey]
- and T.[Load_Date] = k.[Load_Date]; """)
+ and T.[Load_Date] = k.[Load_Date];""")
 
-#In[]:
+
+# In[ ]:
+
+
 c.execute("""/*****		Post_Observations.sql										*****/
 /*****		Post Observations Staged in XLSX Data Series Work Table		*****/
 /*****		Insert new observations. Update existing observations.		*****/
@@ -886,3 +895,4 @@ UPDATE [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
  and T.[Load_Date] = k.[Load_Date];
 
    Select @@ROWCOUNT as [Observations Retired];""")
+

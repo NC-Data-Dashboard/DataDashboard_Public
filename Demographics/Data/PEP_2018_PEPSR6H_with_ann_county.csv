@@ -1,4 +1,5 @@
 Year.id,Year.display-label,Sex.id,Sex.display-label,Hisp.id,Hisp.display-label,GEO.id,GEO.id2,GEO.display-label,totpop,wa,ba,ia,aa,na,tom
+Id,Year,Id,Sex,Id,Hispanic Origin,Id,Id2,Geography,Total,Race Alone - White,Race Alone - Black or African American,Race Alone - American Indian and Alaska Native,Race Alone - Asian,Race Alone - Native Hawaiian and Other Pacific Islander,Two or More Races
 cen42010,"April 1, 2010 Census",female,Female,hisp,Hispanic,0500000US37001,37001,"Alamance County, North Carolina",8116,6600,423,736,36,27,294
 cen42010,"April 1, 2010 Census",female,Female,nhisp,Not Hispanic,0500000US37001,37001,"Alamance County, North Carolina",71125,53553,15185,290,989,26,1082
 cen42010,"April 1, 2010 Census",female,Female,tothisp,Total,0500000US37001,37001,"Alamance County, North Carolina",79241,60153,15608,1026,1025,53,1376

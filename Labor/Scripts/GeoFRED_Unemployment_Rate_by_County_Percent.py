@@ -4,8 +4,13 @@
 # In[ ]:
 
 
-# Imports  
-import pandas as pd 
+#Imports
+import pandas as pd
+import pyodbc
+import sqlalchemy
+from sqlalchemy import create_engine
+import urllib
+import numpy as np
 
 
 # In[ ]:
@@ -29,7 +34,7 @@ df_backup.to_csv('./Backups/STG_FRED_Unemployment_Rate_by_County_Percent_BACKUP.
 
 
 # Getting and reading new data 
-df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-89.96&lat=40.01&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1224&attributes=Not+Seasonally+Adjusted%2C+Monthly%2C+Percent&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2018-01-01&type=xls&startDate=1976-01-01&endDate=2018-01-01&mapWidth=999&mapHeight=1249&hideLegend=false", skiprows=1)
+df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-89.96&lat=40.01&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1224&attributes=Not+Seasonally+Adjusted%2C+Monthly%2C+Percent&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2025-01-01&type=xls&startDate=1976-01-01&endDate=2025-01-01&mapWidth=999&mapHeight=1249&hideLegend=false", skiprows=1)
 df.head(2)
 
 
@@ -63,4 +68,129 @@ df_nc.head(2)
 
 # Save file to tab delimited txt for upload to SSMS
 df_nc.to_csv('./Updates/STG_FRED_Unemployment_Rate_by_County_Percent.txt', sep = '\t')
+
+
+# In[ ]:
+
+
+#Reset Index for upload to database
+df_nc = df_nc.reset_index()    
+
+
+# In[ ]:
+
+
+column_list = df_nc.columns.values
+for i in column_list:
+    df_nc.loc[df_nc[i].isnull(),i]=0
+
+
+# In[ ]:
+
+
+#Connect to database and create cursor
+con = pyodbc.connect('Driver={SQL Server};'
+                      'Server=TITANIUM-BOOK;'
+                      'Database=DataDashboard;'
+                      'Trusted_Connection=yes;',
+                    autocommit=True)
+
+c = con.cursor()
+
+
+# In[ ]:
+
+
+#Drop old backup table
+c.execute('drop table STG_FRED_Unemployment_Rate_by_County_Percent_BACKUP')
+
+
+# In[ ]:
+
+
+#Create new backup
+c.execute('''sp_rename 'dbo.STG_FRED_Unemployment_Rate_by_County_Percent','STG_FRED_Unemployment_Rate_by_County_Percent_BACKUP';''')
+
+
+# In[ ]:
+
+
+c.execute('''USE [DataDashboard]
+
+SET ANSI_NULLS ON
+
+
+SET QUOTED_IDENTIFIER ON
+
+CREATE TABLE [dbo].[STG_FRED_Unemployment_Rate_by_County_Percent](
+	[Series ID] [varchar](14) NULL,
+	[Region Name] [varchar](23) NULL,
+	[Region Code] [int] NULL,
+	[1975] [float] NULL,
+	[1976] [float] NULL,
+	[1977] [float] NULL,
+	[1978] [float] NULL,
+	[1979] [float] NULL,
+	[1980] [float] NULL,
+	[1981] [float] NULL,
+	[1982] [float] NULL,
+	[1983] [float] NULL,
+	[1984] [float] NULL,
+	[1985] [float] NULL,
+	[1986] [float] NULL,
+	[1987] [float] NULL,
+	[1988] [float] NULL,
+	[1989] [float] NULL,
+	[1990] [float] NULL,
+	[1991] [float] NULL,
+	[1992] [float] NULL,
+	[1993] [float] NULL,
+	[1994] [float] NULL,
+	[1995] [float] NULL,
+	[1996] [float] NULL,
+	[1997] [float] NULL,
+	[1998] [float] NULL,
+	[1999] [float] NULL,
+	[2000] [float] NULL,
+	[2001] [float] NULL,
+	[2002] [float] NULL,
+	[2003] [float] NULL,
+	[2004] [float] NULL,
+	[2005] [float] NULL,
+	[2006] [float] NULL,
+	[2007] [float] NULL,
+	[2008] [float] NULL,
+	[2009] [float] NULL,
+	[2010] [float] NULL,
+	[2011] [float] NULL,
+	[2012] [float] NULL,
+	[2013] [float] NULL,
+	[2014] [float] NULL,
+	[2015] [float] NULL,
+	[2016] [float] NULL,
+	[2017] [float] NULL,
+	[2018] [float] NULL,
+    [2019] [float] NULL,
+    [2020] [float] NULL,
+    [2021] [float] NULL,
+    [2022] [float] NULL,
+    [2023] [float] NULL,
+    [2024] [float] NULL,
+    [2025] [float] NULL
+) ON [PRIMARY]''')
+
+
+# In[ ]:
+
+
+params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
+                                 r'Trusted_Connection=yes;')
+
+engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
+
+#df: pandas.dataframe; mTableName:table name in MS SQL
+#warning: discard old table if exists
+df_nc.to_sql('STG_FRED_Unemployment_Rate_by_County_Percent', con=engine, if_exists='replace', index=False)
 

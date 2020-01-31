@@ -5,6 +5,8 @@ python -m pip install Requests --upgrade --user
 python -m pip install watermark --upgrade --user
 python -m pip install xlrd --upgrade --user
 python -m pip install pyodbc --upgrade --user
+python -m pip install sqlalchemy --upgrade --user
+python -m pip install numpy --upgrade --user
 
 REM git config --global user.name "NCDataDashboard"
 

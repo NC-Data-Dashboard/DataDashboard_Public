@@ -121,8 +121,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=TITANIUM-BOOK;'
-                      'Database=DataDashboard;'
+                      'Server=STEIN\ECONDEV;'
+                      'Database=STG2;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -146,7 +146,7 @@ c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPrice_AllHomes','STG_ZL
 # In[ ]:
 
 
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -297,10 +297,10 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianListingPrice_AllHomes](
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus('Driver={SQL Server};' 
+                                 'Server=STEIN\ECONDEV;'
+                                 'Database=STG2;'
+                                 'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 

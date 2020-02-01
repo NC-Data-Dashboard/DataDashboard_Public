@@ -95,7 +95,7 @@ df_mlsf_nc
 
 
 #Save to csv file for export in Excel
-df_mlsf_nc.to_csv('./Updates/STG_ZLLW_County_MedianListingPricePerSqf_AllHomes.txt', sep = '\t')
+df_mlsf_nc.to_csv('./Updates/STG_ZLLW_County_MedianListingPricePerSqft_AllHomes.txt', sep = '\t')
 
 
 # In[ ]:

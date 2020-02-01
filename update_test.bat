@@ -10,9 +10,9 @@ python -m pip install numpy --upgrade --user
 
 REM git config --global user.name "NCDataDashboard"
 
-cd Land
-call land_test.bat
-cd..
+REM cd Land
+REM call land_test.bat
+REM cd..
 
 cd Labor
 call labor_test.bat

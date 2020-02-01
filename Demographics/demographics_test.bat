@@ -1,3 +1,4 @@
+REM python -W ignore Scripts\CNSUS.py
 python -W ignore Scripts\GeoFRED_Civilian_Labor_Force_by_County_Persons.py
 python -W ignore Scripts\GeoFRED_EQFXSUBPRIME.py
 python -W ignore Scripts\GeoFRED_People_25_Years_and_Over_Who_Have_Completed_an_Associates_Degree_or_Higher_5year_estimate_by_County_Percent.py

@@ -90,8 +90,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=TITANIUM-BOOK;'
-                      'Database=DataDashboard;'
+                      'Server=STEIN\ECONDEV;'
+                      'Database=STG2;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +115,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_EQFXSUBPRIME','STG_FRED_EQFXSUBPRIME_BACKUP
 # In[ ]:
 
 
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -218,8 +218,8 @@ CREATE TABLE [dbo].[STG_FRED_EQFXSUBPRIME](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -227,4 +227,22 @@ engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 #df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
 df_nc.to_sql('STG_FRED_EQFXSUBPRIME', con=engine, if_exists='replace', index=False)
+
+
+# In[1]:
+
+
+#c.execute("""""")
+
+
+# In[ ]:
+
+
+#c.execute("""""")
+
+
+# In[ ]:
+
+
+#c.execute("""""")
 

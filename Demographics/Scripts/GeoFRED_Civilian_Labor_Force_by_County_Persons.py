@@ -278,6 +278,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	Select top 100 * from STG2.dbo.STG_XLSX_DataSeries_WRK
 	;""")
 
+
 # In[ ]:
 
 

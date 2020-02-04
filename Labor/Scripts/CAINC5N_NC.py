@@ -29,8 +29,8 @@ import numpy as np
 
 
 # Create Backups
-df_backup = pd.read_csv('./Updates/STG_BEA_CAINC5N_NC.txt', encoding = 'ISO-8859-1', sep='\t')
-df_backup.to_csv('./Backups/STG_BEA_CAINC5N_NC_BACKUP.txt')
+df_backup = pd.read_csv('../Updates/STG_BEA_CAINC5N_NC.txt', encoding = 'ISO-8859-1', sep='\t')
+df_backup.to_csv('../Backups/STG_BEA_CAINC5N_NC_BACKUP.txt')
 
 
 # In[ ]:
@@ -87,612 +87,575 @@ df.head()
 
 
 # Save as tab-delimited txt file for export to SSMS
-df.to_csv('./Updates/STG_BEA_CAINC5N_NC.txt', sep = '\t')
-
-
-# In[ ]:
-
-
-#Reset Index for upload to database
-df = df.reset_index()    
-
-
-# In[ ]:
-
-
-#Fill NaN values for upload to database
-column_list = df.columns.values
-for i in column_list:
-    df.loc[df[i].isnull(),i]=0
-
-
-# In[ ]:
-
-
-#Connect to database and create cursor
-con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
-                      'Trusted_Connection=yes;',
-                    autocommit=True)
-
-c = con.cursor()
-
-
-# In[ ]:
-
-
-#Drop old backup table
-#c.execute('drop table STG_BEA_CAINC5N_NC_BACKUP')
-
-
-# In[ ]:
-
-
-#Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_CAINC5N_NC','STG_BEA_CAINC5N_NC_BACKUP';''')
-
-
-# In[ ]:
-
-
-c.execute('''USE [STG2]
-
-SET ANSI_NULLS ON
-
-SET QUOTED_IDENTIFIER ON
-
-CREATE TABLE [dbo].[STG_BEA_CAINC5N_NC](
-	[GeoFIPS] [varchar](12) NULL,
-	[GeoName] [varchar](14) NULL,
-	[Region] [real] NULL,
-	[TableName] [varchar](7) NULL,
-	[LineCode] [real] NULL,
-	[IndustryClassification] [varchar](3) NULL,
-	[Description] [varchar](38) NULL,
-	[Unit] [varchar](20) NULL,
-	[2001] [float] NULL,
-	[2002] [float] NULL,
-	[2003] [float] NULL,
-	[2004] [float] NULL,
-	[2005] [float] NULL,
-	[2006] [float] NULL,
-	[2007] [float] NULL,
-	[2008] [float] NULL,
-	[2009] [float] NULL,
-	[2010] [float] NULL,
-	[2011] [float] NULL,
-	[2012] [float] NULL,
-	[2013] [float] NULL,
-	[2014] [float] NULL,
-	[2015] [float] NULL,
-	[2016] [float] NULL,
-	[2017] [float] NULL,
-	[2018] [float] NULL,
-    [2019] [float] NULL,
-    [2020] [float] NULL,
-    [2021] [float] NULL,
-    [2022] [float] NULL,
-    [2023] [float] NULL,
-    [2024] [float] NULL,
-    [2025] [float] NULL
-) ON [PRIMARY]''')
-
-
-# In[ ]:
-
-
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
-                                 r'Trusted_Connection=yes;')
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-#df: pandas.dataframe; mTableName:table name in MS SQL
-#warning: discard old table if exists
-df.to_sql('STG_BEA_CAINC5N_NC', con=engine, if_exists='replace', index=False)
-
-
-# In[ ]:
-
-
-#c.execute("""""")
-
-
-# In[ ]:
-
-
-#c.execute("""/**************************************************************************/
-/***																	***/
-/***				PopulateDV2_Measure_Tables.sql						***/
-/***																	***/
-/***	The script adds entries to:										***/
-/***				-	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK]			***/
-/***				-	[DV2].[dbo].[Hub_Measure]						***/
-/***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
-/***	and updates the Load End Date for entries retiring in			***/
-/***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
-/***	All input come from:											***/
-/***				-	[STG2].[dbo].[STG_XLSX_MeasureDefn_WRK]			***/
-/***	This is the only place where HashKeys are calculated for 		***/
-/***	Measures														***/
-/***																	***/
-/**************************************************************************/
-
-USE DV2;
-
-
-TRUNCATE TABLE [STG2].[dbo].[STG_SAT_MeasureDefn_WRK];
-
-INSERT INTO [STG2].[dbo].[STG_SAT_MeasureDefn_WRK]
-           ([Measure_Business_Key]
-		   ,[Record_Source]
-           ,[Measure_HashKey]
-           ,[Measure_HashDiff]
-           ,[Measure_Authority]
-           ,[TableID]
-           ,[Table_LineCode]
-           ,[MeasureGroupName]
-           ,[MeasureName]
-           ,[MeasureCategory]
-           ,[Observation_Frequency]
-           ,[UOMCode]
-           ,[UOMName]
-           ,[DefaultScale]
-           ,[CalculationType]
-           ,[MetricHeirarchyLevel]
-           ,[ParticipatesIn]
-           ,[NAICS_IndustryCodeStr]
-           ,[BEA_Industry_ID]
-           ,[BEA_GDP_Component_ID]
-           ,[Source_Citation]
-           ,[Accessed_Date]
-           ,[Vintage]
-           ,[Revised_Data_Period]
-           ,[New_Data_Period]
-           ,[WNCD_Notes]
-           ,[Table_Note_ID]
-           ,[Table_Notes]
-           ,[Table_Line_Note_ID]
-           ,[Table_Line_Notes])
-SELECT [Measure_Business_Key]
-		,[Record_Source]
-      ,Convert(Char(64), Hashbytes('SHA2_256',
-	Upper(
-		Ltrim(Rtrim([Measure_Business_Key]))
-		)),2) as HashKey  
-      ,Convert(Char(64), Hashbytes('SHA2_256',
-	Upper(
-		Ltrim(Rtrim(Measure_Authority))
-		+ '|' + Ltrim(Rtrim(TableID))
-		+ '|' + Ltrim(Rtrim(Table_LineCode))
-		+ '|' + Ltrim(Rtrim(COALESCE(MeasureGroupName,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(MeasureName,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(MeasureCategory,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Observation_Frequency,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(UOMCode,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(UOMName,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(DefaultScale,0)))
-		+ '|' + Ltrim(Rtrim(COALESCE(CalculationType,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(MetricHeirarchyLevel,0)))
-		+ '|' + Ltrim(Rtrim(COALESCE(ParticipatesIn,'...'))
-		+ '|' + Ltrim(Rtrim(COALESCE(NAICS_IndustryCodeStr,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(BEA_Industry_ID,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(BEA_GDP_Component_ID,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Source_Citation,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Accessed_Date,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Vintage,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Revised_Data_Period,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(New_Data_Period,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(WNCD_Notes,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Table_Note_ID,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Table_Notes,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Table_Line_Note_ID,'...')))
-		+ '|' + Ltrim(Rtrim(COALESCE(Table_Line_Notes,'...'))))
-		)),2) as HashDiff
-      ,[Measure_Authority]
-      ,[TableID]
-      ,[Table_LineCode]
-      ,[MeasureGroupName]
-      ,[MeasureName]
-      ,[MeasureCategory]
-      ,[Observation_Frequency]
-      ,[UOMCode]
-      ,[UOMName]
-      ,[DefaultScale]
-      ,[CalculationType]
-      ,[MetricHeirarchyLevel]
-      ,[ParticipatesIn]
-      ,[NAICS_IndustryCodeStr]
-      ,[BEA_Industry_ID]
-      ,[BEA_GDP_Component_ID]
-      ,[Source_Citation]
-      ,[Accessed_Date]
-      ,[Vintage]
-      ,[Revised_Data_Period]
-      ,[New_Data_Period]
-      ,[WNCD_Notes]
-      ,[Table_Note_ID]
-      ,[Table_Notes]
-      ,[Table_Line_Note_ID]
-      ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_XLSX_MeasureDefn_WRK];
-
-/*	List the Keys from the incoming data that are not currently present in the Measure Hub	*/
-
-
-
-Select	M.[Measure_HashKey]
-	into #NewKeys
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-	Left outer join [DV2].[dbo].[Hub_Measure] H
-	on M.[Measure_HashKey] = H.[Measure_HashKey]
-	Where H.[Record_Source] is NULL;
-
---	Select * from #NewKeys
-
-/*	Register new Measure keys with the Measure Hub 	*/
-INSERT INTO [DV2].[dbo].[Hub_Measure]
-           ([Measure_HashKey]
-           ,[Measure_Business_Key]
-           ,[Load_Date]
-           ,[Record_Source]
-		   )
-   Select	M.[Measure_HashKey]
-			,M.[Measure_Business_Key]
-			,CURRENT_TIMESTAMP
-			,M.[Record_Source]
-	FROM #NewKeys N
-	inner join [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-	on N.[Measure_HashKey] = M.[Measure_HashKey]
-	;
-
-/*	List the Keys from the incoming data that are not currently present in the Measure Description Satellite	*/
-DROP TABLE IF EXISTS #NewKeys1;
-
-Select	M.[Measure_HashKey]
-	into #NewKeys1
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-	Left outer join [DV2].[dbo].[Sat_Measure_Description] D
-	on M.[Measure_HashKey] = D.[Measure_HashKey]
-	and D.[Load_Date] <= CURRENT_TIMESTAMP
-	AND D.[Load_End_Date] > CURRENT_TIMESTAMP
-	where D.[Record_Source] is NULL;
-
---	Select * from #NewKeys1;
-
-/*	Identify existing Measure descriptions that will be replaced by new descriptions	*/
-
-Select	M.[Measure_HashKey]
-		,E.[Load_Date]
-	into #UpdtKeys
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-	inner join [DV2].[dbo].[Sat_Measure_Description] E
-	on M.[Measure_HashKey] = E.[Measure_HashKey]
-	and E.[Load_Date] <= CURRENT_TIMESTAMP
-	AND E.[Load_End_Date] > CURRENT_TIMESTAMP
-	and M.[Measure_HashDiff] <> E.[Measure_HashDiff];
-
---	Select * from #UpdtKeys;
-
-/*	Add New Measure Descriptions to the Measure Description Satellite	*/
-
-INSERT INTO [DV2].[dbo].[Sat_Measure_Description]
-           ([Measure_HashKey]
-           ,[Load_Date]
-           ,[Load_End_Date]
-           ,[Record_Source]
-           ,[Measure_Business_Key]
-           ,[Measure_HashDiff]
-           ,[Measure_Authority]
-           ,[Measure_TableID]
-           ,[Measure_Table_Line_Number]
-           ,[Measure_Group_Name]
-           ,[Measure_Name]
-           ,[Measure_Category]
-           ,[Observation_Frequency]
-           ,[Unit_of_Measure_Code]
-           ,[Unit_of_Measure_Name]
-           ,[Default_Scale]
-           ,[Calulation_Type]
-           ,[Measure_Hierarchy_Level]
-           ,[Participates_In]
-           ,[NAICS_Industry_Code_Str]
-           ,[BEA_Industry_ID]
-           ,[BEA_GDP_Component_ID]
-           ,[Source_Citation]
-           ,[Accessed_Date]
-           ,[Vintage]
-           ,[Revised_Data_Period]
-           ,[New_Data_Period]
-           ,[WNCD_Notes]
-           ,[Table_Note_ID]
-           ,[Table_Notes]
-           ,[Table_Line_Note_ID]
-           ,[Table_Line_Notes])
-SELECT M.[Measure_HashKey]
-		,CURRENT_TIMESTAMP
-		,cast('9999-12-31 23:59:59.9999999' as Datetime2(7)) LoadEndDate
-      ,[Record_Source]
-      ,[Measure_Business_Key]
-      ,[Measure_HashDiff]
-      ,[Measure_Authority]
-      ,[TableID]
-      ,[Table_LineCode]
-      ,[MeasureGroupName]
-      ,[MeasureName]
-      ,[MeasureCategory]
-      ,[Observation_Frequency]
-      ,[UOMCode]
-      ,[UOMName]
-      ,[DefaultScale]
-      ,[CalculationType]
-      ,[MetricHeirarchyLevel]
-      ,[ParticipatesIn]
-      ,[NAICS_IndustryCodeStr]
-      ,[BEA_Industry_ID]
-      ,[BEA_GDP_Component_ID]
-      ,[Source_Citation]
-      ,[Accessed_Date]
-      ,[Vintage]
-      ,[Revised_Data_Period]
-      ,[New_Data_Period]
-      ,[WNCD_Notes]
-      ,[Table_Note_ID]
-      ,[Table_Notes]
-      ,[Table_Line_Note_ID]
-      ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-  inner join #NewKeys1 N
-  on M.[Measure_HashKey] = N.[Measure_HashKey];
-  
-  /*	Insert Replacement entries for those being retired	*/
-
-Declare @Load_Date		Datetime2(7);
-Set @Load_Date = CURRENT_TIMESTAMP;
-
-INSERT INTO [dbo].[Sat_Measure_Description]
-           ([Measure_HashKey]
-           ,[Load_Date]
-           ,[Load_End_Date]
-           ,[Record_Source]
-           ,[Measure_Business_Key]
-           ,[Measure_HashDiff]
-           ,[Measure_Authority]
-           ,[Measure_TableID]
-           ,[Measure_Table_Line_Number]
-           ,[Measure_Group_Name]
-           ,[Measure_Name]
-           ,[Measure_Category]
-           ,[Observation_Frequency]
-           ,[Unit_of_Measure_Code]
-           ,[Unit_of_Measure_Name]
-           ,[Default_Scale]
-           ,[Calulation_Type]
-           ,[Measure_Hierarchy_Level]
-           ,[Participates_In]
-           ,[NAICS_Industry_Code_Str]
-           ,[BEA_Industry_ID]
-           ,[BEA_GDP_Component_ID]
-           ,[Source_Citation]
-           ,[Accessed_Date]
-           ,[Vintage]
-           ,[Revised_Data_Period]
-           ,[New_Data_Period]
-           ,[WNCD_Notes]
-           ,[Table_Note_ID]
-           ,[Table_Notes]
-           ,[Table_Line_Note_ID]
-           ,[Table_Line_Notes])
-SELECT M.[Measure_HashKey]
-		,@Load_Date
-		,cast('9999-12-31 23:59:59.9999999' as Datetime2(7)) LoadEndDate
-      ,[Record_Source]
-      ,[Measure_Business_Key]
-      ,[Measure_HashDiff]
-      ,[Measure_Authority]
-      ,[TableID]
-      ,[Table_LineCode]
-      ,[MeasureGroupName]
-      ,[MeasureName]
-      ,[MeasureCategory]
-      ,[Observation_Frequency]
-      ,[UOMCode]
-      ,[UOMName]
-      ,[DefaultScale]
-      ,[CalculationType]
-      ,[MetricHeirarchyLevel]
-      ,[ParticipatesIn]
-      ,[NAICS_IndustryCodeStr]
-      ,[BEA_Industry_ID]
-      ,[BEA_GDP_Component_ID]
-      ,[Source_Citation]
-      ,[Accessed_Date]
-      ,[Vintage]
-      ,[Revised_Data_Period]
-      ,[New_Data_Period]
-      ,[WNCD_Notes]
-      ,[Table_Note_ID]
-      ,[Table_Notes]
-      ,[Table_Line_Note_ID]
-      ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
-  inner join #UpdtKeys N
-  on M.[Measure_HashKey] = N.[Measure_HashKey];
-
-/*	Retire the entries in the Measure Description satellite that have been replaced.	*/
-/*	End-Date entries being retired.													 	*/
-
-UPDATE [DV2].[dbo].[Sat_Measure_Description] 
-   SET [Load_End_Date] =  @Load_Date
-   From #UpdtKeys K
-	,[DV2].[dbo].[Sat_Measure_Description] T
- WHERE T.[Measure_HashKey] = K.[Measure_HashKey]
- and T.[Load_Date] = k.[Load_Date];""")
-
-
-# In[ ]:
-
-
-#c.execute("""/*****		Post_Observations.sql										*****/
-/*****		Post Observations Staged in XLSX Data Series Work Table		*****/
-/*****		Insert new observations. Update existing observations.		*****/
-/*****		Required Input: [STG2].[dbo].[STG_XLSX_DataSeries_WRK]		*****/
-
-
-USE STG2;
-
-
-DECLARE		@Load_Date		Datetime2(7)
-
-DROP TABLE IF EXISTS #NewKeys;
-
-DROP TABLE IF EXISTS #UpdtKeys;
-
-TRUNCATE TABLE [STG2].[dbo].[STG_Sat_DataSeries_WRK];
-
-INSERT INTO [STG2].[dbo].[STG_Sat_DataSeries_WRK]
-           (
-		   [GeoArea_ID]
-           ,[GEOID_Type]
-           ,[Measure_Business_Key]
-           ,[Data_Period_Business_Key]
-           ,[GeoArea_Measure_HashKey]
-           ,[GeoArea_HashKey]
-           ,[Measure_HashKey]
-           ,[Data_Period_HashKey]
-           ,[Record_Source]
-           ,[ObservedValue]
-           ,[ObservationQualifier]
-		   )
-SELECT   S.[GeoArea_ID]
-        ,S.[GEOID_Type]
-        ,S.[Measure_Business_Key]
-        ,S.[DataPeriodID]
-        ,Convert(Char(64), Hashbytes('SHA2_256',
-		  Upper(
-				Ltrim(Rtrim(S.[GeoArea_ID]))
-				+'|'+Ltrim(Rtrim(S.[GEOID_Type]))
-				+'|'+Ltrim(Rtrim(S.[Measure_Business_Key]))
-				+'|'+Ltrim(Rtrim(S.[DataPeriodID]))
-		       )),2) 
-       ,G.GeoArea_HashKey
-       ,M.Measure_HashKey
-       ,D.Data_Period_HashKey
-	   ,S.[Record_Source]
-       ,S.[ObservedValue]
-       ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_XLSX_DataSeries_WRK] S
-  inner join DV2.dbo.Hub_GeoArea G
-    on S.GeoArea_ID = G.GeoArea_ID
-	and S.GEOID_Type = G.GEOID_Type
-  inner join DV2.dbo.Hub_Measure M
-    on S.Measure_Business_Key = M.Measure_Business_Key
-  Inner Join DV2.dbo.Hub_Data_Period D
-    on S.DataPeriodID = D.Data_Period_Business_Key
-Where S.[ObservedValue] is not null
-	or s.[ObservationQualifier] is not null
-;
---Select count(*) as [Loaded to STG_Sat_DataSeries_WRK]
---from [STG2].[dbo].[STG_Sat_DataSeries_WRK];
-
-Select @@ROWCOUNT as [Update Rows Staged]
-
-Select S.[GeoArea_Measure_HashKey]
-  into #NewKeys
-From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
-left outer join [DV2].[dbo].[Link_GeoArea_Measurement] L
-ON S.[GeoArea_Measure_HashKey] = L.[GeoArea_Measure_HashKey]
-WHERE L.[Reord_Source] is null;
-
-Select @@ROWCOUNT as [New Keys Identified];
-
-
-Select  S.[GeoArea_Measure_HashKey]
-		,O.Load_Date
-	into #UpdtKeys
-From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
-inner join [ACS].[dbo].[V_Sat_GeoArea_Measure_Observation_Cur] O
-on S.[GeoArea_Measure_HashKey] = O.[GeoArea_Measure_HashKey]
-Where (		coalesce(S.[ObservedValue],1) <> coalesce(O.[Estimated_Value],1)
-		or 
-			coalesce(S.[ObservationQualifier],1) <> coalesce(O.[Estimation_Qualifier],1)
-	  ); 
-
-Select @@ROWCOUNT as [Update Keys Identified];
-
-
-INSERT INTO [DV2].[dbo].[Link_GeoArea_Measurement]
-           ([GeoArea_Measure_HashKey]
-           ,[Load_Date]
-           ,[Reord_Source]
-           ,[GeoArea_HashKey]
-           ,[Measure_HashKey]
-           ,[Data_Period_HashKey])
-SELECT S.[GeoArea_Measure_HashKey]
-	  ,CURRENT_TIMESTAMP
-      ,[Record_Source]
-      ,[GeoArea_HashKey]
-      ,[Measure_HashKey]
-      ,[Data_Period_HashKey]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
-  inner join #NewKeys N
-  on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
-
-  Select @@ROWCOUNT as [Links Inserted];
-
-
-INSERT INTO [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
-           ([GeoArea_Measure_HashKey]
-           ,[Load_Date]
-           ,[Load_End_Date]
-           ,[Record_Source]
-           ,[Estimated_Value]
-           ,[Estimation_Qualifier])
-SELECT S.[GeoArea_Measure_HashKey]
-	  ,CURRENT_TIMESTAMP
-	  ,cast('9999-12-31 23:59:59.9999999' as Datetime2(7))
-      ,S.[Record_Source]
-      ,S.[ObservedValue]
-      ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
-  inner join #NewKeys N
-  on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
-
-  Select @@ROWCOUNT as [Observations Inserted];
-
-Set @Load_Date = CURRENT_TIMESTAMP;
-
-INSERT INTO [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
-           ([GeoArea_Measure_HashKey]
-           ,[Load_Date]
-           ,[Load_End_Date]
-           ,[Record_Source]
-           ,[Estimated_Value]
-           ,[Estimation_Qualifier])
-SELECT S.[GeoArea_Measure_HashKey]
-	  ,@Load_Date
-	  ,cast('9999-12-31 23:59:59.9999999' as Datetime2(7))
-      ,S.[Record_Source]
-      ,S.[ObservedValue]
-      ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
-  inner join #UpdtKeys N
-  on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
-
-  Select @@ROWCOUNT as [Replacement Observations Inserted];
-
-
-/*	Retire the entries in the Measure Description satellite that have been replaced.	*/
-/*	End-Date entries being retired.													 	*/
-
-UPDATE [DV2].[dbo].[Sat_GeoArea_Measure_Observation] 
-   SET [Load_End_Date] =  @Load_Date
-   From #UpdtKeys K
-	,[DV2].[dbo].[Sat_GeoArea_Measure_Observation] T
- WHERE T.[GeoArea_Measure_HashKey] = K.[GeoArea_Measure_HashKey]
- and T.[Load_Date] = k.[Load_Date];
-
-   Select @@ROWCOUNT as [Observations Retired];""")
-
+df.to_csv('../Updates/STG_BEA_CAINC5N_NC.txt', sep = '\t')
+
+
+# # SSMS Update as Markdown Cells
+# ### To run code below, change to 'Code' cells
+
+# #Reset Index for upload to database
+# df = df.reset_index()    
+
+# #Fill NaN values for upload to database
+# column_list = df.columns.values
+# for i in column_list:
+#     df.loc[df[i].isnull(),i]=0
+
+# #Connect to database and create cursor
+# con = pyodbc.connect('Driver={SQL Server};'
+#                       'Server=STEIN\ECONDEV;'
+#                       'Database=STG2;'
+#                       'Trusted_Connection=yes;',
+#                     autocommit=True)
+# 
+# c = con.cursor()
+
+# #Drop old backup table
+# c.execute('drop table STG_BEA_CAINC5N_NC_BACKUP')
+
+# #Create new backup
+# c.execute('''sp_rename 'dbo.STG_BEA_CAINC5N_NC','STG_BEA_CAINC5N_NC_BACKUP';''')
+
+# c.execute('''USE [STG2]
+# 
+# SET ANSI_NULLS ON
+# 
+# SET QUOTED_IDENTIFIER ON
+# 
+# CREATE TABLE [dbo].[STG_BEA_CAINC5N_NC](
+# 	[GeoFIPS] [varchar](12) NULL,
+# 	[GeoName] [varchar](14) NULL,
+# 	[Region] [real] NULL,
+# 	[TableName] [varchar](7) NULL,
+# 	[LineCode] [real] NULL,
+# 	[IndustryClassification] [varchar](3) NULL,
+# 	[Description] [varchar](38) NULL,
+# 	[Unit] [varchar](20) NULL,
+# 	[2001] [float] NULL,
+# 	[2002] [float] NULL,
+# 	[2003] [float] NULL,
+# 	[2004] [float] NULL,
+# 	[2005] [float] NULL,
+# 	[2006] [float] NULL,
+# 	[2007] [float] NULL,
+# 	[2008] [float] NULL,
+# 	[2009] [float] NULL,
+# 	[2010] [float] NULL,
+# 	[2011] [float] NULL,
+# 	[2012] [float] NULL,
+# 	[2013] [float] NULL,
+# 	[2014] [float] NULL,
+# 	[2015] [float] NULL,
+# 	[2016] [float] NULL,
+# 	[2017] [float] NULL,
+# 	[2018] [float] NULL,
+#     [2019] [float] NULL,
+#     [2020] [float] NULL,
+#     [2021] [float] NULL,
+#     [2022] [float] NULL,
+#     [2023] [float] NULL,
+#     [2024] [float] NULL,
+#     [2025] [float] NULL
+# ) ON [PRIMARY]''')
+
+# params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
+#                                  r'Server=STEIN\ECONDEV;'
+#                                  r'Database=STG2;'
+#                                  r'Trusted_Connection=yes;')
+# 
+# engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
+# 
+# #df: pandas.dataframe; mTableName:table name in MS SQL
+# #warning: discard old table if exists
+# df.to_sql('STG_BEA_CAINC5N_NC', con=engine, if_exists='replace', index=False)
+
+# c.execute("""""")
+
+# c.execute("""/**************************************************************************/
+# /***																	***/
+# /***				PopulateDV2_Measure_Tables.sql						***/
+# /***																	***/
+# /***	The script adds entries to:										***/
+# /***				-	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK]			***/
+# /***				-	[DV2].[dbo].[Hub_Measure]						***/
+# /***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
+# /***	and updates the Load End Date for entries retiring in			***/
+# /***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
+# /***	All input come from:											***/
+# /***				-	[STG2].[dbo].[STG_XLSX_MeasureDefn_WRK]			***/
+# /***	This is the only place where HashKeys are calculated for 		***/
+# /***	Measures														***/
+# /***																	***/
+# /**************************************************************************/
+# 
+# USE DV2;
+# 
+# 
+# TRUNCATE TABLE [STG2].[dbo].[STG_SAT_MeasureDefn_WRK];
+# 
+# INSERT INTO [STG2].[dbo].[STG_SAT_MeasureDefn_WRK]
+#            ([Measure_Business_Key]
+# 		   ,[Record_Source]
+#            ,[Measure_HashKey]
+#            ,[Measure_HashDiff]
+#            ,[Measure_Authority]
+#            ,[TableID]
+#            ,[Table_LineCode]
+#            ,[MeasureGroupName]
+#            ,[MeasureName]
+#            ,[MeasureCategory]
+#            ,[Observation_Frequency]
+#            ,[UOMCode]
+#            ,[UOMName]
+#            ,[DefaultScale]
+#            ,[CalculationType]
+#            ,[MetricHeirarchyLevel]
+#            ,[ParticipatesIn]
+#            ,[NAICS_IndustryCodeStr]
+#            ,[BEA_Industry_ID]
+#            ,[BEA_GDP_Component_ID]
+#            ,[Source_Citation]
+#            ,[Accessed_Date]
+#            ,[Vintage]
+#            ,[Revised_Data_Period]
+#            ,[New_Data_Period]
+#            ,[WNCD_Notes]
+#            ,[Table_Note_ID]
+#            ,[Table_Notes]
+#            ,[Table_Line_Note_ID]
+#            ,[Table_Line_Notes])
+# SELECT [Measure_Business_Key]
+# 		,[Record_Source]
+#       ,Convert(Char(64), Hashbytes('SHA2_256',
+# 	Upper(
+# 		Ltrim(Rtrim([Measure_Business_Key]))
+# 		)),2) as HashKey  
+#       ,Convert(Char(64), Hashbytes('SHA2_256',
+# 	Upper(
+# 		Ltrim(Rtrim(Measure_Authority))
+# 		+ '|' + Ltrim(Rtrim(TableID))
+# 		+ '|' + Ltrim(Rtrim(Table_LineCode))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(MeasureGroupName,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(MeasureName,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(MeasureCategory,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Observation_Frequency,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(UOMCode,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(UOMName,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(DefaultScale,0)))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(CalculationType,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(MetricHeirarchyLevel,0)))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(ParticipatesIn,'...'))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(NAICS_IndustryCodeStr,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(BEA_Industry_ID,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(BEA_GDP_Component_ID,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Source_Citation,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Accessed_Date,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Vintage,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Revised_Data_Period,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(New_Data_Period,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(WNCD_Notes,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Table_Note_ID,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Table_Notes,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Table_Line_Note_ID,'...')))
+# 		+ '|' + Ltrim(Rtrim(COALESCE(Table_Line_Notes,'...'))))
+# 		)),2) as HashDiff
+#       ,[Measure_Authority]
+#       ,[TableID]
+#       ,[Table_LineCode]
+#       ,[MeasureGroupName]
+#       ,[MeasureName]
+#       ,[MeasureCategory]
+#       ,[Observation_Frequency]
+#       ,[UOMCode]
+#       ,[UOMName]
+#       ,[DefaultScale]
+#       ,[CalculationType]
+#       ,[MetricHeirarchyLevel]
+#       ,[ParticipatesIn]
+#       ,[NAICS_IndustryCodeStr]
+#       ,[BEA_Industry_ID]
+#       ,[BEA_GDP_Component_ID]
+#       ,[Source_Citation]
+#       ,[Accessed_Date]
+#       ,[Vintage]
+#       ,[Revised_Data_Period]
+#       ,[New_Data_Period]
+#       ,[WNCD_Notes]
+#       ,[Table_Note_ID]
+#       ,[Table_Notes]
+#       ,[Table_Line_Note_ID]
+#       ,[Table_Line_Notes]
+#   FROM [STG2].[dbo].[STG_XLSX_MeasureDefn_WRK];
+# 
+# /*	List the Keys from the incoming data that are not currently present in the Measure Hub	*/
+# 
+# 
+# 
+# Select	M.[Measure_HashKey]
+# 	into #NewKeys
+# From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+# 	Left outer join [DV2].[dbo].[Hub_Measure] H
+# 	on M.[Measure_HashKey] = H.[Measure_HashKey]
+# 	Where H.[Record_Source] is NULL;
+# 
+# --	Select * from #NewKeys
+# 
+# /*	Register new Measure keys with the Measure Hub 	*/
+# INSERT INTO [DV2].[dbo].[Hub_Measure]
+#            ([Measure_HashKey]
+#            ,[Measure_Business_Key]
+#            ,[Load_Date]
+#            ,[Record_Source]
+# 		   )
+#    Select	M.[Measure_HashKey]
+# 			,M.[Measure_Business_Key]
+# 			,CURRENT_TIMESTAMP
+# 			,M.[Record_Source]
+# 	FROM #NewKeys N
+# 	inner join [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+# 	on N.[Measure_HashKey] = M.[Measure_HashKey]
+# 	;
+# 
+# /*	List the Keys from the incoming data that are not currently present in the Measure Description Satellite	*/
+# DROP TABLE IF EXISTS #NewKeys1;
+# 
+# Select	M.[Measure_HashKey]
+# 	into #NewKeys1
+# From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+# 	Left outer join [DV2].[dbo].[Sat_Measure_Description] D
+# 	on M.[Measure_HashKey] = D.[Measure_HashKey]
+# 	and D.[Load_Date] <= CURRENT_TIMESTAMP
+# 	AND D.[Load_End_Date] > CURRENT_TIMESTAMP
+# 	where D.[Record_Source] is NULL;
+# 
+# --	Select * from #NewKeys1;
+# 
+# /*	Identify existing Measure descriptions that will be replaced by new descriptions	*/
+# 
+# Select	M.[Measure_HashKey]
+# 		,E.[Load_Date]
+# 	into #UpdtKeys
+# From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+# 	inner join [DV2].[dbo].[Sat_Measure_Description] E
+# 	on M.[Measure_HashKey] = E.[Measure_HashKey]
+# 	and E.[Load_Date] <= CURRENT_TIMESTAMP
+# 	AND E.[Load_End_Date] > CURRENT_TIMESTAMP
+# 	and M.[Measure_HashDiff] <> E.[Measure_HashDiff];
+# 
+# --	Select * from #UpdtKeys;
+# 
+# /*	Add New Measure Descriptions to the Measure Description Satellite	*/
+# 
+# INSERT INTO [DV2].[dbo].[Sat_Measure_Description]
+#            ([Measure_HashKey]
+#            ,[Load_Date]
+#            ,[Load_End_Date]
+#            ,[Record_Source]
+#            ,[Measure_Business_Key]
+#            ,[Measure_HashDiff]
+#            ,[Measure_Authority]
+#            ,[Measure_TableID]
+#            ,[Measure_Table_Line_Number]
+#            ,[Measure_Group_Name]
+#            ,[Measure_Name]
+#            ,[Measure_Category]
+#            ,[Observation_Frequency]
+#            ,[Unit_of_Measure_Code]
+#            ,[Unit_of_Measure_Name]
+#            ,[Default_Scale]
+#            ,[Calulation_Type]
+#            ,[Measure_Hierarchy_Level]
+#            ,[Participates_In]
+#            ,[NAICS_Industry_Code_Str]
+#            ,[BEA_Industry_ID]
+#            ,[BEA_GDP_Component_ID]
+#            ,[Source_Citation]
+#            ,[Accessed_Date]
+#            ,[Vintage]
+#            ,[Revised_Data_Period]
+#            ,[New_Data_Period]
+#            ,[WNCD_Notes]
+#            ,[Table_Note_ID]
+#            ,[Table_Notes]
+#            ,[Table_Line_Note_ID]
+#            ,[Table_Line_Notes])
+# SELECT M.[Measure_HashKey]
+# 		,CURRENT_TIMESTAMP
+# 		,cast('9999-12-31 23:59:59.9999999' as Datetime2(7)) LoadEndDate
+#       ,[Record_Source]
+#       ,[Measure_Business_Key]
+#       ,[Measure_HashDiff]
+#       ,[Measure_Authority]
+#       ,[TableID]
+#       ,[Table_LineCode]
+#       ,[MeasureGroupName]
+#       ,[MeasureName]
+#       ,[MeasureCategory]
+#       ,[Observation_Frequency]
+#       ,[UOMCode]
+#       ,[UOMName]
+#       ,[DefaultScale]
+#       ,[CalculationType]
+#       ,[MetricHeirarchyLevel]
+#       ,[ParticipatesIn]
+#       ,[NAICS_IndustryCodeStr]
+#       ,[BEA_Industry_ID]
+#       ,[BEA_GDP_Component_ID]
+#       ,[Source_Citation]
+#       ,[Accessed_Date]
+#       ,[Vintage]
+#       ,[Revised_Data_Period]
+#       ,[New_Data_Period]
+#       ,[WNCD_Notes]
+#       ,[Table_Note_ID]
+#       ,[Table_Notes]
+#       ,[Table_Line_Note_ID]
+#       ,[Table_Line_Notes]
+#   FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+#   inner join #NewKeys1 N
+#   on M.[Measure_HashKey] = N.[Measure_HashKey];
+#   
+#   /*	Insert Replacement entries for those being retired	*/
+# 
+# Declare @Load_Date		Datetime2(7);
+# Set @Load_Date = CURRENT_TIMESTAMP;
+# 
+# INSERT INTO [dbo].[Sat_Measure_Description]
+#            ([Measure_HashKey]
+#            ,[Load_Date]
+#            ,[Load_End_Date]
+#            ,[Record_Source]
+#            ,[Measure_Business_Key]
+#            ,[Measure_HashDiff]
+#            ,[Measure_Authority]
+#            ,[Measure_TableID]
+#            ,[Measure_Table_Line_Number]
+#            ,[Measure_Group_Name]
+#            ,[Measure_Name]
+#            ,[Measure_Category]
+#            ,[Observation_Frequency]
+#            ,[Unit_of_Measure_Code]
+#            ,[Unit_of_Measure_Name]
+#            ,[Default_Scale]
+#            ,[Calulation_Type]
+#            ,[Measure_Hierarchy_Level]
+#            ,[Participates_In]
+#            ,[NAICS_Industry_Code_Str]
+#            ,[BEA_Industry_ID]
+#            ,[BEA_GDP_Component_ID]
+#            ,[Source_Citation]
+#            ,[Accessed_Date]
+#            ,[Vintage]
+#            ,[Revised_Data_Period]
+#            ,[New_Data_Period]
+#            ,[WNCD_Notes]
+#            ,[Table_Note_ID]
+#            ,[Table_Notes]
+#            ,[Table_Line_Note_ID]
+#            ,[Table_Line_Notes])
+# SELECT M.[Measure_HashKey]
+# 		,@Load_Date
+# 		,cast('9999-12-31 23:59:59.9999999' as Datetime2(7)) LoadEndDate
+#       ,[Record_Source]
+#       ,[Measure_Business_Key]
+#       ,[Measure_HashDiff]
+#       ,[Measure_Authority]
+#       ,[TableID]
+#       ,[Table_LineCode]
+#       ,[MeasureGroupName]
+#       ,[MeasureName]
+#       ,[MeasureCategory]
+#       ,[Observation_Frequency]
+#       ,[UOMCode]
+#       ,[UOMName]
+#       ,[DefaultScale]
+#       ,[CalculationType]
+#       ,[MetricHeirarchyLevel]
+#       ,[ParticipatesIn]
+#       ,[NAICS_IndustryCodeStr]
+#       ,[BEA_Industry_ID]
+#       ,[BEA_GDP_Component_ID]
+#       ,[Source_Citation]
+#       ,[Accessed_Date]
+#       ,[Vintage]
+#       ,[Revised_Data_Period]
+#       ,[New_Data_Period]
+#       ,[WNCD_Notes]
+#       ,[Table_Note_ID]
+#       ,[Table_Notes]
+#       ,[Table_Line_Note_ID]
+#       ,[Table_Line_Notes]
+#   FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+#   inner join #UpdtKeys N
+#   on M.[Measure_HashKey] = N.[Measure_HashKey];
+# 
+# /*	Retire the entries in the Measure Description satellite that have been replaced.	*/
+# /*	End-Date entries being retired.													 	*/
+# 
+# UPDATE [DV2].[dbo].[Sat_Measure_Description] 
+#    SET [Load_End_Date] =  @Load_Date
+#    From #UpdtKeys K
+# 	,[DV2].[dbo].[Sat_Measure_Description] T
+#  WHERE T.[Measure_HashKey] = K.[Measure_HashKey]
+#  and T.[Load_Date] = k.[Load_Date];""")
+
+# c.execute("""/*****		Post_Observations.sql										*****/
+# /*****		Post Observations Staged in XLSX Data Series Work Table		*****/
+# /*****		Insert new observations. Update existing observations.		*****/
+# /*****		Required Input: [STG2].[dbo].[STG_XLSX_DataSeries_WRK]		*****/
+# 
+# 
+# USE STG2;
+# 
+# 
+# DECLARE		@Load_Date		Datetime2(7)
+# 
+# DROP TABLE IF EXISTS #NewKeys;
+# 
+# DROP TABLE IF EXISTS #UpdtKeys;
+# 
+# TRUNCATE TABLE [STG2].[dbo].[STG_Sat_DataSeries_WRK];
+# 
+# INSERT INTO [STG2].[dbo].[STG_Sat_DataSeries_WRK]
+#            (
+# 		   [GeoArea_ID]
+#            ,[GEOID_Type]
+#            ,[Measure_Business_Key]
+#            ,[Data_Period_Business_Key]
+#            ,[GeoArea_Measure_HashKey]
+#            ,[GeoArea_HashKey]
+#            ,[Measure_HashKey]
+#            ,[Data_Period_HashKey]
+#            ,[Record_Source]
+#            ,[ObservedValue]
+#            ,[ObservationQualifier]
+# 		   )
+# SELECT   S.[GeoArea_ID]
+#         ,S.[GEOID_Type]
+#         ,S.[Measure_Business_Key]
+#         ,S.[DataPeriodID]
+#         ,Convert(Char(64), Hashbytes('SHA2_256',
+# 		  Upper(
+# 				Ltrim(Rtrim(S.[GeoArea_ID]))
+# 				+'|'+Ltrim(Rtrim(S.[GEOID_Type]))
+# 				+'|'+Ltrim(Rtrim(S.[Measure_Business_Key]))
+# 				+'|'+Ltrim(Rtrim(S.[DataPeriodID]))
+# 		       )),2) 
+#        ,G.GeoArea_HashKey
+#        ,M.Measure_HashKey
+#        ,D.Data_Period_HashKey
+# 	   ,S.[Record_Source]
+#        ,S.[ObservedValue]
+#        ,S.[ObservationQualifier]
+#   FROM [STG2].[dbo].[STG_XLSX_DataSeries_WRK] S
+#   inner join DV2.dbo.Hub_GeoArea G
+#     on S.GeoArea_ID = G.GeoArea_ID
+# 	and S.GEOID_Type = G.GEOID_Type
+#   inner join DV2.dbo.Hub_Measure M
+#     on S.Measure_Business_Key = M.Measure_Business_Key
+#   Inner Join DV2.dbo.Hub_Data_Period D
+#     on S.DataPeriodID = D.Data_Period_Business_Key
+# Where S.[ObservedValue] is not null
+# 	or s.[ObservationQualifier] is not null
+# ;
+# --Select count(*) as [Loaded to STG_Sat_DataSeries_WRK]
+# --from [STG2].[dbo].[STG_Sat_DataSeries_WRK];
+# 
+# Select @@ROWCOUNT as [Update Rows Staged]
+# 
+# Select S.[GeoArea_Measure_HashKey]
+#   into #NewKeys
+# From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+# left outer join [DV2].[dbo].[Link_GeoArea_Measurement] L
+# ON S.[GeoArea_Measure_HashKey] = L.[GeoArea_Measure_HashKey]
+# WHERE L.[Reord_Source] is null;
+# 
+# Select @@ROWCOUNT as [New Keys Identified];
+# 
+# 
+# Select  S.[GeoArea_Measure_HashKey]
+# 		,O.Load_Date
+# 	into #UpdtKeys
+# From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+# inner join [ACS].[dbo].[V_Sat_GeoArea_Measure_Observation_Cur] O
+# on S.[GeoArea_Measure_HashKey] = O.[GeoArea_Measure_HashKey]
+# Where (		coalesce(S.[ObservedValue],1) <> coalesce(O.[Estimated_Value],1)
+# 		or 
+# 			coalesce(S.[ObservationQualifier],1) <> coalesce(O.[Estimation_Qualifier],1)
+# 	  ); 
+# 
+# Select @@ROWCOUNT as [Update Keys Identified];
+# 
+# 
+# INSERT INTO [DV2].[dbo].[Link_GeoArea_Measurement]
+#            ([GeoArea_Measure_HashKey]
+#            ,[Load_Date]
+#            ,[Reord_Source]
+#            ,[GeoArea_HashKey]
+#            ,[Measure_HashKey]
+#            ,[Data_Period_HashKey])
+# SELECT S.[GeoArea_Measure_HashKey]
+# 	  ,CURRENT_TIMESTAMP
+#       ,[Record_Source]
+#       ,[GeoArea_HashKey]
+#       ,[Measure_HashKey]
+#       ,[Data_Period_HashKey]
+#   FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+#   inner join #NewKeys N
+#   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
+# 
+#   Select @@ROWCOUNT as [Links Inserted];
+# 
+# 
+# INSERT INTO [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
+#            ([GeoArea_Measure_HashKey]
+#            ,[Load_Date]
+#            ,[Load_End_Date]
+#            ,[Record_Source]
+#            ,[Estimated_Value]
+#            ,[Estimation_Qualifier])
+# SELECT S.[GeoArea_Measure_HashKey]
+# 	  ,CURRENT_TIMESTAMP
+# 	  ,cast('9999-12-31 23:59:59.9999999' as Datetime2(7))
+#       ,S.[Record_Source]
+#       ,S.[ObservedValue]
+#       ,S.[ObservationQualifier]
+#   FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+#   inner join #NewKeys N
+#   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
+# 
+#   Select @@ROWCOUNT as [Observations Inserted];
+# 
+# Set @Load_Date = CURRENT_TIMESTAMP;
+# 
+# INSERT INTO [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
+#            ([GeoArea_Measure_HashKey]
+#            ,[Load_Date]
+#            ,[Load_End_Date]
+#            ,[Record_Source]
+#            ,[Estimated_Value]
+#            ,[Estimation_Qualifier])
+# SELECT S.[GeoArea_Measure_HashKey]
+# 	  ,@Load_Date
+# 	  ,cast('9999-12-31 23:59:59.9999999' as Datetime2(7))
+#       ,S.[Record_Source]
+#       ,S.[ObservedValue]
+#       ,S.[ObservationQualifier]
+#   FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+#   inner join #UpdtKeys N
+#   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
+# 
+#   Select @@ROWCOUNT as [Replacement Observations Inserted];
+# 
+# 
+# /*	Retire the entries in the Measure Description satellite that have been replaced.	*/
+# /*	End-Date entries being retired.													 	*/
+# 
+# UPDATE [DV2].[dbo].[Sat_GeoArea_Measure_Observation] 
+#    SET [Load_End_Date] =  @Load_Date
+#    From #UpdtKeys K
+# 	,[DV2].[dbo].[Sat_GeoArea_Measure_Observation] T
+#  WHERE T.[GeoArea_Measure_HashKey] = K.[GeoArea_Measure_HashKey]
+#  and T.[Load_Date] = k.[Load_Date];
+# 
+#    Select @@ROWCOUNT as [Observations Retired];""")

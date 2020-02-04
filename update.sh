@@ -1,29 +1,38 @@
-RM git config --global user.name "NCDataDashboard"
+# git config --global user.name "NCDataDashboard"
 
+echo Updating Land:
 cd Land
-bash land.bat
+bash land.sh
 cd ..
-
+clear
+echo Land update complete.
+echo Updating Labor:
 cd Labor
-bash labor.bat
+bash labor.sh
 cd ..
-
+clear
+echo Land and Labor updates complete.
+echo Updating Earnings...
 cd Earnings
-bash earnings.bat
+bash earnings.sh
 cd ..
-
+clear
+echo Land, Labor, and Earnings updates complete.
+echo Updating Demographics...
 cd Demographics
-bash Demographics.bat
+bash Demographics.sh
 cd ..
+echo Land, Labor, Earnings, and Demographics updates complete.
 
-RM cd Health
-RM bash health.bat
-RM cd ..
+# cd Health
+# bash health.sh
+# cd ..
 
-RM cd Natural Products
-RM bash natproducts.bat
-RM cd ..
+# cd Natural Products
+# bash natproducts.sh
+# cd ..
 
-RM git status
+# git status
 
+sleep 5
 exit

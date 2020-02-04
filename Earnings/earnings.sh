@@ -1,13 +1,14 @@
+cd Scripts
 echo Updating CAINC5N
-Python -W ignore Scripts/CAINC5N_NC.py
+Python -W ignore CAINC5N_NC.py
 echo Update complete!
 
-RM cd Updates
-RM git status
+#cd Updates
+#git status
 
-RM it commit -a -m "Earnings Update" date +"%m-%d-%Y"
-RM git status
+#git commit -a -m "Earnings Update" date +"%m-%d-%Y"
+#git status
 
-RM git push
+#git push
 
-RM cd ..
+cd ..

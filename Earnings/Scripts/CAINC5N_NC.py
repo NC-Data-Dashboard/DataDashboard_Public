@@ -20,9 +20,9 @@ import numpy as np
 
 
 # Watermark
-print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-get_ipython().run_line_magic('load_ext', 'watermark')
-get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+#get_ipython().run_line_magic('load_ext', 'watermark')
+#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
 
 
 # In[ ]:

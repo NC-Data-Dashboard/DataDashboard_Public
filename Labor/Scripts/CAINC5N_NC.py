@@ -76,8 +76,8 @@ df.drop('GeoFIPS', axis = 1, inplace = True)
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=TITANIUM-BOOK;'
-                      'Database=DataDashboard;'
+                      'Server=STEIN\ECONDEV;'
+                      'Database=STG2;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -142,21 +142,21 @@ df_per_capita.head()
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Per_Capita_Personal_Income_BACKUP')
+#c.execute('drop table STG_BEA_Per_Capita_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Per_Capita_Personal_Income','STG_BEA_Per_Capita_Personal_Income_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Per_Capita_Personal_Income','STG_BEA_Per_Capita_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Per Capita table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -203,8 +203,8 @@ CREATE TABLE [dbo].[STG_BEA_Per_Capita_Personal_Income](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -265,21 +265,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Earnings_by_Place_of_Work_BACKUP')
+#c.execute('drop table STG_BEA_Earnings_by_Place_of_Work_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Earnings_by_Place_of_Work','STG_BEA_Earnings_by_Place_of_Work_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Earnings_by_Place_of_Work','STG_BEA_Earnings_by_Place_of_Work_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Earnings table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -326,8 +326,8 @@ CREATE TABLE [dbo].[STG_BEA_Earnings_by_Place_of_Work](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -395,21 +395,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Population_BACKUP')
+#c.execute('drop table STG_BEA_Population_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Population','STG_BEA_Population_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Population','STG_BEA_Population_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Population table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -456,8 +456,8 @@ CREATE TABLE [dbo].[STG_BEA_Population](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -518,21 +518,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Personal_Income_BACKUP')
+#c.execute('drop table STG_BEA_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Personal_Income','STG_BEA_Personal_Income_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Personal_Income','STG_BEA_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Personal Income Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -579,8 +579,8 @@ CREATE TABLE [dbo].[STG_BEA_Personal_Income](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

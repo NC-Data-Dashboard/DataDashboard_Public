@@ -26,8 +26,8 @@ import numpy as np
 
 
 # Create backups
-#df_backup = pd.read_csv('./Updates/STG_FRED_Civilian_Labor_Force_by_County_Persons.txt')
-#df_backup.to_csv('./Backups/STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP.txt')
+df_backup = pd.read_csv('./Updates/STG_FRED_Civilian_Labor_Force_by_County_Persons.txt')
+df_backup.to_csv('./Backups/STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP.txt')
 
 
 # In[ ]:
@@ -67,7 +67,7 @@ df_nc.head(2)
 
 
 # Save file to tab delimited txt for upload to SSMS
-#df_nc.to_csv('./Updates/STG_FRED_Civilian_Labor_Force_by_County_Persons.txt', sep = '\t')
+df_nc.to_csv('./Updates/STG_FRED_Civilian_Labor_Force_by_County_Persons.txt', sep = '\t')
 
 
 # In[ ]:
@@ -90,8 +90,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=TITANIUM-BOOK;'
-                      'Database=DataDashboard;'
+                      'Server=STEIN\ECONDEV;'
+                      'Database=STG2;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -179,8 +179,8 @@ CREATE TABLE [dbo].[STG_FRED_Civilian_Labor_Force_by_County_Persons](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

@@ -76,8 +76,8 @@ df.drop('GeoFIPS', axis = 1, inplace = True)
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=TITANIUM-BOOK;'
-                      'Database=DataDashboard;'
+                      'Server=STEIN\ECONDEV;'
+                      'Database=STG2;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -143,21 +143,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Compensation_of_Employees_BACKUP')
+#c.execute('drop table STG_BEA_Compensation_of_Employees_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Compensation_of_Employees','STG_BEA_Compensation_of_Employees_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Compensation_of_Employees','STG_BEA_Compensation_of_Employees_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Per Capita table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -204,8 +204,8 @@ CREATE TABLE [dbo].[STG_BEA_Compensation_of_Employees](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -265,21 +265,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Wages_and_Salaries_BACKUP')
+#c.execute('drop table STG_BEA_Wages_and_Salaries_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Wages_and_Salaries','STG_BEA_Wages_and_Salaries_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Wages_and_Salaries','STG_BEA_Wages_and_Salaries_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Earnings table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -326,8 +326,8 @@ CREATE TABLE [dbo].[STG_BEA_Wages_and_Salaries](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -387,21 +387,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Health_Care_and_Social_Assistance_BACKUP')
+#c.execute('drop table STG_BEA_Health_Care_and_Social_Assistance_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Health_Care_and_Social_Assistance','STG_BEA_Health_Care_and_Social_Assistance_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Health_Care_and_Social_Assistance','STG_BEA_Health_Care_and_Social_Assistance_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Health_Care_and_Social_Assistance table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -448,8 +448,8 @@ CREATE TABLE [dbo].[STG_BEA_Health_Care_and_Social_Assistance](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -509,21 +509,21 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Information_BACKUP')
+#c.execute('drop table STG_BEA_Information_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Information','STG_BEA_Information_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Information','STG_BEA_Information_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Information Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -570,8 +570,8 @@ CREATE TABLE [dbo].[STG_BEA_Information](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -607,13 +607,13 @@ for i in column_list:
     df_management.loc[df_management[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Management_of_Companies_and_Enterprises_BACKUP')
+#c.execute('drop table STG_BEA_Management_of_Companies_and_Enterprises_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Management_of_Companies_and_Enterprises','STG_BEA_Management_of_Companies_and_Enterprises_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Management_of_Companies_and_Enterprises','STG_BEA_Management_of_Companies_and_Enterprises_BACKUP';''')
 
 # Create Information Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -656,8 +656,8 @@ CREATE TABLE [dbo].[STG_BEA_Management_of_Companies_and_Enterprises](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -693,13 +693,13 @@ for i in column_list:
     df_manufacturing.loc[df_manufacturing[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Manufacturing_BACKUP')
+#c.execute('drop table STG_BEA_Manufacturing_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Manufacturing','STG_BEA_Manufacturing_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Manufacturing','STG_BEA_Manufacturing_BACKUP';''')
 
 # Create Manufacturing Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -742,8 +742,8 @@ CREATE TABLE [dbo].[STG_BEA_Manufacturing](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -779,13 +779,13 @@ for i in column_list:
     df_mining.loc[df_mining[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP')
+#c.execute('drop table STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction','STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction','STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP';''')
 
 # Create Mining_Quarrying_and_Oil_and_Gas_Extraction Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -828,8 +828,8 @@ CREATE TABLE [dbo].[STG_BEA_Mining_Quarrying_and_Oil_and_Gas_Extraction](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -865,13 +865,13 @@ for i in column_list:
     df_services.loc[df_services[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Other_Services_BACKUP')
+#c.execute('drop table STG_BEA_Other_Services_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Other_Services','STG_BEA_Other_Services_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Other_Services','STG_BEA_Other_Services_BACKUP';''')
 
 # Create Other_Services Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -914,8 +914,8 @@ CREATE TABLE [dbo].[STG_BEA_Other_Services](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -952,13 +952,13 @@ for i in column_list:
     df_professional.loc[df_professional[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Professional_Scientific_and_Technical_Services_BACKUP')
+#c.execute('drop table STG_BEA_Professional_Scientific_and_Technical_Services_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Professional_Scientific_and_Technical_Services','STG_BEA_Professional_Scientific_and_Technical_Services_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Professional_Scientific_and_Technical_Services','STG_BEA_Professional_Scientific_and_Technical_Services_BACKUP';''')
 
 # Create Professional_Scientific_and_Technical_Services Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1001,8 +1001,8 @@ CREATE TABLE [dbo].[STG_BEA_Professional_Scientific_and_Technical_Services](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1039,13 +1039,13 @@ for i in column_list:
     df_realestate.loc[df_realestate[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Real_Estate_and_Rental_and_Leasing_BACKUP')
+#c.execute('drop table STG_BEA_Real_Estate_and_Rental_and_Leasing_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Real_Estate_and_Rental_and_Leasing','STG_BEA_Real_Estate_and_Rental_and_Leasing_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Real_Estate_and_Rental_and_Leasing','STG_BEA_Real_Estate_and_Rental_and_Leasing_BACKUP';''')
 
 # Create Real_Estate_and_Rental_and_Leasing Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1088,8 +1088,8 @@ CREATE TABLE [dbo].[STG_BEA_Real_Estate_and_Rental_and_Leasing](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1126,13 +1126,13 @@ for i in column_list:
     df_retail.loc[df_retail[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Retail_Trade_BACKUP')
+#c.execute('drop table STG_BEA_Retail_Trade_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Retail_Trade','STG_BEA_Retail_Trade_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Retail_Trade','STG_BEA_Retail_Trade_BACKUP';''')
 
 # Create Retail_Trade Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1175,8 +1175,8 @@ CREATE TABLE [dbo].[STG_BEA_Retail_Trade](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1213,13 +1213,13 @@ for i in column_list:
     df_transportation.loc[df_transportation[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Transportation_and_Warehousing_BACKUP')
+#c.execute('drop table STG_BEA_Transportation_and_Warehousing_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Transportation_and_Warehousing','STG_BEA_Transportation_and_Warehousing_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Transportation_and_Warehousing','STG_BEA_Transportation_and_Warehousing_BACKUP';''')
 
 # Create Transportation_and_Warehousing Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1262,8 +1262,8 @@ CREATE TABLE [dbo].[STG_BEA_Transportation_and_Warehousing](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1300,13 +1300,13 @@ for i in column_list:
     df_utilities.loc[df_utilities[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Utilities_BACKUP')
+#c.execute('drop table STG_BEA_Utilities_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Utilities','STG_BEA_Utilities_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Utilities','STG_BEA_Utilities_BACKUP';''')
 
 # Create Utilities Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1349,8 +1349,8 @@ CREATE TABLE [dbo].[STG_BEA_Utilities](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1387,13 +1387,13 @@ for i in column_list:
     df_wholesale.loc[df_wholesale[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Wholesale_Trade_BACKUP')
+#c.execute('drop table STG_BEA_Wholesale_Trade_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Wholesale_Trade','STG_BEA_Wholesale_Trade_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Wholesale_Trade','STG_BEA_Wholesale_Trade_BACKUP';''')
 
 # Create Wholesale_Trade Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1436,8 +1436,8 @@ CREATE TABLE [dbo].[STG_BEA_Wholesale_Trade](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1477,13 +1477,13 @@ for i in column_list:
     df_pension.loc[df_pension[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds_BACKUP')
+#c.execute('drop table STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds','STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds','STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insurance_Funds_BACKUP';''')
 
 # Create Employer_Contributions_for_Employee_Pension_and_Insurance_Funds Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1526,8 +1526,8 @@ CREATE TABLE [dbo].[STG_BEA_Employer_Contributions_for_Employee_Pension_and_Insu
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1564,13 +1564,13 @@ for i in column_list:
     df_social.loc[df_social[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Employer_Contributions_for_Government_Social_Insurance_BACKUP')
+#c.execute('drop table STG_BEA_Employer_Contributions_for_Government_Social_Insurance_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Employer_Contributions_for_Government_Social_Insurance','STG_BEA_Employer_Contributions_for_Government_Social_Insurance_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Employer_Contributions_for_Government_Social_Insurance','STG_BEA_Employer_Contributions_for_Government_Social_Insurance_BACKUP';''')
 
 # Create Employer_Contributions_for_Government_Social_Insurance Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1613,8 +1613,8 @@ CREATE TABLE [dbo].[STG_BEA_Employer_Contributions_for_Government_Social_Insuran
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1651,13 +1651,13 @@ for i in column_list:
     df_gov.loc[df_gov[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Government_and_Government_Enterprises_BACKUP')
+#c.execute('drop table STG_BEA_Government_and_Government_Enterprises_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Government_and_Government_Enterprises','STG_BEA_Government_and_Government_Enterprises_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Government_and_Government_Enterprises','STG_BEA_Government_and_Government_Enterprises_BACKUP';''')
 
 # Create Government_and_Government_Enterprises Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1700,8 +1700,8 @@ CREATE TABLE [dbo].[STG_BEA_Government_and_Government_Enterprises](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1738,13 +1738,13 @@ for i in column_list:
     df_private.loc[df_private[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Private_Nonfarm_Compensation_BACKUP')
+#c.execute('drop table STG_BEA_Private_Nonfarm_Compensation_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Private_Nonfarm_Compensation','STG_BEA_Private_Nonfarm_Compensation_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Private_Nonfarm_Compensation','STG_BEA_Private_Nonfarm_Compensation_BACKUP';''')
 
 # Create Private_Nonfarm_Compensation Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1787,8 +1787,8 @@ CREATE TABLE [dbo].[STG_BEA_Private_Nonfarm_Compensation](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1825,13 +1825,13 @@ for i in column_list:
     df_farm.loc[df_farm[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Farm_Compensation_BACKUP')
+#c.execute('drop table STG_BEA_Farm_Compensation_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Farm_Compensation','STG_BEA_Farm_Compensation_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Farm_Compensation','STG_BEA_Farm_Compensation_BACKUP';''')
 
 # Create Farm_Compensation Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1874,8 +1874,8 @@ CREATE TABLE [dbo].[STG_BEA_Farm_Compensation](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1912,13 +1912,13 @@ for i in column_list:
     df_nonfarm.loc[df_nonfarm[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Nonfarm_Compensation_BACKUP')
+#c.execute('drop table STG_BEA_Nonfarm_Compensation_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Nonfarm_Compensation','STG_BEA_Nonfarm_Compensation_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Nonfarm_Compensation','STG_BEA_Nonfarm_Compensation_BACKUP';''')
 
 # Create Nonfarm_Compensation Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -1961,8 +1961,8 @@ CREATE TABLE [dbo].[STG_BEA_Nonfarm_Compensation](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -1999,13 +1999,13 @@ for i in column_list:
     df_supplement.loc[df_supplement[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Supplements_to_Wages_and_Salaries_BACKUP')
+#c.execute('drop table STG_BEA_Supplements_to_Wages_and_Salaries_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Supplements_to_Wages_and_Salaries','STG_BEA_Supplements_to_Wages_and_Salaries_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Supplements_to_Wages_and_Salaries','STG_BEA_Supplements_to_Wages_and_Salaries_BACKUP';''')
 
 # Create Supplements_to_Wages_and_Salaries Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2048,8 +2048,8 @@ CREATE TABLE [dbo].[STG_BEA_Supplements_to_Wages_and_Salaries](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2089,13 +2089,13 @@ for i in column_list:
     df_comp.loc[df_comp[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Average_Compensation_Per_Job_BACKUP')
+#c.execute('drop table STG_BEA_Average_Compensation_Per_Job_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Average_Compensation_Per_Job','STG_BEA_Average_Compensation_Per_Job_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Average_Compensation_Per_Job','STG_BEA_Average_Compensation_Per_Job_BACKUP';''')
 
 # Create Average_Compensation_Per_Job Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2138,8 +2138,8 @@ CREATE TABLE [dbo].[STG_BEA_Average_Compensation_Per_Job](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2176,13 +2176,13 @@ for i in column_list:
     df_food.loc[df_food[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Accommodation_and_Food_Services_BACKUP')
+#c.execute('drop table STG_BEA_Accommodation_and_Food_Services_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Accommodation_and_Food_Services','STG_BEA_Accommodation_and_Food_Services_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Accommodation_and_Food_Services','STG_BEA_Accommodation_and_Food_Services_BACKUP';''')
 
 # Create Accommodation_and_Food_Services Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2225,8 +2225,8 @@ CREATE TABLE [dbo].[STG_BEA_Accommodation_and_Food_Services](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2263,13 +2263,13 @@ for i in column_list:
     df_admin.loc[df_admin[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP')
+#c.execute('drop table STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services','STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services','STG_BEA_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP';''')
 
 # Create Administrative_and_Support_and_Waste_Management_and_Remediation_Services Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2312,8 +2312,8 @@ CREATE TABLE [dbo].[STG_BEA_Administrative_and_Support_and_Waste_Management_and_
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2350,13 +2350,13 @@ for i in column_list:
     df_arts.loc[df_arts[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Arts_Entertainment_and_Recreation_BACKUP')
+#c.execute('drop table STG_BEA_Arts_Entertainment_and_Recreation_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Arts_Entertainment_and_Recreation','STG_BEA_Arts_Entertainment_and_Recreation_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Arts_Entertainment_and_Recreation','STG_BEA_Arts_Entertainment_and_Recreation_BACKUP';''')
 
 # Create Arts_Entertainment_and_Recreation Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2399,8 +2399,8 @@ CREATE TABLE [dbo].[STG_BEA_Arts_Entertainment_and_Recreation](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2437,13 +2437,13 @@ for i in column_list:
     df_construction.loc[df_construction[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Construction_BACKUP')
+#c.execute('drop table STG_BEA_Construction_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Construction','STG_BEA_Construction_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Construction','STG_BEA_Construction_BACKUP';''')
 
 # Create Construction Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2486,8 +2486,8 @@ CREATE TABLE [dbo].[STG_BEA_Construction](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2524,13 +2524,13 @@ for i in column_list:
     df_eduserv.loc[df_eduserv[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Educational_Services_BACKUP')
+#c.execute('drop table STG_BEA_Educational_Services_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Educational_Services','STG_BEA_Educational_Services_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Educational_Services','STG_BEA_Educational_Services_BACKUP';''')
 
 # Create Educational_Services Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2573,8 +2573,8 @@ CREATE TABLE [dbo].[STG_BEA_Educational_Services](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2611,13 +2611,13 @@ for i in column_list:
     df_finance.loc[df_finance[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Finance_and_Insurance_BACKUP')
+#c.execute('drop table STG_BEA_Finance_and_Insurance_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Finance_and_Insurance','STG_BEA_Finance_and_Insurance_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Finance_and_Insurance','STG_BEA_Finance_and_Insurance_BACKUP';''')
 
 # Create Finance_and_Insurance Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2660,8 +2660,8 @@ CREATE TABLE [dbo].[STG_BEA_Finance_and_Insurance](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -2698,13 +2698,13 @@ for i in column_list:
     df_forestry.loc[df_forestry[i].isnull(),i]=0
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Forestry_Fishing_and_Related_Activities_BACKUP')
+#c.execute('drop table STG_BEA_Forestry_Fishing_and_Related_Activities_BACKUP')
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Forestry_Fishing_and_Related_Activities','STG_BEA_Forestry_Fishing_and_Related_Activities_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_Forestry_Fishing_and_Related_Activities','STG_BEA_Forestry_Fishing_and_Related_Activities_BACKUP';''')
 
 # Create Forestry_Fishing_and_Related_Activities Table
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 
@@ -2747,8 +2747,8 @@ CREATE TABLE [dbo].[STG_BEA_Forestry_Fishing_and_Related_Activities](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TITANIUM-BOOK;'
-                                 r'Database=DataDashboard;'
+                                 r'Server=STEIN\ECONDEV;'
+                                 r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

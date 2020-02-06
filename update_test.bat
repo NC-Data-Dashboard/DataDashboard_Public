@@ -1,21 +1,21 @@
-python -m pip install --upgrade pip --user
-python -m pip install jupyter --upgrade --user
-python -m pip install pandas --upgrade --user
-python -m pip install Requests --upgrade --user
-python -m pip install watermark --upgrade --user
-python -m pip install xlrd --upgrade --user
-python -m pip install pyodbc --upgrade --user
-python -m pip install sqlalchemy --upgrade --user
-python -m pip install numpy --upgrade --user
+pip install --upgrade pip --user
+pip install jupyter --upgrade --user
+pip install pandas --upgrade --user
+pip install Requests --upgrade --user
+pip install watermark --upgrade --user
+pip install xlrd --upgrade --user
+pip install pyodbc --upgrade --user
+pip install sqlalchemy --upgrade --user
+pip install numpy --upgrade --user
 
 REM git config --global user.name "NCDataDashboard"
 
-REM cd Land
-REM call land_test.bat
-REM cd..
+cd Land
+call land_test.bat
+cd..
 
 cd Labor
-call labor_test.bat
+call labor.bat
 cd..
 
 cd Earnings

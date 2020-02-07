@@ -149,7 +149,7 @@ df_per_capita.head()
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_Per_Capita_Personal_Income','STG_BEA_Per_Capita_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_Per_Capita_Personal_Income','STG_BEA_Per_Capita_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
@@ -272,7 +272,7 @@ for i in column_list:
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_Earnings_by_Place_of_Work','STG_BEA_Earnings_by_Place_of_Work_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_Earnings_by_Place_of_Work','STG_BEA_Earnings_by_Place_of_Work_BACKUP';''')
 
 
 # In[ ]:
@@ -402,7 +402,7 @@ for i in column_list:
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_Population','STG_BEA_Population_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_Population','STG_BEA_Population_BACKUP';''')
 
 
 # In[ ]:
@@ -525,7 +525,7 @@ for i in column_list:
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_Personal_Income','STG_BEA_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_Personal_Income','STG_BEA_Personal_Income_BACKUP';''')
 
 
 # In[ ]:

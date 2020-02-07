@@ -102,7 +102,7 @@ c = con.cursor()
 
 
 #Drop old backup table
-c.execute('drop table STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP')
+#c.execute('drop table STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP')
 
 
 # In[ ]:

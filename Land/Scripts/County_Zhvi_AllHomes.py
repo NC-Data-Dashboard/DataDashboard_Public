@@ -444,7 +444,9 @@ CREATE TABLE [dbo].[STG_ZLLW_County_Zhvi_AllHomes](
 	[2019-09] [float] NULL,
 	[2019-10] [float] NULL,
 	[2019-11] [float] NULL,
-	[2019-12] [float] NULL
+	[2019-12] [float] NULL,
+	[2020-01] [float] NULL,
+	[2020-02] [float] NULL
 ) ON [PRIMARY]''')
 
 

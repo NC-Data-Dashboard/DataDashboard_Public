@@ -109,13 +109,13 @@ c = con.cursor()
 
 
 #Create new backup
-c.execute('''sp_rename 'dbo.STG_FRED_Civilian_Labor_Force_by_County_Persons','STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_FRED_Civilian_Labor_Force_by_County_Persons','STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP';''')
 
 
 # In[ ]:
 
 
-c.execute('''USE [DataDashboard]
+c.execute('''USE [STG2]
 
 SET ANSI_NULLS ON
 

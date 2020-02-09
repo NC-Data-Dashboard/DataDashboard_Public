@@ -149,7 +149,7 @@ c.execute('drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP')
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
@@ -276,7 +276,7 @@ c.execute('drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP')
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
 
 
 # In[ ]:
@@ -411,7 +411,7 @@ c.execute('drop table STG_BEA_CA5N_Population_BACKUP')
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
 
 
 # In[ ]:
@@ -538,7 +538,7 @@ c.execute('drop table STG_BEA_CA5N_Personal_Income_BACKUP')
 
 
 # Create new backup
-#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
 
 
 # In[ ]:

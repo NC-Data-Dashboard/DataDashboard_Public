@@ -140,7 +140,7 @@ c = con.cursor()
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPrice_AllHomes','STG_ZLLW_County_MedianListingPrice_AllHomes_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPrice_AllHomes','STG_ZLLW_County_MedianListingPrice_AllHomes_BACKUP';''')
 
 
 # In[ ]:

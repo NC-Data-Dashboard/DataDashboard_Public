@@ -109,7 +109,7 @@ c = con.cursor()
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_FRED_New_Private_Housing_Structures','STG_FRED_New_Private_Housing_Structures_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_FRED_New_Private_Housing_Structures','STG_FRED_New_Private_Housing_Structures_BACKUP';''')
 
 
 # In[ ]:

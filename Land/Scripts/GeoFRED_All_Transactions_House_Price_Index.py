@@ -109,7 +109,7 @@ c = con.cursor()
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index','STG_FRED_All_Transactions_House_Price_Index_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index','STG_FRED_All_Transactions_House_Price_Index_BACKUP';''')
 
 
 # In[ ]:

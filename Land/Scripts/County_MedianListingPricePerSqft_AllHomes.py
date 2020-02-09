@@ -139,7 +139,7 @@ c = con.cursor()
 # In[ ]:
 
 
-#c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes','STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes','STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP';''')
 
 
 # In[ ]:

@@ -109,7 +109,7 @@ c = con.cursor()
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_FRED_Unemployment_Rate_by_County_Percent','STG_FRED_Unemployment_Rate_by_County_Percent_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_FRED_Unemployment_Rate_by_County_Percent','STG_FRED_Unemployment_Rate_by_County_Percent_BACKUP';''')
 
 
 # In[ ]:

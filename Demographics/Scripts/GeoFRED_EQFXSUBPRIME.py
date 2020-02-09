@@ -90,8 +90,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
+                      'Server=TITANIUM-BOOK;'
+                      'Database=DataDashboard;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +115,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_EQFXSUBPRIME','STG_FRED_EQFXSUBPRIME_BACKUP
 # In[ ]:
 
 
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
@@ -210,7 +210,26 @@ CREATE TABLE [dbo].[STG_FRED_EQFXSUBPRIME](
     [2019 Q3] [float] NULL,
     [2019 Q4] [float] NULL,
     [2020 Q1] [float] NULL,
-    [2020 Q2] [float] NULL
+    [2020 Q2] [float] NULL,
+    [2020 Q3] [float] NULL,
+    [2020 Q4] [float] NULL,
+    [2021 Q1] [float] NULL,
+    [2021 Q2] [float] NULL,
+    [2021 Q3] [float] NULL,
+    [2021 Q4] [float] NULL,
+    [2022 Q1] [float] NULL,
+    [2022 Q2] [float] NULL,
+    [2022 Q3] [float] NULL,
+    [2022 Q4] [float] NULL,
+    [2023 Q1] [float] NULL,
+    [2023 Q2] [float] NULL,
+    [2023 Q3] [float] NULL,
+    [2023 Q4] [float] NULL,
+    [2024 Q1] [float] NULL,
+    [2024 Q2] [float] NULL,
+    [2024 Q3] [float] NULL,
+    [2024 Q4] [float] NULL,
+    [2025 Q1] [float] NULL,
 ) ON [PRIMARY]''')
 
 
@@ -218,31 +237,12 @@ CREATE TABLE [dbo].[STG_FRED_EQFXSUBPRIME](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
 df_nc.to_sql('STG_FRED_EQFXSUBPRIME', con=engine, if_exists='replace', index=False)
-
-
-# In[1]:
-
-
-#c.execute("""""")
-
-
-# In[ ]:
-
-
-#c.execute("""""")
-
-
-# In[ ]:
-
-
-#c.execute("""""")
 

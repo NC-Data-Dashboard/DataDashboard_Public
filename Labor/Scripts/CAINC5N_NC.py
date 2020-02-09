@@ -76,8 +76,8 @@ df.drop('GeoFIPS', axis = 1, inplace = True)
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
+                      'Server=TITANIUM-BOOK;'
+                      'Database=DataDashboard;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -96,8 +96,8 @@ print('Updating Per Capita Personal Income...')
 
 
 # Create Backups
-df_pc_backup = pd.read_csv('./Updates/STG_BEA_Per_Capita_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
-df_pc_backup.to_csv('./Backups/STG_BEA_Per_Capita_Personal_Income_BACKUP.txt')
+df_pc_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
+df_pc_backup.to_csv('./Backups/STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP.txt')
 
 
 # In[ ]:
@@ -113,7 +113,7 @@ df_per_capita.head()
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_per_capita.to_csv('./Updates/STG_BEA_Per_Capita_Personal_Income.txt', sep = '\t')
+df_per_capita.to_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', sep = '\t')
 
 
 # In[ ]:
@@ -142,27 +142,27 @@ df_per_capita.head()
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Per_Capita_Personal_Income_BACKUP')
+c.execute('drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Per_Capita_Personal_Income','STG_BEA_Per_Capita_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Per Capita table
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
 SET QUOTED_IDENTIFIER ON
 
-CREATE TABLE [dbo].[STG_BEA_Per_Capita_Personal_Income](
+CREATE TABLE [dbo].[STG_BEA_CA5N_Per_Capita_Personal_Income](
 	[GeoFIPS] [varchar](12) NULL,
 	[GeoName] [varchar](14) NULL,
 	[Region] [real] NULL,
@@ -195,7 +195,12 @@ CREATE TABLE [dbo].[STG_BEA_Per_Capita_Personal_Income](
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
+    [2026] [float] NULL,
+    [2027] [float] NULL,
+    [2028] [float] NULL,
+    [2029] [float] NULL,
+    [2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -203,15 +208,14 @@ CREATE TABLE [dbo].[STG_BEA_Per_Capita_Personal_Income](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
-df_per_capita.to_sql('STG_BEA_Per_Capita_Personal_Income', con=engine, if_exists='replace', index=False)
+df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='replace', index=False)
 
 
 # # Create Earnings by Place of Work
@@ -226,8 +230,8 @@ print('Done. Updating Earnings by Place of Work...')
 
 
 # Create Backups
-df_e_backup = pd.read_csv('./Updates/STG_BEA_Earnings_by_Place_of_Work.txt', encoding = 'ISO-8859-1', sep='\t')
-df_e_backup.to_csv('./Backups/STG_BEA_Earnings_by_Place_of_Work_BACKUP.txt')
+df_e_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', encoding = 'ISO-8859-1', sep='\t')
+df_e_backup.to_csv('./Backups/STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP.txt')
 
 
 # In[ ]:
@@ -242,7 +246,7 @@ df_earnings = df[filter1]
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_earnings.to_csv('./Updates/STG_BEA_Earnings_by_Place_of_Work.txt', sep = '\t')
+df_earnings.to_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', sep = '\t')
 
 
 # In[ ]:
@@ -265,27 +269,27 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Earnings_by_Place_of_Work_BACKUP')
+c.execute('drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Earnings_by_Place_of_Work','STG_BEA_Earnings_by_Place_of_Work_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Earnings table
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
 SET QUOTED_IDENTIFIER ON
 
-CREATE TABLE [dbo].[STG_BEA_Earnings_by_Place_of_Work](
+CREATE TABLE [dbo].[STG_BEA_CA5N_Earnings_by_Place_of_Work](
 	[GeoFIPS] [varchar](12) NULL,
 	[GeoName] [varchar](14) NULL,
 	[Region] [real] NULL,
@@ -318,7 +322,12 @@ CREATE TABLE [dbo].[STG_BEA_Earnings_by_Place_of_Work](
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
+    [2026] [float] NULL,
+    [2027] [float] NULL,
+    [2028] [float] NULL,
+    [2029] [float] NULL,
+    [2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -326,15 +335,15 @@ CREATE TABLE [dbo].[STG_BEA_Earnings_by_Place_of_Work](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
-df_earnings.to_sql('STG_BEA_Earnings_by_Place_of_Work', con=engine, if_exists='replace', index=False)
+df_earnings.to_sql('STG_BEA_CA5N_Earnings_by_Place_of_Work', con=engine, if_exists='replace', index=False)
 
 
 # # Create Population
@@ -349,8 +358,8 @@ print('Done. Updating Population...')
 
 
 # Create Backups
-df_pop_backup = pd.read_csv('./Updates/STG_BEA_Population.txt', encoding = 'ISO-8859-1', sep='\t')
-df_pop_backup.to_csv('./Backups/STG_BEA_Population_BACKUP.txt')
+df_pop_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Population.txt', encoding = 'ISO-8859-1', sep='\t')
+df_pop_backup.to_csv('./Backups/STG_BEA_CA5N_Population_BACKUP.txt')
 
 
 # In[ ]:
@@ -372,7 +381,7 @@ df_population.loc[:,'Description'] = df_population['Description'].str.strip('2/'
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_population.to_csv('./Updates/STG_BEA_Population.txt', sep = '\t')
+df_population.to_csv('./Updates/STG_BEA_CA5N_Population.txt', sep = '\t')
 
 
 # In[ ]:
@@ -395,27 +404,27 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Population_BACKUP')
+c.execute('drop table STG_BEA_CA5N_Population_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Population','STG_BEA_Population_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Population table
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
 SET QUOTED_IDENTIFIER ON
 
-CREATE TABLE [dbo].[STG_BEA_Population](
+CREATE TABLE [dbo].[STG_BEA_CA5N_Population](
 	[GeoFIPS] [varchar](12) NULL,
 	[GeoName] [varchar](14) NULL,
 	[Region] [real] NULL,
@@ -448,7 +457,12 @@ CREATE TABLE [dbo].[STG_BEA_Population](
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
+    [2026] [float] NULL,
+    [2027] [float] NULL,
+    [2028] [float] NULL,
+    [2029] [float] NULL,
+    [2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -456,15 +470,14 @@ CREATE TABLE [dbo].[STG_BEA_Population](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
-df_population.to_sql('STG_BEA_Population', con=engine, if_exists='replace', index=False)
+df_population.to_sql('STG_BEA_CA5N_Population', con=engine, if_exists='replace', index=False)
 
 
 # # Create Personal Income
@@ -479,8 +492,8 @@ print('Done. Updating Personal Income...')
 
 
 # Create Backups
-df_i_backup = pd.read_csv('./Updates/STG_BEA_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
-df_i_backup.to_csv('./Backups/STG_BEA_Personal_Income_BACKUP.txt')
+df_i_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
+df_i_backup.to_csv('./Backups/STG_BEA_CA5N_Personal_Income_BACKUP.txt')
 
 
 # In[ ]:
@@ -495,7 +508,7 @@ df_income = df[filter1]
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_income.to_csv('./Updates/STG_BEA_Personal_Income.txt', sep = '\t')
+df_income.to_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', sep = '\t')
 
 
 # In[ ]:
@@ -518,27 +531,27 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_Personal_Income_BACKUP')
+c.execute('drop table STG_BEA_CA5N_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_Personal_Income','STG_BEA_Personal_Income_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
 
 
 # Create Personal Income Table
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
 SET QUOTED_IDENTIFIER ON
 
-CREATE TABLE [dbo].[STG_BEA_Personal_Income](
+CREATE TABLE [dbo].[STG_BEA_CA5N_Personal_Income](
 	[GeoFIPS] [varchar](12) NULL,
 	[GeoName] [varchar](14) NULL,
 	[Region] [real] NULL,
@@ -571,7 +584,12 @@ CREATE TABLE [dbo].[STG_BEA_Personal_Income](
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
+    [2026] [float] NULL,
+    [2027] [float] NULL,
+    [2028] [float] NULL,
+    [2029] [float] NULL,
+    [2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -579,13 +597,12 @@ CREATE TABLE [dbo].[STG_BEA_Personal_Income](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
-df_income.to_sql('STG_BEA_Personal_Income', con=engine, if_exists='replace', index=False)
+df_income.to_sql('STG_BEA_CA5N_Personal_Income', con=engine, if_exists='replace', index=False)
 

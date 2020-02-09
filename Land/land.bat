@@ -15,5 +15,3 @@ git status
 git push
 
 cd..
-
-

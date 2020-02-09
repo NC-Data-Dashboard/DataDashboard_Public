@@ -34,7 +34,7 @@ df_backup.to_csv('./Backups/STG_FRED_Resident_Population_by_County_Thoudands_of_
 
 
 # Getting and reading new data 
-df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-89.96&lat=40.78&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1549&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Thousands+of+Persons&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2025-01-01&type=xls&startDate=1970-01-01&endDate=2025-01-01&mapWidth=999&mapHeight=582&hideLegend=false", skiprows=1)
+df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-89.96&lat=40.78&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1549&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Thousands+of+Persons&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2030-01-01&type=xls&startDate=1970-01-01&endDate=2030-01-01&mapWidth=999&mapHeight=582&hideLegend=false", skiprows=1)
 df.head(2)
 
 
@@ -90,8 +90,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
+                      'Server=TITANIUM-BOOK;'
+                      'Database=DataDashboard;'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +115,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_Resident_Population_by_County_Thousands_of_
 # In[ ]:
 
 
-c.execute('''USE [STG2]
+c.execute('''USE [DataDashboard]
 
 SET ANSI_NULLS ON
 
@@ -176,7 +176,12 @@ CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons]
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
+    [2026] [float] NULL,
+    [2027] [float] NULL,
+    [2028] [float] NULL,
+    [2029] [float] NULL,
+    [2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -184,13 +189,12 @@ CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons]
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=TITANIUM-BOOK;'
+                                 r'Database=DataDashboard;'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#df: pandas.dataframe; mTableName:table name in MS SQL
 #warning: discard old table if exists
 df_nc.to_sql('STG_FRED_Resident_Population_by_County_Thousands_of_Persons', con=engine, if_exists='replace', index=False)
 

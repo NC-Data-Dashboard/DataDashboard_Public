@@ -133,7 +133,7 @@ c = con.cursor()
 
 
 #Drop old backup table
-#c.execute('''drop table dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP;''')
+c.execute('''drop table dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP;''')
 
 
 # In[ ]:

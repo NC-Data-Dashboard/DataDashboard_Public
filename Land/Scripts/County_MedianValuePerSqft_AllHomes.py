@@ -133,7 +133,7 @@ c = con.cursor()
 
 
 #Drop old backup table
-#c.execute('drop table STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP')
+c.execute('drop table STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP')
 
 
 # In[ ]:

@@ -102,7 +102,7 @@ c = con.cursor()
 
 
 #Drop old backup table
-#c.execute('drop table STG_FRED_EQFXSUBPRIME_BACKUP')
+c.execute('drop table STG_FRED_EQFXSUBPRIME_BACKUP')
 
 
 # In[ ]:

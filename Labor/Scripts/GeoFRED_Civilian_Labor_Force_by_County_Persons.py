@@ -102,14 +102,14 @@ c = con.cursor()
 
 
 #Drop old backup table
-c.execute('drop table STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP')
+#c.execute('drop table STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP')
 
 
 # In[ ]:
 
 
 #Create new backup
-c.execute('''sp_rename 'dbo.STG_FRED_Civilian_Labor_Force_by_County_Persons','STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_FRED_Civilian_Labor_Force_by_County_Persons','STG_FRED_Civilian_Labor_Force_by_County_Persons_BACKUP';''')
 
 
 # In[ ]:

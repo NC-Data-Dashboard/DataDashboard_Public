@@ -133,14 +133,14 @@ c = con.cursor()
 
 
 #Drop old backup table
-c.execute('drop table STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP')
+#c.execute('drop table STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP')
 
 
 # In[ ]:
 
 
 #Create new backup
-c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianValuePerSqft_AllHomes','STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianValuePerSqft_AllHomes','STG_ZLLW_County_MedianValuePerSqft_AllHomes_BACKUP';''')
 
 
 # In[ ]:
@@ -462,7 +462,7 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianValuePerSqft_AllHomes](
     [2021-03] [float] NULL,
     [2021-04] [float] NULL,
     [2021-05] [float] NULL,
-    [2021-06] [float] NULL
+    [2021-06] [float] NULL,
     [2021-07] [float] NULL,
     [2021-08] [float] NULL,
     [2021-09] [float] NULL,

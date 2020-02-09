@@ -1387,7 +1387,7 @@ df_wholesale.to_sql('STG_BEA_CA5N_Wholesale_Trade', con=engine, if_exists='repla
 # In[ ]:
 
 
-print('Done. Updating Proprietors' Income..')
+print('Done. Updating Proprietors Income..')
 
 # Create Backups
 df_pi_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Proprietors_Income.txt', encoding = 'ISO-8859-1', sep='\t')

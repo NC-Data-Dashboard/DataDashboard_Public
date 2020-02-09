@@ -17,9 +17,9 @@ import numpy as np
 
 
 # Watermark
-print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-get_ipython().run_line_magic('load_ext', 'watermark')
-get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+#get_ipython().run_line_magic('load_ext', 'watermark')
+#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
 
 
 # In[ ]:
@@ -102,14 +102,14 @@ c = con.cursor()
 
 
 #Drop old backup table
-c.execute('drop table STG_FRED_Resident_Population_by_County_Thousands_of_Persons_BACKUP')
+#c.execute('drop table STG_FRED_Resident_Population_by_County_Thousands_of_Persons_BACKUP')
 
 
 # In[ ]:
 
 
 #Create new backup
-c.execute('''sp_rename 'dbo.STG_FRED_Resident_Population_by_County_Thousands_of_Persons','STG_FRED_Resident_Population_by_County_Thousands_of_Persons_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_FRED_Resident_Population_by_County_Thousands_of_Persons','STG_FRED_Resident_Population_by_County_Thousands_of_Persons_BACKUP';''')
 
 
 # In[ ]:

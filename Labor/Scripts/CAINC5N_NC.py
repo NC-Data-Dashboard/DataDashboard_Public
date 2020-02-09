@@ -20,9 +20,9 @@ import numpy as np
 
 
 # Watermark
-print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-get_ipython().run_line_magic('load_ext', 'watermark')
-get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
+#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
+#get_ipython().run_line_magic('load_ext', 'watermark')
+#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
 
 
 # In[ ]:
@@ -142,14 +142,14 @@ df_per_capita.head()
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP')
+#c.execute('drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
 
 
 # In[ ]:
@@ -269,14 +269,14 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP')
+#c.execute('drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
 
 
 # In[ ]:
@@ -404,14 +404,14 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Population_BACKUP')
+#c.execute('drop table STG_BEA_CA5N_Population_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
 
 
 # In[ ]:
@@ -531,14 +531,14 @@ for i in column_list:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Personal_Income_BACKUP')
+#c.execute('drop table STG_BEA_CA5N_Personal_Income_BACKUP')
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
 
 
 # In[ ]:

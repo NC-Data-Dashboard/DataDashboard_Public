@@ -681,7 +681,7 @@ CREATE TABLE [dbo].[STG_BEA_CA6N_Management_of_Companies_and_Enterprises](
 ) ON [PRIMARY]''')
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=TfITANIUM-BOOK;'
+                                 r'Server=STEIN\ECONDEV;'
                                  r'Database=STG2;'
                                  r'Trusted_Connection=yes;')
 

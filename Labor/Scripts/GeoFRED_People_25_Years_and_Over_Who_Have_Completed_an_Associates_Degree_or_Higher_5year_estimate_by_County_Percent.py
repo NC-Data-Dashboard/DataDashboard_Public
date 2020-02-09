@@ -194,7 +194,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-SQL
+
 #warning: discard old table if exists
 df_nc.to_sql('STG_FRED_People_25_Years_and_Over_Who_Have_Completed_an_Associates_Degree_or_Higher_5year_estimate_by_County_Percent', con=engine, if_exists='replace', index=False)
 

@@ -26,4 +26,5 @@ REM cd..
 
 git status
 
+pause
 exit

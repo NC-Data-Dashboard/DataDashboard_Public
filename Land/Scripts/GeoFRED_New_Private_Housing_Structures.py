@@ -26,8 +26,8 @@ import numpy as np
 
 
 # Create backups
-#df_backup = pd.read_csv('./Updates/STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County.txt')
-#df_backup.to_csv('./Backups/STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County_BACKUP.txt')
+df_backup = pd.read_csv('./Updates/STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County.txt')
+df_backup.to_csv('./Backups/STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County_BACKUP.txt')
 
 
 # In[ ]:
@@ -109,7 +109,7 @@ c = con.cursor()
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County','STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County','STG_FRED_New_Private_Housing_Structures_Authorized_by_Building_Permits_by_County_BACKUP';''')
 
 
 # In[ ]:

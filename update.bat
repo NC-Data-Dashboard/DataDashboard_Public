@@ -10,6 +10,8 @@ python -m pip install numpy --upgrade --user
 
 git config --global user.name "NCDataDashboard"
 
+start
+
 cd Land
 call land.bat
 cd..
@@ -35,6 +37,8 @@ REM start natproducts.bat
 REM cd..
 
 git status
+
+goto start
 
 pause
 exit

@@ -14,4 +14,5 @@ git status
 
 git push
 
+pause
 cd..

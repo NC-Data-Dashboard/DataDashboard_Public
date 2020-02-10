@@ -208,7 +208,6 @@ c.execute("""/*******	DYNAMIC SCRIPT FOR MOVING DATA FROM SHALLOW-AND-WIDE LAYOU
 /*******				******/
 
 USE STG2;
-GO 
 
 TRUNCATE TABLE STG2.[dbo].[STG_XLSX_DataSeries_WRK];
 
@@ -309,7 +308,6 @@ c.execute("""/******************************************************************
 /**************************************************************************/
 
 USE DV2;
-GO
 
 TRUNCATE TABLE [STG2].[dbo].[STG_SAT_MeasureDefn_WRK];
 
@@ -630,7 +628,6 @@ c.execute("""/*****		Post_Observations.sql										*****/
 
 
 USE STG2;
-GO
 
 DECLARE		@Load_Date		Datetime2(7)
 

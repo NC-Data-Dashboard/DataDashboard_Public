@@ -176,7 +176,7 @@ CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons]
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
     [2026] [float] NULL,
     [2027] [float] NULL,
     [2028] [float] NULL,

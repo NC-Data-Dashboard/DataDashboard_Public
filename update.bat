@@ -8,6 +8,8 @@ python -m pip install pyodbc --user
 python -m pip install sqlalchemy --upgrade --user
 python -m pip install numpy --upgrade --user
 
+:start
+
 git config --global user.name "NCDataDashboard"
 
 cd Land
@@ -35,5 +37,7 @@ REM start natproducts.bat
 REM cd..
 
 git status
+
+goto start
 
 pause

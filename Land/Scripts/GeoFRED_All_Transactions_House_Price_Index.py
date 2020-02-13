@@ -74,7 +74,7 @@ df_nc.to_csv('./Updates/STG_FRED_All_Transactions_House_Price_Index_by_County.tx
 
 
 #Reset Index_by_County for upload to database
-df_nc = df_nc.reset_Index_by_County()    
+df_nc = df_nc.reset_index()    
 
 
 # In[ ]:

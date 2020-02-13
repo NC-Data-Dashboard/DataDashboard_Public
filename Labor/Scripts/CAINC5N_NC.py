@@ -304,7 +304,6 @@ Declare @ColNm		varchar(30)	-- holds the column name
 --	Select * from STG2.dbo.STG_XLSX_DataSeries_WRK
 	;""")
 
-
 # In[ ]:
 
 
@@ -797,9 +796,7 @@ UPDATE [DV2].[dbo].[Sat_GeoArea_Measure_Observation]
    From #UpdtKeys K
 	,[DV2].[dbo].[Sat_GeoArea_Measure_Observation] T
  WHERE T.[GeoArea_Measure_HashKey] = K.[GeoArea_Measure_HashKey]
- and T.[Load_Date] = k.[Load_Date];
-
-   Select @@ROWCOUNT as [Observations Retired];""")
+ and T.[Load_Date] = k.[Load_Date];""")
 
 
 # # Create Earnings by Place of Work

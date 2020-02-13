@@ -236,6 +236,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -946,6 +947,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -1655,6 +1657,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -2363,7 +2366,8 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@DataPeriodKey Nvarchar(20)
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
-	,@TableName		nvarchar(128)	-- Name of input table
+	,@TableName		nvarchar(128)	-- Name of table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -3038,6 +3042,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -3711,6 +3716,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -4385,6 +4391,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -5059,6 +5066,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -5733,6 +5741,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -6407,6 +6416,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -7082,6 +7092,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -7597,6 +7608,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -8272,6 +8284,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -8947,6 +8960,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -9625,6 +9639,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -10300,6 +10315,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -10974,6 +10990,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -11649,6 +11666,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -12324,6 +12342,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -12999,6 +13018,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -13674,6 +13694,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -14352,6 +14373,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -15026,6 +15048,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -15701,6 +15724,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -16376,6 +16400,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -17050,6 +17075,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -17725,6 +17751,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -18399,6 +18426,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -19073,6 +19101,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 

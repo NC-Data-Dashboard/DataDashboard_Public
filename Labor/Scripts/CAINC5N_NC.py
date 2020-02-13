@@ -189,18 +189,18 @@ CREATE TABLE [dbo].[STG_BEA_CA5N_Per_Capita_Personal_Income](
 	[2016] [float] NULL,
 	[2017] [float] NULL,
 	[2018] [float] NULL,
-    [2019] [float] NULL,
-    [2020] [float] NULL,
-    [2021] [float] NULL,
-    [2022] [float] NULL,
-    [2023] [float] NULL,
-    [2024] [float] NULL,
-    [2025] [float] NULL,
-    [2026] [float] NULL,
-    [2027] [float] NULL,
-    [2028] [float] NULL,
-    [2029] [float] NULL,
-    [2030] [float] NULL
+	[2019] [float] NULL,
+	[2020] [float] NULL,
+	[2021] [float] NULL,
+	[2022] [float] NULL,
+	[2023] [float] NULL,
+	[2024] [float] NULL,
+	[2025] [float] NULL,
+	[2026] [float] NULL,
+	[2027] [float] NULL,
+	[2028] [float] NULL,
+	[2029] [float] NULL,
+	[2030] [float] NULL
 ) ON [PRIMARY]''')
 
 
@@ -236,13 +236,14 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
 	Set	@GEOID_Type	= 'FIPS'		-- Identifies the standard for the GeoArea Tidentifier
 	Set	@Record_Source	= 'BEA'		-- Code for the source of the data
 	set @TableName = 'STG_BEA_CA5N_Per_Capita_Personal_Income';   -- SOURCE TABLE *** NEEDS TO BE UPDATED MANUALLY!!!!!
-	set @Measure_Business_Key = 'BEA_CA5N_0030';
+        set @Measure_Business_Key = 'BEA_CA5N_0030';        -- Data Series Business Identifier
 	set @ColNm = 'YR_ONE'
 	set @StartRow = 9;				-- **** NEEDS ADJUSTMENT DEPENDING ON INPUT *****
 	set @DataPeriodKey = '9999'
@@ -946,6 +947,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -1663,6 +1665,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -2373,6 +2376,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+	,@Measure_Business_Key varchar(50)      -- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 

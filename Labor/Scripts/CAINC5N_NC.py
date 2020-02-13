@@ -215,7 +215,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #warning: discard old table if exists
-df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='replace', index=False)
+df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='append', index=False)
 
 
 # In[ ]:

@@ -26,15 +26,15 @@ import numpy as np
 
 
 # Create backups
-#df_backup = pd.read_csv('./Updates/STG_FRED_All_Transactions_House_Price_Index_by_County.txt')
-#df_backup.to_csv('./Backups/STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP.txt')
+df_backup = pd.read_csv('./Updates/STG_FRED_All_Transactions_House_Price_Index_by_County.txt')
+df_backup.to_csv('./Backups/STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP.txt')
 
 
 # In[ ]:
 
 
 # Getting and reading new data 
-df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-90&lat=40&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=942&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Index_by_County+2000%3D100&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2030-01-01&type=xls&startDate=1975-01-01&endDate=2030-01-01&mapWidth=999&mapHeight=1249&hideLegend=false", skiprows=1)
+df = pd.read_excel("https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-90&lat=40&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=942&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Index+2000%3D100&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2018-01-01&type=xls&startDate=1975-01-01&endDate=2018-01-01&mapWidth=2000&mapHeight=1262&hideLegend=false", skiprows=1)
 df.head(2)
 
 
@@ -102,14 +102,14 @@ c = con.cursor()
 
 
 #Drop old backup table
-#c.execute('drop table STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP')
+c.execute('drop table STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP')
 
 
 # In[ ]:
 
 
 #Create new backup
-#c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index_by_County','STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP';''')
+c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index_by_County','STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP';''')
 
 
 # In[ ]:

@@ -215,7 +215,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #warning: discard old table if exists
-df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='replace', index=False)
+df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='update', index=False)
 
 
 # In[ ]:
@@ -236,6 +236,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+    ,@Measure_Business_Key	varchar(50)	-- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -946,6 +947,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+    ,@Measure_Business_Key	varchar(50)	-- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -1642,7 +1644,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #warning: discard old table if exists
-df_population.to_sql('STG_BEA_CA5N_Population', con=engine, if_exists='replace', index=False)
+df_population.to_sql('STG_BEA_CA5N_Population', con=engine, if_exists='update', index=False)
 
 
 # In[ ]:
@@ -1663,6 +1665,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+    ,@Measure_Business_Key	varchar(50)	-- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 
@@ -2352,7 +2355,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #warning: discard old table if exists
-df_income.to_sql('STG_BEA_CA5N_Personal_Income', con=engine, if_exists='replace', index=False)
+df_income.to_sql('STG_BEA_CA5N_Personal_Income', con=engine, if_exists='update', index=False)
 
 
 # In[ ]:
@@ -2373,6 +2376,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	,@StartRow		int			-- Starting point in [sys].[all_columns] table
 	,@SQL			nvarchar(1000)	-- SQL string to be executed
 	,@TableName		nvarchar(128)	-- Name of input table
+    ,@Measure_Business_Key	varchar(50)	-- The Data Series Business Identifier
 	,@GEOID_Type	varchar(10)		-- Identifies the standard for the GeoArea Tidentifier
 	,@Record_Source	Varchar(10)		-- Code for the source of the data
 

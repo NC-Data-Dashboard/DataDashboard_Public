@@ -242,7 +242,6 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	Set	@GEOID_Type	= 'FIPS'		-- Identifies the standard for the GeoArea Tidentifier
 	Set	@Record_Source	= 'BEA'		-- Code for the source of the data
 	set @TableName = 'STG_BEA_CA5N_Per_Capita_Personal_Income';   -- SOURCE TABLE *** NEEDS TO BE UPDATED MANUALLY!!!!!
-	set @Measure_Business_Key = 'BEA_CA5N_0030';
 	set @ColNm = 'YR_ONE'
 	set @StartRow = 9;				-- **** NEEDS ADJUSTMENT DEPENDING ON INPUT *****
 	set @DataPeriodKey = '9999'

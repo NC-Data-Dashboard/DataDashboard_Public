@@ -196,7 +196,7 @@ params = urllib.parse.quote_plus(r'Driver={SQL Server};'
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
 #warning: discard old table if exists
-df_nc.to_sql('STG_FRED_All_Transactions_House_Price_Index_by_County', con=engine, if_exists='replace', Index=False)
+df_nc.to_sql('STG_FRED_All_Transactions_House_Price_Index_by_County', con=engine, if_exists='replace', index=False)
 
 
 # In[ ]:

@@ -26,8 +26,8 @@ import numpy as np
 
 
 # Create backups
-df_backup = pd.read_csv('./Updates/STG_FRED_All_Transactions_House_Price_Index_by_County.txt')
-df_backup.to_csv('./Backups/STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP.txt')
+#df_backup = pd.read_csv('./Updates/STG_FRED_All_Transactions_House_Price_Index_by_County.txt')
+#df_backup.to_csv('./Backups/STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP.txt')
 
 
 # In[ ]:
@@ -102,14 +102,14 @@ c = con.cursor()
 
 
 #Drop old backup table
-c.execute('drop table STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP')
+#c.execute('drop table STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP')
 
 
 # In[ ]:
 
 
 #Create new backup
-c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index_by_County','STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP';''')
+#c.execute('''sp_rename 'dbo.STG_FRED_All_Transactions_House_Price_Index_by_County','STG_FRED_All_Transactions_House_Price_Index_by_County_BACKUP';''')
 
 
 # In[ ]:

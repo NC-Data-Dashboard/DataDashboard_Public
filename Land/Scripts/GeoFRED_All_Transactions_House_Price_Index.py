@@ -51,7 +51,7 @@ df_nc.head(2)
 
 
 # Set Index_by_County to Series ID
-df_nc.set_Index_by_County(df_nc['Series ID'], inplace = True)
+df_nc.set_index(df_nc['Series ID'], inplace = True)
 df_nc.head(2)
 
 

@@ -83,7 +83,6 @@ con = pyodbc.connect('Driver={SQL Server};'
 
 c = con.cursor()
 
-
 # # Create Per Capita Personal Income
 
 # In[ ]:

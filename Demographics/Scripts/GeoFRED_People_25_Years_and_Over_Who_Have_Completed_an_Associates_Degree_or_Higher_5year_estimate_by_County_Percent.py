@@ -90,8 +90,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
+                      'Server=[servername];'
+                      'Database=[databasename];'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +115,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_People_25_Years_and_Over_Who_Have_Completed
 # In[ ]:
 
 
-c.execute('''USE [STG2]
+c.execute('''USE [[databasename]]
 
 SET ANSI_NULLS ON
 
@@ -189,8 +189,8 @@ CREATE TABLE [dbo].[STG_FRED_People_25_Years_and_Over_Who_Have_Completed_an_Asso
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=[servername];'
+                                 r'Database=[databasename];'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

@@ -121,8 +121,8 @@ for i in column_list:
 
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=STEIN\ECONDEV;'
-                      'Database=STG2;'
+                      'Server=[servername];'
+                      'Database=[databasename];'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -146,7 +146,7 @@ c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianValuePerSqft_AllHomes','STG_ZL
 # In[ ]:
 
 
-c.execute('''USE [STG2]
+c.execute('''USE [[databasename]]
 
 SET ANSI_NULLS ON
 
@@ -462,7 +462,7 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianValuePerSqft_AllHomes](
     [2021-03] [float] NULL,
     [2021-04] [float] NULL,
     [2021-05] [float] NULL,
-    [2021-06] [float] NULL,
+    [2021-06] [float] NULL
     [2021-07] [float] NULL,
     [2021-08] [float] NULL,
     [2021-09] [float] NULL,
@@ -488,8 +488,8 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianValuePerSqft_AllHomes](
 
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=STEIN\ECONDEV;'
-                                 r'Database=STG2;'
+                                 r'Server=[servername];'
+                                 r'Database=[databasename];'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
@@ -506,9 +506,10 @@ c.execute("""/*******	DYNAMIC SCRIPT FOR MOVING DATA FROM SHALLOW-AND-WIDE LAYOU
 /*******	Specifically modifed for Zillow Monthly input											******/
 /*******				******/
 
-USE STG2;
+USE [databasename];
+GO 
 
-TRUNCATE TABLE STG2.[dbo].[STG_XLSX_DataSeries_WRK];
+TRUNCATE TABLE [databasename].[dbo].[STG_XLSX_DataSeries_WRK];
 
 /*****			Cursor through column names	from [sys].[all_columns]	*******/
 Declare @ColNm		varchar(30)	-- holds the column name
@@ -533,8 +534,8 @@ Declare @ColNm		varchar(30)	-- holds the column name
 		for 
 		Select  C.name	
 				,C.column_id
-		FROM [STG2].[sys].[all_columns] c
-		inner join STG2.sys.all_objects t
+		FROM [[databasename]].[sys].[all_columns] c
+		inner join [databasename].sys.all_objects t
 		on c.object_id = t.object_id
 		and t.name = @TableName
 		and c.column_id >= @StartRow;
@@ -548,7 +549,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	Begin
 		Set @DataPeriodKey = replace(@ColNm,'-','M') -- + Right(@ColNm,2);  -- MAKE FOR OTHER THAN ANNUAL
 
-		SET @SQL = 'INSERT INTO STG2.[dbo].[STG_XLSX_DataSeries_WRK]
+		SET @SQL = 'INSERT INTO [databasename].[dbo].[STG_XLSX_DataSeries_WRK]
            (
 		   [GeoArea_ID]
            ,[GEOID_Type]
@@ -570,7 +571,7 @@ Declare @ColNm		varchar(30)	-- holds the column name
 			when isnumeric(['+@ColNm+']) = 0 Then ['+@ColNm+']
 			else NULL
 		end ObservationQualifier'	
-		  + ' FROM STG2.[dbo].' + @TableName;
+		  + ' FROM [databasename].[dbo].' + @TableName;
 
 --		Select @SQL as SQLStmt
 		EXEC(@SQL)
@@ -580,10 +581,10 @@ Declare @ColNm		varchar(30)	-- holds the column name
 	Close C;
 	Deallocate C;
 	
---	Select cOUNT(*) from STG2.dbo.STG_XLSX_DataSeries_WRK
+--	Select cOUNT(*) from [databasename].dbo.STG_XLSX_DataSeries_WRK
 --	WHERE [oBSERVEDvALUE] IS NOT NULL;
 
-	Select top 100 * from STG2.dbo.STG_XLSX_DataSeries_WRK
+	Select top 100 * from [databasename].dbo.STG_XLSX_DataSeries_WRK
 	;""")	
 
 
@@ -595,23 +596,24 @@ c.execute("""/******************************************************************
 /***				PopulateDV2_Measure_Tables.sql						***/
 /***																	***/
 /***	The script adds entries to:										***/
-/***				-	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK]			***/
+/***				-	[[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK]			***/
 /***				-	[DV2].[dbo].[Hub_Measure]						***/
 /***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
 /***	and updates the Load End Date for entries retiring in			***/
 /***				-	[DV2].[dbo].[Sat_Measure_Description]			***/
 /***	All input come from:											***/
-/***				-	[STG2].[dbo].[STG_XLSX_MeasureDefn_WRK]			***/
+/***				-	[[databasename]].[dbo].[STG_XLSX_MeasureDefn_WRK]			***/
 /***	This is the only place where HashKeys are calculated for 		***/
 /***	Measures														***/
 /***																	***/
 /**************************************************************************/
 
 USE DV2;
+GO
 
-TRUNCATE TABLE [STG2].[dbo].[STG_SAT_MeasureDefn_WRK];
+TRUNCATE TABLE [[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK];
 
-INSERT INTO [STG2].[dbo].[STG_SAT_MeasureDefn_WRK]
+INSERT INTO [[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK]
            ([Measure_Business_Key]
 		   ,[Record_Source]
            ,[Measure_HashKey]
@@ -703,7 +705,7 @@ SELECT [Measure_Business_Key]
       ,[Table_Notes]
       ,[Table_Line_Note_ID]
       ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_XLSX_MeasureDefn_WRK];
+  FROM [[databasename]].[dbo].[STG_XLSX_MeasureDefn_WRK];
 
 /*	List the Keys from the incoming data that are not currently present in the Measure Hub	*/
 
@@ -711,7 +713,7 @@ SELECT [Measure_Business_Key]
 
 Select	M.[Measure_HashKey]
 	into #NewKeys
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+From	[[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
 	Left outer join [DV2].[dbo].[Hub_Measure] H
 	on M.[Measure_HashKey] = H.[Measure_HashKey]
 	Where H.[Record_Source] is NULL;
@@ -730,7 +732,7 @@ INSERT INTO [DV2].[dbo].[Hub_Measure]
 			,CURRENT_TIMESTAMP
 			,M.[Record_Source]
 	FROM #NewKeys N
-	inner join [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+	inner join [[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
 	on N.[Measure_HashKey] = M.[Measure_HashKey]
 	;
 
@@ -739,7 +741,7 @@ DROP TABLE IF EXISTS #NewKeys1;
 
 Select	M.[Measure_HashKey]
 	into #NewKeys1
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+From	[[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
 	Left outer join [DV2].[dbo].[Sat_Measure_Description] D
 	on M.[Measure_HashKey] = D.[Measure_HashKey]
 	and D.[Load_Date] <= CURRENT_TIMESTAMP
@@ -753,7 +755,7 @@ From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
 Select	M.[Measure_HashKey]
 		,E.[Load_Date]
 	into #UpdtKeys
-From	[STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+From	[[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
 	inner join [DV2].[dbo].[Sat_Measure_Description] E
 	on M.[Measure_HashKey] = E.[Measure_HashKey]
 	and E.[Load_Date] <= CURRENT_TIMESTAMP
@@ -829,7 +831,7 @@ SELECT M.[Measure_HashKey]
       ,[Table_Notes]
       ,[Table_Line_Note_ID]
       ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+  FROM [[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
   inner join #NewKeys1 N
   on M.[Measure_HashKey] = N.[Measure_HashKey];
   
@@ -903,7 +905,7 @@ SELECT M.[Measure_HashKey]
       ,[Table_Notes]
       ,[Table_Line_Note_ID]
       ,[Table_Line_Notes]
-  FROM [STG2].[dbo].[STG_SAT_MeasureDefn_WRK] M
+  FROM [[databasename]].[dbo].[STG_SAT_MeasureDefn_WRK] M
   inner join #UpdtKeys N
   on M.[Measure_HashKey] = N.[Measure_HashKey];
 
@@ -924,10 +926,11 @@ UPDATE [DV2].[dbo].[Sat_Measure_Description]
 c.execute("""/*****		Post_Observations.sql										*****/
 /*****		Post Observations Staged in XLSX Data Series Work Table		*****/
 /*****		Insert new observations. Update existing observations.		*****/
-/*****		Required Input: [STG2].[dbo].[STG_XLSX_DataSeries_WRK]		*****/
+/*****		Required Input: [[databasename]].[dbo].[STG_XLSX_DataSeries_WRK]		*****/
 
 
-USE STG2;
+USE [databasename];
+GO
 
 DECLARE		@Load_Date		Datetime2(7)
 
@@ -935,9 +938,9 @@ DROP TABLE IF EXISTS #NewKeys;
 
 DROP TABLE IF EXISTS #UpdtKeys;
 
-TRUNCATE TABLE [STG2].[dbo].[STG_Sat_DataSeries_WRK];
+TRUNCATE TABLE [[databasename]].[dbo].[STG_Sat_DataSeries_WRK];
 
-INSERT INTO [STG2].[dbo].[STG_Sat_DataSeries_WRK]
+INSERT INTO [[databasename]].[dbo].[STG_Sat_DataSeries_WRK]
            (
 		   [GeoArea_ID]
            ,[GEOID_Type]
@@ -968,7 +971,7 @@ SELECT   S.[GeoArea_ID]
 	   ,S.[Record_Source]
        ,S.[ObservedValue]
        ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_XLSX_DataSeries_WRK] S
+  FROM [[databasename]].[dbo].[STG_XLSX_DataSeries_WRK] S
   inner join DV2.dbo.Hub_GeoArea G
     on S.GeoArea_ID = G.GeoArea_ID
 	and S.GEOID_Type = G.GEOID_Type
@@ -980,13 +983,13 @@ Where S.[ObservedValue] is not null
 	or s.[ObservationQualifier] is not null
 ;
 --Select count(*) as [Loaded to STG_Sat_DataSeries_WRK]
---from [STG2].[dbo].[STG_Sat_DataSeries_WRK];
+--from [[databasename]].[dbo].[STG_Sat_DataSeries_WRK];
 
 Select @@ROWCOUNT as [Update Rows Staged]
 
 Select S.[GeoArea_Measure_HashKey]
   into #NewKeys
-From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+From	[[databasename]].[dbo].[STG_Sat_DataSeries_WRK] S
 left outer join [DV2].[dbo].[Link_GeoArea_Measurement] L
 ON S.[GeoArea_Measure_HashKey] = L.[GeoArea_Measure_HashKey]
 WHERE L.[Reord_Source] is null;
@@ -997,7 +1000,7 @@ Select @@ROWCOUNT as [New Keys Identified];
 Select  S.[GeoArea_Measure_HashKey]
 		,O.Load_Date
 	into #UpdtKeys
-From	[STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+From	[[databasename]].[dbo].[STG_Sat_DataSeries_WRK] S
 inner join [ACS].[dbo].[V_Sat_GeoArea_Measure_Observation_Cur] O
 on S.[GeoArea_Measure_HashKey] = O.[GeoArea_Measure_HashKey]
 Where (		coalesce(S.[ObservedValue],1) <> coalesce(O.[Estimated_Value],1)
@@ -1021,7 +1024,7 @@ SELECT S.[GeoArea_Measure_HashKey]
       ,[GeoArea_HashKey]
       ,[Measure_HashKey]
       ,[Data_Period_HashKey]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+  FROM [[databasename]].[dbo].[STG_Sat_DataSeries_WRK] S
   inner join #NewKeys N
   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
 
@@ -1041,7 +1044,7 @@ SELECT S.[GeoArea_Measure_HashKey]
       ,S.[Record_Source]
       ,S.[ObservedValue]
       ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+  FROM [[databasename]].[dbo].[STG_Sat_DataSeries_WRK] S
   inner join #NewKeys N
   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
 
@@ -1062,7 +1065,7 @@ SELECT S.[GeoArea_Measure_HashKey]
       ,S.[Record_Source]
       ,S.[ObservedValue]
       ,S.[ObservationQualifier]
-  FROM [STG2].[dbo].[STG_Sat_DataSeries_WRK] S
+  FROM [[databasename]].[dbo].[STG_Sat_DataSeries_WRK] S
   inner join #UpdtKeys N
   on S.GeoArea_Measure_HashKey = N.[GeoArea_Measure_HashKey]
 

@@ -1,5 +1,6 @@
 python -W ignore Scripts\County_MedianListingPrice_AllHomes.py
 python -W ignore Scripts\County_MedianListingPricePerSqft_AllHomes.py
+python -W ignore Scripts\County_MedianSalePrice_AllHomes.py
 python -W ignore Scripts\County_MedianValuePerSqft_AllHomes.py
 python -W ignore Scripts\County_Zhvi_AllHomes.py
 python -W ignore Scripts\GeoFRED_All_Transactions_House_Price_Index.py
@@ -14,5 +15,4 @@ git status
 
 git push
 
-pause
 cd..

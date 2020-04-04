@@ -16,15 +16,6 @@ import numpy as np
 # In[ ]:
 
 
-# Watermark
-#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-#get_ipython().run_line_magic('load_ext', 'watermark')
-#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
-
-
-# In[ ]:
-
-
 # Create backups
 df_backup = pd.read_csv('./Updates/STG_FRED_People_25_Years_and_Over_Who_Have_Completed_an_Associates_Degree_or_Higher_5year_estimate_by_County_Percent.txt')
 df_backup.to_csv('./Backups/STG_FRED_People_25_Years_and_Over_Who_Have_Completed_an_Associates_Degree_or_Higher_5year_estimate_by_County_Percent_BACKUP.txt')
@@ -91,7 +82,7 @@ for i in column_list:
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
                       'Server=[servername];'
-                      'Database=[databasename];'
+                      'Database=[dbname];'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +106,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_People_25_Years_and_Over_Who_Have_Completed
 # In[ ]:
 
 
-c.execute('''USE [[databasename]]
+c.execute('''USE [[dbname]]
 
 SET ANSI_NULLS ON
 
@@ -190,7 +181,7 @@ CREATE TABLE [dbo].[STG_FRED_People_25_Years_and_Over_Who_Have_Completed_an_Asso
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
                                  r'Server=[servername];'
-                                 r'Database=[databasename];'
+                                 r'Database=[dbname];'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

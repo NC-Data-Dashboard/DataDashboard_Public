@@ -16,15 +16,6 @@ import numpy as np
 # In[ ]:
 
 
-# Watermark
-#print('Nathan Young\nJunior Data Analyst\nCenter for the Study of Free Enterprise')
-#get_ipython().run_line_magic('load_ext', 'watermark')
-#get_ipython().run_line_magic('watermark', '-a "Western Carolina University" -u -d -p pandas')
-
-
-# In[ ]:
-
-
 # Create backups
 df_backup = pd.read_csv('./Updates/STG_FRED_Resident_Population_by_County_Thousands_of_Persons.txt')
 df_backup.to_csv('./Backups/STG_FRED_Resident_Population_by_County_Thoudands_of_Persons_BACKUP.txt')
@@ -91,7 +82,7 @@ for i in column_list:
 #Connect to database and create cursor
 con = pyodbc.connect('Driver={SQL Server};'
                       'Server=[servername];'
-                      'Database=[databasename];'
+                      'Database=[dbname];'
                       'Trusted_Connection=yes;',
                     autocommit=True)
 
@@ -115,7 +106,7 @@ c.execute('''sp_rename 'dbo.STG_FRED_Resident_Population_by_County_Thousands_of_
 # In[ ]:
 
 
-c.execute('''USE [[databasename]]
+c.execute('''USE [[dbname]]
 
 SET ANSI_NULLS ON
 
@@ -176,7 +167,7 @@ CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons]
     [2022] [float] NULL,
     [2023] [float] NULL,
     [2024] [float] NULL,
-    [2025] [float] NULL
+    [2025] [float] NULL,
     [2026] [float] NULL,
     [2027] [float] NULL,
     [2028] [float] NULL,
@@ -190,7 +181,7 @@ CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons]
 
 params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
                                  r'Server=[servername];'
-                                 r'Database=[databasename];'
+                                 r'Database=[dbname];'
                                  r'Trusted_Connection=yes;')
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)

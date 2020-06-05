@@ -1,102 +1,102 @@
 ,GeoFIPS,GeoName,Region,TableName,LineCode,IndustryClassification,Description,Unit,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018
-0," ""37000""",North Carolina,5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,193427,155227,110207,-19080,-112395,-96978,-109403,135589,184916,247311,232048,211604,195625,168758,175447,192219,298355,318311
-1," ""37001""","Alamance, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),2122,2603,2459,2283,2191,2612,3158,4313,3802
-2," ""37003""","Alexander, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),337,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-3," ""37005""","Alleghany, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-4," ""37007""","Anson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6929,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-5," ""37009""","Ashe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-6," ""37011""","Avery, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-7," ""37013""","Beaufort, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),3,-91,-138,-138,-3,-7,-418,-648,-146,84,-28,44,16,12,12,(D),(D)
-8," ""37015""","Bertie, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2,2,7,0,0,0,0,0,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-9," ""37017""","Bladen, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,8,9,7,(D),(D),(D),(D),-607,-553,2,12,10,-3,-14,-33,-24,7,13
-10," ""37019""","Brunswick, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1043,(D)
-11," ""37021""","Buncombe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,5634,5034,4376,5207,5553,(D),5262,4765,5356,7221,6556,6942,5828,6370,6599,4869,6140,6981
-12," ""37023""","Burke, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1497,(D),(D),(D),(D),(D)
-13," ""37025""","Cabarrus, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4364,4247,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-14," ""37027""","Caldwell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,1000,712,777,799,1057,1132,1281,986,390,321,410,455,(D),(D),(D),(D),(D),(D)
-15," ""37029""","Camden, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,31,36,29,6,5,-4,-14,-4,1,13,38,37,54,28,21,34,160,181
-16," ""37031""","Carteret, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,0,2,4,(D),(D),(D),(D),(D),(D),(D),(D),91,90,(D),(D),(D)
-17," ""37033""","Caswell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-18," ""37035""","Catawba, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),1787,1626,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-19," ""37037""","Chatham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),401,2491,2439,2028,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-20," ""37039""","Cherokee, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-21," ""37041""","Chowan, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,42,48,16,-70,-264,-529,-501,-233,0,-1,3,0,5,14,22,64,474,534
-22," ""37043""","Clay, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),30,11,21,29,71,80
-23," ""37045""","Cleveland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,5212,4702,4424,4246,4550,4541,4443,4938,(D),3837,3560,(D),(D),(D),(D),(D),(D),(D)
-24," ""37047""","Columbus, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-80,-68,(D),(D),31,-21,-73,-27,1,100,182,206,112,63,31,43,344,387
-25," ""37049""","Craven, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,215,(D),(D),(D),3109,3129,2925,(D),(D),(D),2767,2921,(D),(D),3242,(D),3809,2959
-26," ""37051""","Cumberland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),54,55,(D),(D),(D),-626,(D),(D),(D),(D),(D),(D),(D),(D),(D),5,10
-27," ""37053""","Currituck, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-175,-150,-125,0,4,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-28," ""37055""","Dare, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-29," ""37057""","Davidson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),2216,2161,1996,1888,2162,2176,2408,1627,2023,2180,1372,1352,1599,2220,(D)
-30," ""37059""","Davie, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),1866,1591,2142,2749,2042,1522,1343,1609,1862,2812,(D)
-31," ""37061""","Duplin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),-56,-177,-393,-369,(D),(D),(D),(D),(D),(D),-24,-3,-13,-103,-88,17,34
-32," ""37063""","Durham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-33," ""37065""","Edgecombe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),777,(D),(D)
-34," ""37067""","Forsyth, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2290,2197,2049,1893,(D),2858,3259,1955,1450,1719,2435,(D),2478,6454,10473,10973,14550,13551
-35," ""37069""","Franklin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),776,(D),(D)
-36," ""37071""","Gaston, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6180,1605,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-37," ""37073""","Gates, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,12,14,15,3,2,0,-6,-2,0,8,24,25,51,25,20,40,137,155
-38," ""37075""","Graham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),0,0,0,0,24,24,36,(D),(D),(D)
-39," ""37077""","Granville, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,142,162,173,49,34,-17,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-40," ""37079""","Greene, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,-50,-79,-256,-393,-469,-578,-328,-56,5,-5,0,-354,-471,-418,10,20
-41," ""37081""","Guilford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,14165,14541,(D),6316,(D),11489,11093,14435,10608,8039,8617,9492,9046,7615,7435,6263,7286,6368
-42," ""37083""","Halifax, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-29,(D),-151,-168,-173,-4,-206,-182,-137,110,277,176,89,0,0,0,0,0
-43," ""37085""","Harnett, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-44," ""37087""","Haywood, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-45," ""37089""","Henderson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2343,(D),(D),(D),(D),(D),(D),(D)
-46," ""37091""","Hertford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,11,13,16,3,3,-1,-4,0,0,8,12,8,0,0,0,0,0,0
-47," ""37093""","Hoke, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-48," ""37095""","Hyde, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,13,15,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-49," ""37097""","Iredell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),1548,(D),(D),2013,(D),(D),(D),(D),(D),1515,1968,1162,935,1007,3251,3702
-50," ""37099""","Jackson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,20,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-51," ""37101""","Johnston, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),2244,2767,3271,2455,2294,2768,2587,2803,2812,3018,3363,3380,4269,4648
-52," ""37103""","Jones, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,24,28,23,4,4,-3,-9,-2,0,32,66,44,26,10,-6,7,5,5
-53," ""37105""","Lee, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,3687,3359,3349,3349,3554,3730,3827,3061,2732,3226,3971,3635,3604,3364,3963,4349,5152,(D)
-54," ""37107""","Lenoir, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),18,26,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-55," ""37109""","Lincoln, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),2839,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-56," ""37111""","McDowell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),331,775,1266,1537,1724,2544,2893,2425,2821,2578,2784,3128,3429,4336,4919,5679,(D)
-57," ""37113""","Macon, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),149,239,(D),598,585,585,438,(D),560,534,699
-58," ""37115""","Madison, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-7,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-59," ""37117""","Martin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6,7,9,2,2,-1,-7,-2,0,23,38,27,17,14,16,17,18,21
-60," ""37119""","Mecklenburg, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),12666,(D),(D),13445,16434,12461,9307,8154,11457,12922,13814,12829,11978,11117,20212,22577
-61," ""37121""","Mitchell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,22774,16743,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-62," ""37123""","Montgomery, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),708,(D),(D),(D),(D),(D),(D),53,123,460,519
-63," ""37125""","Moore, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,1867,1748,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2186,(D),(D),(D),(D),(D)
-64," ""37127""","Nash, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-65," ""37129""","New Hanover, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2463,3170,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-66," ""37131""","Northampton, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),0,0,-3,-2,1,27,(D),(D),106,(D),(D),218,719,810
-67," ""37133""","Onslow, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),2018,1622,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-68," ""37135""","Orange, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,3034,2977,(D),(D),(D),1833,2317,2120,2026,3255,3916,3500,(D),1773,1745,1706,(D),1102
-69," ""37137""","Pamlico, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,27,31,25,5,5,-4,-10,-2,0,(D),(D),(D),(D),(D),39,51,131,147
-70," ""37139""","Pasquotank, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2,2,0,0,0,0,0,0,1,64,126,90,71,36,43,98,293,330
-71," ""37141""","Pender, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),1662,1799,2630,4128,(D),1450,(D),(D),(D),(D),(D)
-72," ""37143""","Perquimans, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,30,35,26,7,5,-4,-7,-1,1,(D),123,90,42,25,36,62,147,165
-73," ""37145""","Person, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,3,0,-44,(D),(D),(D),(D),(D),(D),(D),(D),90,97,188,625,704
-74," ""37147""","Pitt, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),698,(D),(D)
-75," ""37149""","Polk, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,19,22,19,4,4,-3,-7,-33,-31,-5,0,-2,66,68,(D),(D),41,46
-76," ""37151""","Randolph, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2838,2627,2784,1932,2120,(D),(D),(D),(D),(D),(D),2642,2154,2182,2269,2043,3444,2447
-77," ""37153""","Richmond, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,7130,6721,7095,7448,7667,8607,9204,8652,6659,7648,7704,7212,8085,8497,(D),(D),(D),10732
-78," ""37155""","Robeson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-24,-20,-13,-7,0,(D),(D),(D),-118,-13,28,54,24,20,-58,-325,89,177
-79," ""37157""","Rockingham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-80," ""37159""","Rowan, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,10003,9649,12008,13483,11769,13303,15420,14789,11859,11357,10963,10221,10980,10760,11789,12194,14179,14678
-81," ""37161""","Rutherford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),4496,4504,4850,5089,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-82," ""37163""","Sampson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,75,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-2,75,46,51,-15,15,31
-83," ""37165""","Scotland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,0,-50,-57,-66,-5,0,1,54,97,(D),(D),(D),-1,-15,0,0
-84," ""37167""","Stanly, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-85," ""37169""","Stokes, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,9,10,17,7,7,-17,-54,-18,-65,-52,56,-37,7,0,-30,-26,6,12
-86," ""37171""","Surry, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),2539,2763,(D),(D),(D),(D),(D),(D),5002,4457,4157,3516,3466,(D),(D),(D)
-87," ""37173""","Swain, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),26,26,8,8,-6,-17,-3,1,67,116,74,42,21,31,59,206,232
-88," ""37175""","Transylvania, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),551,282,393,(D)
-89," ""37177""","Tyrrell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,6,2,2,-1,-3,-1,0,13,43,39,54,28,26,64,215,243
-90," ""37179""","Union, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-91," ""37181""","Vance, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-92," ""37183""","Wake, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,26870,1341,-71123,-169528,-267803,-271369,-289743,-26711,58263,93558,57585,42230,27624,12366,9159,16511,51240,54953
-93," ""37185""","Warren, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,12,14,10,4,2,0,-1,-11,-10,-2,0,0,0,0,0,0,0,0
-94," ""37187""","Washington, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,0,0,2,-1,-3,0,0,17,33,17,14,2,11,26,85,95
-95," ""37189""","Watauga, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),1182,(D),1851,1822,1920,1636,1431,1117,1700,1754,1904,(D),1844,1600,1789,2250,2188
-96," ""37191""","Wayne, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),12,10,-7,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-97," ""37193""","Wilkes, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-98," ""37195""","Wilson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2136,(D),1976,2189,2204,(D),(D)
-99," ""37197""","Yadkin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-224,-192,-153,-41,2,-1,0,0,0,0,0,0,0,19,45,64,144,163
-100," ""37199""","Yancey, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+0,37000,North Carolina,5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,193427,155227,110207,-19080,-112395,-96978,-109403,135589,184916,247311,232048,211604,195625,168758,175447,192219,298355,318311
+1,37001,"Alamance, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),2122,2603,2459,2283,2191,2612,3158,4313,3802
+2,37003,"Alexander, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),337,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+3,37005,"Alleghany, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+4,37007,"Anson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6929,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+5,37009,"Ashe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+6,37011,"Avery, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+7,37013,"Beaufort, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),3,-91,-138,-138,-3,-7,-418,-648,-146,84,-28,44,16,12,12,(D),(D)
+8,37015,"Bertie, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2,2,7,0,0,0,0,0,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+9,37017,"Bladen, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,8,9,7,(D),(D),(D),(D),-607,-553,2,12,10,-3,-14,-33,-24,7,13
+10,37019,"Brunswick, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1043,(D)
+11,37021,"Buncombe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,5634,5034,4376,5207,5553,(D),5262,4765,5356,7221,6556,6942,5828,6370,6599,4869,6140,6981
+12,37023,"Burke, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1497,(D),(D),(D),(D),(D)
+13,37025,"Cabarrus, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4364,4247,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+14,37027,"Caldwell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,1000,712,777,799,1057,1132,1281,986,390,321,410,455,(D),(D),(D),(D),(D),(D)
+15,37029,"Camden, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,31,36,29,6,5,-4,-14,-4,1,13,38,37,54,28,21,34,160,181
+16,37031,"Carteret, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,0,2,4,(D),(D),(D),(D),(D),(D),(D),(D),91,90,(D),(D),(D)
+17,37033,"Caswell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+18,37035,"Catawba, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),1787,1626,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+19,37037,"Chatham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),401,2491,2439,2028,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+20,37039,"Cherokee, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+21,37041,"Chowan, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,42,48,16,-70,-264,-529,-501,-233,0,-1,3,0,5,14,22,64,474,534
+22,37043,"Clay, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),30,11,21,29,71,80
+23,37045,"Cleveland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,5212,4702,4424,4246,4550,4541,4443,4938,(D),3837,3560,(D),(D),(D),(D),(D),(D),(D)
+24,37047,"Columbus, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-80,-68,(D),(D),31,-21,-73,-27,1,100,182,206,112,63,31,43,344,387
+25,37049,"Craven, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,215,(D),(D),(D),3109,3129,2925,(D),(D),(D),2767,2921,(D),(D),3242,(D),3809,2959
+26,37051,"Cumberland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),54,55,(D),(D),(D),-626,(D),(D),(D),(D),(D),(D),(D),(D),(D),5,10
+27,37053,"Currituck, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-175,-150,-125,0,4,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+28,37055,"Dare, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+29,37057,"Davidson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),2216,2161,1996,1888,2162,2176,2408,1627,2023,2180,1372,1352,1599,2220,(D)
+30,37059,"Davie, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),1866,1591,2142,2749,2042,1522,1343,1609,1862,2812,(D)
+31,37061,"Duplin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),-56,-177,-393,-369,(D),(D),(D),(D),(D),(D),-24,-3,-13,-103,-88,17,34
+32,37063,"Durham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+33,37065,"Edgecombe, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),777,(D),(D)
+34,37067,"Forsyth, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2290,2197,2049,1893,(D),2858,3259,1955,1450,1719,2435,(D),2478,6454,10473,10973,14550,13551
+35,37069,"Franklin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),776,(D),(D)
+36,37071,"Gaston, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6180,1605,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+37,37073,"Gates, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,12,14,15,3,2,0,-6,-2,0,8,24,25,51,25,20,40,137,155
+38,37075,"Graham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),0,0,0,0,24,24,36,(D),(D),(D)
+39,37077,"Granville, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,142,162,173,49,34,-17,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+40,37079,"Greene, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,-50,-79,-256,-393,-469,-578,-328,-56,5,-5,0,-354,-471,-418,10,20
+41,37081,"Guilford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,14165,14541,(D),6316,(D),11489,11093,14435,10608,8039,8617,9492,9046,7615,7435,6263,7286,6368
+42,37083,"Halifax, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-29,(D),-151,-168,-173,-4,-206,-182,-137,110,277,176,89,0,0,0,0,0
+43,37085,"Harnett, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+44,37087,"Haywood, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+45,37089,"Henderson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2343,(D),(D),(D),(D),(D),(D),(D)
+46,37091,"Hertford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,11,13,16,3,3,-1,-4,0,0,8,12,8,0,0,0,0,0,0
+47,37093,"Hoke, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+48,37095,"Hyde, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,13,15,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,37097,"Iredell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),1548,(D),(D),2013,(D),(D),(D),(D),(D),1515,1968,1162,935,1007,3251,3702
+50,37099,"Jackson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,20,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+51,37101,"Johnston, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),2244,2767,3271,2455,2294,2768,2587,2803,2812,3018,3363,3380,4269,4648
+52,37103,"Jones, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,24,28,23,4,4,-3,-9,-2,0,32,66,44,26,10,-6,7,5,5
+53,37105,"Lee, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,3687,3359,3349,3349,3554,3730,3827,3061,2732,3226,3971,3635,3604,3364,3963,4349,5152,(D)
+54,37107,"Lenoir, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),18,26,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+55,37109,"Lincoln, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),2839,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+56,37111,"McDowell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),331,775,1266,1537,1724,2544,2893,2425,2821,2578,2784,3128,3429,4336,4919,5679,(D)
+57,37113,"Macon, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),149,239,(D),598,585,585,438,(D),560,534,699
+58,37115,"Madison, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-7,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+59,37117,"Martin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,6,7,9,2,2,-1,-7,-2,0,23,38,27,17,14,16,17,18,21
+60,37119,"Mecklenburg, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),12666,(D),(D),13445,16434,12461,9307,8154,11457,12922,13814,12829,11978,11117,20212,22577
+61,37121,"Mitchell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,22774,16743,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+62,37123,"Montgomery, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),708,(D),(D),(D),(D),(D),(D),53,123,460,519
+63,37125,"Moore, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,1867,1748,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2186,(D),(D),(D),(D),(D)
+64,37127,"Nash, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+65,37129,"New Hanover, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2463,3170,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+66,37131,"Northampton, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),0,0,-3,-2,1,27,(D),(D),106,(D),(D),218,719,810
+67,37133,"Onslow, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),2018,1622,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+68,37135,"Orange, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,3034,2977,(D),(D),(D),1833,2317,2120,2026,3255,3916,3500,(D),1773,1745,1706,(D),1102
+69,37137,"Pamlico, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,27,31,25,5,5,-4,-10,-2,0,(D),(D),(D),(D),(D),39,51,131,147
+70,37139,"Pasquotank, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2,2,0,0,0,0,0,0,1,64,126,90,71,36,43,98,293,330
+71,37141,"Pender, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),1662,1799,2630,4128,(D),1450,(D),(D),(D),(D),(D)
+72,37143,"Perquimans, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,30,35,26,7,5,-4,-7,-1,1,(D),123,90,42,25,36,62,147,165
+73,37145,"Person, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,4,5,3,0,-44,(D),(D),(D),(D),(D),(D),(D),(D),90,97,188,625,704
+74,37147,"Pitt, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),698,(D),(D)
+75,37149,"Polk, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,19,22,19,4,4,-3,-7,-33,-31,-5,0,-2,66,68,(D),(D),41,46
+76,37151,"Randolph, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,2838,2627,2784,1932,2120,(D),(D),(D),(D),(D),(D),2642,2154,2182,2269,2043,3444,2447
+77,37153,"Richmond, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,7130,6721,7095,7448,7667,8607,9204,8652,6659,7648,7704,7212,8085,8497,(D),(D),(D),10732
+78,37155,"Robeson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-24,-20,-13,-7,0,(D),(D),(D),-118,-13,28,54,24,20,-58,-325,89,177
+79,37157,"Rockingham, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+80,37159,"Rowan, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,10003,9649,12008,13483,11769,13303,15420,14789,11859,11357,10963,10221,10980,10760,11789,12194,14179,14678
+81,37161,"Rutherford, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),4496,4504,4850,5089,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+82,37163,"Sampson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,75,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-2,75,46,51,-15,15,31
+83,37165,"Scotland, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,0,-50,-57,-66,-5,0,1,54,97,(D),(D),(D),-1,-15,0,0
+84,37167,"Stanly, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+85,37169,"Stokes, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,9,10,17,7,7,-17,-54,-18,-65,-52,56,-37,7,0,-30,-26,6,12
+86,37171,"Surry, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),2539,2763,(D),(D),(D),(D),(D),(D),5002,4457,4157,3516,3466,(D),(D),(D)
+87,37173,"Swain, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),26,26,8,8,-6,-17,-3,1,67,116,74,42,21,31,59,206,232
+88,37175,"Transylvania, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),551,282,393,(D)
+89,37177,"Tyrrell, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,6,2,2,-1,-3,-1,0,13,43,39,54,28,26,64,215,243
+90,37179,"Union, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+91,37181,"Vance, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+92,37183,"Wake, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,26870,1341,-71123,-169528,-267803,-271369,-289743,-26711,58263,93558,57585,42230,27624,12366,9159,16511,51240,54953
+93,37185,"Warren, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,12,14,10,4,2,0,-1,-11,-10,-2,0,0,0,0,0,0,0,0
+94,37187,"Washington, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,0,0,0,0,2,-1,-3,0,0,17,33,17,14,2,11,26,85,95
+95,37189,"Watauga, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),1182,(D),1851,1822,1920,1636,1431,1117,1700,1754,1904,(D),1844,1600,1789,2250,2188
+96,37191,"Wayne, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),12,10,-7,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+97,37193,"Wilkes, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+98,37195,"Wilson, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),2136,(D),1976,2189,2204,(D),(D)
+99,37197,"Yadkin, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,-224,-192,-153,-41,2,-1,0,0,0,0,0,0,0,19,45,64,144,163
+100,37199,"Yancey, NC",5.0,CAINC5N,200.0,21,"   Mining, quarrying, and oil and gas extraction",Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)

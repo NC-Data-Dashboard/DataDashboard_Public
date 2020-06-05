@@ -1,603 +1,500 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import pandas as pd
 import requests
-
-
-# In[ ]:
-
 
 # Create backups
 df_backup = pd.read_csv('./Updates/STG_BEA_MSALESUSETAX_0002.txt')
 df_backup.to_csv('./Backups/STG_BEA_MSALESUSETAX_0002_BACKUP.txt')
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_10-18.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'Sales*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'Sales*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1', 'Sales*.1'])
-
+df = df.drop(columns=['County.1', 'Sales*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'Sales*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'Sales*.1':'Sales'})
-
-# append2 dataframes
-df_append2 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'Sales*':'10-01-18'})
+df1 = df1.rename(columns = {'County.1':'County', 'Sales*.1':'10-01-18'})
+# append dataframes
+df_list = [df, df1]
+df_master0 = df.append(df_list)
+df_master0['Date'] = '10/01/2018'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append2 = df_append2.dropna(how='all')
-df_append2 = df_append2.fillna('0')
-
+df_master0 = df_master0.dropna(how='all')
+df_master0 = df_master0.fillna('0')
 # Change dtypes to Int
-df_append2['Sales'] = df_append2['Sales'].astype(float)
-
+df_master0['10-01-18'] = df_master0['10-01-18'].astype(float)
 # Drop junk rows
-df_append2 = df_append2[:-5]
+df_master0 = df_master0[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_11-18.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'Collections*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'Sales*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1', 'Sales*.1'])
-
+df = df.drop(columns=['County.1', 'Sales*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'Sales*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'Collections*.1':'Sales'})
-
-# append3 dataframes
-df_append3 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'Sales*':'11-01-18'})
+df1 = df1.rename(columns = {'County.1':'County', 'Sales*.1':'11-01-18'})
+# append dataframes
+df_list = [df, df1]
+df_master1 = df.append(df_list)
+df_master1['Date'] = '11/01/2018'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append3 = df_append3.dropna(how='all')
-df_append3 = df_append3.fillna('0')
-
+df_master1 = df_master1.dropna(how='all')
+df_master1 = df_master1.fillna('0')
 # Change dtypes to Int
-df_append3['Sales'] = df_append3['Sales'].astype(float)
-
+df_master1['11-01-18'] = df_master1['11-01-18'].astype(float)
 # Drop junk rows
-df_append3 = df_append3[:-5]
+df_master1 = df_master1[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_12-18.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'Collections*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'Sales*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1', 'Sales*.1'])
-
+df = df.drop(columns=['County.1', 'Sales*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'Sales*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'Collections*.1':'Sales'})
-
-# append4 dataframes
-df_append4 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'Sales*':'12-01-18'})
+df1 = df1.rename(columns = {'County.1':'County', 'Sales*.1':'12-01-18'})
+# append dataframes
+df_list = [df, df1]
+df_master2 = df.append(df_list)
+df_master2['Date'] = '12/01/2018'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append4 = df_append4.dropna(how='all')
-df_append4 = df_append4.fillna('0')
-
+df_master2 = df_master2.dropna(how='all')
+df_master2 = df_master2.fillna('0')
 # Change dtypes to Int
-df_append4['Sales'] = df_append4['Sales'].astype(float)
-
+df_master2['12-01-18'] = df_master2['12-01-18'].astype(float)
 # Drop junk rows
-df_append4 = df_append4[:-5]
+df_master2 = df_master2[:-10]
 
 
-# In[ ]:
 
 
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_1-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append5 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'01-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'01-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master3 = df.append(df_list)
+df_master3['Date'] = '01/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append5 = df_append5.dropna(how='all')
-df_append5 = df_append5.fillna('0')
-
+df_master3 = df_master3.dropna(how='all')
+df_master3 = df_master3.fillna('0')
 # Change dtypes to Int
-df_append5['Sales'] = df_append5['Sales'].astype(float)
-
+df_master3['01-01-19'] = df_master3['01-01-19'].astype(float)
 # Drop junk rows
-df_append5 = df_append5[:-5]
+df_master3 = df_master3[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_2-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'02-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'02-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master4 = df.append(df_list)
+df_master4['Date'] = '02/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append = df_append.dropna(how='all')
-df_append = df_append.fillna('0')
-
+df_master4 = df_master4.dropna(how='all')
+df_master4 = df_master4.fillna('0')
 # Change dtypes to Int
-df_append['Sales'] = df_append['Sales'].astype(float) 
-
+df_master4['02-01-19'] = df_master4['02-01-19'].astype(float)
 # Drop junk rows
-df_append = df_append[:-5]
+df_master4 = df_master4[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_3-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append6 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'03-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'03-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master5 = df.append(df_list)
+df_master5['Date'] = '03/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append6 = df_append6.dropna(how='all')
-df_append6 = df_append6.fillna('0')
-
+df_master5 = df_master5.dropna(how='all')
+df_master5 = df_master5.fillna('0')
 # Change dtypes to Int
-df_append6['Sales'] = df_append6['Sales'].astype(float) 
-
+df_master5['03-01-19'] = df_master5['03-01-19'].astype(float)
 # Drop junk rows
-df_append6 = df_append6[:-5]
+df_master5 = df_master5[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_4-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append7 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'04-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'04-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master6 = df.append(df_list)
+df_master6['Date'] = '04/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append7 = df_append7.dropna(how='all')
-df_append7 = df_append7.fillna('0')
-
+df_master6 = df_master6.dropna(how='all')
+df_master6 = df_master6.fillna('0')
 # Change dtypes to Int
-df_append7['Sales'] = df_append7['Sales'].astype(float)
- 
-
+df_master6['04-01-19'] = df_master6['04-01-19'].astype(float)
 # Drop junk rows
-df_append7 = df_append7[:-5]
+df_master6 = df_master6[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_5-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append8 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'05-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'05-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master7 = df.append(df_list)
+df_master7['Date'] = '05/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append8 = df_append8.dropna(how='all')
-df_append8 = df_append8.fillna('0')
-
+df_master7 = df_master7.dropna(how='all')
+df_master7 = df_master7.fillna('0')
 # Change dtypes to Int
-df_append8['Sales'] = df_append8['Sales'].astype(float)
- 
-
+df_master7['05-01-19'] = df_master7['05-01-19'].astype(float)
 # Drop junk rows
-df_append8 = df_append8[:-5]
+df_master7 = df_master7[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_6-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append9 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'06-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'06-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master8 = df.append(df_list)
+df_master8['Date'] = '06/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append9 = df_append9.dropna(how='all')
-df_append9 = df_append9.fillna('0')
-
+df_master8 = df_master8.dropna(how='all')
+df_master8 = df_master8.fillna('0')
 # Change dtypes to Int
-df_append9['Sales'] = df_append9['Sales'].astype(float)
- 
-
+df_master8['06-01-19'] = df_master8['06-01-19'].astype(float)
 # Drop junk rows
-df_append9 = df_append9[:-5]
+df_master8 = df_master8[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_7-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append10 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'07-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'07-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master9 = df.append(df_list)
+df_master9['Date'] = '07/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append10 = df_append10.dropna(how='all')
-df_append10 = df_append10.fillna('0')
-
+df_master9 = df_master9.dropna(how='all')
+df_master9 = df_master9.fillna('0')
 # Change dtypes to Int
-df_append10['Sales'] = df_append10['Sales'].astype(float)
- 
-
+df_master9['07-01-19'] = df_master9['07-01-19'].astype(float)
 # Drop junk rows
-df_append10 = df_append10[:-5]
+df_master9 = df_master9[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_8-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append11 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'08-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'08-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master10 = df.append(df_list)
+df_master10['Date'] = '08/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append11 = df_append11.dropna(how='all')
-df_append11 = df_append11.fillna('0')
-
+df_master10 = df_master10.dropna(how='all')
+df_master10 = df_master10.fillna('0')
 # Change dtypes to Int
-df_append11['Sales'] = df_append11['Sales'].astype(float)
-  
-
+df_master10['08-01-19'] = df_master10['08-01-19'].astype(float)
 # Drop junk rows
-df_append11 = df_append11[:-5]
+df_master10 = df_master10[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_9-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append12 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'09-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'09-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master11 = df.append(df_list)
+df_master11['Date'] = '09/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append12 = df_append12.dropna(how='all')
-df_append12 = df_append12.fillna('0')
-
+df_master11 = df_master11.dropna(how='all')
+df_master11 = df_master11.fillna('0')
 # Change dtypes to Int
-df_append12['Sales'] = df_append12['Sales'].astype(float)
- 
-
+df_master11['09-01-19'] = df_master11['09-01-19'].astype(float)
 # Drop junk rows
-df_append12 = df_append12[:-5]
+df_master11 = df_master11[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_10-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append13 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'10-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'10-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master12 = df.append(df_list)
+df_master12['Date'] = '10/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append13 = df_append13.dropna(how='all')
-df_append13 = df_append13.fillna('0')
-
+df_master12 = df_master12.dropna(how='all')
+df_master12 = df_master12.fillna('0')
 # Change dtypes to Int
-df_append13['Sales'] = df_append13['Sales'].astype(float)
- 
-
+df_master12['10-01-19'] = df_master12['10-01-19'].astype(float)
 # Drop junk rows
-df_append13 = df_append13[:-5]
+df_master12 = df_master12[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_11-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append14 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'11-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'11-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master13 = df.append(df_list)
+df_master13['Date'] = '11/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append14 = df_append14.dropna(how='all')
-df_append14 = df_append14.fillna('0')
-
+df_master13 = df_master13.dropna(how='all')
+df_master13 = df_master13.fillna('0')
 # Change dtypes to Int
-df_append14['Sales'] = df_append14['Sales'].astype(float)
- 
-
+df_master13['11-01-19'] = df_master13['11-01-19'].astype(float)
 # Drop junk rows
-df_append14 = df_append14[:-5]
+df_master13 = df_master13[:-10]
 
 
-# In[ ]:
-
-
-# Read excel file
 df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_12-19.xls', skiprows = 9)
-
 # Drop NaN row
 df = df.drop(df.index[0])
 df = df[:-8]
-
 # Remove columns with amiguous names
 df = df.loc[:,~df.columns.str.contains('Unnamed')]
-
 # Create new dataframe with second set of counties
-df2 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
-
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
 # Drop second set of counties from original dataframe
-df = df.drop(columns=['County.1', 'Collections*', 'Collections*.1','and Purchases*.1'])
-
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
 # Rename columns
-df = df.rename(columns = {'County.1':'County', 'and Purchases*':'Sales'})
-df2 = df2.rename(columns = {'County.1':'County', 'and Purchases*.1':'Sales'})
-
-# Append dataframes
-df_append15 = df.append(df2, ignore_index=True)
-
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'12-01-19'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'12-01-19'})
+# append dataframes
+df_list = [df, df1]
+df_master14 = df.append(df_list)
+df_master14['Date'] = '12/01/2019'
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
-df_append15 = df_append15.dropna(how='all')
-df_append15 = df_append15.fillna('0')
-
+df_master14 = df_master14.dropna(how='all')
+df_master14 = df_master14.fillna('0')
 # Change dtypes to Int
-df_append15['Sales'] = df_append15['Sales'].astype(float)
- 
-
+df_master14['12-01-19'] = df_master14['12-01-19'].astype(float)
 # Drop junk rows
-df_append15 = df_append15[:-5]
+df_master14 = df_master14[:-10]
 
 
-# In[ ]:
+df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_1-20.xls', skiprows = 9)
+# Drop NaN row
+df = df.drop(df.index[0])
+df = df[:-8]
+# Remove columns with amiguous names
+df = df.loc[:,~df.columns.str.contains('Unnamed')]
+# Create new dataframe with second set of counties
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
+# Drop second set of counties from original dataframe
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
+# Rename columns
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'01-01-20'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'01-01-20'})
+# append dataframes
+df_list = [df, df1]
+df_master15 = df.append(df_list)
+df_master15['Date'] = '01/01/2020'
+# Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
+df_master15 = df_master15.dropna(how='all')
+df_master15 = df_master15.fillna('0')
+# Change dtypes to Int
+df_master15['01-01-20'] = df_master15['01-01-20'].astype(float)
+# Drop junk rows
+df_master15 = df_master15[:-10]
 
 
-df_master = pd.concat([df_append, df_append2, df_append3, df_append4, df_append5, df_append6, df_append7, df_append8,
-                       df_append9, df_append10, df_append11, df_append12, df_append13, df_append14, df_append15])
+df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_2-20.xls', skiprows = 9)
+# Drop NaN row
+df = df.drop(df.index[0])
+df = df[:-8]
+# Remove columns with amiguous names
+df = df.loc[:,~df.columns.str.contains('Unnamed')]
+# Create new dataframe with second set of counties
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
+# Drop second set of counties from original dataframe
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
+# Rename columns
+df = df.rename(columns = {'County.1':'County', 'and Purchases*':'02-01-20'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'02-01-20'})
+# append dataframes
+df_list = [df, df1]
+df_master16 = df.append(df_list)
+df_master16['Date'] = '02/01/2020'
+# Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
+df_master16 = df_master16.dropna(how='all')
+df_master16 = df_master16.fillna('0')
+# Change dtypes to Int
+df_master16['02-01-20'] = df_master16['02-01-20'].astype(float)
+# Drop junk rows
+df_master16 = df_master16[:-10]
 
 
-# In[ ]:
+'''df = pd.read_excel('https://files.nc.gov/ncdor/documents/reports/monthly_sales_3-20.xls', skiprows = 9)
+# Drop NaN row
+df = df.drop(df.index[0])
+df = df[:-8]
+# Remove columns with amiguous names
+df = df.loc[:,~df.columns.str.contains('Unnamed')]
+# Create new dataframe with second set of counties
+df1 = pd.DataFrame(df, columns = ['County.1', 'and Purchases*.1'])
+# Drop second set of counties from original dataframe
+df = df.drop(columns=['County.1', 'and Purchases*.1', 'Collections*', 'Collections*.1'])
+# Rename columns
+df = df.rename(columns = {'County.1':'County', 'and Purcahses*':'03-01-20'})
+df1 = df1.rename(columns = {'County.1':'County', 'and Purchases*.1':'03-01-20'})
+# append dataframes
+df_list = [df, df1]
+df_master17 = df.append(df_list)
+df_master17['Date'] = '03/01/2020'
+# Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
+df_master17 = df_master17.dropna(how='all')
+df_master17 = df_master17.fillna('0')
+# Change dtypes to Int
+df_master17['03-01-20'] = df_master17['03-01-20'].astype(float)
+# Drop junk rows
+df_master17 = df_master17[:-10]'''
 
+df_master_list = [df_master1, df_master2, df_master3, df_master4, df_master5, df_master6, df_master7, df_master8, df_master9, df_master10, df_master11, df_master12, df_master13, df_master14, df_master15, df_master16]
+df_master = df_master0.append(df_master_list)
 
-df_master = df_master.sort_values(by = 'County', ascending=True)
-df_master['Sales'] = df_master['Sales'].round(0)
-df_master = df_master.set_index('County')
-df_master.head(20)
+df_fips = pd.read_csv('./FIPS_Codes.csv')
+df_master = pd.merge(df_master, df_fips, on=['County', 'County'])
 
+df_master = df_master.drop(df_master.index[[0]])
+df_master =df_master.drop(columns = ['Unnamed: 0', 'RegionName', 'State', 'Metro', 'StateCodeFIPS', 'MunicipalCodeFIPS'], axis=1)
+df_master = df_master.drop_duplicates()
+df_master = df_master.rename(columns={'County':'GeoArea_Name', 'GeoFIPS':'GeoArea_FIPS'})
+df_master['GeoArea_Name'] = df_master['GeoArea_Name'] + ', NC'
 
-# In[ ]:
+df_master = df_master.melt(id_vars=['GeoArea_FIPS', 'GeoArea_Name'], var_name='Date', value_name='Published_Value')
+df_master = df_master.dropna()
+df_master['Published_Value'] = df_master['Published_Value'].astype(str)
+df_master = df_master[~df_master["Published_Value"].str.contains('/')]
+df_master = df_master.sort_values(by = ['GeoArea_FIPS','Date'], ascending=True)
+df_master = df_master.set_index('GeoArea_FIPS')
 
-
-df_master = df_master.to_csv('./Updates/STG_BEA_MSALESUSETAX_0002.txt', sep='\t')
-
+df_master.to_csv('./Updates/STG_BEA_MSALESUSETAX_0002.txt', sep='\t')

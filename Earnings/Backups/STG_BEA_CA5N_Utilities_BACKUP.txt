@@ -1,102 +1,102 @@
 ,GeoFIPS,GeoName,Region,TableName,LineCode,IndustryClassification,Description,Unit,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018
-0," ""37000""",North Carolina,5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),1279510,1183716,1237111,1153915,1732473,1717612,2646050,2084966,2258749,2190305,1850950,1569505,1809498,2031331,2026892,2352142,2559384
-1," ""37001""","Alamance, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9202,9715,9882,10186,10272,10427,8846,10091,9692,10354,17142,37915,38467,11621,11299,11862,11672,12903
-2," ""37003""","Alexander, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2033,1825,1802,1997,1666,2104,1942,2782,2451,2540,2443,1993,1761,2012,2224,2383,2672,(D)
-3," ""37005""","Alleghany, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-4," ""37007""","Anson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),4380,4375,4730,4931,4713,4190,4588,4951,5030,5483,4924,5022
-5," ""37009""","Ashe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),4106,(D),(D),(D),(D),(D),(D),(D)
-6," ""37011""","Avery, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-7," ""37013""","Beaufort, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),127,49,17,-53,222,182,678,382,476,(D),(D),(D),-79,31,-29,(D),(D)
-8," ""37015""","Bertie, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-101,-90,(D),(D)
-9," ""37017""","Bladen, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),1411,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-10," ""37019""","Brunswick, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),189068,207271,210472,203614,206509
-11," ""37021""","Buncombe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,27333,28698,28440,32470,31343,33087,32629,38030,(D),(D),38586,33573,38491,37000,39384,53246,62893,56561
-12," ""37023""","Burke, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2208,4216,3955,4112,3746,4859,4850,6253,5386,5865,5608,4796,4448,4930,5449,5292,6057,7053
-13," ""37025""","Cabarrus, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,14670,12227,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-14," ""37027""","Caldwell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,10529,11373,9250,9381,10390,10452,9896,11077,(D),11785,12101,11666,12228,12488,14686,13994,14982,15197
-15," ""37029""","Camden, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-16," ""37031""","Carteret, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7832,8504,8674,8319,7492,8608,8256,9585,9270,9365,9390,8958,8942,12942,12149,13041,12959,13585
-17," ""37033""","Caswell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13,26,25,10,0,-9,-30,-50,-35,-31,-60,-79,-73,-59,-61,-55,-61,-65
-18," ""37035""","Catawba, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),38018,37411,38271,43123,31409,35065,(D),37945,(D),(D),(D),(D),(D),(D),(D),(D)
-19," ""37037""","Chatham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,148,111,49,16,-50,353,255,941,546,653,514,192,-155,(D),7597,4627,9872,(D)
-20," ""37039""","Cherokee, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),875,1065
-21," ""37041""","Chowan, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,87,93,17,4,-53,249,245,813,462,539,466,216,-71,1,129,52,295,340
-22," ""37043""","Clay, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13,26,25,10,0,-9,-30,-50,-35,-31,-60,-79,-73,-59,-61,-55,-61,-65
-23," ""37045""","Cleveland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),3431,2951,4013,3815,3667,(D),(D),(D),(D),(D),(D),15977,28215
-24," ""37047""","Columbus, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4359,4972,4929,6423,7776,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-25," ""37049""","Craven, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,5448,5614,7262,8507,8321,9113,9339,10150,10042,10526,10622,10037,10779,12612,12776,13370,14719,15894
-26," ""37051""","Cumberland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19230,(D),18515,19877,17542,26673,27744,35950,36293,38430,38444,35612,34752,39846,41063,43178,45376,48700
-27," ""37053""","Currituck, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-28," ""37055""","Dare, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,6349,(D),7135,7336,7825,8955,9100,10327,9657,10189,(D),7680,7793,8099,8610,9153,9571,10240
-29," ""37057""","Davidson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8829,8643,8337,8024,7794,9825,9926,12504,12039,10652,10606,9562,9159,10269,10357,10718,10967,(D)
-30," ""37059""","Davie, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-31," ""37061""","Duplin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3187,3906,4078,3852,1964,3772,2271,3023,4907,6611,6571,5882,5836,4864,2773,2130,2117,2481
-32," ""37063""","Durham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),25414,22096,26172,(D),(D),21690,17309,(D),(D),(D),(D),(D),30285
-33," ""37065""","Edgecombe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),9250,9892,10241,10174,10927,12574,12961,12631,(D),(D),(D),(D),(D),(D),(D),8682,9284
-34," ""37067""","Forsyth, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-35," ""37069""","Franklin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5791,6030,6203,6968,(D)
-36," ""37071""","Gaston, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,60626,55280,49110,51975,51592,61651,52507,66391,61668,64688,63907,53519,50462,55614,59685,63457,63151,67650
-37," ""37073""","Gates, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7,15,14,6,0,-5,-17,-29,-20,-17,(D),(D),-43,-35,-36,-33,(D),(D)
-38," ""37075""","Graham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),2134,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-39," ""37077""","Granville, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3472,(D),(D),(D),(D),(D),(D),(D),2511,(D),(D),(D),(D),(D),(D),(D),(D),(D)
-40," ""37079""","Greene, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-41," ""37081""","Guilford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,48742,52633,51075,50067,48169,51973,36104,40725,38759,40568,40474,37358,42045,44455,44526,47372,47613,50159
-42," ""37083""","Halifax, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,12429,12960,14987,13547,13376,12125,(D),(D),(D),(D),(D),26594,26770,25310,24198,16967,15790,11939
-43," ""37085""","Harnett, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-44," ""37087""","Haywood, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-45," ""37089""","Henderson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),9659
-46," ""37091""","Hertford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),1903,7892,8349,8399,7789,7252,7769,(D),8413,(D),(D),(D)
-47," ""37093""","Hoke, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),567,(D),(D),244,638,672,1227,874,901,853,563,329,463,579,1307,2369,(D)
-48," ""37095""","Hyde, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-49," ""37097""","Iredell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8674,9194,8269,8430,8624,10143,9422,15309,15715,13861,10330,19571,23768,26581,26832,29037,27773,46388
-50," ""37099""","Jackson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5385,(D),(D),(D),(D),5403
-51," ""37101""","Johnston, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4010,4815,7963,9940,9442,12224,11724,16469,9678,10363,(D),(D),(D),(D),8294,(D),(D),(D)
-52," ""37103""","Jones, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,75,63,-6,-6,-54,225,248,764,440,504,448,246,-5,47,(D),(D),(D),(D)
-53," ""37105""","Lee, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,17052,17295,17752,19012,18026,18799,18420,21836,21516,22309,19556,18373,16284,11126,11390,12340,12515,13723
-54," ""37107""","Lenoir, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3425,3878,1955,(D),2045,2668,2590,3535,3107,3275,3066,2872,2499,2753,2892,2743,2827,3790
-55," ""37109""","Lincoln, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9082,9821,9621,9641,6370,10823,10201,11120,10679,10734,12184,11437,12472,13208,13745,14901,15034,16400
-56," ""37111""","McDowell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),1857,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-57," ""37113""","Macon, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-33,44,208,(D),(D),(D)
-58," ""37115""","Madison, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-59," ""37117""","Martin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-60," ""37119""","Mecklenburg, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,254032,238790,161281,174032,(D),(D),(D),(D),(D),(D),(D),597976,294728,362145,523507,436251,730573,806630
-61," ""37121""","Mitchell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),1341,1353,1416,1814,1875,2538,2210,2317,2335,2054,1933,1945,2072,2456,2500,2481
-62," ""37123""","Montgomery, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19,97,26,7,-54,360,302,1051,592,691,(D),(D),(D),(D),(D),(D),(D),(D)
-63," ""37125""","Moore, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9755,10660,10439,10254,9815,9767,9678,10601,10187,10779,10569,9995,10784,9983,9853,11464,11973,13319
-64," ""37127""","Nash, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),-54,338,317,1019,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-65," ""37129""","New Hanover, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,29006,29585,27060,30197,29095,29501,28138,(D),(D),(D),(D),32628,33109,34031,35675,39071,40471,45001
-66," ""37131""","Northampton, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),515,429,190,-71,-5,111,43,266,307
-67," ""37133""","Onslow, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13468,14610,14187,15097,15654,17338,17269,19863,19631,19842,20646,19877,19442,20806,21294,23377,23566,26021
-68," ""37135""","Orange, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,11736,13061,13071,13771,13965,15719,13725,14829,14505,13731,13035,12271,12645,13670,(D),13430,13967,14961
-69," ""37137""","Pamlico, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-70," ""37139""","Pasquotank, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-71," ""37141""","Pender, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-72," ""37143""","Perquimans, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-73," ""37145""","Person, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),45328,(D),(D),(D),(D),(D),(D),(D),61685,61768,64386,57205,59556
-74," ""37147""","Pitt, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3449,3489,3462,3608,3661,4553,4502,5865,5260,5379,5663,5457,4785,5298,5653,6171,6658,7150
-75," ""37149""","Polk, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),3,-2,(D),(D),237,745,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-76," ""37151""","Randolph, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7326,7619,7844,8085,7655,9069,11574,12670,11402,12227,12267,11976,12845,14097,14068,15140,15257,15714
-77," ""37153""","Richmond, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8710,11539,11336,12195,11928,12639,12567,13877,14047,16498,17723,18039,19576,20937,21267,21242,20873,22966
-78," ""37155""","Robeson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),19407,20294,18089,17890,19127,(D),(D),(D),(D),(D),13675,14292,13903,18428,18882,19267
-79," ""37157""","Rockingham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,17769,16804,17397,17692,18470,20373,18224,18972,18952,17751,16761,14541,15971,16475,17328,18006,18930,21368
-80," ""37159""","Rowan, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),19421,18606,18495,19872,21785,18471,19296,18287,18939,17675,15859,17399,(D),(D),19720,(D),20722
-81," ""37161""","Rutherford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,25313,21969,(D),21291,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-82," ""37163""","Sampson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,926,922,836,990,1083,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1725,2549
-83," ""37165""","Scotland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-84," ""37167""","Stanly, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4062,4624,4204,4202,4597,6311,6180,7124,6804,6881,6747,6470,5738,5846,6589,7061,6957,8276
-85," ""37169""","Stokes, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),239,802,454,533,454,200,-85,-11,116,41,282,326
-86," ""37171""","Surry, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,5589,6102,5933,5389,5569,6377,6107,8247,8373,8963,9530,8770,9252,10282,9828,10367,10684,11515
-87," ""37173""","Swain, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),0,0,0,0,0,5301,5495,(D),(D),(D),(D),2832,0,0
-88," ""37175""","Transylvania, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2349,2114,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-89," ""37177""","Tyrrell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-90," ""37179""","Union, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),9230,9430,10420,11300,13461,17338,18696,16444,17586,17942,16592,17815,20819,21531,23335,24457,27653
-91," ""37181""","Vance, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5777,6382,(D),7100,7739
-92," ""37183""","Wake, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,174015,190300,193164,196999,(D),191688,198811,233017,190710,197527,200261,207170,190427,327961,324744,342522,336138,347090
-93," ""37185""","Warren, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-94," ""37187""","Washington, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3,64,-5,-6,-54,322,294,949,546,641,567,313,-5,59,197,111,377,429
-95," ""37189""","Watauga, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
-96," ""37191""","Wayne, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19696,20819,19740,20922,20350,21997,21827,21104,24284,25028,26168,27260,28654,29848,30168,31471,31197,33358
-97," ""37193""","Wilkes, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2806,3019,2866,2835,2597,3260,2833,3673,3468,3794,4018,3636,3344,3898,3841,3765,3740,4178
-98," ""37195""","Wilson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),659,1916,1810,(D),1667,(D),(D),(D),(D),(D),(D),(D)
-99," ""37197""","Yadkin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),89,18,4,-54,330,290,973,567,663,564,275,(D),(D),163,73,362,(D)
-100," ""37199""","Yancey, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,97,2433,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+0,37000,North Carolina,5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),1279510,1183716,1237111,1153915,1732473,1717612,2646050,2084966,2258749,2190305,1850950,1569505,1809498,2031331,2026892,2352142,2559384
+1,37001,"Alamance, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9202,9715,9882,10186,10272,10427,8846,10091,9692,10354,17142,37915,38467,11621,11299,11862,11672,12903
+2,37003,"Alexander, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2033,1825,1802,1997,1666,2104,1942,2782,2451,2540,2443,1993,1761,2012,2224,2383,2672,(D)
+3,37005,"Alleghany, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+4,37007,"Anson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),4380,4375,4730,4931,4713,4190,4588,4951,5030,5483,4924,5022
+5,37009,"Ashe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),4106,(D),(D),(D),(D),(D),(D),(D)
+6,37011,"Avery, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+7,37013,"Beaufort, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),127,49,17,-53,222,182,678,382,476,(D),(D),(D),-79,31,-29,(D),(D)
+8,37015,"Bertie, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-101,-90,(D),(D)
+9,37017,"Bladen, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),1411,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+10,37019,"Brunswick, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),189068,207271,210472,203614,206509
+11,37021,"Buncombe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,27333,28698,28440,32470,31343,33087,32629,38030,(D),(D),38586,33573,38491,37000,39384,53246,62893,56561
+12,37023,"Burke, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2208,4216,3955,4112,3746,4859,4850,6253,5386,5865,5608,4796,4448,4930,5449,5292,6057,7053
+13,37025,"Cabarrus, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,14670,12227,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+14,37027,"Caldwell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,10529,11373,9250,9381,10390,10452,9896,11077,(D),11785,12101,11666,12228,12488,14686,13994,14982,15197
+15,37029,"Camden, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+16,37031,"Carteret, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7832,8504,8674,8319,7492,8608,8256,9585,9270,9365,9390,8958,8942,12942,12149,13041,12959,13585
+17,37033,"Caswell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13,26,25,10,0,-9,-30,-50,-35,-31,-60,-79,-73,-59,-61,-55,-61,-65
+18,37035,"Catawba, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),38018,37411,38271,43123,31409,35065,(D),37945,(D),(D),(D),(D),(D),(D),(D),(D)
+19,37037,"Chatham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,148,111,49,16,-50,353,255,941,546,653,514,192,-155,(D),7597,4627,9872,(D)
+20,37039,"Cherokee, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),875,1065
+21,37041,"Chowan, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,87,93,17,4,-53,249,245,813,462,539,466,216,-71,1,129,52,295,340
+22,37043,"Clay, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13,26,25,10,0,-9,-30,-50,-35,-31,-60,-79,-73,-59,-61,-55,-61,-65
+23,37045,"Cleveland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),3431,2951,4013,3815,3667,(D),(D),(D),(D),(D),(D),15977,28215
+24,37047,"Columbus, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4359,4972,4929,6423,7776,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+25,37049,"Craven, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,5448,5614,7262,8507,8321,9113,9339,10150,10042,10526,10622,10037,10779,12612,12776,13370,14719,15894
+26,37051,"Cumberland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19230,(D),18515,19877,17542,26673,27744,35950,36293,38430,38444,35612,34752,39846,41063,43178,45376,48700
+27,37053,"Currituck, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+28,37055,"Dare, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,6349,(D),7135,7336,7825,8955,9100,10327,9657,10189,(D),7680,7793,8099,8610,9153,9571,10240
+29,37057,"Davidson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8829,8643,8337,8024,7794,9825,9926,12504,12039,10652,10606,9562,9159,10269,10357,10718,10967,(D)
+30,37059,"Davie, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+31,37061,"Duplin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3187,3906,4078,3852,1964,3772,2271,3023,4907,6611,6571,5882,5836,4864,2773,2130,2117,2481
+32,37063,"Durham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),25414,22096,26172,(D),(D),21690,17309,(D),(D),(D),(D),(D),30285
+33,37065,"Edgecombe, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),9250,9892,10241,10174,10927,12574,12961,12631,(D),(D),(D),(D),(D),(D),(D),8682,9284
+34,37067,"Forsyth, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+35,37069,"Franklin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5791,6030,6203,6968,(D)
+36,37071,"Gaston, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,60626,55280,49110,51975,51592,61651,52507,66391,61668,64688,63907,53519,50462,55614,59685,63457,63151,67650
+37,37073,"Gates, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7,15,14,6,0,-5,-17,-29,-20,-17,(D),(D),-43,-35,-36,-33,(D),(D)
+38,37075,"Graham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),2134,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+39,37077,"Granville, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3472,(D),(D),(D),(D),(D),(D),(D),2511,(D),(D),(D),(D),(D),(D),(D),(D),(D)
+40,37079,"Greene, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+41,37081,"Guilford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,48742,52633,51075,50067,48169,51973,36104,40725,38759,40568,40474,37358,42045,44455,44526,47372,47613,50159
+42,37083,"Halifax, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,12429,12960,14987,13547,13376,12125,(D),(D),(D),(D),(D),26594,26770,25310,24198,16967,15790,11939
+43,37085,"Harnett, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+44,37087,"Haywood, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+45,37089,"Henderson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),9659
+46,37091,"Hertford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),1903,7892,8349,8399,7789,7252,7769,(D),8413,(D),(D),(D)
+47,37093,"Hoke, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),567,(D),(D),244,638,672,1227,874,901,853,563,329,463,579,1307,2369,(D)
+48,37095,"Hyde, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+49,37097,"Iredell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8674,9194,8269,8430,8624,10143,9422,15309,15715,13861,10330,19571,23768,26581,26832,29037,27773,46388
+50,37099,"Jackson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5385,(D),(D),(D),(D),5403
+51,37101,"Johnston, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4010,4815,7963,9940,9442,12224,11724,16469,9678,10363,(D),(D),(D),(D),8294,(D),(D),(D)
+52,37103,"Jones, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,75,63,-6,-6,-54,225,248,764,440,504,448,246,-5,47,(D),(D),(D),(D)
+53,37105,"Lee, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,17052,17295,17752,19012,18026,18799,18420,21836,21516,22309,19556,18373,16284,11126,11390,12340,12515,13723
+54,37107,"Lenoir, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3425,3878,1955,(D),2045,2668,2590,3535,3107,3275,3066,2872,2499,2753,2892,2743,2827,3790
+55,37109,"Lincoln, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9082,9821,9621,9641,6370,10823,10201,11120,10679,10734,12184,11437,12472,13208,13745,14901,15034,16400
+56,37111,"McDowell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),1857,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+57,37113,"Macon, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),-33,44,208,(D),(D),(D)
+58,37115,"Madison, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+59,37117,"Martin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+60,37119,"Mecklenburg, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,254032,238790,161281,174032,(D),(D),(D),(D),(D),(D),(D),597976,294728,362145,523507,436251,730573,806630
+61,37121,"Mitchell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),1341,1353,1416,1814,1875,2538,2210,2317,2335,2054,1933,1945,2072,2456,2500,2481
+62,37123,"Montgomery, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19,97,26,7,-54,360,302,1051,592,691,(D),(D),(D),(D),(D),(D),(D),(D)
+63,37125,"Moore, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,9755,10660,10439,10254,9815,9767,9678,10601,10187,10779,10569,9995,10784,9983,9853,11464,11973,13319
+64,37127,"Nash, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),-54,338,317,1019,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+65,37129,"New Hanover, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,29006,29585,27060,30197,29095,29501,28138,(D),(D),(D),(D),32628,33109,34031,35675,39071,40471,45001
+66,37131,"Northampton, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),515,429,190,-71,-5,111,43,266,307
+67,37133,"Onslow, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,13468,14610,14187,15097,15654,17338,17269,19863,19631,19842,20646,19877,19442,20806,21294,23377,23566,26021
+68,37135,"Orange, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,11736,13061,13071,13771,13965,15719,13725,14829,14505,13731,13035,12271,12645,13670,(D),13430,13967,14961
+69,37137,"Pamlico, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+70,37139,"Pasquotank, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+71,37141,"Pender, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+72,37143,"Perquimans, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+73,37145,"Person, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),45328,(D),(D),(D),(D),(D),(D),(D),61685,61768,64386,57205,59556
+74,37147,"Pitt, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3449,3489,3462,3608,3661,4553,4502,5865,5260,5379,5663,5457,4785,5298,5653,6171,6658,7150
+75,37149,"Polk, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),3,-2,(D),(D),237,745,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+76,37151,"Randolph, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,7326,7619,7844,8085,7655,9069,11574,12670,11402,12227,12267,11976,12845,14097,14068,15140,15257,15714
+77,37153,"Richmond, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,8710,11539,11336,12195,11928,12639,12567,13877,14047,16498,17723,18039,19576,20937,21267,21242,20873,22966
+78,37155,"Robeson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),19407,20294,18089,17890,19127,(D),(D),(D),(D),(D),13675,14292,13903,18428,18882,19267
+79,37157,"Rockingham, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,17769,16804,17397,17692,18470,20373,18224,18972,18952,17751,16761,14541,15971,16475,17328,18006,18930,21368
+80,37159,"Rowan, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),19421,18606,18495,19872,21785,18471,19296,18287,18939,17675,15859,17399,(D),(D),19720,(D),20722
+81,37161,"Rutherford, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,25313,21969,(D),21291,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+82,37163,"Sampson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,926,922,836,990,1083,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),1725,2549
+83,37165,"Scotland, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+84,37167,"Stanly, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,4062,4624,4204,4202,4597,6311,6180,7124,6804,6881,6747,6470,5738,5846,6589,7061,6957,8276
+85,37169,"Stokes, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),239,802,454,533,454,200,-85,-11,116,41,282,326
+86,37171,"Surry, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,5589,6102,5933,5389,5569,6377,6107,8247,8373,8963,9530,8770,9252,10282,9828,10367,10684,11515
+87,37173,"Swain, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),0,0,0,0,0,5301,5495,(D),(D),(D),(D),2832,0,0
+88,37175,"Transylvania, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2349,2114,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+89,37177,"Tyrrell, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+90,37179,"Union, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),9230,9430,10420,11300,13461,17338,18696,16444,17586,17942,16592,17815,20819,21531,23335,24457,27653
+91,37181,"Vance, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),5777,6382,(D),7100,7739
+92,37183,"Wake, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,174015,190300,193164,196999,(D),191688,198811,233017,190710,197527,200261,207170,190427,327961,324744,342522,336138,347090
+93,37185,"Warren, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+94,37187,"Washington, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,3,64,-5,-6,-54,322,294,949,546,641,567,313,-5,59,197,111,377,429
+95,37189,"Watauga, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)
+96,37191,"Wayne, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,19696,20819,19740,20922,20350,21997,21827,21104,24284,25028,26168,27260,28654,29848,30168,31471,31197,33358
+97,37193,"Wilkes, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,2806,3019,2866,2835,2597,3260,2833,3673,3468,3794,4018,3636,3344,3898,3841,3765,3740,4178
+98,37195,"Wilson, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),(D),(D),(D),(D),(D),659,1916,1810,(D),1667,(D),(D),(D),(D),(D),(D),(D)
+99,37197,"Yadkin, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,(D),89,18,4,-54,330,290,973,567,663,564,275,(D),(D),163,73,362,(D)
+100,37199,"Yancey, NC",5.0,CAINC5N,300.0,22,   Utilities,Thousands of dollars,97,2433,(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D),(D)

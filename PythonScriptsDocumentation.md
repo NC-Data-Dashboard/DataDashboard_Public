@@ -1,9 +1,9 @@
 # Python Scripts Documentation
 
 ***
-[Nathan Young](www.linkedin.com/in/nathayoung)<br />Junior Data Analyst/Lead Project Programmer<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
+[Nathan Young](www.linkedin.com/in/nathayoung)<br />Senior<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
 
-Last edited by: Nathan Young 03.15.2020
+Last edited by: Nathan Young 06.05.2020
 
 ***
 ## Table of Contents

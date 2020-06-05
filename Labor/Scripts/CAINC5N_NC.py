@@ -5,26 +5,24 @@
 
 
 # Imports
+import urllib
+from io import BytesIO
+from zipfile import ZipFile
 import pandas as pd
 import requests
-from io import BytesIO, StringIO
-from zipfile import ZipFile
-import pyodbc
-import sqlalchemy
 from sqlalchemy import create_engine
-import urllib
-import numpy as np
+import pyodbc
 
 
 # In[ ]:
 
 
 # Load BEA CAINC5N_NC data
-response = requests.get('https://apps.bea.gov/regional/zip/CAINC5N.zip')
+response = requests.get("https://apps.bea.gov/regional/zip/CAINC5N.zip")
 zip_file = ZipFile(BytesIO(response.content))
 files = zip_file.namelist()
 with zip_file.open(files[34]) as csvfile:
-    df = pd.read_csv(csvfile, encoding='ISO-8859-1', sep=",")
+    df = pd.read_csv(csvfile, encoding="ISO-8859-1", sep=",")
 
 
 # In[ ]:
@@ -38,39 +36,41 @@ df.tail(10)
 
 
 # Remove unused fields
-df.drop(df.tail(4).index,inplace=True)
+df.drop(df.tail(4).index, inplace=True)
 
 
 # In[ ]:
 
 
-#Clean GeoFIPS
-df['GeoFIPS'] = df['GeoFIPS'].replace({"":''})
+# Clean GeoFIPS
+df["GeoFIPS"] = df["GeoFIPS"].replace({"": ""})
 
 
 # In[ ]:
 
 
 # Set GeoFIPS as Index
-df.set_index(df['GeoFIPS'], inplace = True)
+df.set_index(df["GeoFIPS"], inplace=True)
 
 
 # In[ ]:
 
 
 # Drop GeoFIPS column
-df.drop('GeoFIPS', axis = 1, inplace = True)
+df.drop("GeoFIPS", axis=1, inplace=True)
 
 
 # In[ ]:
 
 
-#Connect to database and create cursor
-con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=[servername];'
-                      'Database=[dbname];'
-                      'Trusted_Connection=yes;',
-                    autocommit=True)
+# Connect to database and create cursor
+con = pyodbc.connect(
+    "Driver={SQL Server};"
+    "Server=[server];"
+    "Database=[server];"
+    "Trusted_Connection=yes;",
+    autocommit=True,
+)
 
 c = con.cursor()
 
@@ -80,22 +80,26 @@ c = con.cursor()
 # In[ ]:
 
 
-print('Updating Per Capita Personal Income...')
+print("Updating Per Capita Personal Income...")
 
 
 # In[ ]:
 
 
 # Create Backups
-df_pc_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
-df_pc_backup.to_csv('./Backups/STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP.txt')
+df_pc_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt",
+    encoding="ISO-8859-1",
+    sep="\t",
+)
+df_pc_backup.to_csv("./Backups/STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP.txt")
 
 
 # In[ ]:
 
 
 # Create new dataframe for Per capita personal income
-filter1 = df['LineCode'] == 30
+filter1 = df["LineCode"] == 30
 df_per_capita = df[filter1]
 df_per_capita.head()
 
@@ -104,7 +108,7 @@ df_per_capita.head()
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_per_capita.to_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', sep = '\t')
+df_per_capita.to_csv("./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt", sep="\t")
 
 
 # In[ ]:
@@ -120,7 +124,7 @@ df_per_capita = df_per_capita.reset_index()
 # Fill NaN values for upload to database
 column_list = df_per_capita.columns.values
 for i in column_list:
-    df_per_capita.loc[df_per_capita[i].isnull(),i]=0
+    df_per_capita.loc[df_per_capita[i].isnull(), i] = 0
 
 
 # In[ ]:
@@ -133,21 +137,24 @@ df_per_capita.head()
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP')
+c.execute("drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP")
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';''')
+c.execute(
+    """sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';"""
+)
 
 
 # In[ ]:
 
 
 # Create Per Capita table
-c.execute('''USE [[dbname]]
+c.execute(
+    """USE [[server]]
 
 SET ANSI_NULLS ON
 
@@ -192,20 +199,28 @@ CREATE TABLE [dbo].[STG_BEA_CA5N_Per_Capita_Personal_Income](
     [2028] [float] NULL,
     [2029] [float] NULL,
     [2030] [float] NULL
-) ON [PRIMARY]''')
+) ON [PRIMARY]"""
+)
 
 
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=[servername];'
-                                 r'Database=[dbname];'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(
+    r"Driver={SQL Server};"
+    r"Server=[server];"
+    r"Database=[server];"
+    r"Trusted_Connection=yes;"
+)
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_exists='replace', index=False)
+df_per_capita.to_sql(
+    "STG_BEA_CA5N_Per_Capita_Personal_Income",
+    con=engine,
+    if_exists="replace",
+    index=False,
+)
 
 
 # # Create Earnings by Place of Work
@@ -213,22 +228,26 @@ df_per_capita.to_sql('STG_BEA_CA5N_Per_Capita_Personal_Income', con=engine, if_e
 # In[ ]:
 
 
-print('Done. Updating Earnings by Place of Work...')
+print("Done. Updating Earnings by Place of Work...")
 
 
 # In[ ]:
 
 
 # Create Backups
-df_e_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', encoding = 'ISO-8859-1', sep='\t')
-df_e_backup.to_csv('./Backups/STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP.txt')
+df_e_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt",
+    encoding="ISO-8859-1",
+    sep="\t",
+)
+df_e_backup.to_csv("./Backups/STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP.txt")
 
 
 # In[ ]:
 
 
 # Create a new dataframe for Earnings by place of work
-filter1 = df['LineCode'] == 35
+filter1 = df["LineCode"] == 35
 df_earnings = df[filter1]
 
 
@@ -236,7 +255,7 @@ df_earnings = df[filter1]
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_earnings.to_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', sep = '\t')
+df_earnings.to_csv("./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt", sep="\t")
 
 
 # In[ ]:
@@ -252,28 +271,31 @@ df_earnings = df_earnings.reset_index()
 # Fill NaN values for upload to database
 column_list = df_earnings.columns.values
 for i in column_list:
-    df_earnings.loc[df_earnings[i].isnull(),i]=0
+    df_earnings.loc[df_earnings[i].isnull(), i] = 0
 
 
 # In[ ]:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP')
+c.execute("drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP")
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';''')
+c.execute(
+    """sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';"""
+)
 
 
 # In[ ]:
 
 
 # Create Earnings table
-c.execute('''USE [[dbname]]
+c.execute(
+    """USE [[server]]
 
 SET ANSI_NULLS ON
 
@@ -318,20 +340,28 @@ CREATE TABLE [dbo].[STG_BEA_CA5N_Earnings_by_Place_of_Work](
     [2028] [float] NULL,
     [2029] [float] NULL,
     [2030] [float] NULL
-) ON [PRIMARY]''')
+) ON [PRIMARY]"""
+)
 
 
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=[servername];'
-                                 r'Database=[dbname];'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(
+    r"Driver={SQL Server};"
+    r"Server=[server];"
+    r"Database=[server];"
+    r"Trusted_Connection=yes;"
+)
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-df_earnings.to_sql('STG_BEA_CA5N_Earnings_by_Place_of_Work', con=engine, if_exists='replace', index=False)
+df_earnings.to_sql(
+    "STG_BEA_CA5N_Earnings_by_Place_of_Work",
+    con=engine,
+    if_exists="replace",
+    index=False,
+)
 
 
 # # Create Population
@@ -339,22 +369,24 @@ df_earnings.to_sql('STG_BEA_CA5N_Earnings_by_Place_of_Work', con=engine, if_exis
 # In[ ]:
 
 
-print('Done. Updating Population...')
+print("Done. Updating Population...")
 
 
 # In[ ]:
 
 
 # Create Backups
-df_pop_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Population.txt', encoding = 'ISO-8859-1', sep='\t')
-df_pop_backup.to_csv('./Backups/STG_BEA_CA5N_Population_BACKUP.txt')
+df_pop_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Population.txt", encoding="ISO-8859-1", sep="\t"
+)
+df_pop_backup.to_csv("./Backups/STG_BEA_CA5N_Population_BACKUP.txt")
 
 
 # In[ ]:
 
 
 # Create a new dataframe for Population
-filter1 = df['LineCode'] == 20
+filter1 = df["LineCode"] == 20
 df_population = df[filter1]
 
 
@@ -362,14 +394,14 @@ df_population = df[filter1]
 
 
 # Clean Description column
-df_population.loc[:,'Description'] = df_population['Description'].str.strip('2/')
+df_population.loc[:, "Description"] = df_population["Description"].str.strip("2/")
 
 
 # In[ ]:
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_population.to_csv('./Updates/STG_BEA_CA5N_Population.txt', sep = '\t')
+df_population.to_csv("./Updates/STG_BEA_CA5N_Population.txt", sep="\t")
 
 
 # In[ ]:
@@ -385,28 +417,31 @@ df_population = df_population.reset_index()
 # Fill NaN values for upload to database
 column_list = df_population.columns.values
 for i in column_list:
-    df_population.loc[df_population[i].isnull(),i]=0
+    df_population.loc[df_population[i].isnull(), i] = 0
 
 
 # In[ ]:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Population_BACKUP')
+c.execute("drop table STG_BEA_CA5N_Population_BACKUP")
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';''')
+c.execute(
+    """sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';"""
+)
 
 
 # In[ ]:
 
 
 # Create Population table
-c.execute('''USE [[dbname]]
+c.execute(
+    """USE [[server]]
 
 SET ANSI_NULLS ON
 
@@ -451,20 +486,25 @@ CREATE TABLE [dbo].[STG_BEA_CA5N_Population](
     [2028] [float] NULL,
     [2029] [float] NULL,
     [2030] [float] NULL
-) ON [PRIMARY]''')
+) ON [PRIMARY]"""
+)
 
 
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=[servername];'
-                                 r'Database=[dbname];'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(
+    r"Driver={SQL Server};"
+    r"Server=[server];"
+    r"Database=[server];"
+    r"Trusted_Connection=yes;"
+)
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-df_population.to_sql('STG_BEA_CA5N_Population', con=engine, if_exists='replace', index=False)
+df_population.to_sql(
+    "STG_BEA_CA5N_Population", con=engine, if_exists="replace", index=False
+)
 
 
 # # Create Personal Income
@@ -472,22 +512,24 @@ df_population.to_sql('STG_BEA_CA5N_Population', con=engine, if_exists='replace',
 # In[ ]:
 
 
-print('Done. Updating Personal Income...')
+print("Done. Updating Personal Income...")
 
 
 # In[ ]:
 
 
 # Create Backups
-df_i_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', encoding = 'ISO-8859-1', sep='\t')
-df_i_backup.to_csv('./Backups/STG_BEA_CA5N_Personal_Income_BACKUP.txt')
+df_i_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Personal_Income.txt", encoding="ISO-8859-1", sep="\t"
+)
+df_i_backup.to_csv("./Backups/STG_BEA_CA5N_Personal_Income_BACKUP.txt")
 
 
 # In[ ]:
 
 
 # Create new dataframe for Personal Income
-filter1 = df['LineCode'] == 10
+filter1 = df["LineCode"] == 10
 df_income = df[filter1]
 
 
@@ -495,7 +537,7 @@ df_income = df[filter1]
 
 
 # Save as tab-delimited txt file for export to SSMS
-df_income.to_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', sep = '\t')
+df_income.to_csv("./Updates/STG_BEA_CA5N_Personal_Income.txt", sep="\t")
 
 
 # In[ ]:
@@ -511,28 +553,31 @@ df_income = df_income.reset_index()
 # Fill NaN values for upload to database
 column_list = df_income.columns.values
 for i in column_list:
-    df_income.loc[df_income[i].isnull(),i]=0
+    df_income.loc[df_income[i].isnull(), i] = 0
 
 
 # In[ ]:
 
 
 # Drop old backup table
-c.execute('drop table STG_BEA_CA5N_Personal_Income_BACKUP')
+c.execute("drop table STG_BEA_CA5N_Personal_Income_BACKUP")
 
 
 # In[ ]:
 
 
 # Create new backup
-c.execute('''sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';''')
+c.execute(
+    """sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';"""
+)
 
 
 # In[ ]:
 
 
 # Create Personal Income Table
-c.execute('''USE [[dbname]]
+c.execute(
+    """USE [[server]]
 
 SET ANSI_NULLS ON
 
@@ -577,18 +622,22 @@ CREATE TABLE [dbo].[STG_BEA_CA5N_Personal_Income](
     [2028] [float] NULL,
     [2029] [float] NULL,
     [2030] [float] NULL
-) ON [PRIMARY]''')
+) ON [PRIMARY]"""
+)
 
 
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=[servername];'
-                                 r'Database=[dbname];'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(
+    r"Driver={SQL Server};"
+    r"Server=[server];"
+    r"Database=[server];"
+    r"Trusted_Connection=yes;"
+)
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-df_income.to_sql('STG_BEA_CA5N_Personal_Income', con=engine, if_exists='replace', index=False)
-
+df_income.to_sql(
+    "STG_BEA_CA5N_Personal_Income", con=engine, if_exists="replace", index=False
+)

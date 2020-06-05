@@ -4,65 +4,70 @@
 # In[ ]:
 
 
-#Imports
-import pandas as pd
-import pyodbc
-import sqlalchemy
-from sqlalchemy import create_engine
+# Imports
 import urllib
+import pandas as pd
+from sqlalchemy import create_engine
 import numpy as np
+import pyodbc
 
 
 # In[ ]:
 
 
 # Create Backups
-df_backup = pd.read_csv('./Updates/STG_ZLLW_County_MedianListingPricePerSqft_AllHomes.txt')
-df_backup.to_csv('./Backups/STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP.txt')
+df_backup = pd.read_csv(
+    "./Updates/STG_ZLLW_County_MedianListingPricePerSqft_AllHomes.txt"
+)
+df_backup.to_csv(
+    "./Backups/STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP.txt"
+)
 
 
 # In[ ]:
 
 
-#Load Land data
-df_mlsf = pd.read_csv('http://files.zillowstatic.com/research/public/County/County_MedianListingPricePerSqft_AllHomes.csv', 
-                      encoding='ISO-8859-1')
+# Load Land data
+df_mlsf = pd.read_csv(
+    "http://files.zillowstatic.com/research/public/County/County_MedianListingPricePerSqft_AllHomes.csv",
+    encoding="ISO-8859-1",
+)
 
-#Display table to ensure data loaded correctly
+# Display table to ensure data loaded correctly
 df_mlsf.head()
 
 
 # In[ ]:
 
 
-#Filter data to NC
-filter1 = df_mlsf['State'] == "NC"
+# Filter data to NC
+filter1 = df_mlsf["State"] == "NC"
 df_mlsf_nc = df_mlsf[filter1]
 
-#Check to ensure filter worked
+# Check to ensure filter worked
 df_mlsf_nc.head(5)
 
 
 # In[ ]:
 
 
-#View data types of dataframe
+# View data types of dataframe
 df_mlsf_nc.dtypes
 
 
 # In[ ]:
 
 
-#Change MunicipalCodeFIPS dtype to add leading 0's
-df_mlsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlsf_nc['MunicipalCodeFIPS'].astype(str)
+# Change MunicipalCodeFIPS dtype to add leading 0's
+df_mlsf_nc.loc[:, "MunicipalCodeFIPS"] = df_mlsf_nc["MunicipalCodeFIPS"].astype(str)
 df_mlsf_nc.dtypes
 
 
 # In[ ]:
 
 
-#Add leading 0's and check to ensure they were added
-df_mlsf_nc.loc[ :, 'MunicipalCodeFIPS'] = df_mlsf_nc['MunicipalCodeFIPS'].str.zfill(3)
+# Add leading 0's and check to ensure they were added
+df_mlsf_nc.loc[:, "MunicipalCodeFIPS"] = df_mlsf_nc["MunicipalCodeFIPS"].str.zfill(3)
 df_mlsf_nc.head(5)
 
 
@@ -70,7 +75,7 @@ df_mlsf_nc.head(5)
 
 
 # Set Index to Region Name
-df_mlsf_nc.set_index(df_mlsf_nc['RegionName'], inplace = True)
+df_mlsf_nc.set_index(df_mlsf_nc["RegionName"], inplace=True)
 df_mlsf_nc
 
 
@@ -78,44 +83,48 @@ df_mlsf_nc
 
 
 # Drop Region Name column
-df_mlsf_nc.drop('RegionName', axis = 1, inplace = True)
+df_mlsf_nc.drop("RegionName", axis=1, inplace=True)
 df_mlsf_nc
 
 
 # In[ ]:
 
 
-#Save to csv file for export in Excel
-df_mlsf_nc.to_csv('./Updates/STG_ZLLW_County_MedianListingPricePerSqf_AllHomes.txt', sep = '\t')
+# Save to csv file for export in Excel
+df_mlsf_nc.to_csv(
+    "./Updates/STG_ZLLW_County_MedianListingPricePerSqf_AllHomes.txt", sep="\t"
+)
 
 
 # In[ ]:
 
 
-#Reset Index for upload to database
-df_mlsf_nc = df_mlsf_nc.reset_index()    
+# Reset Index for upload to database
+df_mlsf_nc = df_mlsf_nc.reset_index()
 
 
 # In[ ]:
 
 
-#Fill NaN values for upload to database
-df_mlsf_nc['Metro'] = df_mlsf_nc['Metro'].replace(np.nan,'', regex=True)
+# Fill NaN values for upload to database
+df_mlsf_nc["Metro"] = df_mlsf_nc["Metro"].replace(np.nan, "", regex=True)
 
 column_list = df_mlsf_nc.columns.values
 for i in column_list:
-    df_mlsf_nc.loc[df_mlsf_nc[i].isnull(),i]=0
+    df_mlsf_nc.loc[df_mlsf_nc[i].isnull(), i] = 0
 
 
 # In[ ]:
 
 
-#Connect to database and create cursor
-con = pyodbc.connect('Driver={SQL Server};'
-                      'Server=[servername];'
-                      'Database=[dbname];'
-                      'Trusted_Connection=yes;',
-                    autocommit=True)
+# Connect to database and create cursor
+con = pyodbc.connect(
+    "Driver={SQL Server};"
+    "Server=[server];"
+    "Database=[database];"
+    "Trusted_Connection=yes;",
+    autocommit=True,
+)
 
 c = con.cursor()
 
@@ -123,20 +132,21 @@ c = con.cursor()
 # In[ ]:
 
 
-#Drop old backup table
-c.execute('''drop table dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP;''')
+# Drop old backup table
+# c.execute('drop table dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP;')
 
 
 # In[ ]:
 
 
-c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes','STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP';''')
+# c.execute('''sp_rename 'dbo.STG_ZLLW_County_MedianListingPricePerSqft_AllHomes','STG_ZLLW_County_MedianListingPricePerSqft_AllHomes_BACKUP';''')
 
 
 # In[ ]:
 
 
-c.execute('''USE [[dbname]]
+c.execute(
+    """USE [[database]]
 
 SET ANSI_NULLS ON
 
@@ -305,19 +315,25 @@ CREATE TABLE [dbo].[STG_ZLLW_County_MedianListingPricePerSqft_AllHomes](
     [2022-10] [float] NULL,
     [2022-11] [float] NULL,
     [2022-12] [float] NULL
-) ON [PRIMARY]''')
+) ON [PRIMARY]"""
+)
 
 
 # In[ ]:
 
 
-params = urllib.parse.quote_plus(r'Driver={SQL Server};' 
-                                 r'Server=[servername];'
-                                 r'Database=[dbname];'
-                                 r'Trusted_Connection=yes;')
+params = urllib.parse.quote_plus(
+    r"Driver={SQL Server};"
+    r"Server=[server];"
+    r"Database=[database];"
+    r"Trusted_Connection=yes;"
+)
 
 engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 
-#warning: discard old table if exists
-df_mlsf_nc.to_sql('STG_ZLLW_County_MedianListingPricePerSqft_AllHomes', con=engine, if_exists='replace', index=False)
-
+df_mlsf_nc.to_sql(
+    "STG_ZLLW_County_MedianListingPricePerSqft_AllHomes",
+    con=engine,
+    if_exists="replace",
+    index=False,
+)

@@ -8,9 +8,6 @@ python -m pip install pyodbc --user
 python -m pip install sqlalchemy --upgrade --user
 python -m pip install numpy --upgrade --user
 
-git config --global user.name "NCDataDashboard"
-git config --global user.email "nayoung1@catamount.wcu.edu"
-
 cls
 
 cd Land
@@ -37,9 +34,9 @@ cd..
 
 cls
 
-REM cd Health
-REM start health.bat
-REM cd..
+cd Health
+call health.bat
+cd..
 
 cls
 

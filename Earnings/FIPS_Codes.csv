@@ -1,0 +1,101 @@
+,RegionName,State,Metro,StateCodeFIPS,GeoFIPS,MunicipalCodeFIPS,County
+0,Alamance County,NC,Burlington,37,37001,1,Alamance
+1,Alexander County,NC,Hickory-Lenoir-Morganton,37,37003,3,Alexander
+2,Alleghany County,NC,,37,37005,5,Alleghany
+3,Anson County,NC,,37,37007,7,Anson
+4,Ashe County,NC,,37,37009,9,Ashe
+5,Avery County,NC,,37,37011,11,Avery
+6,Beaufort County,NC,Washington,37,37013,13,Beaufort
+7,Bertie County,NC,,37,37015,15,Bertie
+8,Bladen County,NC,,37,37017,17,Bladen
+9,Brunswick County,NC,Myrtle Beach-Conway-North Myrtle Beach,37,37019,19,Brunswick
+10,Buncombe County,NC,Asheville,37,37021,21,Buncombe
+11,Burke County,NC,Hickory-Lenoir-Morganton,37,37023,23,Burke
+12,Cabarrus County,NC,Charlotte-Concord-Gastonia,37,37025,25,Cabarrus
+13,Caldwell County,NC,Hickory-Lenoir-Morganton,37,37027,27,Caldwell
+14,Camden County,NC,Elizabeth City,37,37029,29,Camden
+15,Carteret County,NC,Morehead City,37,37031,31,Carteret
+16,Caswell County,NC,,37,37033,33,Caswell
+17,Catawba County,NC,Hickory-Lenoir-Morganton,37,37035,35,Catawba
+18,Chatham County,NC,Durham-Chapel Hill,37,37037,37,Chatham
+19,Cherokee County,NC,,37,37039,39,Cherokee
+20,Chowan County,NC,,37,37041,41,Chowan
+21,Clay County,NC,,37,37043,43,Clay
+22,Cleveland County,NC,Shelby,37,37045,45,Cleveland
+23,Columbus County,NC,,37,37047,47,Columbus
+24,Craven County,NC,New Bern,37,37049,49,Craven
+25,Cumberland County,NC,Fayetteville,37,37051,51,Cumberland
+26,Currituck County,NC,Virginia Beach-Norfolk-Newport News,37,37053,53,Currituck
+27,Dare County,NC,Kill Devil Hills,37,37055,55,Dare
+28,Davidson County,NC,Winston-Salem,37,37057,57,Davidson
+29,Davie County,NC,Winston-Salem,37,37059,59,Davie
+30,Duplin County,NC,,37,37061,61,Duplin
+31,Durham County,NC,Durham-Chapel Hill,37,37063,63,Durham
+32,Edgecombe County,NC,Rocky Mount,37,37065,65,Edgecombe
+33,Forsyth County,NC,Winston-Salem,37,37067,67,Forsyth
+34,Franklin County,NC,Raleigh,37,37069,69,Franklin
+35,Gaston County,NC,Charlotte-Concord-Gastonia,37,37071,71,Gaston
+36,Gates County,NC,Virginia Beach-Norfolk-Newport News,37,37073,73,Gates
+37,Graham County,NC,,37,37075,75,Graham
+38,Granville County,NC,Oxford,37,37077,77,Granville
+39,Greene County,NC,,37,37079,79,Greene
+40,Guilford County,NC,Greensboro-High Point,37,37081,81,Guilford
+41,Halifax County,NC,Roanoke Rapids,37,37083,83,Halifax
+42,Harnett County,NC,Dunn,37,37085,85,Harnett
+43,Haywood County,NC,Asheville,37,37087,87,Haywood
+44,Henderson County,NC,Asheville,37,37089,89,Henderson
+45,Hertford County,NC,,37,37091,91,Hertford
+46,Hoke County,NC,Fayetteville,37,37093,93,Hoke
+47,Hyde County,NC,,37,37095,95,Hyde
+48,Iredell County,NC,Charlotte-Concord-Gastonia,37,37097,97,Iredell
+49,Jackson County,NC,Cullowhee,37,37099,99,Jackson
+50,Johnston County,NC,Raleigh,37,37101,101,Johnston
+51,Jones County,NC,New Bern,37,37103,103,Jones
+52,Lee County,NC,Sanford,37,37105,105,Lee
+53,Lenoir County,NC,Kinston,37,37107,107,Lenoir
+54,Lincoln County,NC,Charlotte-Concord-Gastonia,37,37109,109,Lincoln
+55,Macon County,NC,,37,37113,113,Macon
+56,Madison County,NC,Asheville,37,37115,115,Madison
+57,Martin County,NC,,37,37117,117,Martin
+58,McDowell County,NC,Marion,37,37111,111,McDowell
+59,Mecklenburg County,NC,Charlotte-Concord-Gastonia,37,37119,119,Mecklenburg
+60,Mitchell County,NC,,37,37121,121,Mitchell
+61,Montgomery County,NC,,37,37123,123,Montgomery
+62,Moore County,NC,Pinehurst-Southern Pines,37,37125,125,Moore
+63,Nash County,NC,Rocky Mount,37,37127,127,Nash
+64,New Hanover County,NC,Wilmington,37,37129,129,New
+65,Northampton County,NC,Roanoke Rapids,37,37131,131,Northampton
+66,Onslow County,NC,Jacksonville,37,37133,133,Onslow
+67,Orange County,NC,Durham-Chapel Hill,37,37135,135,Orange
+68,Pamlico County,NC,New Bern,37,37137,137,Pamlico
+69,Pasquotank County,NC,Elizabeth City,37,37139,139,Pasquotank
+70,Pender County,NC,Wilmington,37,37141,141,Pender
+71,Perquimans County,NC,Elizabeth City,37,37143,143,Perquimans
+72,Person County,NC,Durham-Chapel Hill,37,37145,145,Person
+73,Pitt County,NC,Greenville,37,37147,147,Pitt
+74,Polk County,NC,,37,37149,149,Polk
+75,Randolph County,NC,Greensboro-High Point,37,37151,151,Randolph
+76,Richmond County,NC,Rockingham,37,37153,153,Richmond
+77,Robeson County,NC,Lumberton,37,37155,155,Robeson
+78,Rockingham County,NC,Greensboro-High Point,37,37157,157,Rockingham
+79,Rowan County,NC,Charlotte-Concord-Gastonia,37,37159,159,Rowan
+80,Rutherford County,NC,Forest City,37,37161,161,Rutherford
+81,Sampson County,NC,,37,37163,163,Sampson
+82,Scotland County,NC,Laurinburg,37,37165,165,Scotland
+83,Stanly County,NC,Albermarle,37,37167,167,Stanly
+84,Stokes County,NC,Winston-Salem,37,37169,169,Stokes
+85,Surry County,NC,Mount Airy,37,37171,171,Surry
+86,Swain County,NC,,37,37173,173,Swain
+87,Transylvania County,NC,Brevard,37,37175,175,Transylvania
+88,Tyrrell County,NC,Kill Devil Hills,37,37177,177,Tyrrell
+89,Union County,NC,Charlotte-Concord-Gastonia,37,37179,179,Union
+90,Vance County,NC,Henderson,37,37181,181,Vance
+91,Wake County,NC,Raleigh,37,37183,183,Wake
+92,Warren County,NC,,37,37185,185,Warren
+93,Washington County,NC,,37,37187,187,Washington
+94,Watauga County,NC,Boone,37,37189,189,Watauga
+95,Wayne County,NC,Goldsboro,37,37191,191,Wayne
+96,Wilkes County,NC,North Wilkesboro,37,37193,193,Wilkes
+97,Wilson County,NC,Wilson,37,37195,195,Wilson
+98,Yadkin County,NC,Winston-Salem,37,37197,197,Yadkin
+99,Yancey County,NC,,37,37199,199,Yancey

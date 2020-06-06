@@ -1,6 +1,9 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work I created to automate data updates for Data Analyst roles at Western Carolina University.
 __________________________________________________________________________________________________________________________________________
+
+** These scripts are used to automatically upload data to a database.  Database information has been replaced with [server] and [database] for security.  If you want to utilize these tools, please make sure you change these values. **
+
 ### [Demographics](https://github.com/nathayoung/DataDashboard_Public/tree/master/Demographics)
 The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) for the Demographics workbook.
 

@@ -8,6 +8,7 @@ The Demographics folder includes scripts used to update data from [GeoFRED](http
 The Earnings folder includes scripts that are used to pull data from [BEA](https://apps.bea.gov/regional/downloadzip.cfm) to update our Earnings Workbook.
 
 ### [Health](https://github.com/nathayoung/DataDashboard_Public/tree/master/Health)
+Currently, this folder contains data related to COVID-19.
 
 ### [Labor](https://github.com/nathayoung/DataDashboard_Public/tree/master/Labor)
 The Labor folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) and [BEA](https://apps.bea.gov/regional/downloadzip.cfm) for the Labor workbook.
@@ -37,4 +38,4 @@ Some folders will have a Data folder for data in .csv form that could not be pul
 
 All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. 
 
-#### Last updated: 01.29.2020
+#### Last updated: 06.06.2020

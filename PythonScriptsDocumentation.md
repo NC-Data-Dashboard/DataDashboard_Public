@@ -89,14 +89,13 @@ Functions of each cell are written as comments in their respective cell, but an 
         * Execute renaming old table to ‘_BACKUP’
 * Add new data
 
-~~    * Create new table
+    ~~* Create new table
 
         * To create new tables in Python, first create table in SSMS.  Remember to refresh connection.  To get script for Python, right click on table, select ‘Script table as’ -> ‘Create to’ -> ‘new query editor window’
 
         * Copy and paste into Python.  Remove all ‘go’ from script.
 
-        * Can also be created by viewing data and writing script based on columns.
-~~
+        * Can also be created by viewing data and writing script based on columns.~~
 
     * Insert dataframe into new table
         * Establish a connection with an engine, software that connects to relational database.

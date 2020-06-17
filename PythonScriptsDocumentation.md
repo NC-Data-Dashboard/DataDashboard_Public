@@ -93,7 +93,7 @@ Functions of each cell are written as comments in their respective cell, but an 
         * To create new tables in Python, first create table in SSMS.  Remember to refresh connection.  To get script for Python, right click on table, select ‘Script table as’ -> ‘Create to’ -> ‘new query editor window’
         * Copy and paste into Python.  Remove all ‘go’ from script.
         * Can also be created by viewing data and writing script based on columns.~~
-        
+
     * Insert dataframe into new table
         * Establish a connection with an engine, software that connects to relational database.
         * Send dataframe to SSMS using to_sql
@@ -185,7 +185,9 @@ If you do not have git and VSCode (or the like), there is a way to use these scr
         * Download should start
         * When finished, extract files to known location (e.g. Desktop)
         * To run, view Updating Data section above
-            ~~* Update_test.bat has all git commands removed to increase usability~~(You will need to have access to GitHub to run)
+
+            ~~* Update_test.bat has all git commands removed to increase usability~~
+            (You will need to have access to GitHub to run)
 
 A Unix version of the code can be found on my main account in the [‘DataDashboard_Unix’ repository](https://github.com/nathayoung/DataDashboard_Unix) (work in progress)
 

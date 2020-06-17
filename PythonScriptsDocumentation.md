@@ -32,8 +32,8 @@ Going back to the Land folder, updates now take less than 3 minutes and all I mu
 There are still many updates that can and will happen, but it is exciting to be part of the future success of the NC Data Dashboard.
 
 -Nathan Young
-Senior Data Analyst
-WCU Class of 2020
+<br />Senior Data Analyst
+<br />WCU Class of 2020
 
 ***
 

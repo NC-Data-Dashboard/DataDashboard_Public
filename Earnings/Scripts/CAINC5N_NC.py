@@ -67,7 +67,7 @@ df.drop("GeoFIPS", axis=1, inplace=True)
 # Connect to database and create cursor
 con = pyodbc.connect(
     "Driver={SQL Server};"
-    "Server=[server];"
+    "Server=[server;"
     "Database=[database];"
     "Trusted_Connection=yes;",
     autocommit=True,

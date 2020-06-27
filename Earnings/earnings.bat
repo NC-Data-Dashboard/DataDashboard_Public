@@ -1,7 +1,8 @@
 python -W ignore Scripts/CAINC5N_NC.py
+python -W ignore Scripts/CAINC5N_NAT.py
 python -W ignore Scripts/NCDOR_MSALESUSETAX_0001.py
 python -W ignore Scripts/NCDOR_MSALESUSETAX_0002.py
-REM python -W ignore Scripts/Publish_Earnings_Data_Series.py
+python -W ignore Scripts/Publish_Earnings_Data_Series.py
 
 cd Updates
 git status

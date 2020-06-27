@@ -6,8 +6,8 @@ import pyodbc
 import datetime as dt
 
 
-#backup_df_master = pd.read_csv('./Updates/STG_WNCD_Earnings_Data_Series.txt', sep='\t')
-#backup_df_master.to_csv('./Backups/STG_WNCD_Earnings_Data_Series_BACKUP.txt', sep='\t')
+backup_df_master = pd.read_csv('./Updates/STG_WNCD_Earnings_Data_Series.txt', sep='\t')
+backup_df_master.to_csv('./Backups/STG_WNCD_Earnings_Data_Series_BACKUP.txt', sep='\t')
 
 
 #### BEA ####
@@ -419,6 +419,7 @@ df37['Default_Scale'] = '0'
 df37['Data_Period_Type'] = 'MM'
 df37['Calculation_Type'] = 'Level'
 df37['Measure_Hierarchy_Level'] = '1'
+
 
 df_list = [df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15, df16, df17, df18, df19, df20, df21, df22, df23, df24, df25, df26, df27, df28, df29, df30, df31, df32, df33, df34, df35]
 

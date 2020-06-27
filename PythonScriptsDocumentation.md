@@ -1,9 +1,9 @@
 # Python Scripts Documentation
 
 ***
-[Nathan Young](www.linkedin.com/in/nathayoung)<br />Senior<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
+[Nathan Young](www.linkedin.com/in/nathayoung)<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
 
-Last edited by: Nathan Young 06.05.2020
+Last edited by: Nathan Young 06.17.2020
 
 ***
 ## Table of Contents
@@ -32,6 +32,8 @@ Going back to the Land folder, updates now take less than 3 minutes and all I mu
 There are still many updates that can and will happen, but it is exciting to be part of the future success of the NC Data Dashboard.
 
 -Nathan Young
+<br />Senior Data Analyst
+<br />WCU Class of 2020
 
 ***
 
@@ -49,7 +51,7 @@ n this file, everything is in classes.  By writing classes, edits usually only m
 ## Understanding the Notebooks
 All notebooks, no matter the folder, should look and function like each other.  This was done to (hopefully) make them easier to understand and use. 
 Functions of each cell are written as comments in their respective cell, but an overview is here to help comprehension.
-* Imports
+* Imports (update as necessary)
     * Pandas is a tool used by Python for data analysis
     * ZipFile, os, StringIO, BytesIO, Requests are all used to open zip files
     * sqlalchemy is used to connect Python to database for SQL commands
@@ -59,35 +61,39 @@ Functions of each cell are written as comments in their respective cell, but an 
     * Each notebook is set to pull data for specific data requested for the Data Dashboard.  The pull request is using the web address for the Excel or CSV table found in the source (Land data = Zillow & GeoFRED, Earnings data = BEA, etc.)
 * Clean new data
     * In order to be uploaded to the NC Data Dashboard, the data needs to only show North Carolina.  To do this, we apply a filter on the State column to show only data where State == NC.
-    * MunicipalCodeFIPS is a number but should have 3 digits for all values.  Excel removes the leading 0 because nobody reads 031 as ‘zero three one’.  Its ‘thirty-one’. 
-        * Because there are two- and three-digit values, we need to get the values to match the largest value, three digits, meaning we have to add back the leading 0’s.
-        * To do this, we convert MunicipalCodeFIPS data type to text with ‘str’ and then use ‘.zfill(3)’ to fill in the values to 3 places. 
+    * In folders like Land:    
+        * MunicipalCodeFIPS is a number but should have 3 digits for all values.  Excel removes the leading 0 because nobody reads 031 as ‘zero three one’.  Its ‘thirty-one’. 
+            * Because there are two- and three-digit values, we need to get the values to match the largest value, three digits, meaning we have to add back the leading 0’s.
+                * To do this, we convert MunicipalCodeFIPS data type to text with ‘str’ and then use ‘.zfill(3)’ to fill in the values to 3 places. 
 * Save new data for export to SSMS
     * To prepare the data for export to the database, it needs to be a tab-delimited text file.  ‘sep = ‘\t’’ saves the file as tab delimited.  Data is now ready to be loaded to SSMS
-    * NOTE: SSMS is now updated via dataframe addressed in later steps.
 * Prepare dataframe for upload to SSMS
     * Reset index
         * When we created text files for upload, we had to change the index from row numbers to data for SSMS to read them the way we wanted.  
         * SSMS creates its own index which would delete the index we created so we must reset the index.
     * Fill NaN values with 0
         * Missing data in the dataframe is considered ‘NaN’.  Tableau team cannot work with ‘NaN’ data so we must convert missing values to ‘0’
-* Connect to database
+
+~~* Connect to database
     * Establish connection
         * Connection is made with Windows Authentication so no need to login.  ‘Trusted_Connection=yes’ handles login.
         * Server should be whatever server you are on.
         * Database should typically be STG2
     * ‘Autocommit = True’ will commit all SQL code executed by cursor
-    * cursor allows execution of SQL scripts in Python
+    * cursor allows execution of SQL scripts in Python~~
+
 * Clean database
     * Remove old backup tables
         * Execute dropping of table titled ‘_BACKUP’
     * Create new backup tables
         * Execute renaming old table to ‘_BACKUP’
 * Add new data
-    * Create new table
+
+    ~~* Create new table
         * To create new tables in Python, first create table in SSMS.  Remember to refresh connection.  To get script for Python, right click on table, select ‘Script table as’ -> ‘Create to’ -> ‘new query editor window’
         * Copy and paste into Python.  Remove all ‘go’ from script.
-        * Can also be created by viewing data and writing script based on columns.
+        * Can also be created by viewing data and writing script based on columns.~~
+
     * Insert dataframe into new table
         * Establish a connection with an engine, software that connects to relational database.
         * Send dataframe to SSMS using to_sql
@@ -132,19 +138,37 @@ Each category folder will have a .bat file.  This file can be used to update the
                 * Choose a place to save the repository
                     * Desktop should do
 * Once the repository has been downloaded, to update:
-    * Open Command Prompt
-        * Type ‘cmd’ into Windows search bar
-        * Navigate to path of repository using ‘cd’ --> ‘Enter’ to move forward and ‘cd..’ -> ‘Enter’ to move back
-            * Example:
+    * If you want to complete this manually, follow the steps below.  To set up auto updates, jump to next bullet.
+        * Open Command Prompt
+            * Type ‘cmd’ into Windows search bar
+            * Navigate to path of repository using ‘cd’ --> ‘Enter’ to move forward and ‘cd..’ -> ‘Enter’ to move back
+                * Example:
+                    
+                        ..\cd Desktop ‘enter'
+                        ..\Desktop cd NCDataDashboard ‘enter’
                 
-                    ..\cd Desktop ‘enter'
-                    ..\Desktop cd NCDataDashboard ‘enter’
-            
-    * When in folder, type or tab to update.bat and press ‘Enter’
-        * When testing, use update_test.bat
-    * Let the files update.  
-        * update.bat will also push updates to GitHub as another form of backup
-        * When that finishes, the database, Excel, and GitHub repository should all be updated.  Double check to see the latest updates by the repository on GitHub.com.
+        * When 'in' folder, type or tab to update.bat and press ‘Enter’
+            ~~* When testing, use update_test.bat~~
+        * Let the files update.  
+            * update.bat will also push updates to GitHub as another form of backup
+            * When that finishes, the database, Excel, and GitHub repository should all be updated.  Double check to see the latest updates by the repository on GitHub.com.
+    * To set up automatic updates via Windows Task Scheduler:
+        * On the production server, type ‘Task’ into Windows search bar and select ‘Task Scheduler’
+        * In the left navigation pane, there should be a folder called ‘Task Scheduler Library’.  Select it.
+            * You should now see a list of scheduled tasks.
+                * If setting up for the first time there should be two tasks for Google.  Leave these as they are essential for Chrome
+            * In the ‘Actions’ pane on the right, select ‘Create Task’
+                * This will open a new window
+            * Name the task
+            * Under the ‘Triggers’ tab, set up a trigger for when the scheduled task should start
+            * Under the ‘Actions’ tab, set up what you want to happen when the task is triggered.
+                * Action = Start a program
+                * Program/Action = Browse for .bat file you want to run
+                * Start in (optional) = Enter the directory where the repository is stored
+                    * This is not optional for these tasks.  They will not run if this is not specified.
+            * Under ‘Settings’ tab, select settings you want to apply to the task.
+            * Save task and let the computer do its thing!
+
 
 ***
 
@@ -161,6 +185,10 @@ If you do not have git and VSCode (or the like), there is a way to use these scr
         * Download should start
         * When finished, extract files to known location (e.g. Desktop)
         * To run, view Updating Data section above
-            * Update_test.bat has all git commands removed to increase usability
 
-A Unix version of the code can be found on my main account in the ‘DataDashboard_Unix’ repository (https://github.com/nathayoung/DataDashboard_Unix)
+            ~~* Update_test.bat has all git commands removed to increase usability~~
+            (You will need to have access to GitHub to run)
+
+A Unix version of the code can be found on my main account in the [‘DataDashboard_Unix’ repository](https://github.com/nathayoung/DataDashboard_Unix) (work in progress)
+
+Bullets that are ~~stuck through~~ are features that used to be in the code but are no longer in production.

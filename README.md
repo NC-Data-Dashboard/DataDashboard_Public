@@ -1,6 +1,6 @@
 # Welcome to the NC Data Dashboard!
-This repository contains work [Nathan Young](https://github.com/nathayoung) created to automate data updates for Data Analyst roles at Western Carolina University.
-__________________________________________________________________________________________________________________________________________
+This repository contains work [Nathan Young](https://www.linkedin.com/in/nathayoung/) created to automate data updates for Data Analyst roles at Western Carolina University.
+__________________________________________________________________________________________________________________________________________https://www.linkedin.com/in/nathayoung/
 
 ** These scripts are used to automatically upload data to a database.  Database information has been replaced with [server] and [database] for security.  If you want to utilize these tools, please make sure you change these values. **
 

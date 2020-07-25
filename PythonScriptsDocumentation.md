@@ -3,7 +3,7 @@
 ***
 [Nathan Young](www.linkedin.com/in/nathayoung)<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
 
-Last edited by: Nathan Young 06.17.2020
+Last edited by: Nathan Young 07.25.2020
 
 ***
 ## Table of Contents
@@ -44,7 +44,7 @@ Up until March of 2020, we had been using Data Vault 2 (DV2) methodology to help
 
 When the rebuild was approved, the separate notebooks were combined into a single Python file.  This allows for easy bug fixing and easy updates allowing for extended usability.  This new single file still contains the notebooks, just as menu items instead of individual notebooks.  
 I
-n this file, everything is in classes.  By writing classes, edits usually only must be done once and functionality is increased.  As more sections are added to the database, new definitions can be added and can then be called in their respective places throughout the file.  Menus are based on numeric values to avoid spelling errors improving functionality and avoiding headaches.  
+n this file, everything is in functions.  By writing functions, edits usually only must be done once and functionality is increased.  As more sections are added to the database, new functions can be added and can then be called in their respective places throughout the file.  Menus are based on numeric values to avoid spelling errors improving reliability and avoiding headaches.  
 
 ***
 

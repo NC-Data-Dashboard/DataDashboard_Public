@@ -127,8 +127,8 @@ Usage (in command line):
 <br>
 
 Notes: 
-* In order to keep methods uniform for easy use and application in the future, many, if not all scripts use the same imports. 
-* Import should be added in order they are listed in this doc to follow current Python PEP8 guidelines for readiblity and function.
+* In order to keep methods uniform for easy use and application in the future, many, if not all scripts use the same modules. 
+* Modules should be added in order they are listed in this doc to follow current Python PEP8 guidelines for readiblity and function.
 ***
 ### Backups
 ***

@@ -299,6 +299,6 @@ Note:
 
 ***
 ### More Information
-To view Python Script Documentation, [click here](https://github.com/NC-Data-Dashboard/DataDashboard_Greenspan/blob/master/PythonScriptsDocumentation.md).
+To view Python Script Documentation, [click here](https://github.com/NC-Data-Dashboard/DataDashboard_Public/blob/master/PythonScriptsDocumentation.md).
 ***
 Last updated: 07.29.2020

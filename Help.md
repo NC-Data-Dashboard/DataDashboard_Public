@@ -15,7 +15,7 @@ Note:
 ### Modules
 <details><summary><a href=https://www.geeksforgeeks.org/python-urllib-module/>urllib</a>: the URL handling module for Python.</summary><br>Installation:
 
-    py -m pip install urllib --upgrade
+    python -m pip install urllib --upgrade
 </details>
 
 
@@ -41,7 +41,7 @@ Note:
 
 <details><summary><a href=https://pypi.org/project/pandas/>pandas</a>: a Python package providing fast, flexible, and expressive data structures designed to make working with structured (tabular, multidimensional, potentially heterogeneous) and time series data both easy and intuitive.</summary><br>Installation:
 
-    py -m pip install pandas --upgrade
+    python -m pip install pandas --upgrade
 <br>
 Usage:
     
@@ -53,7 +53,7 @@ Usage:
 
 <details><summary><a href=https://pypi.org/project/requests/>requests</a>: allows you to send HTTP/1.1 requests extremely easily. </summary><br>Installation:
 
-    py -m pip install requests --upgrade
+    python -m pip install requests --upgrade
 <br>
 Usage:
 
@@ -62,7 +62,7 @@ Usage:
 
 <details><summary><a href=https://pypi.org/project/pyodbc/>pyodbc</a>: an open source Python module that makes accessing ODBC databases simple.</summary><br>Installation:
 
-    py -m pip install pyodbc --upgrade
+    python -m pip install pyodbc --upgrade
 <br>
 Usage:
 
@@ -86,7 +86,7 @@ When the cursor has been created, we can now use it so perform SQL queries:
 
 <details><summary><a href=https://pypi.org/project/SQLAlchemy/>sqlalchemy</a>: the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.</summary><br>Installation:
 
-    py -m pip install SQLAlchemy --upgrade
+    python -m pip install SQLAlchemy --upgrade
 <br>   
 Usage:
 
@@ -96,7 +96,7 @@ Usage:
 
 <details><summary><a href=https://pypi.org/project/numpy/>numpy</a>: the fundamental package for array computing with Python.</summary><br>Installation:
 
-    py -m pip install numpy --upgrade
+    python -m pip install numpy --upgrade
 <br>
 Usage:
 
@@ -109,7 +109,7 @@ Usage:
 ### Other Modules
 <details><summary><a href=https://pypi.org/project/pylint/>pylint</a>: a Python static code analysis tool which looks for programming errors, helps enforcing a coding standard, sniffs for code smells and offers simple refactoring suggestions.</summary><br>Installation:
 
-    py -m pip install pylint --upgrade
+    python -m pip install pylint --upgrade
 <br>
 Usage (in command line):
 
@@ -119,7 +119,7 @@ Usage (in command line):
 
 <details><summary><a href=https://pypi.org/project/black/#:~:text=Black%20is%20the%20uncompromising%20Python%20code%20formatter.%20By,time%20and%20mental%20energy%20for%20more%20important%20matters.>black</a>: the uncompromising Python code formatter.</summary><br>Installation:
 
-    py -m pip install black --upgrade
+    python -m pip install black --upgrade
 <br>
 Usage (in command line):
 
@@ -139,11 +139,11 @@ The backup section at the beginning of the script pulls the file created with th
 
 <details><summary>Read file from "Updates" folder:</summary><br>Using pandas:
 
-    df_backup = pd.read_csv("./Updates/[filename].txt", sep="\t")
+    data_frame_backup = pd.read_csv("./Updates/[filename].txt", sep="\t")
 <br>
 And save file to Backups folder with '_backup' added at the end:
 
-    df_backup.to_csv("./Backups/[filename]_backup.txt", sep="\t")
+    data_frame_backup.to_csv("./Backups/[filename]_backup.txt", sep="\t")
 
 </details>
 

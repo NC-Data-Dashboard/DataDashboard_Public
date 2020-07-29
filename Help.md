@@ -128,9 +128,8 @@ Usage (in command line):
 <br>
 
 Note: 
-+ To install all modules, please use 
-+ In order to keep methods uniform for easy use and application in the future, many, if not all scripts use the same imports. 
-+ Import should be added in order they are listed in this doc to follow current Python [PEP8 guidelines](https://pep8.org/) for readiblity and function.
++ In order for scripts to work properly, in accordance with current Python [PEP8 guidelines](https://pep8.org/), it is recommened that modules are imported in the order listed above.
++ To install all modules, please use the install_modules.bat file
 ***
 ### Backups
 In every script, there are two places where backups are completed: in the beginning and before the data is uploaded into the database.  

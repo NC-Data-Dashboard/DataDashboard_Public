@@ -11,7 +11,7 @@ Welcome to the "Help Desk" for the NC Data Dashboard on GitHub.  If you have a q
 
 Note: 
 + Anything directly in [ ] square brackets denotes a user input field and must be changed by user before code will run successfully.
-+ Arrows denote drop downs containing more information regarding the subject.  Click the arrow to learn more!
++ Arrows denote drop downs containing more information regarding the subject.  Click the arrow or text following the arrow to learn more!
 ***
 ### Modules
 <details><summary><a href=https://www.geeksforgeeks.org/python-urllib-module/>urllib</a>: the URL handling module for Python.</summary><br>Installation:

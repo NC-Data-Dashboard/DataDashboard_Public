@@ -41,6 +41,6 @@ Some folders will have a Data folder for data in .csv form that could not be pul
 
 All folders contain or will contain Windows Batch Files (.bat) to simplify and expedite update process. 
 
-View [Help](https://github.com/NC-Data-Dashboard/DataDashboard_Greenspan/blob/master/Help.md) Documentation.
+View [Help](https://github.com/NC-Data-Dashboard/DataDashboard_Public/blob/master/Help.md) Documentation.
 
 #### Last updated: 07.29.2020

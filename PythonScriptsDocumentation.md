@@ -1,10 +1,6 @@
 # Python Scripts Documentation
-
-***
+### Author Info
 [Nathan Young](www.linkedin.com/in/nathayoung)<br />[NC Data Dashboard](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)<br />[Western Carolina University](wcu.edu)
-
-Last edited by: Nathan Young 07.25.2020
-
 ***
 ## Table of Contents
 1. [Why Automate](#Why-Automate)
@@ -14,6 +10,8 @@ Last edited by: Nathan Young 07.25.2020
 5. [Updating Data](#Updating-Data)
 6. [Notes](#Notes)
 
+
+Last edited by: Nathan Young 07.29.2020
 ***
 
 ## Why Automate

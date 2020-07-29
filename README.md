@@ -1,8 +1,8 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work [Nathan Young](https://www.linkedin.com/in/nathayoung/) created to automate data updates for Data Analyst roles at Western Carolina University.
 
-[![NC Data Dashboard Website](https://img.shields.io/badge/-Website-5f249f?style=for-the-badge&logo=website&logoColor=white])](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)
-[![Tableau Public](https://img.shields.io/badge/-TABLEAU-5f249f?style=for-the-badge&logo=TABLEAU&logoColor=white])](https://public.tableau.com/profile/wnced#!/)
+[![NC Data Dashboard Website](https://img.shields.io/badge/-Dashboard_Website-5f249f?style=for-the-badge&logo=website&logoColor=white])](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)
+[![Tableau Public](https://img.shields.io/badge/-Dashboard_Tableau-5f249f?style=for-the-badge&logo=TABLEAU&logoColor=white])](https://public.tableau.com/profile/wnced#!/)
 ________________________________________________________________________________________________________________________________________
 
 ** These scripts are used to automatically upload data to a database.  Database information has been replaced with [server] and [database] for security.  If you want to utilize these tools, please make sure you change these values. **

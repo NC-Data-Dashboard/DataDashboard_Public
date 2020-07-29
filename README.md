@@ -1,7 +1,7 @@
 # Welcome to the NC Data Dashboard!
 This repository contains work [Nathan Young](https://www.linkedin.com/in/nathayoung/) created to automate data updates for Data Analyst roles at Western Carolina University.
 
-[![NC Data Dashboard Website](https://img.shields.io/badge/-Website-d3bc8d?style=for-the-badge&logo=website&logoColor=white])](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)
+[![NC Data Dashboard Website](https://img.shields.io/badge/-Website-5f249f?style=for-the-badge&logo=website&logoColor=white])](https://www.wcu.edu/engage/regional-development/data-dashboard.aspx)
 [![Tableau Public](https://img.shields.io/badge/-TABLEAU-5f249f?style=for-the-badge&logo=TABLEAU&logoColor=white])](https://public.tableau.com/profile/wnced#!/)
 ________________________________________________________________________________________________________________________________________
 

@@ -36,13 +36,13 @@ There are still many updates that can and will happen, but it is exciting to be 
 ***
 
 ## DataUpdate.py
-The first version of the scripts written to help automate the data update process were built using Jupyter Notebooks, with a notebook dedicated to each source of data.  The documentation has not been changed and can be found in the following pages.  
+~~The first version of the scripts written to help automate the data update process were built using Jupyter Notebooks, with a notebook dedicated to each source of data.  The documentation has not been changed and can be found in the following pages.  
 
 Up until March of 2020, we had been using Data Vault 2 (DV2) methodology to help us create our database.  However, this system had been incorporated upon the creation of the NC Data Dashboard with staff who were trained in DV2 who are no longer working on the team.  Since DV2 is unfortunately not taught in classes, as of writing, and there were many issues with the way it was set up, we decided to move away from it and rebuild our database to match systems taught in classes.  As Western Carolina University adds more IT related career paths, maybe it will make a return, but until then, simplification is key and will hopefully cause less headaches.  
 
 When the rebuild was approved, the separate notebooks were combined into a single Python file.  This allows for easy bug fixing and easy updates allowing for extended usability.  This new single file still contains the notebooks, just as menu items instead of individual notebooks.  
 I
-n this file, everything is in functions.  By writing functions, edits usually only must be done once and functionality is increased.  As more sections are added to the database, new functions can be added and can then be called in their respective places throughout the file.  Menus are based on numeric values to avoid spelling errors improving reliability and avoiding headaches.  
+n this file, everything is in functions.  By writing functions, edits usually only must be done once and functionality is increased.  As more sections are added to the database, new functions can be added and can then be called in their respective places throughout the file.  Menus are based on numeric values to avoid spelling errors improving reliability and avoiding headaches.~~
 
 ***
 

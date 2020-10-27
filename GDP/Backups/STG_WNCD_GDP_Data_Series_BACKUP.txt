@@ -1481,25 +1481,25 @@
 1479	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2001	16629.0
 1480	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2001	25372.0
 1481	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2001	138644.0
-1482	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2001	
-1483	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2001	0.0
-1484	37155	FIPS_37155	Robeson County			  Utilities	2001	28810.0
-1485	37155	FIPS_37155	Robeson County			  Construction	2001	118458.0
-1486	37155	FIPS_37155	Robeson County			  Manufacturing	2001	830109.0
-1487	37155	FIPS_37155	Robeson County			  Wholesale trade	2001	94445.0
-1488	37155	FIPS_37155	Robeson County			  Retail trade	2001	173772.0
-1489	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2001	
-1490	37155	FIPS_37155	Robeson County			  Information	2001	18114.0
-1491	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2001	226177.0
-1492	37155	FIPS_37155	Robeson County			  Professional and business services	2001	79070.0
-1493	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2001	18432.0
-1494	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2001	27065.0
-1495	37155	FIPS_37155	Robeson County			   Educational services	2001	4077.0
-1496	37155	FIPS_37155	Robeson County			   Health care and social assistance	2001	203860.0
-1497	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2001	4813.0
-1498	37155	FIPS_37155	Robeson County			   Accommodation and food services	2001	54806.0
-1499	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2001	60198.0
-1500	37155	FIPS_37155	Robeson County			Government and government enterprises	2001	364888.0
+1482	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2001	
+1483	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2001	0.0
+1484	37155	FIPS_37155	Robeson County	South Central		  Utilities	2001	28810.0
+1485	37155	FIPS_37155	Robeson County	South Central		  Construction	2001	118458.0
+1486	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2001	830109.0
+1487	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2001	94445.0
+1488	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2001	173772.0
+1489	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2001	
+1490	37155	FIPS_37155	Robeson County	South Central		  Information	2001	18114.0
+1491	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2001	226177.0
+1492	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2001	79070.0
+1493	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2001	18432.0
+1494	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2001	27065.0
+1495	37155	FIPS_37155	Robeson County	South Central		   Educational services	2001	4077.0
+1496	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2001	203860.0
+1497	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2001	4813.0
+1498	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2001	54806.0
+1499	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2001	60198.0
+1500	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2001	364888.0
 1501	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2001	24219.0
 1502	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2001	2128.0
 1503	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2001	50998.0
@@ -3400,25 +3400,25 @@
 3398	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2002	18040.0
 3399	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2002	27719.0
 3400	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2002	138541.0
-3401	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2002	
-3402	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2002	0.0
-3403	37155	FIPS_37155	Robeson County			  Utilities	2002	
-3404	37155	FIPS_37155	Robeson County			  Construction	2002	123526.0
-3405	37155	FIPS_37155	Robeson County			  Manufacturing	2002	760312.0
-3406	37155	FIPS_37155	Robeson County			  Wholesale trade	2002	
-3407	37155	FIPS_37155	Robeson County			  Retail trade	2002	173195.0
-3408	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2002	53395.0
-3409	37155	FIPS_37155	Robeson County			  Information	2002	17779.0
-3410	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2002	246879.0
-3411	37155	FIPS_37155	Robeson County			  Professional and business services	2002	86815.0
-3412	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2002	19067.0
-3413	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2002	32455.0
-3414	37155	FIPS_37155	Robeson County			   Educational services	2002	5664.0
-3415	37155	FIPS_37155	Robeson County			   Health care and social assistance	2002	214318.0
-3416	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2002	5163.0
-3417	37155	FIPS_37155	Robeson County			   Accommodation and food services	2002	56684.0
-3418	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2002	68404.0
-3419	37155	FIPS_37155	Robeson County			Government and government enterprises	2002	379482.0
+3401	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2002	
+3402	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2002	0.0
+3403	37155	FIPS_37155	Robeson County	South Central		  Utilities	2002	
+3404	37155	FIPS_37155	Robeson County	South Central		  Construction	2002	123526.0
+3405	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2002	760312.0
+3406	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2002	
+3407	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2002	173195.0
+3408	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2002	53395.0
+3409	37155	FIPS_37155	Robeson County	South Central		  Information	2002	17779.0
+3410	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2002	246879.0
+3411	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2002	86815.0
+3412	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2002	19067.0
+3413	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2002	32455.0
+3414	37155	FIPS_37155	Robeson County	South Central		   Educational services	2002	5664.0
+3415	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2002	214318.0
+3416	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2002	5163.0
+3417	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2002	56684.0
+3418	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2002	68404.0
+3419	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2002	379482.0
 3420	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2002	14012.0
 3421	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2002	1884.0
 3422	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2002	42115.0
@@ -5319,25 +5319,25 @@
 5317	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2003	16213.0
 5318	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2003	28124.0
 5319	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2003	142112.0
-5320	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2003	25177.0
-5321	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2003	0.0
-5322	37155	FIPS_37155	Robeson County			  Utilities	2003	39533.0
-5323	37155	FIPS_37155	Robeson County			  Construction	2003	133894.0
-5324	37155	FIPS_37155	Robeson County			  Manufacturing	2003	873281.0
-5325	37155	FIPS_37155	Robeson County			  Wholesale trade	2003	88470.0
-5326	37155	FIPS_37155	Robeson County			  Retail trade	2003	181162.0
-5327	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2003	53427.0
-5328	37155	FIPS_37155	Robeson County			  Information	2003	18388.0
-5329	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2003	252099.0
-5330	37155	FIPS_37155	Robeson County			  Professional and business services	2003	82173.0
-5331	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2003	12461.0
-5332	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2003	34172.0
-5333	37155	FIPS_37155	Robeson County			   Educational services	2003	5675.0
-5334	37155	FIPS_37155	Robeson County			   Health care and social assistance	2003	241729.0
-5335	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2003	5214.0
-5336	37155	FIPS_37155	Robeson County			   Accommodation and food services	2003	58581.0
-5337	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2003	67498.0
-5338	37155	FIPS_37155	Robeson County			Government and government enterprises	2003	399124.0
+5320	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2003	25177.0
+5321	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2003	0.0
+5322	37155	FIPS_37155	Robeson County	South Central		  Utilities	2003	39533.0
+5323	37155	FIPS_37155	Robeson County	South Central		  Construction	2003	133894.0
+5324	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2003	873281.0
+5325	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2003	88470.0
+5326	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2003	181162.0
+5327	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2003	53427.0
+5328	37155	FIPS_37155	Robeson County	South Central		  Information	2003	18388.0
+5329	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2003	252099.0
+5330	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2003	82173.0
+5331	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2003	12461.0
+5332	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2003	34172.0
+5333	37155	FIPS_37155	Robeson County	South Central		   Educational services	2003	5675.0
+5334	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2003	241729.0
+5335	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2003	5214.0
+5336	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2003	58581.0
+5337	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2003	67498.0
+5338	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2003	399124.0
 5339	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2003	15880.0
 5340	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2003	1712.0
 5341	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2003	49387.0
@@ -7238,25 +7238,25 @@
 7236	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2004	16924.0
 7237	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2004	29284.0
 7238	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2004	150428.0
-7239	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2004	81983.0
-7240	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2004	0.0
-7241	37155	FIPS_37155	Robeson County			  Utilities	2004	37532.0
-7242	37155	FIPS_37155	Robeson County			  Construction	2004	145684.0
-7243	37155	FIPS_37155	Robeson County			  Manufacturing	2004	993331.0
-7244	37155	FIPS_37155	Robeson County			  Wholesale trade	2004	100432.0
-7245	37155	FIPS_37155	Robeson County			  Retail trade	2004	184326.0
-7246	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2004	49675.0
-7247	37155	FIPS_37155	Robeson County			  Information	2004	21926.0
-7248	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2004	260479.0
-7249	37155	FIPS_37155	Robeson County			  Professional and business services	2004	86744.0
-7250	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2004	15329.0
-7251	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2004	35236.0
-7252	37155	FIPS_37155	Robeson County			   Educational services	2004	7118.0
-7253	37155	FIPS_37155	Robeson County			   Health care and social assistance	2004	275430.0
-7254	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2004	5470.0
-7255	37155	FIPS_37155	Robeson County			   Accommodation and food services	2004	59772.0
-7256	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2004	67951.0
-7257	37155	FIPS_37155	Robeson County			Government and government enterprises	2004	418371.0
+7239	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2004	81983.0
+7240	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2004	0.0
+7241	37155	FIPS_37155	Robeson County	South Central		  Utilities	2004	37532.0
+7242	37155	FIPS_37155	Robeson County	South Central		  Construction	2004	145684.0
+7243	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2004	993331.0
+7244	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2004	100432.0
+7245	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2004	184326.0
+7246	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2004	49675.0
+7247	37155	FIPS_37155	Robeson County	South Central		  Information	2004	21926.0
+7248	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2004	260479.0
+7249	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2004	86744.0
+7250	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2004	15329.0
+7251	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2004	35236.0
+7252	37155	FIPS_37155	Robeson County	South Central		   Educational services	2004	7118.0
+7253	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2004	275430.0
+7254	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2004	5470.0
+7255	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2004	59772.0
+7256	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2004	67951.0
+7257	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2004	418371.0
 7258	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2004	26004.0
 7259	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2004	2637.0
 7260	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2004	41236.0
@@ -9157,25 +9157,25 @@
 9155	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2005	17281.0
 9156	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2005	29874.0
 9157	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2005	157356.0
-9158	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2005	79972.0
-9159	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2005	0.0
-9160	37155	FIPS_37155	Robeson County			  Utilities	2005	39498.0
-9161	37155	FIPS_37155	Robeson County			  Construction	2005	145068.0
-9162	37155	FIPS_37155	Robeson County			  Manufacturing	2005	1034671.0
-9163	37155	FIPS_37155	Robeson County			  Wholesale trade	2005	106585.0
-9164	37155	FIPS_37155	Robeson County			  Retail trade	2005	198838.0
-9165	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2005	47287.0
-9166	37155	FIPS_37155	Robeson County			  Information	2005	24752.0
-9167	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2005	240546.0
-9168	37155	FIPS_37155	Robeson County			  Professional and business services	2005	93576.0
-9169	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2005	20896.0
-9170	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2005	36495.0
-9171	37155	FIPS_37155	Robeson County			   Educational services	2005	7934.0
-9172	37155	FIPS_37155	Robeson County			   Health care and social assistance	2005	294878.0
-9173	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2005	5969.0
-9174	37155	FIPS_37155	Robeson County			   Accommodation and food services	2005	61342.0
-9175	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2005	70465.0
-9176	37155	FIPS_37155	Robeson County			Government and government enterprises	2005	451203.0
+9158	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2005	79972.0
+9159	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2005	0.0
+9160	37155	FIPS_37155	Robeson County	South Central		  Utilities	2005	39498.0
+9161	37155	FIPS_37155	Robeson County	South Central		  Construction	2005	145068.0
+9162	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2005	1034671.0
+9163	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2005	106585.0
+9164	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2005	198838.0
+9165	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2005	47287.0
+9166	37155	FIPS_37155	Robeson County	South Central		  Information	2005	24752.0
+9167	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2005	240546.0
+9168	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2005	93576.0
+9169	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2005	20896.0
+9170	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2005	36495.0
+9171	37155	FIPS_37155	Robeson County	South Central		   Educational services	2005	7934.0
+9172	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2005	294878.0
+9173	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2005	5969.0
+9174	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2005	61342.0
+9175	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2005	70465.0
+9176	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2005	451203.0
 9177	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2005	15841.0
 9178	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2005	2777.0
 9179	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2005	37612.0
@@ -11076,25 +11076,25 @@
 11074	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2006	17825.0
 11075	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2006	31098.0
 11076	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2006	168457.0
-11077	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2006	75227.0
-11078	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2006	63.0
-11079	37155	FIPS_37155	Robeson County			  Utilities	2006	39825.0
-11080	37155	FIPS_37155	Robeson County			  Construction	2006	153266.0
-11081	37155	FIPS_37155	Robeson County			  Manufacturing	2006	1200350.0
-11082	37155	FIPS_37155	Robeson County			  Wholesale trade	2006	119391.0
-11083	37155	FIPS_37155	Robeson County			  Retail trade	2006	204203.0
-11084	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2006	51482.0
-11085	37155	FIPS_37155	Robeson County			  Information	2006	22977.0
-11086	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2006	330570.0
-11087	37155	FIPS_37155	Robeson County			  Professional and business services	2006	102034.0
-11088	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2006	24774.0
-11089	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2006	39862.0
-11090	37155	FIPS_37155	Robeson County			   Educational services	2006	9184.0
-11091	37155	FIPS_37155	Robeson County			   Health care and social assistance	2006	325689.0
-11092	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2006	6328.0
-11093	37155	FIPS_37155	Robeson County			   Accommodation and food services	2006	65559.0
-11094	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2006	77790.0
-11095	37155	FIPS_37155	Robeson County			Government and government enterprises	2006	475837.0
+11077	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2006	75227.0
+11078	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2006	63.0
+11079	37155	FIPS_37155	Robeson County	South Central		  Utilities	2006	39825.0
+11080	37155	FIPS_37155	Robeson County	South Central		  Construction	2006	153266.0
+11081	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2006	1200350.0
+11082	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2006	119391.0
+11083	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2006	204203.0
+11084	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2006	51482.0
+11085	37155	FIPS_37155	Robeson County	South Central		  Information	2006	22977.0
+11086	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2006	330570.0
+11087	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2006	102034.0
+11088	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2006	24774.0
+11089	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2006	39862.0
+11090	37155	FIPS_37155	Robeson County	South Central		   Educational services	2006	9184.0
+11091	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2006	325689.0
+11092	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2006	6328.0
+11093	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2006	65559.0
+11094	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2006	77790.0
+11095	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2006	475837.0
 11096	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2006	20674.0
 11097	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2006	1820.0
 11098	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2006	60024.0
@@ -12995,25 +12995,25 @@
 12993	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2007	21051.0
 12994	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2007	30944.0
 12995	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2007	179422.0
-12996	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2007	68865.0
-12997	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2007	33.0
-12998	37155	FIPS_37155	Robeson County			  Utilities	2007	51489.0
-12999	37155	FIPS_37155	Robeson County			  Construction	2007	156656.0
-13000	37155	FIPS_37155	Robeson County			  Manufacturing	2007	1183138.0
-13001	37155	FIPS_37155	Robeson County			  Wholesale trade	2007	128606.0
-13002	37155	FIPS_37155	Robeson County			  Retail trade	2007	211051.0
-13003	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2007	56858.0
-13004	37155	FIPS_37155	Robeson County			  Information	2007	26096.0
-13005	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2007	382358.0
-13006	37155	FIPS_37155	Robeson County			  Professional and business services	2007	106546.0
-13007	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2007	24796.0
-13008	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2007	41831.0
-13009	37155	FIPS_37155	Robeson County			   Educational services	2007	12284.0
-13010	37155	FIPS_37155	Robeson County			   Health care and social assistance	2007	363813.0
-13011	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2007	6276.0
-13012	37155	FIPS_37155	Robeson County			   Accommodation and food services	2007	74208.0
-13013	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2007	76216.0
-13014	37155	FIPS_37155	Robeson County			Government and government enterprises	2007	503921.0
+12996	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2007	68865.0
+12997	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2007	33.0
+12998	37155	FIPS_37155	Robeson County	South Central		  Utilities	2007	51489.0
+12999	37155	FIPS_37155	Robeson County	South Central		  Construction	2007	156656.0
+13000	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2007	1183138.0
+13001	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2007	128606.0
+13002	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2007	211051.0
+13003	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2007	56858.0
+13004	37155	FIPS_37155	Robeson County	South Central		  Information	2007	26096.0
+13005	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2007	382358.0
+13006	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2007	106546.0
+13007	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2007	24796.0
+13008	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2007	41831.0
+13009	37155	FIPS_37155	Robeson County	South Central		   Educational services	2007	12284.0
+13010	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2007	363813.0
+13011	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2007	6276.0
+13012	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2007	74208.0
+13013	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2007	76216.0
+13014	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2007	503921.0
 13015	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2007	7492.0
 13016	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2007	2851.0
 13017	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2007	65532.0
@@ -14914,25 +14914,25 @@
 14912	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2008	22086.0
 14913	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2008	30840.0
 14914	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2008	187736.0
-14915	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2008	
-14916	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2008	0.0
-14917	37155	FIPS_37155	Robeson County			  Utilities	2008	45128.0
-14918	37155	FIPS_37155	Robeson County			  Construction	2008	128563.0
-14919	37155	FIPS_37155	Robeson County			  Manufacturing	2008	945450.0
-14920	37155	FIPS_37155	Robeson County			  Wholesale trade	2008	130950.0
-14921	37155	FIPS_37155	Robeson County			  Retail trade	2008	206275.0
-14922	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2008	
-14923	37155	FIPS_37155	Robeson County			  Information	2008	26687.0
-14924	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2008	364230.0
-14925	37155	FIPS_37155	Robeson County			  Professional and business services	2008	112888.0
-14926	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2008	28482.0
-14927	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2008	41287.0
-14928	37155	FIPS_37155	Robeson County			   Educational services	2008	12076.0
-14929	37155	FIPS_37155	Robeson County			   Health care and social assistance	2008	395167.0
-14930	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2008	6305.0
-14931	37155	FIPS_37155	Robeson County			   Accommodation and food services	2008	70265.0
-14932	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2008	71136.0
-14933	37155	FIPS_37155	Robeson County			Government and government enterprises	2008	528136.0
+14915	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2008	
+14916	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2008	0.0
+14917	37155	FIPS_37155	Robeson County	South Central		  Utilities	2008	45128.0
+14918	37155	FIPS_37155	Robeson County	South Central		  Construction	2008	128563.0
+14919	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2008	945450.0
+14920	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2008	130950.0
+14921	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2008	206275.0
+14922	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2008	
+14923	37155	FIPS_37155	Robeson County	South Central		  Information	2008	26687.0
+14924	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2008	364230.0
+14925	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2008	112888.0
+14926	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2008	28482.0
+14927	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2008	41287.0
+14928	37155	FIPS_37155	Robeson County	South Central		   Educational services	2008	12076.0
+14929	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2008	395167.0
+14930	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2008	6305.0
+14931	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2008	70265.0
+14932	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2008	71136.0
+14933	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2008	528136.0
 14934	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2008	35006.0
 14935	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2008	2066.0
 14936	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2008	62261.0
@@ -16833,25 +16833,25 @@
 16831	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2009	22249.0
 16832	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2009	30316.0
 16833	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2009	182832.0
-16834	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2009	
-16835	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2009	0.0
-16836	37155	FIPS_37155	Robeson County			  Utilities	2009	30895.0
-16837	37155	FIPS_37155	Robeson County			  Construction	2009	120791.0
-16838	37155	FIPS_37155	Robeson County			  Manufacturing	2009	994443.0
-16839	37155	FIPS_37155	Robeson County			  Wholesale trade	2009	131565.0
-16840	37155	FIPS_37155	Robeson County			  Retail trade	2009	201477.0
-16841	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2009	
-16842	37155	FIPS_37155	Robeson County			  Information	2009	29482.0
-16843	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2009	386025.0
-16844	37155	FIPS_37155	Robeson County			  Professional and business services	2009	112406.0
-16845	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2009	30571.0
-16846	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2009	40960.0
-16847	37155	FIPS_37155	Robeson County			   Educational services	2009	12150.0
-16848	37155	FIPS_37155	Robeson County			   Health care and social assistance	2009	402446.0
-16849	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2009	6309.0
-16850	37155	FIPS_37155	Robeson County			   Accommodation and food services	2009	68459.0
-16851	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2009	73818.0
-16852	37155	FIPS_37155	Robeson County			Government and government enterprises	2009	535595.0
+16834	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2009	
+16835	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2009	0.0
+16836	37155	FIPS_37155	Robeson County	South Central		  Utilities	2009	30895.0
+16837	37155	FIPS_37155	Robeson County	South Central		  Construction	2009	120791.0
+16838	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2009	994443.0
+16839	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2009	131565.0
+16840	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2009	201477.0
+16841	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2009	
+16842	37155	FIPS_37155	Robeson County	South Central		  Information	2009	29482.0
+16843	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2009	386025.0
+16844	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2009	112406.0
+16845	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2009	30571.0
+16846	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2009	40960.0
+16847	37155	FIPS_37155	Robeson County	South Central		   Educational services	2009	12150.0
+16848	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2009	402446.0
+16849	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2009	6309.0
+16850	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2009	68459.0
+16851	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2009	73818.0
+16852	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2009	535595.0
 16853	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2009	26703.0
 16854	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2009	1658.0
 16855	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2009	32681.0
@@ -18752,25 +18752,25 @@
 18750	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2010	23133.0
 18751	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2010	30951.0
 18752	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2010	184029.0
-18753	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2010	
-18754	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2010	0.0
-18755	37155	FIPS_37155	Robeson County			  Utilities	2010	49765.0
-18756	37155	FIPS_37155	Robeson County			  Construction	2010	128516.0
-18757	37155	FIPS_37155	Robeson County			  Manufacturing	2010	753533.0
-18758	37155	FIPS_37155	Robeson County			  Wholesale trade	2010	136896.0
-18759	37155	FIPS_37155	Robeson County			  Retail trade	2010	214169.0
-18760	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2010	
-18761	37155	FIPS_37155	Robeson County			  Information	2010	29927.0
-18762	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2010	408547.0
-18763	37155	FIPS_37155	Robeson County			  Professional and business services	2010	128354.0
-18764	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2010	37495.0
-18765	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2010	50825.0
-18766	37155	FIPS_37155	Robeson County			   Educational services	2010	12111.0
-18767	37155	FIPS_37155	Robeson County			   Health care and social assistance	2010	385153.0
-18768	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2010	6709.0
-18769	37155	FIPS_37155	Robeson County			   Accommodation and food services	2010	70180.0
-18770	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2010	76382.0
-18771	37155	FIPS_37155	Robeson County			Government and government enterprises	2010	541369.0
+18753	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2010	
+18754	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2010	0.0
+18755	37155	FIPS_37155	Robeson County	South Central		  Utilities	2010	49765.0
+18756	37155	FIPS_37155	Robeson County	South Central		  Construction	2010	128516.0
+18757	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2010	753533.0
+18758	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2010	136896.0
+18759	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2010	214169.0
+18760	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2010	
+18761	37155	FIPS_37155	Robeson County	South Central		  Information	2010	29927.0
+18762	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2010	408547.0
+18763	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2010	128354.0
+18764	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2010	37495.0
+18765	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2010	50825.0
+18766	37155	FIPS_37155	Robeson County	South Central		   Educational services	2010	12111.0
+18767	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2010	385153.0
+18768	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2010	6709.0
+18769	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2010	70180.0
+18770	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2010	76382.0
+18771	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2010	541369.0
 18772	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2010	20898.0
 18773	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2010	1151.0
 18774	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2010	69681.0
@@ -20671,25 +20671,25 @@
 20669	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2011	23936.0
 20670	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2011	29880.0
 20671	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2011	183220.0
-20672	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2011	
-20673	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2011	0.0
-20674	37155	FIPS_37155	Robeson County			  Utilities	2011	26533.0
-20675	37155	FIPS_37155	Robeson County			  Construction	2011	128524.0
-20676	37155	FIPS_37155	Robeson County			  Manufacturing	2011	601535.0
-20677	37155	FIPS_37155	Robeson County			  Wholesale trade	2011	138366.0
-20678	37155	FIPS_37155	Robeson County			  Retail trade	2011	211452.0
-20679	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2011	
-20680	37155	FIPS_37155	Robeson County			  Information	2011	26944.0
-20681	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2011	436166.0
-20682	37155	FIPS_37155	Robeson County			  Professional and business services	2011	142625.0
-20683	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2011	40982.0
-20684	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2011	59475.0
-20685	37155	FIPS_37155	Robeson County			   Educational services	2011	10961.0
-20686	37155	FIPS_37155	Robeson County			   Health care and social assistance	2011	375417.0
-20687	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2011	8976.0
-20688	37155	FIPS_37155	Robeson County			   Accommodation and food services	2011	68818.0
-20689	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2011	77439.0
-20690	37155	FIPS_37155	Robeson County			Government and government enterprises	2011	539777.0
+20672	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2011	
+20673	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2011	0.0
+20674	37155	FIPS_37155	Robeson County	South Central		  Utilities	2011	26533.0
+20675	37155	FIPS_37155	Robeson County	South Central		  Construction	2011	128524.0
+20676	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2011	601535.0
+20677	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2011	138366.0
+20678	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2011	211452.0
+20679	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2011	
+20680	37155	FIPS_37155	Robeson County	South Central		  Information	2011	26944.0
+20681	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2011	436166.0
+20682	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2011	142625.0
+20683	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2011	40982.0
+20684	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2011	59475.0
+20685	37155	FIPS_37155	Robeson County	South Central		   Educational services	2011	10961.0
+20686	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2011	375417.0
+20687	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2011	8976.0
+20688	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2011	68818.0
+20689	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2011	77439.0
+20690	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2011	539777.0
 20691	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2011	15276.0
 20692	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2011	660.0
 20693	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2011	51075.0
@@ -22590,25 +22590,25 @@
 22588	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2012	23780.0
 22589	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2012	31235.0
 22590	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2012	179191.0
-22591	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2012	
-22592	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2012	0.0
-22593	37155	FIPS_37155	Robeson County			  Utilities	2012	15185.0
-22594	37155	FIPS_37155	Robeson County			  Construction	2012	138072.0
-22595	37155	FIPS_37155	Robeson County			  Manufacturing	2012	544736.0
-22596	37155	FIPS_37155	Robeson County			  Wholesale trade	2012	148545.0
-22597	37155	FIPS_37155	Robeson County			  Retail trade	2012	211366.0
-22598	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2012	
-22599	37155	FIPS_37155	Robeson County			  Information	2012	25151.0
-22600	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2012	434674.0
-22601	37155	FIPS_37155	Robeson County			  Professional and business services	2012	144959.0
-22602	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2012	44457.0
-22603	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2012	58139.0
-22604	37155	FIPS_37155	Robeson County			   Educational services	2012	10531.0
-22605	37155	FIPS_37155	Robeson County			   Health care and social assistance	2012	405925.0
-22606	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2012	7892.0
-22607	37155	FIPS_37155	Robeson County			   Accommodation and food services	2012	74272.0
-22608	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2012	82166.0
-22609	37155	FIPS_37155	Robeson County			Government and government enterprises	2012	523825.0
+22591	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2012	
+22592	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2012	0.0
+22593	37155	FIPS_37155	Robeson County	South Central		  Utilities	2012	15185.0
+22594	37155	FIPS_37155	Robeson County	South Central		  Construction	2012	138072.0
+22595	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2012	544736.0
+22596	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2012	148545.0
+22597	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2012	211366.0
+22598	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2012	
+22599	37155	FIPS_37155	Robeson County	South Central		  Information	2012	25151.0
+22600	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2012	434674.0
+22601	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2012	144959.0
+22602	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2012	44457.0
+22603	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2012	58139.0
+22604	37155	FIPS_37155	Robeson County	South Central		   Educational services	2012	10531.0
+22605	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2012	405925.0
+22606	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2012	7892.0
+22607	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2012	74272.0
+22608	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2012	82166.0
+22609	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2012	523825.0
 22610	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2012	25816.0
 22611	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2012	743.0
 22612	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2012	58088.0
@@ -24509,25 +24509,25 @@
 24507	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2013	24010.0
 24508	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2013	31579.0
 24509	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2013	186091.0
-24510	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2013	112482.0
-24511	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2013	0.0
-24512	37155	FIPS_37155	Robeson County			  Utilities	2013	16024.0
-24513	37155	FIPS_37155	Robeson County			  Construction	2013	132732.0
-24514	37155	FIPS_37155	Robeson County			  Manufacturing	2013	611747.0
-24515	37155	FIPS_37155	Robeson County			  Wholesale trade	2013	154641.0
-24516	37155	FIPS_37155	Robeson County			  Retail trade	2013	215841.0
-24517	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2013	56702.0
-24518	37155	FIPS_37155	Robeson County			  Information	2013	25765.0
-24519	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2013	425240.0
-24520	37155	FIPS_37155	Robeson County			  Professional and business services	2013	149384.0
-24521	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2013	46585.0
-24522	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2013	59821.0
-24523	37155	FIPS_37155	Robeson County			   Educational services	2013	9729.0
-24524	37155	FIPS_37155	Robeson County			   Health care and social assistance	2013	409557.0
-24525	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2013	6146.0
-24526	37155	FIPS_37155	Robeson County			   Accommodation and food services	2013	77820.0
-24527	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2013	82868.0
-24528	37155	FIPS_37155	Robeson County			Government and government enterprises	2013	533984.0
+24510	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2013	112482.0
+24511	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2013	0.0
+24512	37155	FIPS_37155	Robeson County	South Central		  Utilities	2013	16024.0
+24513	37155	FIPS_37155	Robeson County	South Central		  Construction	2013	132732.0
+24514	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2013	611747.0
+24515	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2013	154641.0
+24516	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2013	215841.0
+24517	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2013	56702.0
+24518	37155	FIPS_37155	Robeson County	South Central		  Information	2013	25765.0
+24519	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2013	425240.0
+24520	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2013	149384.0
+24521	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2013	46585.0
+24522	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2013	59821.0
+24523	37155	FIPS_37155	Robeson County	South Central		   Educational services	2013	9729.0
+24524	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2013	409557.0
+24525	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2013	6146.0
+24526	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2013	77820.0
+24527	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2013	82868.0
+24528	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2013	533984.0
 24529	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2013	13243.0
 24530	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2013	1642.0
 24531	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2013	210020.0
@@ -26428,25 +26428,25 @@
 26426	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2014	25379.0
 26427	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2014	33207.0
 26428	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2014	185854.0
-26429	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2014	73886.0
-26430	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2014	0.0
-26431	37155	FIPS_37155	Robeson County			  Utilities	2014	18450.0
-26432	37155	FIPS_37155	Robeson County			  Construction	2014	136786.0
-26433	37155	FIPS_37155	Robeson County			  Manufacturing	2014	669214.0
-26434	37155	FIPS_37155	Robeson County			  Wholesale trade	2014	139919.0
-26435	37155	FIPS_37155	Robeson County			  Retail trade	2014	226498.0
-26436	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2014	58327.0
-26437	37155	FIPS_37155	Robeson County			  Information	2014	27107.0
-26438	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2014	421673.0
-26439	37155	FIPS_37155	Robeson County			  Professional and business services	2014	155028.0
-26440	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2014	48831.0
-26441	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2014	62915.0
-26442	37155	FIPS_37155	Robeson County			   Educational services	2014	10687.0
-26443	37155	FIPS_37155	Robeson County			   Health care and social assistance	2014	409473.0
-26444	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2014	5236.0
-26445	37155	FIPS_37155	Robeson County			   Accommodation and food services	2014	83325.0
-26446	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2014	88031.0
-26447	37155	FIPS_37155	Robeson County			Government and government enterprises	2014	540703.0
+26429	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2014	73886.0
+26430	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2014	0.0
+26431	37155	FIPS_37155	Robeson County	South Central		  Utilities	2014	18450.0
+26432	37155	FIPS_37155	Robeson County	South Central		  Construction	2014	136786.0
+26433	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2014	669214.0
+26434	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2014	139919.0
+26435	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2014	226498.0
+26436	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2014	58327.0
+26437	37155	FIPS_37155	Robeson County	South Central		  Information	2014	27107.0
+26438	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2014	421673.0
+26439	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2014	155028.0
+26440	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2014	48831.0
+26441	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2014	62915.0
+26442	37155	FIPS_37155	Robeson County	South Central		   Educational services	2014	10687.0
+26443	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2014	409473.0
+26444	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2014	5236.0
+26445	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2014	83325.0
+26446	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2014	88031.0
+26447	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2014	540703.0
 26448	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2014	19796.0
 26449	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2014	2878.0
 26450	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2014	208613.0
@@ -28347,25 +28347,25 @@
 28345	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2015	27494.0
 28346	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2015	32734.0
 28347	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2015	202703.0
-28348	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2015	41343.0
-28349	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2015	0.0
-28350	37155	FIPS_37155	Robeson County			  Utilities	2015	19424.0
-28351	37155	FIPS_37155	Robeson County			  Construction	2015	139740.0
-28352	37155	FIPS_37155	Robeson County			  Manufacturing	2015	741554.0
-28353	37155	FIPS_37155	Robeson County			  Wholesale trade	2015	141278.0
-28354	37155	FIPS_37155	Robeson County			  Retail trade	2015	237315.0
-28355	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2015	69922.0
-28356	37155	FIPS_37155	Robeson County			  Information	2015	27112.0
-28357	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2015	437378.0
-28358	37155	FIPS_37155	Robeson County			  Professional and business services	2015	154068.0
-28359	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2015	29627.0
-28360	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2015	80422.0
-28361	37155	FIPS_37155	Robeson County			   Educational services	2015	10917.0
-28362	37155	FIPS_37155	Robeson County			   Health care and social assistance	2015	413927.0
-28363	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2015	4980.0
-28364	37155	FIPS_37155	Robeson County			   Accommodation and food services	2015	87301.0
-28365	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2015	89034.0
-28366	37155	FIPS_37155	Robeson County			Government and government enterprises	2015	564585.0
+28348	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2015	41343.0
+28349	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2015	0.0
+28350	37155	FIPS_37155	Robeson County	South Central		  Utilities	2015	19424.0
+28351	37155	FIPS_37155	Robeson County	South Central		  Construction	2015	139740.0
+28352	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2015	741554.0
+28353	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2015	141278.0
+28354	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2015	237315.0
+28355	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2015	69922.0
+28356	37155	FIPS_37155	Robeson County	South Central		  Information	2015	27112.0
+28357	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2015	437378.0
+28358	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2015	154068.0
+28359	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2015	29627.0
+28360	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2015	80422.0
+28361	37155	FIPS_37155	Robeson County	South Central		   Educational services	2015	10917.0
+28362	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2015	413927.0
+28363	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2015	4980.0
+28364	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2015	87301.0
+28365	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2015	89034.0
+28366	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2015	564585.0
 28367	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2015	15985.0
 28368	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2015	3253.0
 28369	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2015	262122.0
@@ -30266,25 +30266,25 @@
 30264	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2016	28444.0
 30265	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2016	32320.0
 30266	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2016	204040.0
-30267	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2016	41941.0
-30268	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2016	0.0
-30269	37155	FIPS_37155	Robeson County			  Utilities	2016	28067.0
-30270	37155	FIPS_37155	Robeson County			  Construction	2016	142855.0
-30271	37155	FIPS_37155	Robeson County			  Manufacturing	2016	740466.0
-30272	37155	FIPS_37155	Robeson County			  Wholesale trade	2016	141462.0
-30273	37155	FIPS_37155	Robeson County			  Retail trade	2016	244723.0
-30274	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2016	68757.0
-30275	37155	FIPS_37155	Robeson County			  Information	2016	26554.0
-30276	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2016	438730.0
-30277	37155	FIPS_37155	Robeson County			  Professional and business services	2016	156999.0
-30278	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2016	29547.0
-30279	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2016	81733.0
-30280	37155	FIPS_37155	Robeson County			   Educational services	2016	10350.0
-30281	37155	FIPS_37155	Robeson County			   Health care and social assistance	2016	394672.0
-30282	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2016	5101.0
-30283	37155	FIPS_37155	Robeson County			   Accommodation and food services	2016	91507.0
-30284	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2016	88012.0
-30285	37155	FIPS_37155	Robeson County			Government and government enterprises	2016	565470.0
+30267	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2016	41941.0
+30268	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2016	0.0
+30269	37155	FIPS_37155	Robeson County	South Central		  Utilities	2016	28067.0
+30270	37155	FIPS_37155	Robeson County	South Central		  Construction	2016	142855.0
+30271	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2016	740466.0
+30272	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2016	141462.0
+30273	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2016	244723.0
+30274	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2016	68757.0
+30275	37155	FIPS_37155	Robeson County	South Central		  Information	2016	26554.0
+30276	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2016	438730.0
+30277	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2016	156999.0
+30278	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2016	29547.0
+30279	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2016	81733.0
+30280	37155	FIPS_37155	Robeson County	South Central		   Educational services	2016	10350.0
+30281	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2016	394672.0
+30282	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2016	5101.0
+30283	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2016	91507.0
+30284	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2016	88012.0
+30285	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2016	565470.0
 30286	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2016	16127.0
 30287	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2016	3571.0
 30288	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2016	296961.0
@@ -32185,25 +32185,25 @@
 32183	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2017	29863.0
 32184	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2017	33282.0
 32185	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2017	206533.0
-32186	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2017	83143.0
-32187	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2017	0.0
-32188	37155	FIPS_37155	Robeson County			  Utilities	2017	39104.0
-32189	37155	FIPS_37155	Robeson County			  Construction	2017	146623.0
-32190	37155	FIPS_37155	Robeson County			  Manufacturing	2017	737664.0
-32191	37155	FIPS_37155	Robeson County			  Wholesale trade	2017	145876.0
-32192	37155	FIPS_37155	Robeson County			  Retail trade	2017	236723.0
-32193	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2017	70627.0
-32194	37155	FIPS_37155	Robeson County			  Information	2017	24157.0
-32195	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2017	468933.0
-32196	37155	FIPS_37155	Robeson County			  Professional and business services	2017	168254.0
-32197	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2017	29568.0
-32198	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2017	93382.0
-32199	37155	FIPS_37155	Robeson County			   Educational services	2017	7597.0
-32200	37155	FIPS_37155	Robeson County			   Health care and social assistance	2017	399501.0
-32201	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2017	5294.0
-32202	37155	FIPS_37155	Robeson County			   Accommodation and food services	2017	97251.0
-32203	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2017	86700.0
-32204	37155	FIPS_37155	Robeson County			Government and government enterprises	2017	579291.0
+32186	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2017	83143.0
+32187	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2017	0.0
+32188	37155	FIPS_37155	Robeson County	South Central		  Utilities	2017	39104.0
+32189	37155	FIPS_37155	Robeson County	South Central		  Construction	2017	146623.0
+32190	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2017	737664.0
+32191	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2017	145876.0
+32192	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2017	236723.0
+32193	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2017	70627.0
+32194	37155	FIPS_37155	Robeson County	South Central		  Information	2017	24157.0
+32195	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2017	468933.0
+32196	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2017	168254.0
+32197	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2017	29568.0
+32198	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2017	93382.0
+32199	37155	FIPS_37155	Robeson County	South Central		   Educational services	2017	7597.0
+32200	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2017	399501.0
+32201	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2017	5294.0
+32202	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2017	97251.0
+32203	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2017	86700.0
+32204	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2017	579291.0
 32205	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2017	20795.0
 32206	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2017	3472.0
 32207	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2017	275973.0
@@ -34104,25 +34104,25 @@
 34102	37153	FIPS_37153	Richmond County	South Central	Lumber River	   Accommodation and food services	2018	31084.0
 34103	37153	FIPS_37153	Richmond County	South Central	Lumber River	  Other services (except government and government enterprises)	2018	35212.0
 34104	37153	FIPS_37153	Richmond County	South Central	Lumber River	Government and government enterprises	2018	212065.0
-34105	37155	FIPS_37155	Robeson County			  Agriculture, forestry, fishing and hunting	2018	43624.0
-34106	37155	FIPS_37155	Robeson County			  Mining, quarrying, and oil and gas extraction	2018	0.0
-34107	37155	FIPS_37155	Robeson County			  Utilities	2018	41883.0
-34108	37155	FIPS_37155	Robeson County			  Construction	2018	155732.0
-34109	37155	FIPS_37155	Robeson County			  Manufacturing	2018	731882.0
-34110	37155	FIPS_37155	Robeson County			  Wholesale trade	2018	150121.0
-34111	37155	FIPS_37155	Robeson County			  Retail trade	2018	237079.0
-34112	37155	FIPS_37155	Robeson County			  Transportation and warehousing	2018	75569.0
-34113	37155	FIPS_37155	Robeson County			  Information	2018	25311.0
-34114	37155	FIPS_37155	Robeson County			   Real estate and rental and leasing	2018	498193.0
-34115	37155	FIPS_37155	Robeson County			  Professional and business services	2018	182458.0
-34116	37155	FIPS_37155	Robeson County			   Management of companies and enterprises	2018	31859.0
-34117	37155	FIPS_37155	Robeson County			   Administrative and support and waste management and remediation services	2018	102499.0
-34118	37155	FIPS_37155	Robeson County			   Educational services	2018	7347.0
-34119	37155	FIPS_37155	Robeson County			   Health care and social assistance	2018	417814.0
-34120	37155	FIPS_37155	Robeson County			   Arts, entertainment, and recreation	2018	5395.0
-34121	37155	FIPS_37155	Robeson County			   Accommodation and food services	2018	101474.0
-34122	37155	FIPS_37155	Robeson County			  Other services (except government and government enterprises)	2018	89692.0
-34123	37155	FIPS_37155	Robeson County			Government and government enterprises	2018	596642.0
+34105	37155	FIPS_37155	Robeson County	South Central		  Agriculture, forestry, fishing and hunting	2018	43624.0
+34106	37155	FIPS_37155	Robeson County	South Central		  Mining, quarrying, and oil and gas extraction	2018	0.0
+34107	37155	FIPS_37155	Robeson County	South Central		  Utilities	2018	41883.0
+34108	37155	FIPS_37155	Robeson County	South Central		  Construction	2018	155732.0
+34109	37155	FIPS_37155	Robeson County	South Central		  Manufacturing	2018	731882.0
+34110	37155	FIPS_37155	Robeson County	South Central		  Wholesale trade	2018	150121.0
+34111	37155	FIPS_37155	Robeson County	South Central		  Retail trade	2018	237079.0
+34112	37155	FIPS_37155	Robeson County	South Central		  Transportation and warehousing	2018	75569.0
+34113	37155	FIPS_37155	Robeson County	South Central		  Information	2018	25311.0
+34114	37155	FIPS_37155	Robeson County	South Central		   Real estate and rental and leasing	2018	498193.0
+34115	37155	FIPS_37155	Robeson County	South Central		  Professional and business services	2018	182458.0
+34116	37155	FIPS_37155	Robeson County	South Central		   Management of companies and enterprises	2018	31859.0
+34117	37155	FIPS_37155	Robeson County	South Central		   Administrative and support and waste management and remediation services	2018	102499.0
+34118	37155	FIPS_37155	Robeson County	South Central		   Educational services	2018	7347.0
+34119	37155	FIPS_37155	Robeson County	South Central		   Health care and social assistance	2018	417814.0
+34120	37155	FIPS_37155	Robeson County	South Central		   Arts, entertainment, and recreation	2018	5395.0
+34121	37155	FIPS_37155	Robeson County	South Central		   Accommodation and food services	2018	101474.0
+34122	37155	FIPS_37155	Robeson County	South Central		  Other services (except government and government enterprises)	2018	89692.0
+34123	37155	FIPS_37155	Robeson County	South Central		Government and government enterprises	2018	596642.0
 34124	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Agriculture, forestry, fishing and hunting	2018	10946.0
 34125	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Mining, quarrying, and oil and gas extraction	2018	2982.0
 34126	37157	FIPS_37157	Rockingham County	Piedmont-Triad	Northwest Piedmont	  Utilities	2018	369923.0

@@ -26,7 +26,7 @@ df["Unit_of_Measure_Code"] = "Count"
 
 # read population data and grab latest population data
 df_population = pd.read_csv(
-    "./Demographics/Updates/STG_FRED_Resident_Population_by_County_Thousands_of_Persons.txt",
+    "./Data/STG_FRED_Resident_Population_by_County_Thousands_of_Persons.txt",
     sep="\t",
 )
 df_population = df_population[["Region Code", "2017"]]

@@ -44,7 +44,7 @@ df.drop(df.tail(4).index, inplace=True)
 
 
 # Clean GeoFIPS
-df["GeoFIPS"] = df["GeoFIPS"].str.replace('"', '')
+df["GeoFIPS"] = df["GeoFIPS"].str.replace('"', "")
 
 
 # In[ ]:
@@ -61,172 +61,52 @@ df.set_index(df["GeoFIPS"], inplace=True)
 df.drop("GeoFIPS", axis=1, inplace=True)
 
 
-# In[ ]:
-
-
-# Connect to database and create cursor
-con = pyodbc.connect(
-    "Driver={SQL Server};"
-    "Server=[server;"
-    "Database=[database];"
-    "Trusted_Connection=yes;",
-    autocommit=True,
-)
-
-c = con.cursor()
-
-
 # # Personal Income
 # In[ ]:
-print('Updating Personal Income..')
+print("Updating Personal Income..")
 
-df_per_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', encoding='ISO-8859-1', sep='\t')
-df_per_backup.to_csv('./Backups/STG_BEA_CA5N_Personal_Income_BACKUP.txt')
+df_per_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Personal_Income.txt", encoding="ISO-8859-1", sep="\t"
+)
+df_per_backup.to_csv("./Backups/STG_BEA_CA5N_Personal_Income_BACKUP.txt")
 
-filter1 = df['LineCode'] == 10
+filter1 = df["LineCode"] == 10
 df_per = df[filter1]
 
-df_per.to_csv('./Updates/STG_BEA_CA5N_Personal_Income.txt', sep='\t')
-
-df_per = df_per.reset_index()
-
-column_list = df_per.columns.values
-for i in column_list:
-    df_per.loc[df_per[i].isnull(), i] = 0
-
-c.execute("drop table STG_BEA_CA5N_Personal_Income_BACKUP")
-
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Personal_Income','STG_BEA_CA5N_Personal_Income_BACKUP';""")
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_per.to_sql("STG_BEA_CA5N_Personal_Income", con=engine, if_exists="replace", index=False)
-
+df_per.to_csv("./Updates/STG_BEA_CA5N_Personal_Income.txt", sep="\t")
 
 # # Population
 
 # In[ ]:
-print('Done. Updating Population..')
+print("Done. Updating Population..")
 
-df_pop_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Population.txt', encoding ='ISO-8859-1', sep='\t')
-df_pop_backup.to_csv('./Backups/STG_BEA_CA5N_Population_BACKUP.txt')
+df_pop_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Population.txt", encoding="ISO-8859-1", sep="\t"
+)
+df_pop_backup.to_csv("./Backups/STG_BEA_CA5N_Population_BACKUP.txt")
 
-filter1 = df['LineCode'] == 20
+filter1 = df["LineCode"] == 20
 df_pop = df[filter1]
 
-df_pop.to_csv('./Updates/STG_BEA_CA5N_Population.txt', sep='\t')
+df_pop.to_csv("./Updates/STG_BEA_CA5N_Population.txt", sep="\t")
 
-df_pop = df_pop.reset_index()
-
-column_list = df_pop.columns.values
-for i in column_list:
-    df_pop.loc[df_pop[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Population_BACKUP")
-
-# Create new backup
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Population','STG_BEA_CA5N_Population_BACKUP';""")
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_pop.to_sql(
-    "STG_BEA_CA5N_Population", con=engine, if_exists="replace", index=False
-)
-
-
-# # Per capita Personal Income 
+# # Per capita Personal Income
 
 # In[ ]:
 
-print('Done. Updating Per Capita Personal Income..')
+print("Done. Updating Per Capita Personal Income..")
 
-df_pi_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', encoding='ISO-8859-1', sep='\t')
-df_pi_backup.to_csv('./Backups/STG_BEA_CA5N_Per_Capita_Personal_Income.txt')
+df_pi_backup = pd.read_csv(
+    "./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt",
+    encoding="ISO-8859-1",
+    sep="\t",
+)
+df_pi_backup.to_csv("./Backups/STG_BEA_CA5N_Per_Capita_Personal_Income.txt")
 
-filter1 = df['LineCode'] == 30
+filter1 = df["LineCode"] == 30
 df_pi = df[filter1]
 
-df_pi.to_csv('./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt', sep='\t')
-
-df_pi = df_pi.reset_index()
-
-column_list = df_per.columns.values
-for i in column_list:
-    df_per.loc[df_per[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP")
-
-# Create new backup
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Per_Capita_Personal_Income','STG_BEA_CA5N_Per_Capita_Personal_Income_BACKUP';""")
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_pi.to_sql(
-    "STG_BEA_CA5N_Per_Capita_Personal_Income", con=engine, if_exists="replace", index=False
-)
-
-
-# # Earnings by Place of Work 
-
-# In[ ]:
-print('Done. Updating Earnings by Place of Work..')
-
-df_ew_backup = pd.read_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', encoding='ISO-8859-1', sep='\t')
-df_ew_backup.to_csv('./Backups/STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP.txt', sep='\t')
-
-filter1 = df['LineCode'] == 35
-df_ew = df[filter1]
-
-df_ew.to_csv('./Updates/STG_BEA_CA5N_Earnings_by_Place_of_Work.txt', sep='\t')
-
-df_ew = df_ew.reset_index()
-
-column_list = df_ew.columns.values
-for i in column_list:
-    df_ew.loc[df_ew[i].isnull(), i] = 0
-
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP")
-
-# Create new backup
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Earnings_by_Place_of_Work','STG_BEA_CA5N_Earnings_by_Place_of_Work_BACKUP';""")
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_ew.to_sql(
-    "STG_BEA_CA5N_Earnings_by_Place_of_Work", con=engine, if_exists="replace", index=False
-)
+df_pi.to_csv("./Updates/STG_BEA_CA5N_Per_Capita_Personal_Income.txt", sep="\t")
 
 # # Wages and Salaries
 
@@ -259,53 +139,6 @@ df_wages = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_wages.to_csv("./Updates/STG_BEA_CA5N_Wages_and_Salaries.txt", sep="\t")
-
-
-# In[ ]:
-
-
-# Reset the index
-df_wages = df_wages.reset_index()
-
-
-# In[ ]:
-
-
-# Fill NaN values for upload to database
-column_list = df_wages.columns.values
-for i in column_list:
-    df_wages.loc[df_wages[i].isnull(), i] = 0
-
-
-# In[ ]:
-
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Wages_and_Salaries_BACKUP")
-
-
-# In[ ]:
-
-
-# Create new backup
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Wages_and_Salaries','STG_BEA_CA5N_Wages_and_Salaries_BACKUP';""")
-
-
-# In[ ]:
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_wages.to_sql(
-    "STG_BEA_CA5N_Wages_and_Salaries", con=engine, if_exists="replace", index=False
-)
 
 
 # # Health Care and Social Assistance
@@ -346,58 +179,6 @@ df_health.to_csv(
     "./Updates/STG_BEA_CA5N_Health_Care_and_Social_Assistance.txt", sep="\t"
 )
 
-
-# In[ ]:
-
-
-# Reset the index
-df_health = df_health.reset_index()
-
-
-# In[ ]:
-
-
-# Fill NaN values for upload to database
-column_list = df_health.columns.values
-for i in column_list:
-    df_health.loc[df_health[i].isnull(), i] = 0
-
-
-# In[ ]:
-
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Health_Care_and_Social_Assistance_BACKUP")
-
-
-# In[ ]:
-
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Health_Care_and_Social_Assistance','STG_BEA_CA5N_Health_Care_and_Social_Assistance_BACKUP';"""
-)
-
-
-# In[ ]:
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_health.to_sql(
-    "STG_BEA_CA5N_Health_Care_and_Social_Assistance",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Information
 
 # In[ ]:
@@ -431,53 +212,6 @@ df_info = df[filter1]
 df_info.to_csv("./Updates/STG_BEA_CA5N_Information.txt", sep="\t")
 
 
-# In[ ]:
-
-
-# Reset the index
-df_info = df_info.reset_index()
-
-
-# In[ ]:
-
-
-# Fill NaN values for upload to database
-column_list = df_info.columns.values
-for i in column_list:
-    df_info.loc[df_info[i].isnull(), i] = 0
-
-
-# In[ ]:
-
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Information_BACKUP")
-
-
-# In[ ]:
-
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Information','STG_BEA_CA5N_Information_BACKUP';"""
-)
-
-
-# In[ ]:
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_info.to_sql("STG_BEA_CA5N_Information", con=engine, if_exists="replace", index=False)
-
-
 # # Management of Companies and Enterprises
 
 # In[ ]:
@@ -504,40 +238,6 @@ df_management.to_csv(
     "./Updates/STG_BEA_CA5N_Management_of_Companies_and_Enterprises.txt", sep="\t"
 )
 
-# Reset the index
-df_management = df_management.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_management.columns.values
-for i in column_list:
-    df_management.loc[df_management[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Management_of_Companies_and_Enterprises_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Management_of_Companies_and_Enterprises','STG_BEA_CA5N_Management_of_Companies_and_Enterprises_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_management.to_sql(
-    "STG_BEA_CA5N_Management_of_Companies_and_Enterprises",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Manufacturing
 
 # In[ ]:
@@ -557,36 +257,6 @@ df_manufacturing = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_manufacturing.to_csv("./Updates/STG_BEA_CA5N_Manufacturing.txt", sep="\t")
-
-# Reset the indexf
-df_manufacturing = df_manufacturing.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_manufacturing.columns.values
-for i in column_list:
-    df_manufacturing.loc[df_manufacturing[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Manufacturing_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Manufacturing','STG_BEA_CA5N_Manufacturing_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_manufacturing.to_sql(
-    "STG_BEA_CA5N_Manufacturing", con=engine, if_exists="replace", index=False
-)
 
 
 # # Mining, Quarrying, and Oil and Gas Production
@@ -615,39 +285,6 @@ df_mining.to_csv(
     "./Updates/STG_BEA_CA5N_Mining_Quarrying_and_Oil_and_Gas_Extraction.txt", sep="\t"
 )
 
-# Reset the index
-df_mining = df_mining.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_mining.columns.values
-for i in column_list:
-    df_mining.loc[df_mining[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Mining_Quarrying_and_Oil_and_Gas_Extraction','STG_BEA_CA5N_Mining_Quarrying_and_Oil_and_Gas_Extraction_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_mining.to_sql(
-    "STG_BEA_CA5N_Mining_Quarrying_and_Oil_and_Gas_Extraction",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Other Services
 
@@ -668,36 +305,6 @@ df_services = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_services.to_csv("./Updates/STG_BEA_CA5N_Other_Services.txt", sep="\t")
-
-# Reset the index
-df_services = df_services.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_services.columns.values
-for i in column_list:
-    df_services.loc[df_services[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Other_Services_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Other_Services','STG_BEA_CA5N_Other_Services_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_services.to_sql(
-    "STG_BEA_CA5N_Other_Services", con=engine, if_exists="replace", index=False
-)
 
 
 # # Professional, Scientific, and Technical Services
@@ -727,41 +334,6 @@ df_professional.to_csv(
     sep="\t",
 )
 
-# Reset the index
-df_professional = df_professional.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_professional.columns.values
-for i in column_list:
-    df_professional.loc[df_professional[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute(
-    "drop table STG_BEA_CA5N_Professional_Scientific_and_Technical_Services_BACKUP"
-)
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Professional_Scientific_and_Technical_Services','STG_BEA_CA5N_Professional_Scientific_and_Technical_Services_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_professional.to_sql(
-    "STG_BEA_CA5N_Professional_Scientific_and_Technical_Services",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Real Estate and Rental Housing
 
 # In[ ]:
@@ -788,38 +360,6 @@ df_realestate.to_csv(
     "./Updates/STG_BEA_CA5N_Real_Estate_and_Rental_and_Leasing.txt", sep="\t"
 )
 
-# Reset the index
-df_realestate = df_realestate.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_realestate.columns.values
-for i in column_list:
-    df_realestate.loc[df_realestate[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Real_Estate_and_Rental_and_Leasing_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Real_Estate_and_Rental_and_Leasing','STG_BEA_CA5N_Real_Estate_and_Rental_and_Leasing_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_realestate.to_sql(
-    "STG_BEA_CA5N_Real_Estate_and_Rental_and_Leasing",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Retail Trade
 
@@ -840,35 +380,6 @@ df_retail = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_retail.to_csv("./Updates/STG_BEA_CA5N_Retail_Trade.txt", sep="\t")
-
-# Reset the index
-df_retail = df_retail.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_retail.columns.values
-for i in column_list:
-    df_retail.loc[df_retail[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Retail_Trade_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Retail_Trade','STG_BEA_CA5N_Retail_Trade_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_retail.to_sql(
-    "STG_BEA_CA5N_Retail_Trade", con=engine, if_exists="replace", index=False
-)
 
 
 # # Transportation and Warehousing
@@ -895,38 +406,6 @@ df_transportation.to_csv(
     "./Updates/STG_BEA_CA5N_Transportation_and_Warehousing.txt", sep="\t"
 )
 
-# Reset the index
-df_transportation = df_transportation.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_transportation.columns.values
-for i in column_list:
-    df_transportation.loc[df_transportation[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Transportation_and_Warehousing_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Transportation_and_Warehousing','STG_BEA_CA5N_Transportation_and_Warehousing_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_transportation.to_sql(
-    "STG_BEA_CA5N_Transportation_and_Warehousing",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Utilities
 
@@ -948,34 +427,6 @@ df_utilities = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_utilities.to_csv("./Updates/STG_BEA_CA5N_Utilities.txt", sep="\t")
 
-# Reset the index
-df_utilities = df_utilities.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_utilities.columns.values
-for i in column_list:
-    df_utilities.loc[df_utilities[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Utilities_BACKUP")
-
-# Create new backup
-c.execute("""sp_rename 'dbo.STG_BEA_CA5N_Utilities','STG_BEA_CA5N_Utilities_BACKUP';""")
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_utilities.to_sql(
-    "STG_BEA_CA5N_Utilities", con=engine, if_exists="replace", index=False
-)
-
-
 # # Wholesale Trade
 
 # In[ ]:
@@ -996,37 +447,6 @@ df_wholesale = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_wholesale.to_csv("./Updates/STG_BEA_CA5N_Wholesale_Trade.txt", sep="\t")
 
-# Reset the index
-df_wholesale = df_wholesale.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_wholesale.columns.values
-for i in column_list:
-    df_wholesale.loc[df_wholesale[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Wholesale_Trade_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Wholesale_Trade','STG_BEA_CA5N_Wholesale_Trade_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_wholesale.to_sql(
-    "STG_BEA_CA5N_Wholesale_Trade", con=engine, if_exists="replace", index=False
-)
-
-
 # # Proprietors' Income
 
 # In[ ]:
@@ -1046,37 +466,6 @@ df_propinc = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_propinc.to_csv("./Updates/STG_BEA_CA5N_Proprietors_Income.txt", sep="\t")
-
-# Reset the index
-df_propinc = df_propinc.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_propinc.columns.values
-for i in column_list:
-    df_propinc.loc[df_propinc[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Proprietors_Income_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Proprietors_Income','STG_BEA_CA5N_Proprietors_Income_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_propinc.to_sql(
-    "STG_BEA_CA5N_Proprietors_Income", con=engine, if_exists="replace", index=False
-)
-
 
 # # Government and Government Enterprises
 
@@ -1104,39 +493,6 @@ df_gov.to_csv(
     "./Updates/STG_BEA_CA5N_Government_and_Government_Enterprises.txt", sep="\t"
 )
 
-# Reset the index
-df_gov = df_gov.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_gov.columns.values
-for i in column_list:
-    df_gov.loc[df_gov[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Government_and_Government_Enterprises_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Government_and_Government_Enterprises','STG_BEA_CA5N_Government_and_Government_Enterprises_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_gov.to_sql(
-    "STG_BEA_CA5N_Government_and_Government_Enterprises",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Private Nonfarm Compensation
 
 # In[ ]:
@@ -1159,39 +515,6 @@ df_private = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_private.to_csv("./Updates/STG_BEA_CA5N_Private_Nonfarm_Compensation.txt", sep="\t")
 
-# Reset the index
-df_private = df_private.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_private.columns.values
-for i in column_list:
-    df_private.loc[df_private[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Private_Nonfarm_Compensation_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Private_Nonfarm_Compensation','STG_BEA_CA5N_Private_Nonfarm_Compensation_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_private.to_sql(
-    "STG_BEA_CA5N_Private_Nonfarm_Compensation",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Farm Compensation
 
 # In[ ]:
@@ -1211,35 +534,6 @@ df_farm = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_farm.to_csv("./Updates/STG_BEA_CA5N_Farm_Compensation.txt", sep="\t")
-
-# Reset the index
-df_farm = df_farm.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_farm.columns.values
-for i in column_list:
-    df_farm.loc[df_farm[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Farm_Compensation_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Farm_Compensation','STG_BEA_CA5N_Farm_Compensation_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_farm.to_sql(
-    "STG_BEA_CA5N_Farm_Compensation", con=engine, if_exists="replace", index=False
-)
 
 
 # # Nonfarm Compensation
@@ -1261,36 +555,6 @@ df_nonfarm = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_nonfarm.to_csv("./Updates/STG_BEA_CA5N_Nonfarm_Compensation.txt", sep="\t")
-
-# Reset the index
-df_nonfarm = df_nonfarm.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_nonfarm.columns.values
-for i in column_list:
-    df_nonfarm.loc[df_nonfarm[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Nonfarm_Compensation_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Nonfarm_Compensation','STG_BEA_CA5N_Nonfarm_Compensation_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_nonfarm.to_sql(
-    "STG_BEA_CA5N_Nonfarm_Compensation", con=engine, if_exists="replace", index=False
-)
 
 
 # # Supplements to Wages and Salaries
@@ -1319,39 +583,6 @@ df_supplement.to_csv(
     "./Updates/STG_BEA_CA5N_Supplements_to_Wages_and_Salaries.txt", sep="\t"
 )
 
-# Reset the index
-df_supplement = df_supplement.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_supplement.columns.values
-for i in column_list:
-    df_supplement.loc[df_supplement[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Supplements_to_Wages_and_Salaries_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Supplements_to_Wages_and_Salaries','STG_BEA_CA5N_Supplements_to_Wages_and_Salaries_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_supplement.to_sql(
-    "STG_BEA_CA5N_Supplements_to_Wages_and_Salaries",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Federal, Civilian
 
@@ -1374,40 +605,6 @@ df_federal = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_federal.to_csv("./Updates/STG_BEA_CA5N_Federal_Civilian_Government.txt", sep="\t")
-
-# Reset the index
-df_federal = df_federal.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_federal.columns.values
-for i in column_list:
-    df_federal.loc[df_federal[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Federal_Civilian_Government_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Federal_Civilian_Government','STG_BEA_CA5N_Federal_Civilian_Government_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_federal.to_sql(
-    "STG_BEA_CA5N_Federal_Civilian_Government",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Accommodation and Food Services
 
@@ -1432,40 +629,6 @@ df_food = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_food.to_csv("./Updates/STG_BEA_CA5N_Accommodation_and_Food_Services.txt", sep="\t")
-
-# Reset the index
-df_food = df_food.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_food.columns.values
-for i in column_list:
-    df_food.loc[df_food[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Accommodation_and_Food_Services_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Accommodation_and_Food_Services','STG_BEA_CA5N_Accommodation_and_Food_Services_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_food.to_sql(
-    "STG_BEA_CA5N_Accommodation_and_Food_Services",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
 
 # # Administrative Support
 
@@ -1494,43 +657,6 @@ df_admin.to_csv(
     sep="\t",
 )
 
-# Reset the index
-df_admin = df_admin.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_admin.columns.values
-for i in column_list:
-    df_admin.loc[df_admin[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute(
-    "drop table STG_BEA_CA5N_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP"
-)
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Administrative_and_Support_and_Waste_Management_and_Remediation_Services','STG_BEA_CA5N_Administrative_and_Support_and_Waste_Management_and_Remediation_Services_BACKUP';"""
-)
-
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_admin.to_sql(
-    "STG_BEA_CA5N_Administrative_and_Support_and_Waste_Management_and_Remediation_Services",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Arts, Entertainment, and Recreation
 
 # In[ ]:
@@ -1555,39 +681,6 @@ df_arts = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_arts.to_csv("./Updates/STG_BEA_CA5N_Arts_Entertainment_and_Recreation.txt", sep="\t")
 
-# Reset the index
-df_arts = df_arts.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_arts.columns.values
-for i in column_list:
-    df_arts.loc[df_arts[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Arts_Entertainment_and_Recreation_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Arts_Entertainment_and_Recreation','STG_BEA_CA5N_Arts_Entertainment_and_Recreation_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_arts.to_sql(
-    "STG_BEA_CA5N_Arts_Entertainment_and_Recreation",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Construction
 
 # In[ ]:
@@ -1607,37 +700,6 @@ df_construction = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_construction.to_csv("./Updates/STG_BEA_CA5N_Construction.txt", sep="\t")
-
-# Reset the index
-df_construction = df_construction.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_construction.columns.values
-for i in column_list:
-    df_construction.loc[df_construction[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Construction_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Construction','STG_BEA_CA5N_Construction_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_construction.to_sql(
-    "STG_BEA_CA5N_Construction", con=engine, if_exists="replace", index=False
-)
-
 
 # # Educational Services
 
@@ -1659,37 +721,6 @@ df_eduserv = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_eduserv.to_csv("./Updates/STG_BEA_CA5N_Educational_Services.txt", sep="\t")
 
-# Reset the index
-df_eduserv = df_eduserv.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_eduserv.columns.values
-for i in column_list:
-    df_eduserv.loc[df_eduserv[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Educational_Services_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Educational_Services','STG_BEA_CA5N_Educational_Services_BACKUP';"""
-)
-
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_eduserv.to_sql(
-    "STG_BEA_CA5N_Educational_Services", con=engine, if_exists="replace", index=False
-)
-
 
 # # Finance and Insurance
 
@@ -1710,36 +741,6 @@ df_finance = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_finance.to_csv("./Updates/STG_BEA_CA5N_Finance_and_Insurance.txt", sep="\t")
-
-# Reset the index
-df_finance = df_finance.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_finance.columns.values
-for i in column_list:
-    df_finance.loc[df_finance[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Finance_and_Insurance_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Finance_and_Insurance','STG_BEA_CA5N_Finance_and_Insurance_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_finance.to_sql(
-    "STG_BEA_CA5N_Finance_and_Insurance", con=engine, if_exists="replace", index=False
-)
 
 
 # # Forestry, Fishing, and Related Activities
@@ -1768,39 +769,6 @@ df_forestry.to_csv(
     "./Updates/STG_BEA_CA5N_Forestry_Fishing_and_Related_Activities.txt", sep="\t"
 )
 
-# Reset the index
-df_forestry = df_forestry.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_forestry.columns.values
-for i in column_list:
-    df_forestry.loc[df_forestry[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Forestry_Fishing_and_Related_Activities_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Forestry_Fishing_and_Related_Activities','STG_BEA_CA5N_Forestry_Fishing_and_Related_Activities_BACKUP';"""
-)
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_forestry.to_sql(
-    "STG_BEA_CA5N_Forestry_Fishing_and_Related_Activities",
-    con=engine,
-    if_exists="replace",
-    index=False,
-)
-
-
 # # Military
 
 # In[ ]:
@@ -1820,37 +788,6 @@ df_military = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_military.to_csv("./Updates/STG_BEA_CA5N_Military_Government.txt", sep="\t")
-
-# Reset the index
-df_military = df_military.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_military.columns.values
-for i in column_list:
-    df_military.loc[df_military[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Military_Government_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Military_Government','STG_BEA_CA5N_Military_Government_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_military.to_sql(
-    "STG_BEA_CA5N_Military_Government", con=engine, if_exists="replace", index=False
-)
-
 
 # # State and Local
 
@@ -1872,38 +809,6 @@ df_state_local = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_state_local.to_csv("./Updates/STG_BEA_CA5N_State_Local_Government.txt", sep="\t")
 
-# Reset the index
-df_state_local = df_state_local.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_state_local.columns.values
-for i in column_list:
-    df_state_local.loc[df_state_local[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_State_Local_Government_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_State_Local_Government','STG_BEA_CA5N_State_Local_Government_BACKUP';"""
-)
-
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_state_local.to_sql(
-    "STG_BEA_CA5N_State_Local_Government", con=engine, if_exists="replace", index=False
-)
-
-
 # # State Government
 
 # In[ ]:
@@ -1924,37 +829,6 @@ df_state = df[filter1]
 # Save as tab-delimited txt file for export to SSMS
 df_state.to_csv("./Updates/STG_BEA_CA5N_State_Government.txt", sep="\t")
 
-# Reset the index
-df_state = df_state.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_state.columns.values
-for i in column_list:
-    df_state.loc[df_state[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_State_Government_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_State_Government','STG_BEA_CA5N_State_Government_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_state.to_sql(
-    "STG_BEA_CA5N_State_Government", con=engine, if_exists="replace", index=False
-)
-
-
 # # Local Government
 
 # In[ ]:
@@ -1974,33 +848,3 @@ df_local = df[filter1]
 
 # Save as tab-delimited txt file for export to SSMS
 df_local.to_csv("./Updates/STG_BEA_CA5N_Local_Government.txt", sep="\t")
-
-# Reset the index
-df_local = df_local.reset_index()
-
-# Fill NaN values for upload to database
-column_list = df_local.columns.values
-for i in column_list:
-    df_local.loc[df_local[i].isnull(), i] = 0
-
-# Drop old backup table
-c.execute("drop table STG_BEA_CA5N_Local_Government_BACKUP")
-
-# Create new backup
-c.execute(
-    """sp_rename 'dbo.STG_BEA_CA5N_Local_Government','STG_BEA_CA5N_Local_Government_BACKUP';"""
-)
-
-
-params = urllib.parse.quote_plus(
-    r"Driver={SQL Server};"
-    r"Server=[server];"
-    r"Database=[database];"
-    r"Trusted_Connection=yes;"
-)
-
-engine = create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
-
-df_local.to_sql(
-    "STG_BEA_CA5N_Local_Government", con=engine, if_exists="replace", index=False
-)

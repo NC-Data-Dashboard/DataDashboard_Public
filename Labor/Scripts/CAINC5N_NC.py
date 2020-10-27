@@ -62,19 +62,6 @@ df.drop("GeoFIPS", axis=1, inplace=True)
 
 # In[ ]:
 
-
-# Connect to database and create cursor
-con = pyodbc.connect(
-    "Driver={SQL Server};"
-    "Server=GREENSPAN\ECONPROD;"
-    "Database=General_Vault;"
-    "Trusted_Connection=yes;",
-    autocommit=True,
-)
-
-c = con.cursor()
-
-
 # # Create Per Capita Personal Income
 
 # In[ ]:

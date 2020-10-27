@@ -1,10 +1,24 @@
 # Health Info
+
+** Measure table currently contains only measures for COVID **
+ 
+| Measure Code | Measure Name | Source |
+| :------------ | :------------ | :------ | 
+| NYTI_CNTY_COV01 | COVID-19 Confirmed Cases | [New York Times](https://github.com/nytimes/covid-19-data) |
+| NYTI_CNTY_COV02 | COVID-19 Confirmed Deaths | New York Times |
+| NYTI_NAT_COV03 | COVID-19 Confirmed Cases | New York Times |
+| NYTI_NAT_COV04 | COVID-19 Confirmed Deaths | New York Times |
+
+***
+
 Documented by: [Gemma Herandez Martinez](https://www.linkedin.com/in/gemma-hernandez-martinez/), Junior Data Analyst
 
-Last Updated: 02.05.2020
+Last Updated: 10.12.2020
 
 ### Data Sources
-__________________________________________________________________________________________________________________________________________
+
+***
+
 [Cause of Death: Drug Induced Cases (by crude rate)](http://wonder.cdc.gov/ucd-icd10.html)
 * Scheduled Release Update: Yearly; December 10, 2020
 * Click on:
@@ -217,16 +231,14 @@ In Section 7: Check: Export Results, Show Totals, Show Zero Values, Show Suppres
 
 #
 
-[Infant Mortality (by count)](https://datacenter.kidscount.org/data/tables/9977-infant-mortality-by-race-and-ethnicity-beginning
--2013?loc=35&loct=2#detailed/2/any/false/871,870,573,869,36/1,3944,141,2641,3,13/19331,)
+[Infant Mortality (by count)](https://datacenter.kidscount.org/data/tables/9977-infant-mortality-by-race-and-ethnicity-beginning-2013?loc=35&loct=2#detailed/2/any/false/871,870,573,869,36/1,3944,141,2641,3,13/19331,)
 * Scheduled Release Update: Quarterly; March 2, 2020
 * Click on:
   * 'Raw Data'
 
 #
 
-[Infant Mortality Rate (IMR)](https://datacenter.kidscount.org/data/tables/9977-infant-mortality-by-race-and-ethnicity-beginning
--2013?loc=35&loct=2#detailed/2/any/false/871,870,573,869,36/1,3944,141,2641,3,13/19331,)
+[Infant Mortality Rate (IMR)](https://datacenter.kidscount.org/data/tables/9977-infant-mortality-by-race-and-ethnicity-beginning-2013?loc=35&loct=2#detailed/2/any/false/871,870,573,869,36/1,3944,141,2641,3,13/19331,)
 * Scheduled Release Update: Quarterly; March 2, 2020
 * Click on:
   * 'Raw Data'

@@ -1,5 +1,3 @@
-echo off python -W ignore Scripts\County_MedianListingPrice_AllHomes.py
-echo off python -W ignore Scripts\County_MedianListingPricePerSqft_AllHomes.py
 python -W ignore Scripts\County_MedianSalePrice_AllHomes.py
 python -W ignore Scripts\County_MedianValuePerSqft_AllHomes.py
 python -W ignore Scripts\County_Zhvi_AllHomes.py

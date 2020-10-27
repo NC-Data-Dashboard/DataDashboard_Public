@@ -1,7 +1,20 @@
 # Demographics Info
+
+| Measure Name | Measure Code | Source |
+| :- | :- | :- |
+| Civilian Labor Force by County | FRED_LFN_00000 | GeoFRED |
+| Total across all Population groups | FRED_EQFXSUBPRIME0_00000 | GeoFRED |
+| People 25 Years and Over Who Have Completed an Associates Degree or Higher (5-year estimate) by County (Percent) | FRED_S1501ACSTOTAL0_00000 | GeoFRED |
+| Resident Population by County | FRED_POP_00000 | GeoFRED |
+
+If you get an HTTP 500 error when attempting to run a GeoFRED script, you will have to grap a new link from GeoFRED.  Then check out 
+[getting new data](https://github.com/NC-Data-Dashboard/DataDashboard_Greenspan/blob/master/Help.md/#Getting-New-Data) in the Help documentation.
+
+***
+
 Documented by: [Gemma Herandez Martinez](https://www.linkedin.com/in/gemma-hernandez-martinez/), Junior Data Analyst
 
-Last Updated: 02.05.2020
+Last Updated: 09.04.2020
 
 ### Data Sources
 __________________________________________________________________________________________________________________________________________

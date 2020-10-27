@@ -13,7 +13,6 @@ import pyodbc
 
 # In[ ]:
 
-
 # Create backups
 df_backup = pd.read_csv(
     "./Updates/STG_FRED_Resident_Population_by_County_Thousands_of_Persons.txt"
@@ -22,13 +21,12 @@ df_backup.to_csv(
     "./Backups/STG_FRED_Resident_Population_by_County_Thoudands_of_Persons_BACKUP.txt"
 )
 
-
 # In[ ]:
 
 
 # Getting and reading new data
 df = pd.read_excel(
-    "https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-89.96&lat=40.78&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1549&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Thousands+of+Persons&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2030-01-01&type=xls&startDate=1970-01-01&endDate=2030-01-01&mapWidth=999&mapHeight=582&hideLegend=false",
+    "https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=-90.00&lat=40.01&zoom=4&showLabels=true&showValues=true&regionType=county&seriesTypeId=1549&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Thousands+of+Persons%2C+no_period_desc&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2019-01-01&type=xls&startDate=1970-01-01&endDate=2021-01-01&mapWidth=2000&mapHeight=1214&hideLegend=false",
     skiprows=1,
 )
 df.head(2)
@@ -55,13 +53,33 @@ df_nc.head(2)
 
 
 # Drop Series ID column
-df_nc.drop('Region Code', axis=1, inplace=True)
+df_nc.drop("Region Code", axis=1, inplace=True)
 df_nc.drop("Series ID", axis=1, inplace=True)
-df_nc.head(2)
-
 
 # In[ ]:
 
+# Get national population data
+df = pd.read_excel(
+    "https://geofred.stlouisfed.org/api/download.php?theme=pubugn&colorCount=5&reverseColors=false&intervalMethod=fractile&displayStateOutline=true&lng=0&lat=40&zoom=2&showLabels=true&showValues=true&regionType=country&seriesTypeId=534&attributes=Not+Seasonally+Adjusted%2C+Annual%2C+Millions+of+Persons%2C+no_period_desc&aggregationFrequency=Annual&aggregationType=Average&transformation=lin&date=2017-01-01&type=xls&startDate=1970-01-01&endDate=2017-01-01&mapWidth=999&mapHeight=1253&hideLegend=false",
+    skiprows=1,
+)
+
+filter2 = df["Region Name"] == "United States"
+df_nation = df[filter2]
+
+df_nation["Region Code"] = "00000"
+
+df_nation.set_index(df_nation["Region Code"], inplace=True)
+
+df_nation.drop("Region Code", axis=1, inplace=True)
+df_nation.drop("Series ID", axis=1, inplace=True)
+
+# In[ ]:
+
+df_nc = df_nc.append(df_nation)
+
+
+# In[ ]:
 
 # Save file to tab delimited txt for upload to SSMS
 df_nc.to_csv(
@@ -72,7 +90,7 @@ df_nc.to_csv(
 
 # In[ ]:
 
-
+'''
 # Reset Index for upload to database
 df_nc = df_nc.reset_index()
 
@@ -91,7 +109,7 @@ for i in column_list:
 # Connect to database and create cursor
 con = pyodbc.connect(
     "Driver={SQL Server};"
-    "Server=GREENSPAN\ECONPROD;"
+    "Server=[server];"
     "Database=[database];"
     "Trusted_Connection=yes;",
     autocommit=True,
@@ -121,84 +139,9 @@ c.execute(
 # In[ ]:
 
 
-c.execute(
-    """USE [[database]]
-
-SET ANSI_NULLS ON
-
-
-SET QUOTED_IDENTIFIER ON
-
-CREATE TABLE [dbo].[STG_FRED_Resident_Population_by_County_Thousands_of_Persons](
-	[Series ID] [varchar](14) NULL,
-	[Region Name] [varchar](23) NULL,
-	[Region Code] [int] NULL,
-	[1975] [float] NULL,
-	[1976] [float] NULL,
-	[1977] [float] NULL,
-	[1978] [float] NULL,
-	[1979] [float] NULL,
-	[1980] [float] NULL,
-	[1981] [float] NULL,
-	[1982] [float] NULL,
-	[1983] [float] NULL,
-	[1984] [float] NULL,
-	[1985] [float] NULL,
-	[1986] [float] NULL,
-	[1987] [float] NULL,
-	[1988] [float] NULL,
-	[1989] [float] NULL,
-	[1990] [float] NULL,
-	[1991] [float] NULL,
-	[1992] [float] NULL,
-	[1993] [float] NULL,
-	[1994] [float] NULL,
-	[1995] [float] NULL,
-	[1996] [float] NULL,
-	[1997] [float] NULL,
-	[1998] [float] NULL,
-	[1999] [float] NULL,
-	[2000] [float] NULL,
-	[2001] [float] NULL,
-	[2002] [float] NULL,
-	[2003] [float] NULL,
-	[2004] [float] NULL,
-	[2005] [float] NULL,
-	[2006] [float] NULL,
-	[2007] [float] NULL,
-	[2008] [float] NULL,
-	[2009] [float] NULL,
-	[2010] [float] NULL,
-	[2011] [float] NULL,
-	[2012] [float] NULL,
-	[2013] [float] NULL,
-	[2014] [float] NULL,
-	[2015] [float] NULL,
-	[2016] [float] NULL,
-	[2017] [float] NULL,
-	[2018] [float] NULL,
-    [2019] [float] NULL,
-    [2020] [float] NULL,
-    [2021] [float] NULL,
-    [2022] [float] NULL,
-    [2023] [float] NULL,
-    [2024] [float] NULL,
-    [2025] [float] NULL,
-    [2026] [float] NULL,
-    [2027] [float] NULL,
-    [2028] [float] NULL,
-    [2029] [float] NULL,
-    [2030] [float] NULL
-) ON [PRIMARY]"""
-)
-
-
-# In[ ]:
-
-
 params = urllib.parse.quote_plus(
     r"Driver={SQL Server};"
-    r"Server=GREENSPAN\ECONPROD;"
+    r"Server=[server];"
     r"Database=[database];"
     r"Trusted_Connection=yes;"
 )
@@ -212,3 +155,4 @@ df_nc.to_sql(
     if_exists="replace",
     index=False,
 )
+'''

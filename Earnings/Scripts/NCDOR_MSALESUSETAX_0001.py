@@ -11,7 +11,7 @@ df_backup.to_csv("./Backups/STG_BEA_MSALESUSETAX_0001_BACKUP.txt")
 
 # Get new data from NCDOR (change month value in file name to get new month of data)
 df = pd.read_excel(
-    "https://files.nc.gov/ncdor/documents/reports/monthly_sales_09-20.xls", skiprows=9
+    "https://files.nc.gov/ncdor/documents/reports/monthly_sales_10-20.xls", skiprows=9
 )
 
 # Drop NaN row
@@ -30,20 +30,20 @@ df = df.drop(
 )
 
 # Rename columns
-df = df.rename(columns={"County.1": "County", "Collections*": "09-01-20"})
-df1 = df1.rename(columns={"County.1": "County", "Collections*.1": "09-01-20"})
+df = df.rename(columns={"County.1": "County", "Collections*": "10-01-20"})
+df1 = df1.rename(columns={"County.1": "County", "Collections*.1": "10-01-20"})
 
 # append dataframes
 df_list = [df, df1]
 df_main = df.append(df_list)
-df_main["Date"] = "09/01/2020"
+df_main["Date"] = "10/01/2020"
 
 # Drop rows that are all NaN and replace NaN with 0 if the entire row is not NaN
 df_main = df_main.dropna(how="all")
 df_main = df_main.fillna("0")
 
 # Change dtypes to Int
-df_main["09-01-20"] = df_main["09-01-20"].astype(float)
+df_main["10-01-20"] = df_main["10-01-20"].astype(float)
 
 # Drop junk rows
 df_main = df_main[:-10]

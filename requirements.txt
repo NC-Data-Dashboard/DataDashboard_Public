@@ -5,3 +5,4 @@ Requests
 pyodbc
 sqlalchemy 
 numpy 
+xlrd

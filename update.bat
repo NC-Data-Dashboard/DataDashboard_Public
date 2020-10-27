@@ -1,51 +1,31 @@
-python -m pip install --upgrade pip --user
-python -m pip install jupyter --upgrade --user
-python -m pip install pandas --upgrade --user
-python -m pip install Requests --upgrade --user
-python -m pip install watermark --upgrade --user
-python -m pip install xlrd --upgrade --user
-python -m pip install pyodbc --user
-python -m pip install sqlalchemy --upgrade --user
-python -m pip install numpy --upgrade --user
-
 cls
 
 cd Land
 call land.bat
 cd..
 
-cls
-
 cd Labor
 call labor.bat
 cd..
-
-cls
 
 cd Earnings
 call earnings.bat
 cd..
 
-cls
-
 cd Demographics
 call Demographics.bat
 cd..
-
-cls
 
 cd Health
 call health.bat
 cd..
 
-cls
+cd GDP
+call gdp.bat
+cd..
 
 REM cd Natural Products
 REM start natproducts.bat
 REM cd..
-
-cls
-
-git status
 
 pause

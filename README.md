@@ -1,6 +1,8 @@
 # Welcome to the NC Data Dashboard!
 
 This repository contains work [Nathan Young](https://github.com/nathayoung) created to automate data updates for Data Analyst roles at Western Carolina University.
+
+This repository updates every Sunday at 12:00p EST.
 ***
 ### [Demographics](https://github.com/NC-Data-Dashboard/DataDashboard_Greenspan/tree/master/Demographics)
 The Demographics folder includes scripts used to update data from [GeoFRED](https://geofred.stlouisfed.org/map/) for the Demographics workbook.
@@ -41,4 +43,4 @@ All folders contain or will contain Windows Batch Files (.bat) to simplify and e
 
 View [Help](https://github.com/NC-Data-Dashboard/DataDashboard_Greenspan/blob/master/Help.md) Documentation.
 
-#### Last updated: 07.29.2020
+#### Last updated: 11.05.2020

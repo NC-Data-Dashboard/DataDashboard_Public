@@ -1,102 +1,102 @@
-GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018
-" ""37000"""	North Carolina	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	1206308	1193011	1245215	1218429	1300848	1314107	1365634	1336765	1399223	1415956	1414259	1566711	1722946	1752970	1868415	1829179	1964930
-" ""37001"""	Alamance, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9036	9599	9880	10190	10325	10108	8541	9114	9123	9687	16554	37606	38498	11580	11107	11762	11287	12463
-" ""37003"""	Alexander, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	1950	1734	1787	1994	1716	1740	1626	1708	1845	1836	1829	1685	1822	1989	2038	2294	2277	(D)
-" ""37005"""	Alleghany, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37007"""	Anson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	4423	4446	4779	4974	4799	4305	4691	5035	5117	5562	5011	5115
-" ""37009"""	Ashe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	3611	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37011"""	Avery, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37013"""	Beaufort, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	0	0	0	(D)	(D)
-" ""37015"""	Bertie, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	(D)	(D)
-" ""37017"""	Bladen, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	1231	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37019"""	Brunswick, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	188985	207021	210326	203155	205988
-" ""37021"""	Buncombe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	27006	28418	28441	32478	31495	31983	31648	34906	(D)	(D)	36682	32544	38545	36836	38734	52893	61624	55115
-" ""37023"""	Burke, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	1856	3928	3932	4106	3862	4102	4195	4061	4100	4360	4321	4149	4572	4878	5055	5105	5216	6090
-" ""37025"""	Cabarrus, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5268	5512	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37027"""	Caldwell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	10423	11240	9195	9362	10443	10200	9697	10340	(D)	11292	11727	11568	12408	12574	14651	14027	14780	14956
-" ""37029"""	Camden, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37031"""	Carteret, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	7665	8239	8496	8248	7545	8317	8162	8910	8909	8872	9195	9186	9483	13311	12381	13331	12983	13579
-" ""37033"""	Caswell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37035"""	Catawba, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	38008	37410	38324	42758	31088	33983	(D)	37236	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37037"""	Chatham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	(D)	7498	4616	9567	(D)
-" ""37039"""	Cherokee, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	679	835
-" ""37041"""	Chowan, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37043"""	Clay, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37045"""	Cleveland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	3066	2630	2931	3184	2958	(D)	(D)	(D)	(D)	(D)	(D)	15571	27750
-" ""37047"""	Columbus, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	4261	4856	4890	6410	7830	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37049"""	Craven, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5341	5485	7206	8488	8375	8861	9141	9416	9635	10035	10251	9942	10961	12701	12743	13405	14520	15657
-" ""37051"""	Cumberland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	18926	(D)	18416	19866	17912	24225	25588	28953	32226	33668	34374	33579	35162	39697	39833	42602	42748	45684
-" ""37053"""	Currituck, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37055"""	Dare, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	6186	(D)	6968	7271	7879	8643	8968	9558	9245	9669	(D)	7855	8295	8435	8803	9411	9551	10187
-" ""37057"""	Davidson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8498	8331	8248	8000	7961	8816	9077	9632	10387	8683	8992	8862	9479	10327	9960	10586	9972	(D)
-" ""37059"""	Davie, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37061"""	Duplin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3069	3754	4000	3824	2018	3430	2031	2075	4369	5983	6106	5772	6077	4989	2742	2183	1876	2192
-" ""37063"""	Durham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	24030	20822	22154	(D)	(D)	19251	15947	(D)	(D)	(D)	(D)	(D)	28413
-" ""37065"""	Edgecombe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	9123	9838	10222	10228	10659	12374	12200	12185	(D)	(D)	(D)	(D)	(D)	(D)	(D)	8473	9035
-" ""37067"""	Forsyth, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37069"""	Franklin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5708	5780	6058	6509	(D)
-" ""37071"""	Gaston, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	58840	54584	49161	52037	52212	57192	48396	53440	54079	55940	56076	49140	50501	54783	56903	61892	57874	61647
-" ""37073"""	Gates, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	(D)	(D)	0	0	0	0	(D)	(D)
-" ""37075"""	Graham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	2134	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37077"""	Granville, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3396	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1967	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37079"""	Greene, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37081"""	Guilford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	48565	52513	51090	50078	48247	51359	35549	38947	37725	39388	39401	36748	42031	44327	44133	47145	46884	49331
-" ""37083"""	Halifax, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	12345	12833	14933	13528	13430	11857	(D)	(D)	(D)	(D)	(D)	26486	26947	25393	24158	16997	15581	11690
-" ""37085"""	Harnett, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37087"""	Haywood, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37089"""	Henderson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	9240
-" ""37091"""	Hertford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	1914	7911	8362	8411	7813	7284	7797	(D)	8437	(D)	(D)	(D)
-" ""37093"""	Hoke, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	457	(D)	(D)	298	364	430	387	406	337	403	393	461	509	493	1298	2106	(D)
-" ""37095"""	Hyde, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37097"""	Iredell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8557	9045	8194	8403	8678	9800	9178	14356	15191	13230	9861	19456	24004	26701	26797	29085	27525	46092
-" ""37099"""	Jackson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5399	(D)	(D)	(D)	(D)	5416
-" ""37101"""	Johnston, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3918	4520	8017	9993	9884	9981	9475	9443	5555	5588	(D)	(D)	(D)	(D)	6738	(D)	(D)	(D)
-" ""37103"""	Jones, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)
-" ""37105"""	Lee, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	16959	17195	17724	19004	18080	18440	18120	20789	20927	21621	18974	18108	16384	11136	11239	12283	12153	13305
-" ""37107"""	Lenoir, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3334	3782	1930	(D)	2099	2308	2286	2480	2513	2583	2476	2597	2588	2754	2730	2677	2455	3362
-" ""37109"""	Lincoln, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9008	9715	9586	9630	6424	10466	9909	10086	10099	10054	11618	11191	12589	13232	13609	14858	14687	15998
-" ""37111"""	McDowell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	1778	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37113"""	Macon, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	(D)	(D)	(D)
-" ""37115"""	Madison, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37117"""	Martin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37119"""	Mecklenburg, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	196675	184787	172408	182095	(D)	(D)	(D)	(D)	(D)	(D)	(D)	218378	281730	280578	279885	294486	280938	296174
-" ""37121"""	Mitchell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	1328	1352	1464	1579	1647	1785	1776	1795	1892	1843	1984	1935	1947	2399	2219	2158
-" ""37123"""	Montgomery, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37125"""	Moore, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9646	10527	10379	10233	9869	9419	9416	9616	9642	10129	10063	9830	10975	10067	9779	11478	11689	12984
-" ""37127"""	Nash, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37129"""	New Hanover, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	27006	28734	27145	30252	29319	28013	26725	(D)	(D)	(D)	(D)	31101	33057	33704	34692	38499	38654	42938
-" ""37131"""	Northampton, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0
-" ""37133"""	Onslow, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	13321	14411	14120	15077	15758	16575	16653	17738	18391	18402	19452	19349	19663	20836	20990	23268	22822	25161
-" ""37135"""	Orange, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	11623	12919	13003	13747	14019	15373	13473	13861	13972	13091	12548	12132	12858	13772	(D)	13461	13701	14646
-" ""37137"""	Pamlico, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37139"""	Pasquotank, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37141"""	Pender, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37143"""	Perquimans, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37145"""	Person, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	45342	(D)	(D)	(D)	(D)	(D)	(D)	(D)	61778	61866	64474	57302	59659
-" ""37147"""	Pitt, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3357	3393	3458	3611	3726	4025	4060	4400	4409	4404	4800	4990	4820	5228	5361	6015	6080	6491
-" ""37149"""	Polk, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	0	0	(D)	(D)	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37151"""	Randolph, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	7205	7461	7761	8054	7705	8746	11363	11828	10925	11642	11861	11908	13104	14240	14067	15215	15056	15470
-" ""37153"""	Richmond, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8618	11500	11299	12180	11928	12652	12612	13952	14098	16542	17812	18157	19683	21025	21358	21324	20964	23062
-" ""37155"""	Robeson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	19300	20254	18143	17671	18991	(D)	(D)	(D)	(D)	(D)	14005	14500	13997	18579	18808	19163
-" ""37157"""	Rockingham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	17686	16725	17388	17692	18524	20007	17901	17886	18335	17040	16132	14212	16013	16438	17127	17904	18518	20898
-" ""37159"""	Rowan, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	19349	18604	18498	19926	21417	18140	18197	17662	18220	17030	15509	17423	(D)	(D)	19604	(D)	20235
-" ""37161"""	Rutherford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	25231	21894	(D)	21292	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37163"""	Sampson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	809	830	749	954	1083	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1940	2778
-" ""37165"""	Scotland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37167"""	Stanly, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3987	4516	4167	4191	4651	6069	5983	6400	6388	6391	6367	6341	5866	5897	6528	7063	6739	8021
-" ""37169"""	Stokes, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37171"""	Surry, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5471	5949	5854	5360	5623	6020	5844	7301	7836	8311	9055	8653	9497	10408	9794	10420	10435	11216
-" ""37173"""	Swain, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	0	0	0	0	0	5301	5495	(D)	(D)	(D)	(D)	2832	0	0
-" ""37175"""	Transylvania, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	2257	2015	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37177"""	Tyrrell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37179"""	Union, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	9049	9315	10378	11350	13260	17233	18147	16152	17187	17743	16704	18162	21048	21659	23508	24427	27598
-" ""37181"""	Vance, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5699	6149	(D)	6668	7249
-" ""37183"""	Wake, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	173587	189838	193256	197069	(D)	189374	196517	225866	186512	192683	195889	204661	190343	327424	323133	341586	333162	343710
-" ""37185"""	Warren, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37187"""	Washington, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-" ""37189"""	Watauga, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37191"""	Wayne, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	19579	20669	19664	20894	20404	21737	21654	20388	23869	24537	25831	27225	28896	29983	30182	31550	31043	33168
-" ""37193"""	Wilkes, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	2715	2923	2841	2828	2651	2933	2552	2736	2927	3152	3479	3395	3435	3906	3700	3711	3406	3793
-" ""37195"""	Wilson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	337	889	1206	(D)	1040	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37197"""	Yadkin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	0	0	0	0	0	0	0	0	0	0	0	(D)	(D)	0	0	0	(D)
-" ""37199"""	Yancey, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	2326	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019
+" ""37000"""	North Carolina	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	1206308	1193011	1245215	1218429	1300848	1314107	1365634	1336765	1399223	1415956	1414259	1566711	1722946	1750058	1884747	1815370	1953225	2003062
+" ""37001"""	Alamance, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9036	9599	9880	10190	10325	10108	8541	9114	9123	9687	16554	37606	38498	11580	11085	11879	11220	12401	12313
+" ""37003"""	Alexander, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	1950	1734	1787	1994	1716	1740	1626	1708	1845	1836	1829	1685	1822	1989	2031	2328	2273	(D)	(D)
+" ""37005"""	Alleghany, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37007"""	Anson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	4423	4446	4779	4974	4799	4305	4691	5035	5107	5613	4976	5089	5380
+" ""37009"""	Ashe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	3611	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37011"""	Avery, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37013"""	Beaufort, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	0	0	0	(D)	(D)	(D)
+" ""37015"""	Bertie, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	(D)	(D)	(D)
+" ""37017"""	Bladen, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	1231	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37019"""	Brunswick, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	188985	206736	211904	201385	204508	202895
+" ""37021"""	Buncombe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	27006	28418	28441	32478	31495	31983	31648	34906	(D)	(D)	36682	32544	38545	36836	38684	53351	61072	54830	54991
+" ""37023"""	Burke, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	1856	3928	3932	4106	3862	4102	4195	4061	4100	4360	4321	4149	4572	4878	5043	5171	5194	6066	6395
+" ""37025"""	Cabarrus, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5268	5512	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	11240
+" ""37027"""	Caldwell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	10423	11240	9195	9362	10443	10200	9697	10340	(D)	11292	11727	11568	12408	12574	14629	14157	14671	14870	16090
+" ""37029"""	Camden, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37031"""	Carteret, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	7665	8239	8496	8248	7545	8317	8162	8910	8909	8872	9195	9186	9483	13311	12354	13484	12919	13526	13846
+" ""37033"""	Caswell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37035"""	Catawba, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	38008	37410	38324	42758	31088	33983	(D)	37236	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37037"""	Chatham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	(D)	7485	4653	9515	(D)	(D)
+" ""37039"""	Cherokee, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	675	831	805
+" ""37041"""	Chowan, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37043"""	Clay, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37045"""	Cleveland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	3066	2630	2931	3184	2958	(D)	(D)	(D)	(D)	(D)	(D)	15443	27555	29722
+" ""37047"""	Columbus, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	4261	4856	4890	6410	7830	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37049"""	Craven, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5341	5485	7206	8488	8375	8861	9141	9416	9635	10035	10251	9942	10961	12701	12720	13541	14427	15575	16839
+" ""37051"""	Cumberland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	18926	(D)	18416	19866	17912	24225	25588	28953	32226	33668	34374	33579	35162	39697	39731	43104	42552	45532	48406
+" ""37053"""	Currituck, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37055"""	Dare, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	6186	(D)	6968	7271	7879	8643	8968	9558	9245	9669	(D)	7855	8295	8435	8789	9498	9482	10127	(D)
+" ""37057"""	Davidson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8498	8331	8248	8000	7961	8816	9077	9632	10387	8683	8992	8862	9479	10327	9937	10725	9934	(D)	(D)
+" ""37059"""	Davie, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37061"""	Duplin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3069	3754	4000	3824	2018	3430	2031	2075	4369	5983	6106	5772	6077	4989	2736	2210	1870	2187	2486
+" ""37063"""	Durham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	24030	20822	22154	(D)	(D)	19251	15947	(D)	(D)	(D)	(D)	(D)	28259	28486
+" ""37065"""	Edgecombe, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	9123	9838	10222	10228	10659	12374	12200	12185	(D)	(D)	(D)	(D)	(D)	(D)	(D)	8420	8989	9897
+" ""37067"""	Forsyth, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37069"""	Franklin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5708	5771	6114	6458	(D)	(D)
+" ""37071"""	Gaston, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	58840	54584	49161	52037	52212	57192	48396	53440	54079	55940	56076	49140	50501	54783	56800	62462	57472	61328	63260
+" ""37073"""	Gates, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	(D)	(D)	0	0	0	0	(D)	(D)	(D)
+" ""37075"""	Graham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	2134	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37077"""	Granville, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3396	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1967	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37079"""	Greene, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37081"""	Guilford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	48565	52513	51090	50078	48247	51359	35549	38947	37725	39388	39401	36748	42031	44327	44050	47602	46561	49053	50188
+" ""37083"""	Halifax, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	12345	12833	14933	13528	13430	11857	(D)	(D)	(D)	(D)	(D)	26486	26947	25393	24120	17152	15457	11621	11904
+" ""37085"""	Harnett, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37087"""	Haywood, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37089"""	Henderson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	9194	(D)
+" ""37091"""	Hertford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	1914	7911	8362	8411	7813	7284	7797	(D)	8422	(D)	(D)	(D)	(D)
+" ""37093"""	Hoke, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	457	(D)	(D)	298	364	430	387	406	337	403	393	461	509	491	1321	2103	(D)	(D)
+" ""37095"""	Hyde, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37097"""	Iredell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8557	9045	8194	8403	8678	9800	9178	14356	15191	13230	9861	19456	24004	26701	26745	29383	27375	45888	53302
+" ""37099"""	Jackson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5399	(D)	(D)	(D)	(D)	5390	(D)
+" ""37101"""	Johnston, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3918	4520	8017	9993	9884	9981	9475	9443	5555	5588	(D)	(D)	(D)	(D)	6723	(D)	(D)	(D)	(D)
+" ""37103"""	Jones, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)	(D)
+" ""37105"""	Lee, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	16959	17195	17724	19004	18080	18440	18120	20789	20927	21621	18974	18108	16384	11136	11217	12410	12077	13238	13966
+" ""37107"""	Lenoir, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3334	3782	1930	(D)	2099	2308	2286	2480	2513	2583	2476	2597	2588	2754	2724	2715	2446	3352	3906
+" ""37109"""	Lincoln, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9008	9715	9586	9630	6424	10466	9909	10086	10099	10054	11618	11191	12589	13232	13582	15023	14601	15932	16890
+" ""37111"""	McDowell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	1778	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37113"""	Macon, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	(D)	(D)	(D)	(D)
+" ""37115"""	Madison, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37117"""	Martin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37119"""	Mecklenburg, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	196675	184787	172408	182095	(D)	(D)	(D)	(D)	(D)	(D)	(D)	218378	281730	280578	279488	296681	278478	294084	281081
+" ""37121"""	Mitchell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	1328	1352	1464	1579	1647	1785	1776	1795	1892	1843	1984	1935	1944	2422	2205	2148	1963
+" ""37123"""	Montgomery, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37125"""	Moore, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	9646	10527	10379	10233	9869	9419	9416	9616	9642	10129	10063	9830	10975	10067	9762	11580	11602	12902	16069
+" ""37127"""	Nash, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37129"""	New Hanover, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	27006	28734	27145	30252	29319	28013	26725	(D)	(D)	(D)	(D)	31101	33057	33704	34638	38828	38353	42662	43164
+" ""37131"""	Northampton, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0	0
+" ""37133"""	Onslow, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	13321	14411	14120	15077	15758	16575	16653	17738	18391	18402	19452	19349	19663	20836	20948	23515	22693	25044	26435
+" ""37135"""	Orange, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	11623	12919	13003	13747	14019	15373	13473	13861	13972	13091	12548	12132	12858	13772	(D)	13608	13623	14580	14674
+" ""37137"""	Pamlico, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37139"""	Pasquotank, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37141"""	Pender, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37143"""	Perquimans, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37145"""	Person, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	45342	(D)	(D)	(D)	(D)	(D)	(D)	(D)	61778	61773	64977	56806	59224	55112
+" ""37147"""	Pitt, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3357	3393	3458	3611	3726	4025	4060	4400	4409	4404	4800	4990	4820	5228	5348	6088	6052	6472	7051
+" ""37149"""	Polk, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	0	0	(D)	(D)	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37151"""	Randolph, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	7205	7461	7761	8054	7705	8746	11363	11828	10925	11642	11861	11908	13104	14240	14041	15366	14956	15389	14717
+" ""37153"""	Richmond, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	8618	11500	11299	12180	11928	12652	12612	13952	14098	16542	17812	18157	19683	21025	21323	21515	20807	22923	24319
+" ""37155"""	Robeson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	19300	20254	18143	17671	18991	(D)	(D)	(D)	(D)	(D)	14005	14500	13969	18760	18679	19068	20297
+" ""37157"""	Rockingham, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	17686	16725	17388	17692	18524	20007	17901	17886	18335	17040	16132	14212	16013	16438	17080	18068	18379	20771	19875
+" ""37159"""	Rowan, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	19349	18604	18498	19926	21417	18140	18197	17662	18220	17030	15509	17423	(D)	(D)	19773	(D)	20116	21586
+" ""37161"""	Rutherford, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	25231	21894	(D)	21292	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37163"""	Sampson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	809	830	749	954	1083	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1931	2769	3037
+" ""37165"""	Scotland, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37167"""	Stanly, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	3987	4516	4167	4191	4651	6069	5983	6400	6388	6391	6367	6341	5866	5897	6515	7134	6698	7978	8129
+" ""37169"""	Stokes, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0	0	0	0	(D)
+" ""37171"""	Surry, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	5471	5949	5854	5360	5623	6020	5844	7301	7836	8311	9055	8653	9497	10408	9772	10541	10387	11177	12816
+" ""37173"""	Swain, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	0	0	0	0	0	5301	5495	(D)	(D)	(D)	(D)	2855	0	0	0
+" ""37175"""	Transylvania, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	2257	2015	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37177"""	Tyrrell, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37179"""	Union, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	9049	9315	10378	11350	13260	17233	18147	16152	17187	17743	16704	18162	21048	21621	23735	24261	27442	29254
+" ""37181"""	Vance, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5699	6140	(D)	6614	7204	7589
+" ""37183"""	Wake, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	173587	189838	193256	197069	(D)	189374	196517	225866	186512	192683	195889	204661	190343	327424	322622	344396	330511	341555	350579
+" ""37185"""	Warren, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37187"""	Washington, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37189"""	Watauga, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37191"""	Wayne, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	19579	20669	19664	20894	20404	21737	21654	20388	23869	24537	25831	27225	28896	29983	30134	31825	30810	32963	32902
+" ""37193"""	Wilkes, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	2715	2923	2841	2828	2651	2933	2552	2736	2927	3152	3479	3395	3435	3906	3692	3755	3392	3781	3909
+" ""37195"""	Wilson, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	337	889	1206	(D)	1040	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37197"""	Yadkin, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	(D)	0	0	0	0	0	0	0	0	0	0	0	(D)	(D)	0	0	0	(D)	(D)
+" ""37199"""	Yancey, NC	5.0	CAINC6N	300.0	22	   Utilities	Thousands of dollars	0	2326	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)

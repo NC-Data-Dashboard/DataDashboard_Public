@@ -1,102 +1,102 @@
-GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018
-" ""37000"""	North Carolina	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1348453	1382153	1420643	1497167	1498792	1766900	1922179	2029299	2040194	2003956	2079182	2197379	2289286	2494403	2562444	2734687	2815703	2948884
-" ""37001"""	Alamance, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	24424	9827	9729	9577	11958	12458	13666	12135	13750	16517	15481	13985	15520	18113	18243	18659	17112	19142
-" ""37003"""	Alexander, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1309	974	923	1145	1089	1064	1431	1464	1274	1182	1378	1067	911	1148	1123	1704	1737	1757
-" ""37005"""	Alleghany, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2747	2978	3990	4180	4567	4570	4925	5655	4842	5869	6016	5397	5515	5915	5670	7732	7745	7712
-" ""37007"""	Anson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	176	214	152	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37009"""	Ashe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3429	2907	(D)	(D)	1906	(D)	2364	2365	1249	1714	2036	2130	2008	2036	2033	2141	2186	2205
-" ""37011"""	Avery, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	11195	11584	(D)	(D)	(D)	15524	16929	17253	16180	16434	20267	20644	21775	24113	24238	27304	28400	30383
-" ""37013"""	Beaufort, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2183	1395	1913	1943	(D)	1719	1704	1638	1612	1769	1873	3688	3636	3509	3174	3661	3844	3988
-" ""37015"""	Bertie, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	250	512	494	408	219	117	(D)	(D)	(D)	(D)	827	(D)	(D)	1068	1019	1510	1692	1543
-" ""37017"""	Bladen, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	117	(D)	0	(D)	(D)	(D)	(D)	(D)	175	205	245	375	(D)	366	355	399	460
-" ""37019"""	Brunswick, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	19337	20582	24267	26028	27443	28787	41495	44118	41177	39011	37849	41585	41183	42817	41178	42824	42870	41219
-" ""37021"""	Buncombe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	39357	44123	44364	47958	48324	57448	62814	68836	64108	62256	59954	65204	68481	74950	80401	93905	98982	133734
-" ""37023"""	Burke, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2620	2583	2471	2688	2673	2863	3141	3039	2926	3059	3012	3482	3487	3515	3700	3917	3936	3530
-" ""37025"""	Cabarrus, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	108857	107360	124919	131742	164331	163406	179632	197145	201203	175417	190179	240841	253735	276536	275129	293211	276011	267418
-" ""37027"""	Caldwell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3182	3071	2602	2338	2222	3049	3229	3267	2550	2029	1905	2120	2171	3835	3867	3984	3448	3411
-" ""37029"""	Camden, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	0	0	0	0	(D)	(D)	(D)	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37031"""	Carteret, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	13116	14534	14584	15001	14808	14214	13902	14834	15191	14925	14840	16382	16791	18268	18082	18637	19196	19438
-" ""37033"""	Caswell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	657	685	627	479	428	(D)	323	347	368	393	403	(D)	334	318
-" ""37035"""	Catawba, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	32373	19894	21611	24002	23621	30359	28636	24435	22450	21501	21232	20849	21693	23024	21868	26094	30116	30558
-" ""37037"""	Chatham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5966	5168	6357	7004	7716	7371	8077	8399	8796	6905	6853	7341	6892	7158	7594	8737	9122	9352
-" ""37039"""	Cherokee, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	544	494	(D)	578	576	639	552	504	532	517	660	791	1006	655	399	1032
-" ""37041"""	Chowan, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	315	430	429	417	514	538	533	773	401	390	463	495	414	525	528	532
-" ""37043"""	Clay, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	404	(D)	580	824	858	(D)	(D)	(D)	204	(D)	(D)	(D)	0	(D)	(D)	(D)	(D)	(D)
-" ""37045"""	Cleveland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5421	4916	4939	5400	5432	5179	4566	3765	3454	3645	3473	3936	2755	2744	2908	6780	6708	7264
-" ""37047"""	Columbus, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	688	(D)	659	710	612	491	446	498	733	602	(D)	(D)	274	281	309	332	789	893
-" ""37049"""	Craven, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7039	7544	6947	7169	7717	8066	8902	8920	9896	9546	9410	9058	8984	10101	9786	(D)	9151	8898
-" ""37051"""	Cumberland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	20823	24313	23937	17515	17492	18829	20337	20559	22103	19745	19225	22094	22051	24608	23901	24973	25798	29196
-" ""37053"""	Currituck, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3519	6005	7650	7053	6916	7323	6527	6213	5904	6107	5603	5841	5899	6202	5846	9252	11584	11630
-" ""37055"""	Dare, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	8232	10090	10601	11340	11217	11012	12364	12455	11797	11063	11370	10647	10129	10795	11026	12590	12243	13900
-" ""37057"""	Davidson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	23703	29899	21086	27207	21314	24310	26741	29585	30137	30361	40654	41158	43588	47458	48688	45963	50382	37943
-" ""37059"""	Davie, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5156	4714	5585	5661	5649	5505	5613	5711	5331	5470	5346	4397	2847	2827	3133	4182	4398	5026
-" ""37061"""	Duplin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3443	3745	3924	4103	631	543	556	511	524	487	407	381	295	(D)	553	478	480	(D)
-" ""37063"""	Durham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	37185	33065	28935	31368	29224	31790	33108	34922	35428	36169	40045	41609	47612	53874	54588	56551	62698	66407
-" ""37065"""	Edgecombe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1539	1264	1147	1147	1242	1271	1291	1291	1190	1251	958	1036	826	905	849	782	706	1252
-" ""37067"""	Forsyth, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	36557	38191	38199	38350	43639	46151	52577	60921	60260	63980	66442	57214	64393	75663	77099	77814	79186	78831
-" ""37069"""	Franklin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	639	652	548	514	597	710	698	1191	1133	1420	1621	1539	1481	1255	1424	1273	(D)	1472
-" ""37071"""	Gaston, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	13194	10158	10260	10687	10636	9931	13181	10977	10728	10452	10630	11096	10649	10763	11237	15994	16478	17972
-" ""37073"""	Gates, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37075"""	Graham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	264	384	(D)	(D)	357	334	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37077"""	Granville, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	547	510	514	615	679	771	753	787	633	425	508	608	992	836	601	446	452	665
-" ""37079"""	Greene, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1333	1237	107	60	(D)	(D)	(D)	(D)	(D)	(D)	(D)	708	(D)	879	(D)	(D)	(D)	(D)
-" ""37081"""	Guilford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	46938	52058	55228	56084	56120	64539	71841	71559	68986	69135	70023	84384	79584	82432	81305	87065	92105	96534
-" ""37083"""	Halifax, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1977	1394	1401	1480	1450	1478	1732	1995	2565	2629	(D)	2415	2801	(D)	3273	2462	2345	2380
-" ""37085"""	Harnett, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2149	2061	(D)	1277	1321	1881	2172	2126	2333	3241	3236	3439	3846	3600	3965	4655	4775	4422
-" ""37087"""	Haywood, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	8562	8081	6426	8224	7137	9750	9747	9997	9484	9830	9005	9541	9135	9857	10172	8740	8051	10940
-" ""37089"""	Henderson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	21277	19819	19218	16613	16936	16649	16599	18519	19688	20265	19713	19841	19783	19093	19101	19360	20392	19341
-" ""37091"""	Hertford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	354	407	447	602	461	466	448	336	300	343	260	(D)	(D)	348	424	502	(D)	(D)
-" ""37093"""	Hoke, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	411	263	(D)	257	197	208	373	367	510	563	740	730	801	920	2056
-" ""37095"""	Hyde, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	293	440	299	358	304	318	318	346	386	303	382	375	352	300	(D)	316	554	587
-" ""37097"""	Iredell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	92089	112012	122563	145263	153061	177873	189696	190848	155562	139586	133819	123461	125943	137640	131328	142305	145982	164109
-" ""37099"""	Jackson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	6950	9634	9997	10176	11433	16266	19022	19327	17403	17719	17653	18977	20168	21107	21856	25129	25868	29652
-" ""37101"""	Johnston, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3665	4361	5028	4624	4375	4528	4794	4547	4549	4624	5328	5187	6161	10273	9441	10374	9779	10664
-" ""37103"""	Jones, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	292	(D)	303	302	(D)	(D)	(D)	437	527	397	(D)	(D)	(D)	(D)	(D)
-" ""37105"""	Lee, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5453	5977	5676	5267	4905	5109	5332	5319	5831	6405	5888	6078	6115	6262	6080	5994	6165	6579
-" ""37107"""	Lenoir, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3837	4057	3816	3951	3941	4141	4152	3727	4145	3977	3589	3213	2876	2374	2400	2387	2282	2995
-" ""37109"""	Lincoln, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7603	6663	6129	5718	5782	7997	8214	9066	9927	10426	10591	12875	9348	9676	10698	8504	9976	10001
-" ""37111"""	McDowell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1885	1767	1516	1400	1264	1242	4687	4375	1538	1615	1354	1488	1436	1494	1452	1556	1888	2092
-" ""37113"""	Macon, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7938	9409	9248	10385	10891	12116	12520	13652	13042	13430	13205	13616	14223	15219	15135	15711	16413	17918
-" ""37115"""	Madison, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	2016	2412	2812	3091	2880	2827	(D)	2721	2511	2617	2993	2939	3150	3105	3185
-" ""37117"""	Martin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	579	350	403	484	439	458	420	406	367	(D)	(D)	1205	1011	816	(D)	(D)	(D)
-" ""37119"""	Mecklenburg, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	336696	322898	334743	362922	359403	474948	529450	577871	610816	615829	653288	690317	706289	783985	837786	889598	927357	984396
-" ""37121"""	Mitchell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	900	1005	1129	1415	1488	1394	(D)	(D)	(D)	(D)	(D)	512	451	384	(D)	(D)	(D)	(D)
-" ""37123"""	Montgomery, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	866	4734	4196	4711	4373	4127	4045	3861	3871	3708	4917	4056	3620	3896	3944	3592	3919	4229
-" ""37125"""	Moore, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	32395	32268	34635	35781	39215	34722	36212	35637	32278	31176	32295	33052	30684	33682	32111	30526	32033	35289
-" ""37127"""	Nash, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4096	4683	4874	4954	4972	4986	5511	5783	5135	4956	4396	4222	3944	4630	4528	7144	7006	6477
-" ""37129"""	New Hanover, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	33493	35698	35559	35274	36071	39325	41762	43700	42060	40795	42991	44554	48194	52980	54344	58722	57932	58065
-" ""37131"""	Northampton, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	402	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37133"""	Onslow, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4828	4797	5027	(D)	5810	6133	6347	6812	6681	6328	7380	7855	10438	9128	8731	9552	9704	10455
-" ""37135"""	Orange, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	9711	11117	9278	9372	12909	13245	13045	13259	14511	16824	21350	15724	16926	18657	19983	24464	22473	22086
-" ""37137"""	Pamlico, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	873	935	782	1293	1431	1535	1368	1326	6726	6482	6726	6878	7240	7928	7686	7682	8248	8737
-" ""37139"""	Pasquotank, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2848	2997	3448	1659	652	934	1302	1229	(D)	1080	1010	(D)	(D)	1474	1941	2985	2941	2797
-" ""37141"""	Pender, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3108	2914	3028	3217	3417	3792	3677	3610	3158	3225	3400	3199	3502	3362	3104	4298	3742	4228
-" ""37143"""	Perquimans, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37145"""	Person, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	539	1886	1849	1972	1539	1451	1783	1664	1599	1520	1494	1834	1661	1797	1757	1770	(D)	(D)
-" ""37147"""	Pitt, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7578	14071	14082	9612	12044	13186	15157	14678	15204	14900	15034	15461	13575	13642	13278	14487	14773	12719
-" ""37149"""	Polk, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1480	1470	1494	1534	1459	1482	2801	3261	3204	2902	2483	2511	3115	4345	4234	3980	12399	13410
-" ""37151"""	Randolph, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	22886	17747	16516	16957	15260	20955	21519	19357	12743	11605	11860	10889	10590	11346	10469	12259	12136	11800
-" ""37153"""	Richmond, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3188	3462	4037	4162	3394	3289	1256	1519	1263	1153	1300	1385	1574	1644	1630	1704	1755	1894
-" ""37155"""	Robeson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3621	3772	3753	4072	4430	4544	4445	4508	4435	4621	6350	5162	3557	2905	2854	2993	2983	3027
-" ""37157"""	Rockingham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4275	4550	4564	4584	4921	5349	5593	5474	3793	3735	3552	3405	4171	4481	4256	4749	5021	4224
-" ""37159"""	Rowan, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	10356	9533	9324	9064	10612	12359	13246	13866	17797	14447	13402	15018	19271	19763	19367	21969	20517	18540
-" ""37161"""	Rutherford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7075	6555	6281	6642	6846	8911	9900	11006	9385	7512	3846	4010	3241	3848	4010	4356	4581	4533
-" ""37163"""	Sampson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1056	1362	1201	1280	1378	1235	1407	1273	1127	1077	1058	1098	1371	1530	1558	1506	1307	1421
-" ""37165"""	Scotland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1886	(D)	(D)	1410	1405	1601	1490	1389	1317	1338	1431	1702	1517	1664	1668	1633	1575	1364
-" ""37167"""	Stanly, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1024	2563	2878	4889	1204	1696	1967	2156	2069	1921	2123	3012	2960	2457	2240	3742	3747	3464
-" ""37169"""	Stokes, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	715	785	707	689	822	735	798	700	722	605	708	633	528	688	859	3105	3084	2003
-" ""37171"""	Surry, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5870	5936	4500	4422	4737	5316	5288	5643	5617	5959	6291	8411	7487	5543	4847	4168	4091	4360
-" ""37173"""	Swain, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2901	5753	10538	9438	6813	7689	8920	9771	7704	8466	8761	9274	9358	9959	10473	10548	10294	11343
-" ""37175"""	Transylvania, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3326	4168	6314	5624	5359	5774	6358	6833	6495	6745	5798	5852	6144	6627	5799	5404	5921	5656
-" ""37177"""	Tyrrell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0	0	0
-" ""37179"""	Union, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4194	6785	6933	9698	9204	12537	15097	15965	15596	14386	14087	17880	18522	21004	23187	23157	25221	27337
-" ""37181"""	Vance, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3694	3543	2910	3203	3220	3264	3094	2915	2832	2800	2422	2306	5192	5557	5105	6182	7201	7138
-" ""37183"""	Wake, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	151591	167232	162758	166024	126629	189016	195150	212340	245632	253049	264957	274753	311187	332632	348237	361971	373902	383392
-" ""37185"""	Warren, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	158	(D)	107	100	216	(D)	134	163	107	130	237	(D)	(D)	225	225	192
-" ""37187"""	Washington, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	229	210	(D)	(D)	230	307	250	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
-" ""37189"""	Watauga, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	12930	13382	13071	12395	13779	14637	16087	17196	16772	15561	15407	15926	16203	16781	16949	18140	19489	20595
-" ""37191"""	Wayne, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3640	3922	4794	5022	5193	5839	5517	5759	5999	6013	6124	6753	6359	7183	7109	5678	5316	5894
-" ""37193"""	Wilkes, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	964	1118	1234	1168	1463	1672	1953	1219	1019	998	1001	908	943	1038	1103	3536	3672	3335
-" ""37195"""	Wilson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4264	4600	4866	5085	4982	4861	4828	5041	5256	5197	4238	4619	4549	4515	4212	5547	6288	7214
-" ""37197"""	Yadkin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	626	710	931	1039	974	(D)	889	729	869	886	785	815	798	1003	803	1983	2028	2052
-" ""37199"""	Yancey, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	3835	3917	3979	(D)	(D)	(D)	(D)	3229	3569	3810	4056	4397	4360	4509	4595
+GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019
+" ""37000"""	North Carolina	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1348453	1382153	1420643	1497167	1498792	1766900	1922179	2029299	2040194	2003956	2079182	2197379	2289286	2494403	2563884	2750371	2844285	2976526	3077767
+" ""37001"""	Alamance, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	24424	9827	9729	9577	11958	12458	13666	12135	13750	16517	15481	13985	15520	18113	18254	18792	17272	19337	20318
+" ""37003"""	Alexander, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1309	974	923	1145	1089	1064	1431	1464	1274	1182	1378	1067	911	1148	1125	1714	1753	1774	1730
+" ""37005"""	Alleghany, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2747	2978	3990	4180	4567	4570	4925	5655	4842	5869	6016	5397	5515	5915	5681	7780	7790	7782	7899
+" ""37007"""	Anson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	176	214	152	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37009"""	Ashe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3429	2907	(D)	(D)	1906	(D)	2364	2365	1249	1714	2036	2130	2008	2036	2037	2153	2203	2227	2182
+" ""37011"""	Avery, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	11195	11584	(D)	(D)	(D)	15524	16929	17253	16180	16434	20267	20644	21775	24113	24284	27451	28552	30654	32919
+" ""37013"""	Beaufort, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2183	1395	1913	1943	(D)	1719	1704	1638	1612	1769	1873	3688	3636	3509	3179	3687	3871	4025	4018
+" ""37015"""	Bertie, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	250	512	494	408	219	117	(D)	(D)	(D)	(D)	827	(D)	(D)	1068	1021	1520	1705	1561	1870
+" ""37017"""	Bladen, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	117	(D)	0	(D)	(D)	(D)	(D)	(D)	175	205	245	375	(D)	367	358	403	464	388
+" ""37019"""	Brunswick, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	19337	20582	24267	26028	27443	28787	41495	44118	41177	39011	37849	41585	41183	42817	41254	43105	43152	41589	43495
+" ""37021"""	Buncombe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	39357	44123	44364	47958	48324	57448	62814	68836	64108	62256	59954	65204	68481	74950	80407	94433	99660	135041	146470
+" ""37023"""	Burke, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2620	2583	2471	2688	2673	2863	3141	3039	2926	3059	3012	3482	3487	3515	3704	3946	3970	3568	3461
+" ""37025"""	Cabarrus, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	108857	107360	124919	131742	164331	163406	179632	197145	201203	175417	190179	240841	253735	276536	275067	294548	279645	269998	265214
+" ""37027"""	Caldwell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3182	3071	2602	2338	2222	3049	3229	3267	2550	2029	1905	2120	2171	3835	3870	4021	3480	3444	4165
+" ""37029"""	Camden, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	0	0	0	0	(D)	(D)	(D)	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37031"""	Carteret, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	13116	14534	14584	15001	14808	14214	13902	14834	15191	14925	14840	16382	16791	18268	18113	18760	19321	19604	19683
+" ""37033"""	Caswell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	657	685	627	479	428	(D)	323	347	368	393	404	(D)	337	322	(D)
+" ""37035"""	Catawba, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	32373	19894	21611	24002	23621	30359	28636	24435	22450	21501	21232	20849	21693	23024	21892	26302	30424	30788	27884
+" ""37037"""	Chatham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5966	5168	6357	7004	7716	7371	8077	8399	8796	6905	6853	7341	6892	7158	7607	8787	9175	9438	9790
+" ""37039"""	Cherokee, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	544	494	(D)	578	576	639	552	504	532	517	660	791	1008	659	402	1043	1154
+" ""37041"""	Chowan, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	315	430	429	417	514	538	533	773	401	390	463	495	415	532	536	536	475
+" ""37043"""	Clay, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	404	(D)	580	824	858	(D)	(D)	(D)	204	(D)	(D)	(D)	0	(D)	(D)	(D)	(D)	(D)	516
+" ""37045"""	Cleveland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5421	4916	4939	5400	5432	5179	4566	3765	3454	3645	3473	3936	2755	2744	2911	6847	6778	7347	7981
+" ""37047"""	Columbus, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	688	(D)	659	710	612	491	446	498	733	602	(D)	(D)	274	281	310	335	793	900	923
+" ""37049"""	Craven, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7039	7544	6947	7169	7717	8066	8902	8920	9896	9546	9410	9058	8984	10101	9799	(D)	9230	8985	10667
+" ""37051"""	Cumberland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	20823	24313	23937	17515	17492	18829	20337	20559	22103	19745	19225	22094	22051	24608	23931	25178	26018	29501	30371
+" ""37053"""	Currituck, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3519	6005	7650	7053	6916	7323	6527	6213	5904	6107	5603	5841	5899	6202	5855	9319	11667	11737	12431
+" ""37055"""	Dare, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	8232	10090	10601	11340	11217	11012	12364	12455	11797	11063	11370	10647	10129	10795	11044	12673	12329	14055	15040
+" ""37057"""	Davidson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	23703	29899	21086	27207	21314	24310	26741	29585	30137	30361	40654	41158	43588	47458	48683	46181	51002	38224	36967
+" ""37059"""	Davie, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5156	4714	5585	5661	5649	5505	5613	5711	5331	5470	5346	4397	2847	2827	3136	4215	4436	5073	3236
+" ""37061"""	Duplin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3443	3745	3924	4103	631	543	556	511	524	487	407	381	295	(D)	555	481	483	(D)	437
+" ""37063"""	Durham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	37185	33065	28935	31368	29224	31790	33108	34922	35428	36169	40045	41609	47612	53874	54621	57006	63349	67063	71546
+" ""37065"""	Edgecombe, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1539	1264	1147	1147	1242	1271	1291	1291	1190	1251	958	1036	826	905	849	790	712	1265	2234
+" ""37067"""	Forsyth, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	36557	38191	38199	38350	43639	46151	52577	60921	60260	63980	66442	57214	64393	75663	77116	78484	80027	79701	67248
+" ""37069"""	Franklin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	639	652	548	514	597	710	698	1191	1133	1420	1621	1539	1481	1255	1425	1284	(D)	1484	1613
+" ""37071"""	Gaston, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	13194	10158	10260	10687	10636	9931	13181	10977	10728	10452	10630	11096	10649	10763	11248	16138	16634	18176	18335
+" ""37073"""	Gates, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	0	0	0	0	0	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37075"""	Graham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	264	384	(D)	(D)	357	334	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37077"""	Granville, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	547	510	514	615	679	771	753	787	633	425	508	608	992	836	602	449	459	676	986
+" ""37079"""	Greene, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1333	1237	107	60	(D)	(D)	(D)	(D)	(D)	(D)	(D)	708	(D)	879	(D)	(D)	(D)	(D)	(D)
+" ""37081"""	Guilford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	46938	52058	55228	56084	56120	64539	71841	71559	68986	69135	70023	84384	79584	82432	81371	87801	93051	97591	104462
+" ""37083"""	Halifax, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1977	1394	1401	1480	1450	1478	1732	1995	2565	2629	(D)	2415	2801	(D)	3277	2480	2364	2404	2311
+" ""37085"""	Harnett, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2149	2061	(D)	1277	1321	1881	2172	2126	2333	3241	3236	3439	3846	3600	3972	4688	4815	4484	4659
+" ""37087"""	Haywood, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	8562	8081	6426	8224	7137	9750	9747	9997	9484	9830	9005	9541	9135	9857	10192	8795	8107	11038	11841
+" ""37089"""	Henderson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	21277	19819	19218	16613	16936	16649	16599	18519	19688	20265	19713	19841	19783	19093	19128	19492	20558	19517	19427
+" ""37091"""	Hertford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	354	407	447	602	461	466	448	336	300	343	260	(D)	(D)	348	423	507	(D)	(D)	(D)
+" ""37093"""	Hoke, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	411	263	(D)	257	197	208	373	367	510	563	740	730	806	927	2080	2036
+" ""37095"""	Hyde, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	293	440	299	358	304	318	318	346	386	303	382	375	352	300	(D)	318	558	593	406
+" ""37097"""	Iredell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	92089	112012	122563	145263	153061	177873	189696	190848	155562	139586	133819	123461	125943	137640	131320	142976	147781	165656	162151
+" ""37099"""	Jackson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	6950	9634	9997	10176	11433	16266	19022	19327	17403	17719	17653	18977	20168	21107	21903	25254	25985	29893	30228
+" ""37101"""	Johnston, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3665	4361	5028	4624	4375	4528	4794	4547	4549	4624	5328	5187	6161	10273	9452	10458	9867	10773	11751
+" ""37103"""	Jones, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	292	(D)	303	302	(D)	(D)	(D)	437	527	397	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37105"""	Lee, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5453	5977	5676	5267	4905	5109	5332	5319	5831	6405	5888	6078	6115	6262	6089	6047	6221	6648	6642
+" ""37107"""	Lenoir, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3837	4057	3816	3951	3941	4141	4152	3727	4145	3977	3589	3213	2876	2374	2404	2407	2304	3030	2948
+" ""37109"""	Lincoln, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7603	6663	6129	5718	5782	7997	8214	9066	9927	10426	10591	12875	9348	9676	10710	8571	10070	10105	8835
+" ""37111"""	McDowell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1885	1767	1516	1400	1264	1242	4687	4375	1538	1615	1354	1488	1436	1494	1452	1565	1899	2118	2219
+" ""37113"""	Macon, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7938	9409	9248	10385	10891	12116	12520	13652	13042	13430	13205	13616	14223	15219	15165	15789	16491	18067	18778
+" ""37115"""	Madison, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	2016	2412	2812	3091	2880	2827	(D)	2721	2511	2617	2993	2944	3172	3125	3217	3174
+" ""37117"""	Martin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	579	350	403	484	439	458	420	406	367	(D)	(D)	1205	1011	817	(D)	(D)	(D)	(D)
+" ""37119"""	Mecklenburg, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	336696	322898	334743	362922	359403	474948	529450	577871	610816	615829	653288	690317	706289	783985	838064	893265	936988	992822	1017380
+" ""37121"""	Mitchell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	900	1005	1129	1415	1488	1394	(D)	(D)	(D)	(D)	(D)	512	451	384	(D)	(D)	(D)	(D)	(D)
+" ""37123"""	Montgomery, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	866	4734	4196	4711	4373	4127	4045	3861	3871	3708	4917	4056	3620	3896	3951	3616	3945	4265	4327
+" ""37125"""	Moore, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	32395	32268	34635	35781	39215	34722	36212	35637	32278	31176	32295	33052	30684	33682	32162	30746	32266	35590	35880
+" ""37127"""	Nash, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4096	4683	4874	4954	4972	4986	5511	5783	5135	4956	4396	4222	3944	4630	4535	7204	7069	6541	6534
+" ""37129"""	New Hanover, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	33493	35698	35559	35274	36071	39325	41762	43700	42060	40795	42991	44554	48194	52980	54421	59124	58357	58530	63559
+" ""37131"""	Northampton, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	402	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37133"""	Onslow, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4828	4797	5027	(D)	5810	6133	6347	6812	6681	6328	7380	7855	10438	9128	8743	9623	9779	10584	11083
+" ""37135"""	Orange, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	9711	11117	9278	9372	12909	13245	13045	13259	14511	16824	21350	15724	16926	18657	19999	24620	22690	22318	23969
+" ""37137"""	Pamlico, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	873	935	782	1293	1431	1535	1368	1326	6726	6482	6726	6878	7240	7928	7702	7728	8296	8810	8300
+" ""37139"""	Pasquotank, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2848	2997	3448	1659	652	934	1302	1229	(D)	1080	1010	(D)	(D)	1474	1945	3012	2966	2804	2858
+" ""37141"""	Pender, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3108	2914	3028	3217	3417	3792	3677	3610	3158	3225	3400	3199	3502	3362	3109	4325	3769	4275	4856
+" ""37143"""	Perquimans, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	0	0	0	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37145"""	Person, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	539	1886	1849	1972	1539	1451	1783	1664	1599	1520	1494	1834	1661	1797	1760	1787	(D)	(D)	(D)
+" ""37147"""	Pitt, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7578	14071	14082	9612	12044	13186	15157	14678	15204	14900	15034	15461	13575	13642	13296	14602	14909	12845	14769
+" ""37149"""	Polk, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1480	1470	1494	1534	1459	1482	2801	3261	3204	2902	2483	2511	3115	4345	4241	4006	12593	13564	12356
+" ""37151"""	Randolph, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	22886	17747	16516	16957	15260	20955	21519	19357	12743	11605	11860	10889	10590	11346	10485	12348	12235	11918	11894
+" ""37153"""	Richmond, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3188	3462	4037	4162	3394	3289	1256	1519	1263	1153	1300	1385	1574	1644	1631	1719	1772	1918	1862
+" ""37155"""	Robeson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3621	3772	3753	4072	4430	4544	4445	4508	4435	4621	6350	5162	3557	2905	2859	3015	3004	3058	2929
+" ""37157"""	Rockingham, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4275	4550	4564	4584	4921	5349	5593	5474	3793	3735	3552	3405	4171	4481	4264	4786	5060	4231	4581
+" ""37159"""	Rowan, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	10356	9533	9324	9064	10612	12359	13246	13866	17797	14447	13402	15018	19271	19763	19379	22132	20752	18732	18546
+" ""37161"""	Rutherford, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	7075	6555	6281	6642	6846	8911	9900	11006	9385	7512	3846	4010	3241	3848	4009	4389	4617	4587	5062
+" ""37163"""	Sampson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1056	1362	1201	1280	1378	1235	1407	1273	1127	1077	1058	1098	1371	1530	1559	1518	1321	1437	1338
+" ""37165"""	Scotland, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1886	(D)	(D)	1410	1405	1601	1490	1389	1317	1338	1431	1702	1517	1664	1671	1643	1585	1376	1524
+" ""37167"""	Stanly, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	1024	2563	2878	4889	1204	1696	1967	2156	2069	1921	2123	3012	2960	2457	2242	3783	3789	3505	3957
+" ""37169"""	Stokes, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	715	785	707	689	822	735	798	700	722	605	708	633	528	688	859	3133	3113	2027	2189
+" ""37171"""	Surry, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	5870	5936	4500	4422	4737	5316	5288	5643	5617	5959	6291	8411	7487	5543	4855	4199	4120	4404	4829
+" ""37173"""	Swain, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	2901	5753	10538	9438	6813	7689	8920	9771	7704	8466	8761	9274	9358	9959	10489	10614	10355	11441	12461
+" ""37175"""	Transylvania, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3326	4168	6314	5624	5359	5774	6358	6833	6495	6745	5798	5852	6144	6627	5807	5437	5962	5703	6544
+" ""37177"""	Tyrrell, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	0	0	0	0	0	0	0	0	0	0	0	0
+" ""37179"""	Union, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4194	6785	6933	9698	9204	12537	15097	15965	15596	14386	14087	17880	18522	21004	23215	23315	25433	27654	28057
+" ""37181"""	Vance, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3694	3543	2910	3203	3220	3264	3094	2915	2832	2800	2422	2306	5192	5557	5114	6224	7254	7207	7403
+" ""37183"""	Wake, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	151591	167232	162758	166024	126629	189016	195150	212340	245632	253049	264957	274753	311187	332632	348439	364525	378055	387403	439311
+" ""37185"""	Warren, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	158	(D)	107	100	216	(D)	134	163	107	130	237	(D)	(D)	227	226	195	267
+" ""37187"""	Washington, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	229	210	(D)	(D)	230	307	250	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+" ""37189"""	Watauga, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	12930	13382	13071	12395	13779	14637	16087	17196	16772	15561	15407	15926	16203	16781	16981	18256	19622	20788	21748
+" ""37191"""	Wayne, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	3640	3922	4794	5022	5193	5839	5517	5759	5999	6013	6124	6753	6359	7183	7123	5730	5361	5849	5434
+" ""37193"""	Wilkes, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	964	1118	1234	1168	1463	1672	1953	1219	1019	998	1001	908	943	1038	1104	3569	3714	3373	3669
+" ""37195"""	Wilson, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	4264	4600	4866	5085	4982	4861	4828	5041	5256	5197	4238	4619	4549	4515	4217	5592	6336	7298	7923
+" ""37197"""	Yadkin, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	626	710	931	1039	974	(D)	889	729	869	886	785	815	798	1003	802	2013	2064	2076	2145
+" ""37199"""	Yancey, NC	5.0	CAINC6N	1700.0	71	   Arts, entertainment, and recreation	Thousands of dollars	(D)	(D)	(D)	3835	3917	3979	(D)	(D)	(D)	(D)	3229	3569	3810	4056	4406	4386	4539	4635	4828

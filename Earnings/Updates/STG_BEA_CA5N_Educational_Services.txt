@@ -1,102 +1,102 @@
-GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018
- 37000	North Carolina	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1849579	2080703	2229197	2614701	2791357	3153709	3520044	3779306	4194360	4385809	4617000	4875466	4447883	5545765	5702476	5867541	5636184	6031163
- 37001	Alamance, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	42078	50386	55900	62952	67966	76454	87633	96223	105267	110427	113289	122142	111199	133357	140001	148893	151699	158353
- 37003	Alexander, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	96	(D)	(D)	(D)	474	(D)	1001	(D)	(D)	138	(D)	271	(D)	(D)	1913	(D)
- 37005	Alleghany, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	281	288	227	(D)	(D)	(D)	447	523	594	(D)	(D)	(D)
- 37007	Anson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	54	56	27	17	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	350	352
- 37009	Ashe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	357	559	652	1032	1513	1397	858	738	908	1039	1047	945	1663
- 37011	Avery, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	9419	8560	(D)	(D)	(D)	9844	9657	9116	8991	(D)	(D)	(D)	(D)	(D)	(D)
- 37013	Beaufort, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2028	2329	2566	2943	3294	4176	5397	5055	4847	5306	5441	5578	5444	5912	5843	5745	5536	5383
- 37015	Bertie, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5360	(D)	(D)	(D)
- 37017	Bladen, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	327	291	260	331	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1840
- 37019	Brunswick, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3869	4075	5627	4423	3955	5221	8544	9333	9865	9564	9018	8872	8233	9063	11416	13149	13142	16688
- 37021	Buncombe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	46061	57529	47221	51637	53261	57232	66895	72699	75126	79471	79589	83902	82398	99060	109616	119577	127259	132070
- 37023	Burke, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3741	4316	5256	3854	3831	4286	5177	4881	4680	4871	4876	5179	4442	4679	4664	4568	5009	5069
- 37025	Cabarrus, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	11360	13493	16371	20766	13987	26077	31218	31187	28286	25561	26464	30236	22934	25991	28075	33091	38033	35888
- 37027	Caldwell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1778	2449	2455	4335	4128	4626	3375	3633	3729	5687	4144	4311	3938	4260	4633	4498	3113	2826
- 37029	Camden, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37031	Carteret, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2878	3072	3190	2830	3519	3936	4183	4492	5128	4948	4711	7058	6712	7756	7208	6454	13819	14626
- 37033	Caswell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	193	75	95	153	(D)	(D)	210	486	(D)	(D)	(D)
- 37035	Catawba, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	19844	21438	21204	22612	23726	25628	31931	34336	36164	37061	38916	41337	34841	41152	39936	43403	42232	48894
- 37037	Chatham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1647	2031	2747	3230	3439	3922	5571	6115	6962	7873	7952	9878	9912	10896	11314	11888	11811	13702
- 37039	Cherokee, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1317	(D)	(D)	1719	(D)	2176	2837	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37041	Chowan, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37043	Clay, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	193	199	204	204	197	234	331	136	(D)	(D)	(D)	(D)	(D)	(D)	(D)	874	807	774
- 37045	Cleveland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	46974	47505	46082	45387
- 37047	Columbus, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	2560	2777	3235	3385	4034	4306	4363	4668	4295	4510	3865	3985	4071	3666	2474	2034
- 37049	Craven, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6515	6160	6369	6760	9075	10488	12317	12423	14536	15846	13554	14003	14237	16141	17253	21285	23842	24882
- 37051	Cumberland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	33583	39960	43292	49505	53909	56881	77578	98872	137743	175682	203156	111313	90604	105164	106560	118880	113076	115157
- 37053	Currituck, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	4	(D)	(D)	(D)	(D)	(D)	(D)	988	1050	707	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37055	Dare, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1091	1059	1372	1519	2091	2398	2185	2038	2082	2195	2336	2525	2796	3463	3469	3316	3073	3060
- 37057	Davidson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6861	8803	9395	10486	10317	10642	12194	12099	13826	14476	13980	14698	14633	15563	15652	17940	17790	19497
- 37059	Davie, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	1014	1179	1370	1261	1274	1675	1698	1785	1979	1695	1734	1602	(D)	(D)	3235	3196	3270
- 37061	Duplin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	691	787	723	810	727	1002	1472	1240	1698	1746	(D)	3370	2031	1698	1718	1827	2499	2506
- 37063	Durham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	384779	421888	461239	670242	739595	877632	963401	1048561	1230248	1254820	1352095	1443581	1299184	1814171	1834110	1903683	1918955	2032845
- 37065	Edgecombe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37067	Forsyth, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	409206	456614	475391	509374	535848	575044	613596	644300	705195	762006	820710	876206	780370	960120	948910	911545	661451	829122
- 37069	Franklin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	4649	4349	5131	6227	(D)	7717	6930	(D)	7845	7878	8551	7634	10146	10782	11833	11585	11563
- 37071	Gaston, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	20203	23418	23764	26065	27533	30040	34021	35685	34740	35607	38019	40965	37051	41874	42624	45065	42316	43491
- 37073	Gates, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	80	83	95	60	54	88	122	83	18	16	32	62	126	163	157	111	89	93
- 37075	Graham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	137	141	144	(D)	54	(D)	(D)	(D)	(D)	558	386	455	524	604	663	466	277	207
- 37077	Granville, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1302	(D)	1103	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37079	Greene, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	549	721	673	833	754	887	1028	813	1105	1290	1036	1074	1001	1109	1453	1480	1243	1188
- 37081	Guilford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	119212	130083	136515	149876	158444	170761	187348	199526	216782	213767	220991	242733	225881	263870	283807	300225	292480	311186
- 37083	Halifax, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	3333	(D)	(D)	(D)	4533	5675	5335	5602	5090	4880	5012	5534	5991	6201	6887	5639	5900
- 37085	Harnett, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	60683	(D)	(D)	(D)	86364	96831	104282	111595
- 37087	Haywood, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1497	(D)	2014	(D)	2571	2725	3085	2709	3429	3636	2887	3533	3385	3862	3668	3549	3903	4032
- 37089	Henderson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	8255	9518	8612	10408	9305	11221	15261	15264	15032	15177	14379	15227	15254	18402	19287	21856	18772	19467
- 37091	Hertford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37093	Hoke, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	668	605	974	1490	2687	5771	3272	3913	4461	3219	(D)	(D)	3195	3518	2239
- 37095	Hyde, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	261	296	316	325	284	227	(D)	(D)	(D)	305	483	548	546	439	(D)	(D)	(D)	(D)
- 37097	Iredell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6725	8430	17264	20443	21692	24501	24008	26028	30362	31087	26683	27068	25714	32453	33491	37306	40840	42668
- 37099	Jackson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1673	2002	909	1068	1095	1274	1744	2189	2506	3088	3700	4023	3834	4525	4839	4542	4077	4284
- 37101	Johnston, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1872	2266	2874	2590	2978	3799	6845	6811	6149	6091	4867	5497	5736	7154	7824	8783	10110	12511
- 37103	Jones, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	292	290	276	206	136	193	142	99	77	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37105	Lee, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2689	3193	3591	3939	4122	5853	6421	6958	6564	6015	6509	6727	6422	6890	7387	7542	7965	6927
- 37107	Lenoir, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3797	4956	4818	5025	4762	5725	5696	6615	7450	7657	6998	7406	7599	7619	7713	9171	13504	13870
- 37109	Lincoln, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	903	1540	1785	2065	2002	(D)	(D)	2112	1959	1938	(D)	1818	(D)	2549	3954	5244	5811	6592
- 37111	McDowell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	2791	2799	2615	2673	2753	(D)	2841	1761	2310
- 37113	Macon, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1267	1661	1750	1892	1957	(D)	(D)	(D)	2726	2549	2106	2103	1979	2257	2458	2789	2884	4128
- 37115	Madison, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37117	Martin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	825	1377	(D)	(D)	260	163	160	185	(D)	(D)	(D)
- 37119	Mecklenburg, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	191445	211881	230422	264878	294581	336844	366373	389622	425544	450977	459316	512440	474769	554180	577134	586958	564532	556482
- 37121	Mitchell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1945	2404	2639	3091	3453	3635	3848	4406	4983	5273	5009	5047	4740	6008	6099	6080	5353	5283
- 37123	Montgomery, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	823	1035	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1320
- 37125	Moore, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6374	7682	10657	13660	12080	14354	19437	20876	19934	16703	14145	14798	17306	20177	21446	31481	28240	29232
- 37127	Nash, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13085	15387	16177	16491	16442	17477	18336	21625	23964	23352	21901	22879	26076	34286	36713	35878	35399	36734
- 37129	New Hanover, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	19641	20826	23380	24774	25015	26648	28708	31342	36800	43907	46638	49288	44080	53269	56282	58053	56103	58148
- 37131	Northampton, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1748	2006	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37133	Onslow, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6358	9097	11343	12628	10548	12342	16613	21772	25238	27738	27012	27558	28486	33524	32824	29220	35793	38722
- 37135	Orange, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	29667	25345	31005	33565	34819	36408	49365	51967	53997	65118	74449	78198	70560	72462	80158	82655	81464	85940
- 37137	Pamlico, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37139	Pasquotank, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2737	3404	3662	4728	4831	6022	6737	5834	7335	7797	7783	8347	7937	9075	9543	9691	10027	8714
- 37141	Pender, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	181	(D)	(D)	323	348	663	435	(D)	(D)	(D)	(D)	(D)	844	(D)	1045	975	1989	2183
- 37143	Perquimans, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	42	175	181
- 37145	Person, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	895	1084	1397	1654	1608	1658	1719	1786	2042	2488	2170	2490	2579	2687	2586	1987	(D)	(D)
- 37147	Pitt, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	12513	16088	17525	19566	20404	20397	24477	26329	28183	28317	27127	28021	29606	34222	33971	38182	37299	36331
- 37149	Polk, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	976	836	1004	(D)	(D)	(D)	1902	2644	2667	3012	3136	1713	1196	1246
- 37151	Randolph, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	4049	6150	5774	6549	6707	6370	6968	7958	8636	10183	9413	10122	9917	10056	10545	11654	12558	11238
- 37153	Richmond, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	824	937	1104	(D)	(D)	(D)	(D)	2435	2930	2823	3129	3850	3699	4026	3577	4361	4156	3359
- 37155	Robeson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3463	5137	4808	5807	6408	7314	10496	9818	9582	9418	8387	8319	7829	8687	8946	8337	5605	5283
- 37157	Rockingham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	3603	4201	4218	4925	5448	5981	5592	5101	4441	4901	4782	5603	6052	5888	6062	6747
- 37159	Rowan, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	25690	29966	32069	34421	33270	33924	35150	37799	41279	42330	43424	47255	41316	50271	52101	54812	55750	55241
- 37161	Rutherford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2831	3851	5364	7014	6194	6752	6711	6956	6995	7974	8378	9622	9345	9259	9588	10682	9916	10740
- 37163	Sampson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	2500	2799	(D)	(D)	(D)	(D)	(D)	4555	4017	4179	(D)	(D)	(D)	(D)	(D)
- 37165	Scotland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	8929	9485	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	11056	10699	13366	13895	14962	14346	(D)
- 37167	Stanly, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	9624	11232	12966	13992	14766	16282	17553	18227	18323	18514	17867	15062	13729	16401	16308	17520	19188	19344
- 37169	Stokes, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	2002	2049	2222	(D)	1828	1913	1951	3128	3561	2828	2468	2204
- 37171	Surry, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1333	1668	1351	1519	1409	1515	1726	1754	1572	1458	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37173	Swain, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	635	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
- 37175	Transylvania, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	9212	(D)	10565	10504	10490	11396	13564	13574	14495	14248	15374	15684	14449	18010	18929	19674	20100	20860
- 37177	Tyrrell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	68	45	44	53	35	18	25	(D)	(D)	132	187	(D)	(D)	(D)	(D)
- 37179	Union, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	17891	23417	27849	25039	26809	29853	46923	46347	42912	43404	45327	50650	47703	58500	60705	66192	67997	73562
- 37181	Vance, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	3192	3754	3278	4832	7175	6344	5290	5758	6111	6582	6823	7585	8384	8621	7191	7043
- 37183	Wake, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	185695	210673	223282	247830	268076	298465	338062	372912	391059	411656	441190	475518	434018	500109	533259	572858	585044	620315
- 37185	Warren, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1144	1203	(D)	(D)	(D)	739
- 37187	Washington, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	52	85	109	69	39	41	41	33	(D)	20	49	52	910	474
- 37189	Watauga, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2900	2589	3021	3317	3362	3728	5467	5876	5612	6678	7138	7519	6544	8006	8506	8786	7229	7444
- 37191	Wayne, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13649	18010	20023	22349	23845	26889	29854	36481	41152	38693	35476	32723	28735	36243	36683	37719	37132	38131
- 37193	Wilkes, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1312	1807	1960	1900	2995	3733	5018	5715	7357	6523	6253	6447	6272	7402	7591	(D)	6596	7560
- 37195	Wilson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13113	14580	14402	15350	16245	18020	19002	19590	22368	22139	22193	24227	22358	26764	26639	27623	26375	26988
- 37197	Yadkin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	219	192	316	286	355	(D)	(D)	(D)	(D)	831	750	873	889	1088	1254	(D)	(D)	(D)
- 37199	Yancey, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1925
+GeoFIPS	GeoName	Region	TableName	LineCode	IndustryClassification	Description	Unit	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019
+ 37000	North Carolina	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1849579	2080703	2229197	2614701	2791357	3153709	3520044	3779306	4194360	4385809	4617000	4875466	4447883	5545765	5657787	5900419	5726723	6047269	6390267
+ 37001	Alamance, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	42078	50386	55900	62952	67966	76454	87633	96223	105267	110427	113289	122142	111199	133357	139423	149688	153286	158846	169166
+ 37003	Alexander, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	96	(D)	(D)	(D)	474	(D)	1001	(D)	(D)	138	(D)	271	(D)	(D)	2006	(D)	(D)
+ 37005	Alleghany, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	281	288	227	(D)	(D)	(D)	447	523	594	(D)	(D)	(D)	677
+ 37007	Anson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	54	56	27	17	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	370	218	225
+ 37009	Ashe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	357	559	652	1032	1513	1397	858	738	908	1039	1052	948	1553	1738
+ 37011	Avery, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	9419	8560	(D)	(D)	(D)	9844	9657	9116	8991	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37013	Beaufort, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2028	2329	2566	2943	3294	4176	5397	5055	4847	5306	5441	5578	5444	5912	5639	5791	5844	5716	5553
+ 37015	Bertie, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	5113	(D)	(D)	(D)	(D)
+ 37017	Bladen, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	327	291	260	331	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1987	2038
+ 37019	Brunswick, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3869	4075	5627	4423	3955	5221	8544	9333	9865	9564	9018	8872	8233	9063	11144	13226	13609	17283	17385
+ 37021	Buncombe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	46061	57529	47221	51637	53261	57232	66895	72699	75126	79471	79589	83902	82398	99060	107788	120368	130436	135896	143735
+ 37023	Burke, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3741	4316	5256	3854	3831	4286	5177	4881	4680	4871	4876	5179	4442	4679	4527	4601	5203	5192	6350
+ 37025	Cabarrus, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	11360	13493	16371	20766	13987	26077	31218	31187	28286	25561	26464	30236	22934	25991	27258	33367	39446	37133	42422
+ 37027	Caldwell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1778	2449	2455	4335	4128	4626	3375	3633	3729	5687	4144	4311	3938	4260	4517	4528	3207	2713	2882
+ 37029	Camden, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37031	Carteret, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2878	3072	3190	2830	3519	3936	4183	4492	5128	4948	4711	7058	6712	7756	7005	6497	14154	14558	15348
+ 37033	Caswell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	193	75	95	153	(D)	(D)	210	486	(D)	(D)	(D)	(D)
+ 37035	Catawba, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	19844	21438	21204	22612	23726	25628	31931	34336	36164	37061	38916	41337	34841	41152	39370	43715	43371	49509	52727
+ 37037	Chatham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1647	2031	2747	3230	3439	3922	5571	6115	6962	7873	7952	9878	9912	10896	11186	11934	12070	12361	14199
+ 37039	Cherokee, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1317	(D)	(D)	1719	(D)	2176	2837	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37041	Chowan, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37043	Clay, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	193	199	204	204	197	234	331	136	(D)	(D)	(D)	(D)	(D)	(D)	(D)	879	853	713	735
+ 37045	Cleveland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	46935	47896	46445	45310	46248
+ 37047	Columbus, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	2560	2777	3235	3385	4034	4306	4363	4668	4295	4510	3865	3985	3897	3702	2609	2219	2404
+ 37049	Craven, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6515	6160	6369	6760	9075	10488	12317	12423	14536	15846	13554	14003	14237	16141	16886	21460	24588	25358	24145
+ 37051	Cumberland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	33583	39960	43292	49505	53909	56881	77578	98872	137743	175682	203156	111313	90604	105164	104782	119681	116147	115506	114349
+ 37053	Currituck, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	4	(D)	(D)	(D)	(D)	(D)	(D)	988	1050	707	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37055	Dare, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1091	1059	1372	1519	2091	2398	2185	2038	2082	2195	2336	2525	2796	3463	3409	3331	3169	2977	2849
+ 37057	Davidson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6861	8803	9395	10486	10317	10642	12194	12099	13826	14476	13980	14698	14633	15563	15019	18092	18863	21127	22209
+ 37059	Davie, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	1014	1179	1370	1261	1274	1675	1698	1785	1979	1695	1734	1602	(D)	(D)	3248	3248	3347	3208
+ 37061	Duplin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	691	787	723	810	727	1002	1472	1240	1698	1746	(D)	3370	2031	1698	1661	1839	2607	2402	2024
+ 37063	Durham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	384779	421888	461239	670242	739595	877632	963401	1048561	1230248	1254820	1352095	1443581	1299184	1814171	1834026	1912093	1928244	2026104	2138628
+ 37065	Edgecombe, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37067	Forsyth, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	409206	456614	475391	509374	535848	575044	613596	644300	705195	762006	820710	876206	780370	960120	947492	915171	666719	827366	900500
+ 37069	Franklin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	4649	4349	5131	6227	(D)	7717	6930	(D)	7845	7878	8551	7634	10146	10763	11918	11699	11426	11696
+ 37071	Gaston, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	20203	23418	23764	26065	27533	30040	34021	35685	34740	35607	38019	40965	37051	41874	41689	45378	43689	44194	46546
+ 37073	Gates, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	80	83	95	60	54	88	122	83	18	16	32	62	126	163	157	111	89	41	43
+ 37075	Graham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	137	141	144	(D)	54	(D)	(D)	(D)	(D)	558	386	455	524	604	641	469	287	161	169
+ 37077	Granville, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1302	(D)	1103	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37079	Greene, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	549	721	673	833	754	887	1028	813	1105	1290	1036	1074	1001	1109	1407	1487	1324	1332	1373
+ 37081	Guilford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	119212	130083	136515	149876	158444	170761	187348	199526	216782	213767	220991	242733	225881	263870	280803	302171	298288	312211	330331
+ 37083	Halifax, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	3333	(D)	(D)	(D)	4533	5675	5335	5602	5090	4880	5012	5534	5991	5932	6942	6012	6260	6306
+ 37085	Harnett, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	60683	(D)	(D)	(D)	86206	97431	105052	111667	115587
+ 37087	Haywood, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1497	(D)	2014	(D)	2571	2725	3085	2709	3429	3636	2887	3533	3385	3862	3552	3579	4085	4196	4286
+ 37089	Henderson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	8255	9518	8612	10408	9305	11221	15261	15264	15032	15177	14379	15227	15254	18402	18787	22003	19522	19792	17701
+ 37091	Hertford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37093	Hoke, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	668	605	974	1490	2687	5771	3272	3913	4461	3219	(D)	(D)	3217	3655	2473	2639
+ 37095	Hyde, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	261	296	316	325	284	227	(D)	(D)	(D)	305	483	548	546	439	(D)	(D)	(D)	(D)	(D)
+ 37097	Iredell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6725	8430	17264	20443	21692	24501	24008	26028	30362	31087	26683	27068	25714	32453	32812	37563	42192	44267	45933
+ 37099	Jackson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1673	2002	909	1068	1095	1274	1744	2189	2506	3088	3700	4023	3834	4525	4698	4570	4243	4322	4617
+ 37101	Johnston, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1872	2266	2874	2590	2978	3799	6845	6811	6149	6091	4867	5497	5736	7154	7671	8842	10469	12993	13688
+ 37103	Jones, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	292	290	276	206	136	193	142	99	77	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37105	Lee, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2689	3193	3591	3939	4122	5853	6421	6958	6564	6015	6509	6727	6422	6890	7117	7597	8397	7319	8183
+ 37107	Lenoir, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3797	4956	4818	5025	4762	5725	5696	6615	7450	7657	6998	7406	7599	7619	7357	9241	14183	14633	14682
+ 37109	Lincoln, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	903	1540	1785	2065	2002	(D)	(D)	2112	1959	1938	(D)	1818	(D)	2549	3913	5282	5936	6968	7307
+ 37111	McDowell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	2791	2799	2615	2673	2753	(D)	2858	1854	2263	2240
+ 37113	Macon, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1267	1661	1750	1892	1957	(D)	(D)	(D)	2726	2549	2106	2103	1979	2257	2406	2806	2964	4102	4356
+ 37115	Madison, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37117	Martin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	825	1377	(D)	(D)	260	163	160	185	(D)	(D)	(D)	(D)
+ 37119	Mecklenburg, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	191445	211881	230422	264878	294581	336844	366373	389622	425544	450977	459316	512440	474769	554180	567364	591263	580694	568196	592027
+ 37121	Mitchell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1945	2404	2639	3091	3453	3635	3848	4406	4983	5273	5009	5047	4740	6008	6020	6149	5460	5335	5830
+ 37123	Montgomery, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	823	1035	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1312	(D)
+ 37125	Moore, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6374	7682	10657	13660	12080	14354	19437	20876	19934	16703	14145	14798	17306	20177	20778	31674	29195	29883	30464
+ 37127	Nash, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13085	15387	16177	16491	16442	17477	18336	21625	23964	23352	21901	22879	26076	34286	36174	36116	36240	37421	38745
+ 37129	New Hanover, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	19641	20826	23380	24774	25015	26648	28708	31342	36800	43907	46638	49288	44080	53269	54844	58498	58242	58938	57449
+ 37131	Northampton, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1748	2006	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37133	Onslow, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	6358	9097	11343	12628	10548	12342	16613	21772	25238	27738	27012	27558	28486	33524	32339	29423	36749	39490	37115
+ 37135	Orange, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	29667	25345	31005	33565	34819	36408	49365	51967	53997	65118	74449	78198	70560	72462	79434	83027	82824	80516	92391
+ 37137	Pamlico, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37139	Pasquotank, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2737	3404	3662	4728	4831	6022	6737	5834	7335	7797	7783	8347	7937	9075	9275	9784	10463	9037	9650
+ 37141	Pender, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	181	(D)	(D)	323	348	663	435	(D)	(D)	(D)	(D)	(D)	844	(D)	1023	981	2040	2367	2625
+ 37143	Perquimans, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	42	175	322	336
+ 37145	Person, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	895	1084	1397	1654	1608	1658	1719	1786	2042	2488	2170	2490	2579	2687	2478	2003	(D)	(D)	2397
+ 37147	Pitt, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	12513	16088	17525	19566	20404	20397	24477	26329	28183	28317	27127	28021	29606	34222	33090	38537	38829	37052	38663
+ 37149	Polk, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	976	836	1004	(D)	(D)	(D)	1902	2644	2667	3012	3090	1726	1218	1189	1245
+ 37151	Randolph, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	4049	6150	5774	6549	6707	6370	6968	7958	8636	10183	9413	10122	9917	10056	10182	11741	13236	11413	11693
+ 37153	Richmond, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	824	937	1104	(D)	(D)	(D)	(D)	2435	2930	2823	3129	3850	3699	4026	3426	4389	4393	3252	3369
+ 37155	Robeson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	3463	5137	4808	5807	6408	7314	10496	9818	9582	9418	8387	8319	7829	8687	8614	8400	5875	5351	5698
+ 37157	Rockingham, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	3603	4201	4218	4925	5448	5981	5592	5101	4441	4901	4782	5603	5844	5922	6368	6735	7099
+ 37159	Rowan, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	25690	29966	32069	34421	33270	33924	35150	37799	41279	42330	43424	47255	41316	50271	51645	55191	56790	55413	57619
+ 37161	Rutherford, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2831	3851	5364	7014	6194	6752	6711	6956	6995	7974	8378	9622	9345	9259	9360	10755	10249	10814	10947
+ 37163	Sampson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	2500	2799	(D)	(D)	(D)	(D)	(D)	4555	4017	4179	(D)	(D)	(D)	(D)	(D)	7242
+ 37165	Scotland, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	8929	9485	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	11056	10699	13366	13815	15090	14566	(D)	(D)
+ 37167	Stanly, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	9624	11232	12966	13992	14766	16282	17553	18227	18323	18514	17867	15062	13729	16401	16102	17652	19611	19669	20076
+ 37169	Stokes, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	2002	2049	2222	(D)	1828	1913	1951	3128	3447	2852	2565	2181	2570
+ 37171	Surry, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1333	1668	1351	1519	1409	1515	1726	1754	1572	1458	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37173	Swain, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	635	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)
+ 37175	Transylvania, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	9212	(D)	10565	10504	10490	11396	13564	13574	14495	14248	15374	15684	14449	18010	18879	19828	20318	20656	22805
+ 37177	Tyrrell, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	68	45	44	53	35	18	25	(D)	(D)	132	187	(D)	(D)	(D)	(D)	(D)
+ 37179	Union, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	17891	23417	27849	25039	26809	29853	46923	46347	42912	43404	45327	50650	47703	58500	59981	66633	69488	74840	82255
+ 37181	Vance, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	3192	3754	3278	4832	7175	6344	5290	5758	6111	6582	6823	7585	8004	8680	7612	7320	6985
+ 37183	Wake, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	185695	210673	223282	247830	268076	298465	338062	372912	391059	411656	441190	475518	434018	500109	525839	576680	598357	616637	652360
+ 37185	Warren, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	1144	1203	(D)	(D)	(D)	805	869
+ 37187	Washington, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	52	85	109	69	39	41	41	33	(D)	20	49	52	969	510	(D)
+ 37189	Watauga, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	2900	2589	3021	3317	3362	3728	5467	5876	5612	6678	7138	7519	6544	8006	8416	8850	7331	7154	7738
+ 37191	Wayne, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13649	18010	20023	22349	23845	26889	29854	36481	41152	38693	35476	32723	28735	36243	36119	37999	38072	38510	39063
+ 37193	Wilkes, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	1312	1807	1960	1900	2995	3733	5018	5715	7357	6523	6253	6447	6272	7402	7413	(D)	6814	7688	4923
+ 37195	Wilson, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	13113	14580	14402	15350	16245	18020	19002	19590	22368	22139	22193	24227	22358	26764	26199	27799	27099	27396	31107
+ 37197	Yadkin, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	219	192	316	286	355	(D)	(D)	(D)	(D)	831	750	873	889	1088	1230	(D)	(D)	(D)	(D)
+ 37199	Yancey, NC	5.0	CAINC5N	1500.0	61	   Educational services	Thousands of dollars	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	(D)	2072	(D)
